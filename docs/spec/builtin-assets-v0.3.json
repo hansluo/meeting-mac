@@ -16,7 +16,8 @@
       "runtime": "llama-server",
       "developer_download_verified": true,
       "developer_actual_smoke": "embeddinggemma-chinese-smoke-20261015.json",
-      "license_blob": "https://registry.ollama.ai/v2/library/embeddinggemma/blobs/sha256:1adbfec9dcf025cbf301c072f3847527468dcfa399da7491ee4a1c9e9f1b33e9"
+      "license_blob": "https://registry.ollama.ai/v2/library/embeddinggemma/blobs/sha256:1adbfec9dcf025cbf301c072f3847527468dcfa399da7491ee4a1c9e9f1b33e9",
+      "required_by_default": true
     },
     {
       "id": "qwen3-asr-0.6b-int8",
@@ -34,14 +35,16 @@
         "tokenizer/tokenizer_config.json": "4942d005604266809309cabc9f4e9cb89ce855d59b14681fdc0e1cc62ea26c4c"
       },
       "developer_download_verified": true,
-      "developer_actual_smoke": "qwen-synthetic-smoke-20261015.json"
+      "developer_actual_smoke": "qwen-synthetic-smoke-20261015.json",
+      "required_by_default": false
     },
     {
       "id": "sherpa-onnx1.13.7",
       "role": "asr_runtime",
       "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/v1.13.7/sherpa-onnx-v1.13.7-osx-arm64-shared-no-tts-lib.tar.bz2",
       "sha256": "b3a5484f071094d3a922062e6793aca3e0ccc7388bfa5797959fa51fabffc906",
-      "developer_download_verified": true
+      "developer_download_verified": true,
+      "required_by_default": true
     },
     {
       "id": "llama-server-ollama0.40.4",
@@ -51,7 +54,8 @@
       "sha256": "a4ceae4b2aaf18df37ebcbfb56ba3a37a87838631112d66c2be07268693c8d58",
       "runtime_version": "0.6.0-dev b42b7e6d3",
       "developer_download_verified": true,
-      "notes": "Use bundled llama-server directly; do not run user Ollama daemon or touch home config."
+      "notes": "Use bundled llama-server directly; do not run user Ollama daemon or touch home config.",
+      "required_by_default": true
     },
     {
       "id": "sensevoice-int8",
@@ -61,7 +65,8 @@
       "size": 163002883,
       "sha256": "7d1efa2138a65b0b488df37f8b89e3d91a60676e416f515b952358d83dfd347e",
       "developer_download_verified": false,
-      "notes": "Default family follows actual MAC-record senseVoiceInt8; precise bundled checkpoint equivalence unknown. Native adapter and actual speech acceptance pending."
+      "notes": "Default family follows actual MAC-record senseVoiceInt8; precise bundled checkpoint equivalence unknown. Native adapter and actual speech acceptance pending.",
+      "required_by_default": true
     }
   ],
   "acceptance_pending": [
@@ -71,5 +76,6 @@
     "Owned embedding-runtime lifecycle and app integration",
     "Actual full Chinese meeting and RAG evaluation"
   ],
-  "weights_committed_to_git": false
+  "weights_committed_to_git": false,
+  "notes": "Only SenseVoice, Google embedding and their runtimes are default assets. Existing Qwen download remains optional; no Python/FunASR or local generation model required for first use."
 }
