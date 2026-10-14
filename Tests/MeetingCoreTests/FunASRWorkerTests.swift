@@ -4,8 +4,8 @@ import Darwin
 
 final class FunASRWorkerTests: XCTestCase {
     private var fixture: URL { URL(fileURLWithPath: #filePath).deletingLastPathComponent().deletingLastPathComponent().appendingPathComponent("Fixtures/funasr_test_worker.py") }
-    private func client(_ mode: String = "normal", timeout: Double = 1) -> FunASRWorker {
-        FunASRWorker(configuration: .init(pythonExecutable: URL(fileURLWithPath: "/usr/bin/python3"), workerScript: fixture, modelDirectory: URL(fileURLWithPath: "/tmp/\(mode)"), checkpoint: "model.pt", revision: "fixture", startupTimeout: timeout, requestTimeout: timeout))
+    private func client(_ mode: String = "normal", timeout: Double = 1, directory: URL? = nil) -> FunASRWorker {
+        FunASRWorker(configuration: .init(pythonExecutable: URL(fileURLWithPath: "/usr/bin/python3"), workerScript: fixture, modelDirectory: directory ?? URL(fileURLWithPath: "/tmp/\(mode)"), checkpoint: "model.pt", revision: "fixture", startupTimeout: timeout, requestTimeout: timeout))
     }
     private func audio() throws -> URL {
         let url = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString + ".wav")
@@ -40,8 +40,8 @@ final class FunASRWorkerTests: XCTestCase {
     }
     func testRejectsMalformedNoiseOversizedUnknownJobAndCrash() async throws {
         let url = try audio(); defer { try? FileManager.default.removeItem(at:url) }
-        for mode in ["noise","oversized","malformed","unknown_job","crash"] {
-            do { _ = try await client(mode).transcribe(wavURL:url); XCTFail(mode) } catch { XCTAssertTrue(error is FunASRWorkerError, mode) }
+        for mode in ["noise","oversized","malformed","unknown_job","crash","wrong_version","version_true"] {
+            do { _ = try await client(mode).transcribe(wavURL:url); XCTFail(mode) } catch { XCTAssertEqual(error as? FunASRWorkerError, mode == "crash" ? .workerExited : .protocolViolation, mode) }
         }
     }
     func testTimeoutsAndCancellationReapAndAllowRestart() async throws {
@@ -59,6 +59,30 @@ final class FunASRWorkerTests: XCTestCase {
         XCTAssertNotEqual(worker.processIdentifier, oldPID)
         XCTAssertTrue(worker.hasRunningProcess)
         try await worker.shutdown(); XCTAssertFalse(worker.hasRunningProcess)
+    }
+    func testCrashAndBothTimeoutsReapThenRestartSameClient() async throws {
+        let audioURL = try audio(); defer { try? FileManager.default.removeItem(at:audioURL) }
+        for mode in ["crash", "startup_timeout", "request_timeout"] {
+            let root = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
+            let directory = root.appendingPathComponent(mode + "_once")
+            defer { try? FileManager.default.removeItem(at:root) }
+            let worker = client(mode,timeout:0.3,directory:directory)
+            do { _ = try await worker.transcribe(wavURL:audioURL); XCTFail(mode) }
+            catch { XCTAssertEqual(error as? FunASRWorkerError,mode == "crash" ? .workerExited : .timedOut) }
+            let firstJournal = try String(contentsOf:directory.appendingPathComponent("pids"),encoding:.utf8)
+            let firstPID = try XCTUnwrap(Int32(firstJournal.trimmingCharacters(in:.whitespacesAndNewlines)))
+            XCTAssertFalse(worker.hasRunningProcess)
+            XCTAssertEqual(kill(firstPID,0),-1); XCTAssertEqual(errno,ESRCH)
+            let result = try await worker.transcribe(wavURL:audioURL)
+            XCTAssertEqual(result.text,"你好")
+            let nextPID = try XCTUnwrap(worker.processIdentifier)
+            XCTAssertNotEqual(firstPID,nextPID)
+            let journal = try String(contentsOf:directory.appendingPathComponent("pids"),encoding:.utf8).split(separator:"\n")
+            XCTAssertEqual(journal.count,2)
+            XCTAssertEqual(Int32(journal[1]),nextPID)
+            try await worker.shutdown()
+            XCTAssertEqual(kill(nextPID,0),-1); XCTAssertEqual(errno,ESRCH)
+        }
     }
     func testBrokenStdinDoesNotSignalHost() async throws {
         if ProcessInfo.processInfo.environment["FUNASR_PIPE_HOST"] == "1" {

@@ -1,12 +1,19 @@
 import json, os, sys, time
+from pathlib import Path
 mode = os.path.basename(sys.argv[1]) if len(sys.argv) > 1 else 'normal'
+if mode.endswith('_once'):
+    directory = Path(sys.argv[1]); directory.mkdir(parents=True, exist_ok=True)
+    with (directory / 'pids').open('a') as journal: journal.write(str(os.getpid()) + '\n')
+    marker = directory / 'failed'
+    if marker.exists(): mode = 'normal'
+    else: marker.touch(); mode = mode[:-5]
 def emit(d):
     print(json.dumps(d), flush=True)
 if mode == 'startup_timeout': time.sleep(30)
 if mode == 'noise': print('third party noise', flush=True)
 if mode == 'oversized': print('x'*70000, flush=True)
 if mode == 'broken_stdin': os.close(0)
-emit({'version':1, 'type':'started', 'job_id':None})
+emit({'version':True if mode == 'version_true' else 2 if mode == 'wrong_version' else 1, 'type':'started', 'job_id':None})
 if mode == 'broken_stdin': time.sleep(30); sys.exit(0)
 for line in sys.stdin:
     r=json.loads(line); job=r['job_id']; op=r['op']
