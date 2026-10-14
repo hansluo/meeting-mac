@@ -1,0 +1,11 @@
+.build/
+.swiftpm/
+dist/
+.DS_Store
+.venv/
+__pycache__/
+*.pyc
+*.log
+models/
+.env
+coverage/

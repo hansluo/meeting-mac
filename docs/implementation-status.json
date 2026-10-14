@@ -1,0 +1,188 @@
+{
+  "goal": "Complete Meeting Mac v0.2 and deliver to hansluo/meeting-mac",
+  "requirements": [
+    {
+      "id": "FR-001",
+      "title": "模型清单、下载与资源管理",
+      "status": "not_started",
+      "evidence": [],
+      "remaining": "Implement and verify full requirement and acceptance criteria."
+    },
+    {
+      "id": "FR-002",
+      "title": "资料摄取与版本管理",
+      "status": "not_started",
+      "evidence": [],
+      "remaining": "Implement and verify full requirement and acceptance criteria."
+    },
+    {
+      "id": "FR-003",
+      "title": "资料问答与引用",
+      "status": "not_started",
+      "evidence": [],
+      "remaining": "Implement and verify full requirement and acceptance criteria."
+    },
+    {
+      "id": "FR-004",
+      "title": "会议与音频采集",
+      "status": "not_started",
+      "evidence": [],
+      "remaining": "Implement and verify full requirement and acceptance criteria."
+    },
+    {
+      "id": "FR-005",
+      "title": "转写片段、时间与修订",
+      "status": "not_started",
+      "evidence": [],
+      "remaining": "Implement and verify full requirement and acceptance criteria."
+    },
+    {
+      "id": "FR-006",
+      "title": "摘要、行动项与长会议信息",
+      "status": "not_started",
+      "evidence": [],
+      "remaining": "Implement and verify full requirement and acceptance criteria."
+    },
+    {
+      "id": "FR-007",
+      "title": "用户笔记增强",
+      "status": "not_started",
+      "evidence": [],
+      "remaining": "Implement and verify full requirement and acceptance criteria."
+    },
+    {
+      "id": "FR-008",
+      "title": "日程、备会与历史会议搜索",
+      "status": "not_started",
+      "evidence": [],
+      "remaining": "Implement and verify full requirement and acceptance criteria."
+    },
+    {
+      "id": "FR-009",
+      "title": "来源同步与权限撤销",
+      "status": "not_started",
+      "evidence": [],
+      "remaining": "Implement and verify full requirement and acceptance criteria."
+    },
+    {
+      "id": "FR-010",
+      "title": "主动问题检测与sidecar",
+      "status": "not_started",
+      "evidence": [],
+      "remaining": "Implement and verify full requirement and acceptance criteria."
+    },
+    {
+      "id": "FR-011",
+      "title": "多模态与知识组织",
+      "status": "not_started",
+      "evidence": [],
+      "remaining": "Implement and verify full requirement and acceptance criteria."
+    },
+    {
+      "id": "FR-012",
+      "title": "历史、导出、删除与诊断",
+      "status": "not_started",
+      "evidence": [],
+      "remaining": "Implement and verify full requirement and acceptance criteria."
+    },
+    {
+      "id": "FR-013",
+      "title": "本地生成模型发现与连接",
+      "status": "not_started",
+      "evidence": [],
+      "remaining": "Implement and verify full requirement and acceptance criteria."
+    },
+    {
+      "id": "FR-014",
+      "title": "可切换Qwen/FunASR引擎",
+      "status": "not_started",
+      "evidence": [],
+      "remaining": "Implement and verify full requirement and acceptance criteria."
+    },
+    {
+      "id": "FR-015",
+      "title": "音频导入、回放与重转录",
+      "status": "not_started",
+      "evidence": [],
+      "remaining": "Implement and verify full requirement and acceptance criteria."
+    },
+    {
+      "id": "FR-016",
+      "title": "全局语音输入",
+      "status": "not_started",
+      "evidence": [],
+      "remaining": "Implement and verify full requirement and acceptance criteria."
+    },
+    {
+      "id": "FR-017",
+      "title": "按任务选择本地/云端模型",
+      "status": "not_started",
+      "evidence": [],
+      "remaining": "Implement and verify full requirement and acceptance criteria."
+    },
+    {
+      "id": "FR-018",
+      "title": "说话人分离与身份关联",
+      "status": "not_started",
+      "evidence": [],
+      "remaining": "Implement and verify full requirement and acceptance criteria."
+    },
+    {
+      "id": "NFR-001",
+      "title": "数据一致",
+      "status": "not_started",
+      "evidence": [],
+      "remaining": "Implement and verify full requirement and acceptance criteria."
+    },
+    {
+      "id": "NFR-002",
+      "title": "输出可信",
+      "status": "not_started",
+      "evidence": [],
+      "remaining": "Implement and verify full requirement and acceptance criteria."
+    },
+    {
+      "id": "NFR-003",
+      "title": "可恢复",
+      "status": "not_started",
+      "evidence": [],
+      "remaining": "Implement and verify full requirement and acceptance criteria."
+    },
+    {
+      "id": "NFR-004",
+      "title": "执行位置",
+      "status": "not_started",
+      "evidence": [],
+      "remaining": "Implement and verify full requirement and acceptance criteria."
+    },
+    {
+      "id": "NFR-005",
+      "title": "可观察",
+      "status": "not_started",
+      "evidence": [],
+      "remaining": "Implement and verify full requirement and acceptance criteria."
+    },
+    {
+      "id": "NFR-006",
+      "title": "资源预算",
+      "status": "not_started",
+      "evidence": [],
+      "remaining": "Implement and verify full requirement and acceptance criteria."
+    },
+    {
+      "id": "NFR-007",
+      "title": "能力真实",
+      "status": "not_started",
+      "evidence": [],
+      "remaining": "Implement and verify full requirement and acceptance criteria."
+    },
+    {
+      "id": "NFR-008",
+      "title": "模型可替换",
+      "status": "not_started",
+      "evidence": [],
+      "remaining": "Implement and verify full requirement and acceptance criteria."
+    }
+  ],
+  "goal_complete": false
+}

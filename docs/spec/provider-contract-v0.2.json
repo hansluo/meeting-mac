@@ -1,0 +1,257 @@
+{
+  "spec_version": "0.2",
+  "classification": "configuration contract and proposed presets; not connected or implemented providers",
+  "required_profile_fields": [
+    "profile_id",
+    "kind",
+    "backend",
+    "protocol",
+    "execution_location",
+    "model_id",
+    "model_revision",
+    "runtime_version",
+    "verification_status",
+    "capabilities"
+  ],
+  "credential_policy": "Keychain reference only; no key material in config/export/log",
+  "profiles": [
+    {
+      "profile_id": "asr_qwen_onnx_local",
+      "kind": "asr",
+      "backend": "sherpa_onnx_qwen",
+      "protocol": "native_adapter",
+      "execution_location": "on_device",
+      "candidate_models": [
+        "Qwen3-ASR-0.6B INT8 ONNX",
+        "Qwen3-ASR-1.7B INT8 ONNX"
+      ],
+      "model_id": null,
+      "local_model_path": null,
+      "realtime_mode_candidate": "vad_segmented",
+      "notes": "Reuses MAC-record offline wrapper; validate model artifacts and latency; not a native-streaming claim.",
+      "verification_status": "not_integrated_or_not_tested",
+      "capabilities": {
+        "status": "unverified",
+        "last_tested_at": null
+      },
+      "runtime_version": null,
+      "model_revision": null
+    },
+    {
+      "profile_id": "asr_funasr_local",
+      "kind": "asr",
+      "backend": "funasr",
+      "protocol": "concrete_worker_or_server_adapter_tbd",
+      "execution_location": "on_device",
+      "candidate_models": [
+        "SenseVoiceSmall",
+        "Paraformer-zh",
+        "Paraformer-zh-streaming"
+      ],
+      "model_id": null,
+      "base_url": null,
+      "notes": "New required adapter; checkpoint and session cache determine file/streaming mode; Mac/CPU path must be validated.",
+      "verification_status": "not_integrated_or_not_tested",
+      "capabilities": {
+        "status": "unverified",
+        "last_tested_at": null
+      },
+      "runtime_version": null,
+      "model_revision": null
+    },
+    {
+      "profile_id": "llm_qwen_ollama",
+      "kind": "llm",
+      "backend": "ollama",
+      "protocol": "openai_chat_completions",
+      "execution_location": "unverified",
+      "base_url": "http://127.0.0.1:11434/v1",
+      "model_id": null,
+      "credential_ref": null,
+      "candidate_family": "Qwen",
+      "notes": "Discover model IDs; localhost does not prove on-device inference; verify execution location and request capabilities.",
+      "verification_status": "not_integrated_or_not_tested",
+      "capabilities": {
+        "status": "unverified",
+        "last_tested_at": null
+      },
+      "runtime_version": null,
+      "model_revision": null
+    },
+    {
+      "profile_id": "llm_qwen_local_compatible",
+      "kind": "llm",
+      "backend": "lm_studio_or_omlx_or_custom",
+      "protocol": "openai_chat_completions",
+      "execution_location": "unverified",
+      "base_url": null,
+      "model_id": null,
+      "credential_ref": null,
+      "candidate_family": "Qwen",
+      "notes": "User configures full endpoint/path, model ID and optional authentication; streaming/tools/JSON tested separately.",
+      "verification_status": "not_integrated_or_not_tested",
+      "capabilities": {
+        "status": "unverified",
+        "last_tested_at": null
+      },
+      "runtime_version": null,
+      "model_revision": null
+    },
+    {
+      "profile_id": "llm_cloud_optional",
+      "kind": "llm",
+      "backend": "dashscope_or_custom_compatible",
+      "protocol": "provider_verified_chat_adapter",
+      "execution_location": "cloud",
+      "base_url": null,
+      "model_id": null,
+      "credential_ref": null,
+      "enabled": false,
+      "notes": "Task-scoped text/context transmission only; never auto-select after local profile failure.",
+      "verification_status": "not_integrated_or_not_tested",
+      "capabilities": {
+        "status": "unverified",
+        "last_tested_at": null
+      },
+      "runtime_version": null,
+      "model_revision": null
+    },
+    {
+      "profile_id": "embedding_local",
+      "kind": "embedding",
+      "backend": "verified_embedding_runtime",
+      "protocol": "embedding_adapter",
+      "execution_location": "on_device",
+      "base_url": null,
+      "model_id": null,
+      "candidate_family": "Qwen3-Embedding or independently selected local embedding model",
+      "dimension": null,
+      "notes": "Separate from LLM; model/revision/dimension/normalization bound to index generation.",
+      "verification_status": "not_integrated_or_not_tested",
+      "capabilities": {
+        "status": "unverified",
+        "last_tested_at": null
+      },
+      "runtime_version": null,
+      "model_revision": null
+    },
+    {
+      "profile_id": "asr_cloud_optional",
+      "kind": "asr",
+      "backend": "selected_cloud_asr",
+      "protocol": "provider_specific_file_or_streaming_adapter",
+      "execution_location": "cloud",
+      "base_url": null,
+      "model_id": null,
+      "credential_ref": null,
+      "enabled": false,
+      "notes": "Optional future extension; requires separate audio-transmission setting, not inherited from cloud summary permission.",
+      "verification_status": "not_integrated_or_not_tested",
+      "capabilities": {
+        "status": "unverified",
+        "last_tested_at": null
+      },
+      "runtime_version": null,
+      "model_revision": null
+    }
+  ],
+  "task_routes": [
+    {
+      "task_type": "realtime_asr",
+      "preferred_profile": "asr_qwen_onnx_local",
+      "active_profile": null,
+      "cloud_allowed": false,
+      "fallback": "explicit_user_selected_only",
+      "allowed_data": [],
+      "notes": "Proposed preference; configuration and capability test required before activation."
+    },
+    {
+      "task_type": "file_asr",
+      "preferred_profile": "asr_qwen_onnx_local",
+      "active_profile": null,
+      "cloud_allowed": false,
+      "fallback": "explicit_user_selected_only",
+      "allowed_data": [],
+      "notes": "Proposed preference; configuration and capability test required before activation."
+    },
+    {
+      "task_type": "retranscription",
+      "preferred_profile": "asr_qwen_onnx_local",
+      "active_profile": null,
+      "cloud_allowed": false,
+      "fallback": "explicit_user_selected_only",
+      "allowed_data": [],
+      "notes": "Proposed preference; configuration and capability test required before activation."
+    },
+    {
+      "task_type": "qa",
+      "preferred_profile": "llm_qwen_ollama",
+      "active_profile": null,
+      "cloud_allowed": false,
+      "fallback": "explicit_user_selected_only",
+      "allowed_data": [],
+      "notes": "Proposed preference; configuration and capability test required before activation."
+    },
+    {
+      "task_type": "summary",
+      "preferred_profile": "llm_qwen_ollama",
+      "active_profile": null,
+      "cloud_allowed": false,
+      "fallback": "explicit_user_selected_only",
+      "allowed_data": [],
+      "notes": "Proposed preference; configuration and capability test required before activation."
+    },
+    {
+      "task_type": "notes_enhancement",
+      "preferred_profile": "llm_qwen_ollama",
+      "active_profile": null,
+      "cloud_allowed": false,
+      "fallback": "explicit_user_selected_only",
+      "allowed_data": [],
+      "notes": "Proposed preference; configuration and capability test required before activation."
+    },
+    {
+      "task_type": "voice_input_asr",
+      "preferred_profile": "asr_qwen_onnx_local",
+      "active_profile": null,
+      "cloud_allowed": false,
+      "fallback": "explicit_user_selected_only",
+      "allowed_data": [],
+      "notes": "Proposed preference; configuration and capability test required before activation."
+    },
+    {
+      "task_type": "voice_input_correction",
+      "preferred_profile": "llm_qwen_ollama",
+      "active_profile": null,
+      "cloud_allowed": false,
+      "fallback": "explicit_user_selected_only",
+      "allowed_data": [],
+      "notes": "Proposed preference; configuration and capability test required before activation."
+    },
+    {
+      "task_type": "embedding",
+      "preferred_profile": "embedding_local",
+      "active_profile": null,
+      "cloud_allowed": false,
+      "fallback": "explicit_user_selected_only",
+      "allowed_data": [],
+      "notes": "Proposed preference; configuration and capability test required before activation."
+    },
+    {
+      "task_type": "question_detection",
+      "preferred_profile": "llm_qwen_ollama",
+      "active_profile": null,
+      "cloud_allowed": false,
+      "fallback": "explicit_user_selected_only",
+      "allowed_data": [],
+      "notes": "Proposed preference; configuration and capability test required before activation."
+    }
+  ],
+  "forbidden_behaviors": [
+    "Missing active profile must not silently choose first configured model.",
+    "Local failure must not silently switch to cloud.",
+    "Cloud LLM permission must not imply cloud ASR audio permission.",
+    "Models list must not be treated as proof of task capability.",
+    "Embedding model switch must not mix old and new vector spaces."
+  ]
+}
