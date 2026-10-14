@@ -6,9 +6,9 @@
       "title": "模型清单、下载与资源管理",
       "status": "partial",
       "evidence": [
-        "6605251: Sources/MeetingCore/ModelProfile.swift and RouteResolver.swift",
-        "Tests/MeetingCoreTests/RouteResolverTests.swift: 12 behavioral XCTest cases passed; independent parent run 2026-10-14",
-        "swift build passed; direct XCTest runner needed with current CLT toolchain"
+        "6605251 and 143bb20: explicit route core, rejects duplicate selected IDs",
+        "Tests/MeetingCoreTests/RouteResolverTests.swift: 13 behavioral cases, parent scripts/test-core.sh passed 2026-10-14",
+        "Independent spec and quality reviews approved; swift build passed"
       ],
       "remaining": "Model download/hash/runtime/load/resource limits and real capability evidence not implemented. Route types only."
     },
@@ -94,9 +94,9 @@
       "title": "本地生成模型发现与连接",
       "status": "partial",
       "evidence": [
-        "6605251: Sources/MeetingCore/ModelProfile.swift and RouteResolver.swift",
-        "Tests/MeetingCoreTests/RouteResolverTests.swift: 12 behavioral XCTest cases passed; independent parent run 2026-10-14",
-        "swift build passed; direct XCTest runner needed with current CLT toolchain"
+        "6605251 and 143bb20: explicit route core, rejects duplicate selected IDs",
+        "Tests/MeetingCoreTests/RouteResolverTests.swift: 13 behavioral cases, parent scripts/test-core.sh passed 2026-10-14",
+        "Independent spec and quality reviews approved; swift build passed"
       ],
       "remaining": "HTTP discovery/generation/SSE, endpoint configuration, Keychain and real local service probes still required."
     },
@@ -126,9 +126,9 @@
       "title": "按任务选择本地/云端模型",
       "status": "partial",
       "evidence": [
-        "6605251: Sources/MeetingCore/ModelProfile.swift and RouteResolver.swift",
-        "Tests/MeetingCoreTests/RouteResolverTests.swift: 12 behavioral XCTest cases passed; independent parent run 2026-10-14",
-        "swift build passed; direct XCTest runner needed with current CLT toolchain"
+        "6605251 and 143bb20: explicit route core, rejects duplicate selected IDs",
+        "Tests/MeetingCoreTests/RouteResolverTests.swift: 13 behavioral cases, parent scripts/test-core.sh passed 2026-10-14",
+        "Independent spec and quality reviews approved; swift build passed"
       ],
       "remaining": "Resolver unit-tested only; settings persistence, real task execution, probe invalidation, data scope and explicit LAN policy still required. LAN currently rejected."
     },

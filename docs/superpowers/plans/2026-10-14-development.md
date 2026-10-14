@@ -28,13 +28,13 @@
 
 **Files:** Package.swift、Sources/MeetingCore/ModelProfile.swift、Sources/MeetingCore/RouteResolver.swift、Tests/MeetingCoreTests/RouteResolverTests.swift。
 
-- [ ] 新建SwiftPM库与测试目标，平台macOS14，客户端另立可执行目标。
-- [ ] 先写失败测试：缺active profile不得选first；local-only不能选cloud/lan/unverified；ASR任务不能选LLM；未验证能力不得ready；明确允许cloud只能影响该任务；支持本机已验证profile的正常路由。
-- [ ] `swift test --filter RouteResolverTests`观察缺失路由行为，再实现。
-- [ ] 类型包含ModelKind、ExecutionLocation、TaskRole、ProviderProfile、TaskRoute和RouteError。显式profileID、modelID、verified location与任务能力；不默认兜底，不发网络。
-- [ ] 实现`RouteResolver.resolve(task:route:profiles:) throws -> ProviderProfile`，通过上述行为测试，支持Codable与Sendable。
-- [ ] 再做spec review和code quality review；修正后重新运行测试与`swift build`。
-- [ ] 提交基础模块与验证证据，更新FR-001/013/017为部分实现；实际服务探测与模型运行仍未完成。
+- [x] 新建SwiftPM库与测试目标，平台macOS14，客户端另立可执行目标。
+- [x] 先写失败测试：缺active profile不得选first；local-only不能选cloud/lan/unverified；ASR任务不能选LLM；未验证能力不得ready；明确允许cloud只能影响该任务；支持本机已验证profile的正常路由。
+- [x] `swift test --filter RouteResolverTests`观察缺失路由行为，再实现。
+- [x] 类型包含ModelKind、ExecutionLocation、TaskRole、ProviderProfile、TaskRoute和RouteError。显式profileID、modelID、verified location与任务能力；不默认兜底，不发网络。
+- [x] 实现`RouteResolver.resolve(task:route:profiles:) throws -> ProviderProfile`，通过上述行为测试，支持Codable与Sendable。
+- [x] 再做spec review和code quality review；修正后重新运行测试与`swift build`。
+- [x] 提交基础模块与验证证据，更新FR-001/013/017为部分实现；实际服务探测与模型运行仍未完成。
 
 ## Task 2: 文本生成传输
 
