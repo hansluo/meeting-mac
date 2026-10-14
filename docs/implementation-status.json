@@ -107,9 +107,10 @@
         "Independent spec and quality reviews approved; swift build passed",
         "37dd595: ChatClient real HTTP discovery and nonstream text generation",
         "Parent scripts/test-core.sh 31/31 passed; swift build passed 2026-10-14; Task2A spec review approved",
-        "58064e7: bounded fixture startup, failed child reaped; Task2A quality review approved"
+        "58064e7: bounded fixture startup, failed child reaped; Task2A quality review approved",
+        "Parent actual ChatClient discovery+summary generation against controlled local Qwen3 GGUF llama-server passed; exact selected model,finish_reason,usage recorded in local-qwen-generation-smoke-20261015.json. Temporary service stopped; no app readiness persisted."
       ],
-      "remaining": "SSE, Keychain/configuration UI, task feature probes and real local model acceptance remain. Discovery is not readiness; verified profile evidence still declarative."
+      "remaining": "SSE, Keychain/configuration UI, task feature probes and permanent configuration-bound readiness remain. One short controlled local model request passed, not complete service/backend acceptance."
     },
     {
       "id": "FR-014",
@@ -153,7 +154,8 @@
         "Independent spec and quality reviews approved; swift build passed",
         "37dd595: ChatClient real HTTP discovery and nonstream text generation",
         "Parent scripts/test-core.sh 31/31 passed; swift build passed 2026-10-14; Task2A spec review approved",
-        "58064e7: bounded fixture startup, failed child reaped; Task2A quality review approved"
+        "58064e7: bounded fixture startup, failed child reaped; Task2A quality review approved",
+        "Parent actual ChatClient discovery+summary generation against controlled local Qwen3 GGUF llama-server passed; exact selected model,finish_reason,usage recorded in local-qwen-generation-smoke-20261015.json. Temporary service stopped; no app readiness persisted."
       ],
       "remaining": "Settings persistence, actual local/cloud task scenarios, probe invalidation, data scope and explicit LAN policy remain. HTTP rejects non-chat roles, on-device external hosts and redirects; real provider execution location remains unproven."
     },

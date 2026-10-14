@@ -18,6 +18,8 @@
 
 当前已实现明确模型路由、兼容生成接口的 HTTP 基础层、Qwen 本机 ONNX adapter 和 FunASR 常驻 CPU worker。Qwen / FunASR 已用同一组三语言短合成音频完成真实转写，证据与限制见 `docs/verification/2026-10-15-real-asr-smoke.md`。这不代表长会议、原生流式、真实模型生成服务或桌面工作流已验收。
 
+实际本地 Qwen 生成的短请求也已通过正式 ChatClient；采用受控 llama-server 与独立权重，测试后服务已停止。具体模型与限制见 `docs/verification/2026-10-15-local-qwen-generation.md`，不代表所有本地服务或长会议总结已验收。
+
 ## 本机 ASR 开发入口
 
 - Qwen runtime：`scripts/setup-sherpa.sh` 校验官方固定版本后安装到 `.build/native/`。
