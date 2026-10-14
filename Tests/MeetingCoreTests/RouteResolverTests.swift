@@ -42,6 +42,16 @@ final class RouteResolverTests: XCTestCase {
         assertError(.profileNotFound("selected"), profiles: [profile(id: "first")])
     }
 
+    func testDuplicateSelectedProfileIsRejectedRegardlessOfOrder() {
+        let local = profile()
+        let cloud = profile(location: .cloud)
+        for profiles in [[local, cloud], [cloud, local]] {
+            assertError(.ambiguousProfile("selected"),
+                        route: TaskRoute(task: .realtimeASR, profileID: "selected", cloudAllowed: true),
+                        profiles: profiles)
+        }
+    }
+
     func testLocalOnlyRejectsCloudLANAndUnverifiedLocations() {
         for location in [ExecutionLocation.cloud, .lan, .unverified] {
             assertError(.locationForbidden(location), profiles: [profile(location: location)])

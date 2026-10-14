@@ -9,9 +9,12 @@ public enum RouteResolver {
               !profileID.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else {
             throw RouteError.profileNotSelected
         }
-        guard let profile = profiles.first(where: { $0.profileID == profileID }) else {
+        let matches = profiles.filter { $0.profileID == profileID }
+        guard !matches.isEmpty else {
             throw RouteError.profileNotFound(profileID)
         }
+        guard matches.count == 1 else { throw RouteError.ambiguousProfile(profileID) }
+        let profile = matches[0]
         guard let modelID = profile.modelID,
               !modelID.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else {
             throw RouteError.modelNotSelected

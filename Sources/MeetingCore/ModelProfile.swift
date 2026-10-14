@@ -73,6 +73,7 @@ public enum RouteError: Error, Sendable, Equatable {
     case routeTaskMismatch
     case profileNotSelected
     case profileNotFound(String)
+    case ambiguousProfile(String)
     case modelNotSelected
     case locationForbidden(ExecutionLocation)
     case locationNotVerified
