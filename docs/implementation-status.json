@@ -109,7 +109,8 @@
         "37dd595: ChatClient real HTTP discovery and nonstream text generation",
         "Parent scripts/test-core.sh 31/31 passed; swift build passed 2026-10-14; Task2A spec review approved",
         "58064e7: bounded fixture startup, failed child reaped; Task2A quality review approved",
-        "Parent actual ChatClient discovery+summary generation against controlled local Qwen3 GGUF llama-server passed; exact selected model,finish_reason,usage recorded in local-qwen-generation-smoke-20261015.json. Temporary service stopped; no app readiness persisted."
+        "Parent actual ChatClient discovery+summary generation against controlled local Qwen3 GGUF llama-server passed; exact selected model,finish_reason,usage recorded in local-qwen-generation-smoke-20261015.json. Temporary service stopped; no app readiness persisted.",
+        "eba4c95: actor-serialized atomic generation config + Keychain UUID references; rollback/shared-ref/cleanup warning/evidence revision tests; parent99/99 and real own-item Keychain roundtrip passed; independent source spec+quality approved."
       ],
       "remaining": "v0.3: DeepSeek preset+Keychain UI, actual user-key cloud generation, template workflows, capability tests; local LLM remains optional advanced setting."
     },
@@ -156,7 +157,8 @@
         "37dd595: ChatClient real HTTP discovery and nonstream text generation",
         "Parent scripts/test-core.sh 31/31 passed; swift build passed 2026-10-14; Task2A spec review approved",
         "58064e7: bounded fixture startup, failed child reaped; Task2A quality review approved",
-        "Parent actual ChatClient discovery+summary generation against controlled local Qwen3 GGUF llama-server passed; exact selected model,finish_reason,usage recorded in local-qwen-generation-smoke-20261015.json. Temporary service stopped; no app readiness persisted."
+        "Parent actual ChatClient discovery+summary generation against controlled local Qwen3 GGUF llama-server passed; exact selected model,finish_reason,usage recorded in local-qwen-generation-smoke-20261015.json. Temporary service stopped; no app readiness persisted.",
+        "eba4c95: actor-serialized atomic generation config + Keychain UUID references; rollback/shared-ref/cleanup warning/evidence revision tests; parent99/99 and real own-item Keychain roundtrip passed; independent source spec+quality approved."
       ],
       "remaining": "Settings persistence, actual local/cloud task scenarios, probe invalidation, data scope and explicit LAN policy remain. HTTP rejects non-chat roles, on-device external hosts and redirects; real provider execution location remains unproven."
     },

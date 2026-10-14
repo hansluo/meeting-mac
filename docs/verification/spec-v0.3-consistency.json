@@ -1,0 +1,22 @@
+{
+  "spec_version": "0.3",
+  "status": "pass",
+  "spec_sha256": "e4febf7d4765f70eee0a5e5b242253b10d1798ad983c882f58ea7ed8abfccf05",
+  "functional_requirements": 18,
+  "nonfunctional_requirements": 8,
+  "acceptance": 18,
+  "profiles": 10,
+  "task_routes": 10,
+  "verified": [
+    "Spec requirement text and index match",
+    "Default ASR is actual MAC-record SenseVoice INT8 family",
+    "Google text embedding and DeepSeek generation separate",
+    "Managed paths not normal-user configuration",
+    "All route profile references resolve"
+  ],
+  "limits": [
+    "Document consistency, not full implementation or acceptance",
+    "Exact original MAC-record/Foresight checkpoint bytes unknown",
+    "DeepSeek real account call awaits user Key"
+  ]
+}

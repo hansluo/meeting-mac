@@ -134,3 +134,12 @@ Task3C1独立spec/quality审查后实施。先让用户能在原生窗口选择�
 ## 完成审计
 
 18项FR、8项NFR及各AC全部列于implementation-status.json。每项保存代码、单元/集成测试、真实场景验证与缺口。真实ASR、云route、系统权限、双轨、引用/删除、同步、语音输入和主动触发等没有证据时不标完成。
+
+## Task 3D: MAC-record默认SenseVoice原生入口〔进行中〕
+
+- [ ] 固定sherpa1.13.7原生SenseVoice配置，model.int8.onnx/tokens.txt、语言与ITN；Qwen现有ABI不破坏。
+- [ ] 有界PCM、显式模型来源/可选hash、常驻复用/取消/关闭/失败清理与文件变更失效。
+- [ ] CLI按显式backend调用，真实权重下载SHA通过后跑合成中文/英文/粤语，不把PyTorch版本当作ONNX实际验证。
+- [ ] 新ABI与生命周期TDD、全套回归、独立双审；之后接内置模型管理及普通用户界面。
+
+Task2C1核心已完成eba4c95：父任务99测试通过、真实新建Keychain项读删通过，独立spec/quality审查通过。网络探测与DeepSeek设置UI仍待接入，不能将现有证据API当作真实网络探测。
