@@ -8,9 +8,10 @@
       "evidence": [
         "6605251 and 143bb20: explicit route core, rejects duplicate selected IDs",
         "Tests/MeetingCoreTests/RouteResolverTests.swift: 13 behavioral cases, parent scripts/test-core.sh passed 2026-10-14",
-        "Independent spec and quality reviews approved; swift build passed"
+        "Independent spec and quality reviews approved; swift build passed",
+        "f5521ee,86d5c71: pinned native runtime installer SHA/ABI/version; required model files + optional streaming SHA validation; bounded one-job engine"
       ],
-      "remaining": "Model download/hash/runtime/load/resource limits and real capability evidence not implemented. Route types only."
+      "remaining": "Actual model downloads/registration/readiness, persistent model pool, damaged checkpoint coverage and full resource policy remain. Actual Qwen successful ASR unverified."
     },
     {
       "id": "FR-002",
@@ -106,16 +107,20 @@
     {
       "id": "FR-014",
       "title": "可切换Qwen/FunASR引擎",
-      "status": "not_started",
-      "evidence": [],
-      "remaining": "Implement and verify full requirement and acceptance criteria."
+      "status": "partial",
+      "evidence": [
+        "f5521ee,86d5c71: Qwen offline adapter and MeetingASRCheck; parent47/47 tests, build and actual runtime1.13.7 probe passed"
+      ],
+      "remaining": "Actual Qwen checkpoint transcription/quality/latency, FunASR worker, live segmentation/resident pool, capability tests and app routing remain. Native calls cannot be interrupted mid-call."
     },
     {
       "id": "FR-015",
       "title": "音频导入、回放与重转录",
-      "status": "not_started",
-      "evidence": [],
-      "remaining": "Implement and verify full requirement and acceptance criteria."
+      "status": "partial",
+      "evidence": [
+        "f5521ee: bounded strict PCM16 mono16k WAV parser + offline CLI entry"
+      ],
+      "remaining": "App file import/conversion, playback, long-file chunking, progress/cancel, revision comparison/adoption and real ASR acceptance remain."
     },
     {
       "id": "FR-016",
@@ -162,9 +167,11 @@
     {
       "id": "NFR-003",
       "title": "可恢复",
-      "status": "not_started",
-      "evidence": [],
-      "remaining": "Implement and verify full requirement and acceptance criteria."
+      "status": "partial",
+      "evidence": [
+        "f5521ee,86d5c71: bounded job/cancellation/native cleanup and malformed model/ABI failure tests"
+      ],
+      "remaining": "Capture and durable saves, sleep/device/disk failure recovery, worker crash handling and full workflow recovery remain."
     },
     {
       "id": "NFR-004",
@@ -190,9 +197,11 @@
     {
       "id": "NFR-007",
       "title": "能力真实",
-      "status": "not_started",
-      "evidence": [],
-      "remaining": "Implement and verify full requirement and acceptance criteria."
+      "status": "partial",
+      "evidence": [
+        "Native CLI output explicitly symbol-version-probe-only; fixture tests not counted as actual ASR; full spec/quality reviews approved"
+      ],
+      "remaining": "Real checkpoint ASR and per-profile streaming/time/hotword/speaker capability evidence remain. No quality/latency claim yet."
     },
     {
       "id": "NFR-008",

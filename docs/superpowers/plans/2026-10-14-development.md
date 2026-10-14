@@ -65,17 +65,29 @@ Security Keychain更新失败保留旧凭据/配置；临时Key测试不先保�
 
 **Files:** Sources/CSherpaBridge/、Sources/MeetingCore/QwenASREngine.swift、Sources/MeetingASRCheck/、Tests/MeetingCoreTests/QwenASREngineTests.swift、scripts/setup-sherpa.sh、ThirdParty/sherpa-onnx/、Package.swift。
 
-- [ ] 固定官方 sherpa-onnx v1.13.7 头文件与 Apache LICENSE；运行时动态下载与 SHA-256 核验，不提交 dylib 或权重。不依赖临时路径，运行时安装到被忽略的 `.build/native/`。
-- [ ] C bridge 用固定头文件构建，动态加载与版本核验，缺库/符号/不匹配返回可解释错误。Qwen config零初始化，仅设置本模型族；CPU推理、有界线程、长度，销毁所有stream/result/recognizer/dlopen资源。
-- [ ] Swift层显式路径/模型revision、有限PCM输入、sample rate、非空/有效数值、文件清单校验；异步串行处理，不在主线程进行模型初始化/解码。缺失文件不得运行或标ready；取消明确定义，native单段不能抢断时说明限制。
-- [ ] 输出记录原ASR文本、model/runtime及推理耗时；没有对齐能力时不捏造词级时间。VAD片段、热词、对齐、分离及长文件分块另有后续任务。
-- [ ] TDD测试缺库、错模型/缺文件、非法采样/PCM、有界输入、取消与生命周期；实际库版本探针另验。受控假库只用于异常接口行为，不当成实际ASR成功证据。
+- [x] 固定官方 sherpa-onnx v1.13.7 头文件与 Apache LICENSE；运行时动态下载与 SHA-256 核验，不提交 dylib 或权重。不依赖临时路径，运行时安装到被忽略的 `.build/native/`。
+- [x] C bridge 用固定头文件构建，动态加载与版本核验，缺库/符号/不匹配返回可解释错误。Qwen config零初始化，仅设置本模型族；CPU推理、有界线程、长度，销毁所有stream/result/recognizer/dlopen资源。
+- [x] Swift层显式路径/模型revision、有限PCM输入、sample rate、非空/有效数值、文件清单校验；异步串行处理，不在主线程进行模型初始化/解码。缺失文件不得运行或标ready；取消明确定义，native单段不能抢断时说明限制。
+- [x] 输出记录原ASR文本、model/runtime及推理耗时；没有对齐能力时不捏造词级时间。VAD片段、热词、对齐、分离及长文件分块另有后续任务。
+- [x] TDD测试缺库、错模型/缺文件、非法采样/PCM、有界输入、取消与生命周期；实际库版本探针另验。受控假库只用于异常接口行为，不当成实际ASR成功证据。
 - [ ] `MeetingASRCheck`可执行入口接受本机runtime/model/WAV路径，用授权合成音频做真实转写，保存配置、耗时与原始输出证据。权重尚未下载完成时保留真实验收未完成，继续其他可实施工作。
-- [ ] spec、quality review和build/test后提交；FR-014仍partial，最终Qwen/FunASR同音频对照和App接线不能省略。
+- [x] spec、quality review和build/test后提交；FR-014仍partial，最终Qwen/FunASR同音频对照和App接线不能省略。
 
 ## Task 3B: FunASR 本地工作进程
 
 固定独立 Python 环境、具体 checkpoint/revision与管线；进程消息有session/job/cancel身份，有界队列，文件/分段/原生流式能力分开。实际Mac CPU转写与失败恢复验证后才标能力通过。模型下载、输出时间和说话人能力不得从工具包名称推断。
+
+- [ ] 私有NDJSON管道，固定协议version/job ID和worker generation，有界响应及启动/请求超时；单个正在执行任务，不无限排队。
+- [ ] 成功任务复用同一worker与已加载模型；取消/超时/崩溃清理并reap自己的进程，下个任务可重启相同配置，不换模型。
+- [ ] 本机显式模型目录与revision，CPU FunASR backend，关闭运行时自动更新/下载与remote_code，库日志不污染IPC或泄露正文。
+- [ ] 初始严格PCM16/16k/mono批处理合同，保留raw/display文本；流式、热词、词对齐和分离逐checkpoint另验证，不宣称默认具备。
+- [ ] 独立环境和固定hash依赖；实际工具包CPU/import探测与真实转写验收分开。
+- [ ] Python后端单元测试及Swift真实pipe测试包含连续复用、取消后新PID、错误身份、坏消息、启动和请求超时、崩溃/清理。
+- [ ] spec/quality review后提交，FR-014及本机模型验收仍保留未完工作。
+
+## Task 3C: 实时 ASR 模型驻留与分段
+
+Qwen在同一录音session内复用一次加载的recognizer，在结束/切换边界清理；FunASR复用对应worker，真正流式checkpoint的cache按session隔离。VAD/分段、音频时间范围、有限队列、迟到修复与原音频保存另行验收。当前Qwen离线CLI每任务重载不能被当作实时录音闭环。
 
 ## 完成审计
 
