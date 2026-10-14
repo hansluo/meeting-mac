@@ -6,7 +6,7 @@
 
 **当前明确交付目标**：开发并交付hansluo/meeting-mac。整体界面与功能参考Foresight，完整中文体验。由开发方下载、校验并接好默认本地embedding和ASR，用户无需手动部署模型服务。对话、资料整理、引用问答、会议纪要模板、行动项和笔记增强默认使用可配置DeepSeek云端API；普通用户只需填写自己的云端Key，地址和模型预填。保留替换引擎及高级接入，不要求额外本地大语言模型才能完成主流程。
 
-默认三种角色：Google EmbeddingGemma300M文本向量化；沿MAC-record路线的Qwen3-ASR0.6B INT8本机转写；DeepSeek云端文本生成。FunASR为已实现的可选ASR，Gemma4/本地Qwen生成作为后续可选方案，不是默认安装前置条件。
+默认三种角色：Google EmbeddingGemma300M文本向量化；MAC-record默认SenseVoice INT8本机转写；DeepSeek云端文本生成。FunASR为已实现的可选ASR，Gemma4/本地Qwen生成作为后续可选方案，不是默认安装前置条件。
 
 “micro recorder”按既有上下文解释为用户的MAC-record；“100年以后”按日后整理资料理解。若用户后续另有所指再修订，不因此阻止已明确工作。
 
@@ -70,6 +70,7 @@ Qwen是模型家族，FunASR是语音工具与管线体系，sherpa-onnx是可�
 
 | 路线 | 初始候选 | 实时语义 | 定位与门槛 |
 |---|---|---|---|
+| 默认SenseVoice本机ONNX | SenseVoice INT8；MAC-record源码默认 | 分段offline decode，完整实时能力另测 | 内置默认、无Python要求；新增原生adapter并做同音频对照 |
 | Qwen本机ONNX | Qwen3-ASR 0.6B/1.7B INT8；沿MAC-record wrapper | 当前代码为VAD分段后offline decode，标为segment-realtime | 优先复用，分别测延迟、质量与资源；不能承诺词级流式 |
 | FunASR本地服务 | SenseVoice、Paraformer离线、Paraformer-zh-streaming等具体管线 | 只有流式checkpoint与会话缓存验证后才标native-streaming | 新增adapter；CPU/Mac与可选服务端分别验证，不要求CUDA |
 | Qwen/FunASR文件精转 | 已验证的本地文件解码/可选对齐与分离管线 | batch/file，不与实时能力混称 | 导入音频、会后精转、替换旧ASR版本 |
@@ -79,7 +80,7 @@ Qwen官方工具的流式示例当前限定vLLM后端；这不证明MAC-record�
 
 FunASR官方区分离线、流式、VAD、标点和说话人管线；实时必须选择对应流式checkpoint并管理独立session cache。工具包的能力不能自动迁移到任意模型。[FunASR官方资料](https://github.com/modelscope/FunASR)。
 
-**初始产品选择**：沿MAC-record的本机Qwen ONNX为默认内置路径，0.6B用于低负载候选，1.7B用于质量对照/文件精转候选；FunASR本地adapter必须进入基础里程碑，并在同一评测后允许用户设为首选。默认排序是开发选择，不是质量结论。SenseVoice可以保留为轻量备选，但不能替代用户要求的Qwen和FunASR选项。
+**初始产品选择**：本次按MAC-record `ASRConfigStore.swift:10`的真实默认值采用SenseVoice INT8，使用匹配的sherpa原生管线。原仓库所带权重精确revision尚未确认，本应用固定官方可校验的同模型族资源，不冒称字节完全相同。Qwen0.6B/1.7B继续作为可切换路线；FunASR本地adapter必须进入基础里程碑，并在同一评测后允许用户设为首选。默认排序是开发选择，不是质量结论。SenseVoice可以保留为轻量备选，但不能替代用户要求的Qwen和FunASR选项。
 
 ### 4.2 默认DeepSeek生成与可选本地模型
 
@@ -105,7 +106,7 @@ embedding为独立角色，模型版本、向量维度、归一化和索引gener
 
 EmbeddingGemma输入文本、输出向量，不输出转写文字。即使新一代embedding支持音频输入，音频向量也不等于ASR。Foresight静态证据出现EmbeddingGemma及V2类型标记，尚不能确认原程序所用checkpoint与本方案300M完全相同；本方案是明确选择，不冒称已提取原权重。来源：[Google模型卡](https://ai.google.dev/gemma/docs/embeddinggemma/model_card)。
 
-默认Qwen3-ASR0.6B资源和sherpa版本已在本机真实短语音跑通；FunASR可作为高级选项。Google embedding仍需实际中文检索测试、hash与runtime验证。支持音频的Gemma4替代ASR必须另行对照评测，不因网上能力说明自动替换已跑通路径。
+默认ASR选SenseVoice INT8，原生集成和实测仍待完成；Qwen3-ASR0.6B与FunASR此前已在本机真实短语音跑通，保留为高级选项。Google embedding仍需实际中文检索测试、hash与runtime验证。支持音频的Gemma4替代ASR必须另行对照评测，不因网上能力说明自动替换已跑通路径。
 
 ## 5. 本地、局域网与云端路由
 
@@ -225,11 +226,11 @@ FR-001至FR-012保持v0.1身份，内容以本版为准；FR-013至FR-018是融�
 
 验收 AC-013：DeepSeek默认连接与真实账号生成通过；缺Key时本地录音/索引可用；自定义端口/路径、401、无models接口但有生成接口、未加载模型、超时和不支持参数都有清楚结果；发现不等于ready。来源 E-MAC-LLM。
 
-### FR-014 可切换Qwen/FunASR引擎〔M0〕
+### FR-014 默认SenseVoice与可切换Qwen/FunASR引擎〔M0〕
 
-建立统一FileASR/RealtimeASR adapter，Qwen本机ONNX与FunASR本地服务均可选择。分别报告file、segment-realtime/native-streaming、timestamps、hotwords和speaker能力；不支持不能悄悄忽略。每个实时session缓存隔离，flush、取消和结束可验证。
+建立统一FileASR/RealtimeASR adapter，默认SenseVoice INT8原生管线，Qwen本机ONNX与FunASR本地服务均可选择。分别报告file、segment-realtime/native-streaming、timestamps、hotwords和speaker能力；不支持不能悄悄忽略。每个实时session缓存隔离，flush、取消和结束可验证。
 
-验收 AC-014：同一音频可在两条路线重现并保留engine/model；文件与实时分开测；切换不覆盖活动session；真实流式不足时明确标为分段实时。来源 E-MAC-ASR、E-UPSTREAM。
+验收 AC-014：同一音频可在默认SenseVoice及Qwen/FunASR三条路线重现并保留engine/model；文件与实时分开测；切换不覆盖活动session；真实流式不足时明确标为分段实时。来源 E-MAC-ASR、E-UPSTREAM。
 
 ### FR-015 音频导入、回放与重转录〔M1〕
 
@@ -365,7 +366,7 @@ ASR原文、标点处理、LLM纠错、用户编辑和摘要分别保存。生�
 
 | 阶段 | 必须先做到 | 完成门槛 |
 |---|---|---|
-| M0 可替换模型基础 | FR-001/013/014/017：默认内置embedding与Qwen ASR、DeepSeek默认生成、FunASR高级选项 | 同音频/同提示测试；能力与位置正确；缺服务/取消/错误明确 |
+| M0 可替换模型基础 | FR-001/013/014/017：默认内置embedding与SenseVoice INT8 ASR、DeepSeek默认生成、FunASR高级选项 | 同音频/同提示测试；能力与位置正确；缺服务/取消/错误明确 |
 | M1 会议与知识闭环 | FR-002/003/004/005/006/012/015 | 同时双来源、长会保存、文件导入重转录、资料引用与产出版本通过 |
 | M2 工作流融合 | FR-007/008/009/016/018 | 笔记/备会/同步、独立语音输入和可选说话人闭环 |
 | M3 主动与知识组织 | FR-010/011 | 触发质量与资源预算通过；图谱/多模态有可测收益 |

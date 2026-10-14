@@ -196,12 +196,29 @@
         "last_tested_at": null
       },
       "notes": "No extra model download; actual question detection acceptance required."
+    },
+    {
+      "profile_id": "asr_sensevoice_default",
+      "kind": "asr",
+      "backend": "sherpa_onnx_sensevoice",
+      "protocol": "native_adapter",
+      "execution_location": "on_device",
+      "model_id": "sensevoice-int8",
+      "model_revision": "official2024-07-17 candidate, exact original MAC-record bundled bytes unknown",
+      "runtime_version": "sherpa-onnx1.13.7",
+      "managed_install": true,
+      "verification_status": "download_and_native_adapter_pending",
+      "capabilities": {
+        "status": "unverified",
+        "last_tested_at": null
+      },
+      "notes": "MAC-record ASRConfigStore.swift:10 actual default is senseVoiceInt8; do not confuse with optional Qwen or PyTorch FunASR adapter."
     }
   ],
   "task_routes": [
     {
       "task_type": "realtime_asr",
-      "preferred_profile": "asr_qwen_onnx_local",
+      "preferred_profile": "asr_sensevoice_default",
       "active_profile": null,
       "cloud_allowed": false,
       "fallback": "explicit_user_selected_only",
@@ -210,7 +227,7 @@
     },
     {
       "task_type": "file_asr",
-      "preferred_profile": "asr_qwen_onnx_local",
+      "preferred_profile": "asr_sensevoice_default",
       "active_profile": null,
       "cloud_allowed": false,
       "fallback": "explicit_user_selected_only",
@@ -219,7 +236,7 @@
     },
     {
       "task_type": "retranscription",
-      "preferred_profile": "asr_qwen_onnx_local",
+      "preferred_profile": "asr_sensevoice_default",
       "active_profile": null,
       "cloud_allowed": false,
       "fallback": "explicit_user_selected_only",
@@ -264,7 +281,7 @@
     },
     {
       "task_type": "voice_input_asr",
-      "preferred_profile": "asr_qwen_onnx_local",
+      "preferred_profile": "asr_sensevoice_default",
       "active_profile": null,
       "cloud_allowed": false,
       "fallback": "explicit_user_selected_only",
@@ -310,7 +327,7 @@
     "DeepSeek API Key; default endpoint/model already filled and editable"
   ],
   "managed_assets": {
-    "asr": "asr_qwen_onnx_local",
+    "asr": "asr_sensevoice_default",
     "embedding": "embedding_local",
     "manual_paths_required": false,
     "extra_local_llm_required": false

@@ -1,5 +1,5 @@
 {
-  "goal": "Complete Meeting Mac v0.3: full Foresight workflows and Chinese UI, auto-prepared local Google embedding + MAC-record Qwen ASR, default DeepSeek generation",
+  "goal": "Complete Meeting Mac v0.3: full Foresight workflows and Chinese UI, auto-prepared local Google embedding + MAC-record default SenseVoice INT8 ASR, default DeepSeek generation",
   "requirements": [
     {
       "id": "FR-001",
@@ -125,7 +125,7 @@
         "e557ae0: LocalTranscription dispatches explicit Qwen/FunASR production backends; parent actual Mandarin inference through both desktop adapter paths passed, bundled FunASR worker used.",
         "Task4A independent source spec and code-quality reviews passed. Parent73Swift+10Python, release/plist/signature passed; GUI clicked-flow remains pending, see desktop-entry-verification-20261015.json."
       ],
-      "remaining": "Live segmentation, capture/session orchestration, same-audio quality/latency acceptance, complete clicked GUI workflow and streaming capabilities remain."
+      "remaining": "v0.3 actual MAC-record default is SenseVoice INT8, native adapter and speech acceptance must be added. Existing Qwen/FunASR remain optional; live segmentation, capture and full GUI/quality acceptance remain."
     },
     {
       "id": "FR-015",

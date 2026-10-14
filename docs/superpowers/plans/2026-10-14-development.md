@@ -10,7 +10,7 @@
 
 ## 2026-10-15 用户目标更新（优先于旧默认）
 
-规格升级docs/spec/product-v0.3.md。所有Foresight功能/整体界面与中文体验仍须完成。默认三角色：内置Google embedding、内置MAC-record Qwen ASR、DeepSeek云端生成。用户只填云API配置，本地模型/runtime由我们下载并管理。原手动路径短WAV工作台是过渡产物，不是最终目标。FunASR/本地生成保留高级项；DeepSeek真实调用缺用户Key不妨碍完成其他实现。
+规格升级docs/spec/product-v0.3.md。所有Foresight功能/整体界面与中文体验仍须完成。默认三角色：内置Google embedding、内置MAC-record默认SenseVoice INT8 ASR、DeepSeek云端生成。用户只填云API配置，本地模型/runtime由我们下载并管理。原手动路径短WAV工作台是过渡产物，不是最终目标。FunASR/本地生成保留高级项；DeepSeek真实调用缺用户Key不妨碍完成其他实现。
 
 下一步优先：完成当前Keychain事务审查→内置资产manifest/自动下载与路径解析→embedding实际中文检索→Foresight式完整导航与DeepSeek设置→持久化会议/录音/知识闭环。所有旧任务按新默认调整而非删减范围。
 

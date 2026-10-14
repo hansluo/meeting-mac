@@ -2,7 +2,7 @@
 
 原生macOS会议与个人知识助手，基于Foresight产品流程和Hans的MAC-record构建。
 
-开发目标是内置并自动准备Google EmbeddingGemma和MAC-record路线Qwen ASR，默认DeepSeek云端生成（用户填写API Key），保留FunASR/本地生成高级选项、双来源会议、音频重转录、个人资料RAG、引用、笔记增强、行动项、备会和主动助手。
+开发目标是内置并自动准备Google EmbeddingGemma和MAC-record默认SenseVoice INT8 ASR，默认DeepSeek云端生成（用户填写API Key），保留FunASR/本地生成高级选项、双来源会议、音频重转录、个人资料RAG、引用、笔记增强、行动项、备会和主动助手。
 
 目前正在开发，未完成的功能和验证状态见 `docs/implementation-status.json`。模型注册、代码编译和模拟测试不能替代真实ASR/模型运行与完整验收。
 

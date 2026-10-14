@@ -229,15 +229,15 @@
     },
     {
       "id": "FR-014",
-      "title": "可切换Qwen/FunASR引擎",
+      "title": "默认SenseVoice与可切换Qwen/FunASR引擎",
       "milestone": "M0",
       "depends_on": [
         "FR-001"
       ],
-      "spec_text": "建立统一FileASR/RealtimeASR adapter，Qwen本机ONNX与FunASR本地服务均可选择。分别报告file、segment-realtime/native-streaming、timestamps、hotwords和speaker能力；不支持不能悄悄忽略。每个实时session缓存隔离，flush、取消和结束可验证。\n\n验收 AC-014：同一音频可在两条路线重现并保留engine/model；文件与实时分开测；切换不覆盖活动session；真实流式不足时明确标为分段实时。来源 E-MAC-ASR、E-UPSTREAM。",
+      "spec_text": "建立统一FileASR/RealtimeASR adapter，默认SenseVoice INT8原生管线，Qwen本机ONNX与FunASR本地服务均可选择。分别报告file、segment-realtime/native-streaming、timestamps、hotwords和speaker能力；不支持不能悄悄忽略。每个实时session缓存隔离，flush、取消和结束可验证。\n\n验收 AC-014：同一音频可在默认SenseVoice及Qwen/FunASR三条路线重现并保留engine/model；文件与实时分开测；切换不覆盖活动session；真实流式不足时明确标为分段实时。来源 E-MAC-ASR、E-UPSTREAM。",
       "acceptance": {
         "id": "AC-014",
-        "criteria": "同一音频可在两条路线重现并保留engine/model；文件与实时分开测；切换不覆盖活动session；真实流式不足时明确标为分段实时。"
+        "criteria": "同一音频可在默认SenseVoice及Qwen/FunASR三条路线重现并保留engine/model；文件与实时分开测；切换不覆盖活动session；真实流式不足时明确标为分段实时。"
       },
       "evidence_refs": [
         "E-MAC-ASR",

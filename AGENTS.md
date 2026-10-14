@@ -6,4 +6,4 @@
 
 每次迭代更新docs/implementation-status.json的真实证据和剩余工作。测试、构建、运行与人工验收分开标记，不凭模型名称声明能力。已有MAC-record源码可以适配，但必须保留MIT归属和修复已确认的融合缺口。
 
-2026-10-15用户目标刷新：完整Foresight界面/功能和中文体验；内置并自动准备Google embedding与MAC-record路线Qwen ASR，默认DeepSeek云端生成。普通用户只填云API配置，不要求手动模型/Python/运行库路径。不得把短WAV工作台或模型下载说明当成最终交付。v0.2其余完整范围继续有效，默认冲突以v0.3为准。
+2026-10-15用户目标刷新：完整Foresight界面/功能和中文体验；内置并自动准备Google embedding与MAC-record默认SenseVoice INT8 ASR，默认DeepSeek云端生成。普通用户只填云API配置，不要求手动模型/Python/运行库路径。不得把短WAV工作台或模型下载说明当成最终交付。v0.2其余完整范围继续有效，默认冲突以v0.3为准。
