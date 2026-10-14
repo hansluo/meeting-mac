@@ -4,9 +4,13 @@
     {
       "id": "FR-001",
       "title": "模型清单、下载与资源管理",
-      "status": "not_started",
-      "evidence": [],
-      "remaining": "Implement and verify full requirement and acceptance criteria."
+      "status": "partial",
+      "evidence": [
+        "6605251: Sources/MeetingCore/ModelProfile.swift and RouteResolver.swift",
+        "Tests/MeetingCoreTests/RouteResolverTests.swift: 12 behavioral XCTest cases passed; independent parent run 2026-10-14",
+        "swift build passed; direct XCTest runner needed with current CLT toolchain"
+      ],
+      "remaining": "Model download/hash/runtime/load/resource limits and real capability evidence not implemented. Route types only."
     },
     {
       "id": "FR-002",
@@ -88,9 +92,13 @@
     {
       "id": "FR-013",
       "title": "本地生成模型发现与连接",
-      "status": "not_started",
-      "evidence": [],
-      "remaining": "Implement and verify full requirement and acceptance criteria."
+      "status": "partial",
+      "evidence": [
+        "6605251: Sources/MeetingCore/ModelProfile.swift and RouteResolver.swift",
+        "Tests/MeetingCoreTests/RouteResolverTests.swift: 12 behavioral XCTest cases passed; independent parent run 2026-10-14",
+        "swift build passed; direct XCTest runner needed with current CLT toolchain"
+      ],
+      "remaining": "HTTP discovery/generation/SSE, endpoint configuration, Keychain and real local service probes still required."
     },
     {
       "id": "FR-014",
@@ -116,9 +124,13 @@
     {
       "id": "FR-017",
       "title": "按任务选择本地/云端模型",
-      "status": "not_started",
-      "evidence": [],
-      "remaining": "Implement and verify full requirement and acceptance criteria."
+      "status": "partial",
+      "evidence": [
+        "6605251: Sources/MeetingCore/ModelProfile.swift and RouteResolver.swift",
+        "Tests/MeetingCoreTests/RouteResolverTests.swift: 12 behavioral XCTest cases passed; independent parent run 2026-10-14",
+        "swift build passed; direct XCTest runner needed with current CLT toolchain"
+      ],
+      "remaining": "Resolver unit-tested only; settings persistence, real task execution, probe invalidation, data scope and explicit LAN policy still required. LAN currently rejected."
     },
     {
       "id": "FR-018",
