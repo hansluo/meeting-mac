@@ -11,6 +11,11 @@ int mm_qwen_probe(const char *runtime_path, char *error, int32_t error_capacity)
 MMQwen *mm_qwen_create(const char *runtime_path, const char *frontend, const char *encoder,
                       const char *decoder, const char *tokenizer, int32_t threads,
                       int32_t *error_code, char *error, int32_t error_capacity);
+// Generic offline recognizer ownership/decode is shared with the Qwen bridge.
+MMQwen *mm_sensevoice_create(const char *runtime_path, const char *model,
+                           const char *tokens, const char *language, int32_t use_itn,
+                           int32_t threads, int32_t *error_code,
+                           char *error, int32_t error_capacity);
 typedef int (*MMQwenCancelled)(void *context);
 int mm_qwen_decode(MMQwen *engine, const float *samples, int32_t count, char **text,
                    MMQwenCancelled cancelled, void *context,

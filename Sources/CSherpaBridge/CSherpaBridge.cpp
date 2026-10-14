@@ -75,6 +75,38 @@ extern "C" MMQwen *mm_qwen_create(const char *path, const char *frontend, const 
     catch (...) { if (code) *code = fail(5, "Native exception creating recognizer", error, capacity); }
   return nullptr;
 }
+extern "C" MMQwen *mm_sensevoice_create(const char *path, const char *model,
+    const char *tokens, const char *language, int32_t use_itn, int32_t threads,
+    int32_t *code, char *error, int32_t capacity) {
+  if (code) *code = 0;
+  try {
+    auto q = std::make_unique<MMQwen>();
+    int status = load(*q, path, error, capacity);
+    if (status) { if (code) *code = status; return nullptr; }
+    const char *languages[] = {"auto", "zh", "en", "ja", "ko", "yue"};
+    bool valid_language = false;
+    for (auto value : languages) if (language && !strcmp(language, value)) valid_language = true;
+    if (!model || !*model || !tokens || !*tokens || !valid_language ||
+        (use_itn != 0 && use_itn != 1) || threads < 1 || threads > 8) {
+      if (code) *code = fail(4, "Invalid SenseVoice configuration", error, capacity); return nullptr;
+    }
+    SherpaOnnxOfflineRecognizerConfig config{};
+    config.feat_config.sample_rate = 16000;
+    config.feat_config.feature_dim = 80;
+    config.model_config.num_threads = threads;
+    config.model_config.provider = "cpu";
+    config.model_config.tokens = tokens;
+    config.model_config.sense_voice.model = model;
+    config.model_config.sense_voice.language = language;
+    config.model_config.sense_voice.use_itn = use_itn;
+    config.decoding_method = "greedy_search";
+    q->recognizer = q->create(&config);
+    if (!q->recognizer) { if (code) *code = fail(5, "Recognizer creation failed", error, capacity); return nullptr; }
+    return q.release();
+  } catch (const std::exception &e) { if (code) *code = fail(5, e.what(), error, capacity); }
+    catch (...) { if (code) *code = fail(5, "Native exception creating recognizer", error, capacity); }
+  return nullptr;
+}
 extern "C" int mm_qwen_decode(MMQwen *q, const float *samples, int32_t count, char **text, MMQwenCancelled cancelled, void *context, char *error, int32_t capacity) {
   if (text) *text = nullptr;
   if (!q || !q->recognizer || !samples || count <= 0 || !text) return fail(4, "Invalid decode input", error, capacity);
