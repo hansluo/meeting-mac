@@ -1,5 +1,13 @@
 #!/bin/bash
 set -euo pipefail
+# Resolve a caller-relative archive before switching to the repository directory.
+source_archive=""
+if [[ $# == 1 ]]; then
+  case "$1" in
+    /*) source_archive="$1" ;;
+    *) source_archive="$PWD/$1" ;;
+  esac
+fi
 cd "$(dirname "$0")/.."
 [[ "$(uname -s)" == Darwin && "$(uname -m)" == arm64 ]] || { echo 'This pinned runtime requires Apple Silicon macOS.' >&2; exit 1; }
 version=1.13.7
@@ -10,7 +18,7 @@ staging="$(mktemp -d "$PWD/.build/native/install.XXXXXX")"
 trap 'rm -rf "$staging"' EXIT
 archive="$staging/runtime.tar.bz2"
 if [[ $# == 1 ]]; then
-  cp "$1" "$archive"
+  cp "$source_archive" "$archive"
 elif [[ $# == 0 ]]; then
   curl --fail --location --retry 3 "https://github.com/k2-fsa/sherpa-onnx/releases/download/v${version}/${name}.tar.bz2" --output "$archive"
 else

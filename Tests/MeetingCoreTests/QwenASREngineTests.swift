@@ -159,7 +159,9 @@ final class QwenASREngineTests: XCTestCase {
         do { _ = try await task.value; XCTFail("Expected cancellation") }
         catch { XCTAssertTrue(error is CancellationError) }
         XCTAssertTrue(try String(contentsOf: f.trace, encoding: .utf8).hasSuffix("destroy-recognizer\nunload\n"))
-        _ = try await engine.transcribe(samples: [0], sampleRate: 16000)
+        let completed = try await engine.transcribe(samples: [0], sampleRate: 16000)
+        XCTAssertGreaterThanOrEqual(completed.elapsedSeconds, 0.45)
+        XCTAssertLessThan(completed.elapsedSeconds, 30)
     }
     // Controlled native ABI fixture tests failures and ownership; never real ASR evidence.
     private struct Fixture {

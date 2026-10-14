@@ -120,8 +120,13 @@ public final class QwenASREngine: @unchecked Sendable {
             }
         } onCancel: { cancellation.cancel() }
     }
+    private static func seconds(_ duration: Duration) -> Double {
+        let components = duration.components
+        return Double(components.seconds) + Double(components.attoseconds) / 1_000_000_000_000_000_000
+    }
     private func run(samples: [Float], cancellation: QwenCancellation) throws -> QwenASRResult {
-        let start = Date()
+        let clock = ContinuousClock()
+        let start = clock.now
         try cancellation.check()
         try configuration.validateModel()
         try cancellation.check()
@@ -145,7 +150,7 @@ public final class QwenASREngine: @unchecked Sendable {
         guard code == 0, let output else { throw Self.error(code, String(decoding: message.prefix { $0 != 0 }.map { UInt8(bitPattern: $0) }, as: UTF8.self)) }
         return QwenASRResult(text: String(cString: output), modelDirectory: configuration.modelDirectory.path,
             revision: configuration.revision, runtimePath: configuration.runtimePath, runtimeVersion: "1.13.7",
-            elapsedSeconds: Date().timeIntervalSince(start), sampleCount: samples.count, sampleRate: 16000,
+            elapsedSeconds: Self.seconds(start.duration(to: clock.now)), sampleCount: samples.count, sampleRate: 16000,
             integrityManifestVerified: configuration.expectedSHA256 != nil)
     }
 }
