@@ -1,6 +1,6 @@
 {
   "spec_version": "0.2",
-  "current": true,
+  "current": false,
   "source_spec": "产品Spec-v0.2-Foresight融合MAC-record.md",
   "repository_commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
   "classification": "new product requirements; source and reverse evidence separately labelled",
@@ -418,5 +418,6 @@
     "M1": "meeting and knowledge closed loop",
     "M2": "notes, calendar/sync, voice input and optional speakers",
     "M3": "proactive and knowledge organization"
-  }
+  },
+  "superseded_by": "requirements-v0.3.json"
 }

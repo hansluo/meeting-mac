@@ -1,5 +1,5 @@
 {
-  "goal": "Complete Meeting Mac v0.2 and deliver to hansluo/meeting-mac",
+  "goal": "Complete Meeting Mac v0.3: full Foresight workflows and Chinese UI, auto-prepared local Google embedding + MAC-record Qwen ASR, default DeepSeek generation",
   "requirements": [
     {
       "id": "FR-001",
@@ -13,9 +13,10 @@
         "a39f73b,d6e399e: resident FunASR CPU worker, explicit checkpoint and bounded process lifecycle; real toolkit probe passed",
         "10e987e: resident Qwen with async drain/shutdown, failure invalidation and per-clip file-signature validation; independent spec/quality reviews passed; reviewer rerun66/66.",
         "e557ae0: native explicit Qwen/FunASR settings, nonsecret persisted paths, required-field guidance. Build and first native window verified.",
-        "Task4A independent source spec and code-quality reviews passed. Parent73Swift+10Python, release/plist/signature passed; GUI clicked-flow remains pending, see desktop-entry-verification-20261015.json."
+        "Task4A independent source spec and code-quality reviews passed. Parent73Swift+10Python, release/plist/signature passed; GUI clicked-flow remains pending, see desktop-entry-verification-20261015.json.",
+        "v0.3 default Google EmbeddingGemma300M GGUF downloaded621867104bytes, fixedSHA passed; actual Chinese query/document768d retrieval smoke passed. App-managed install/readiness remains pending."
       ],
-      "remaining": "Native model download/registration/hash verification UI, full resource manager and probe readiness remain. Settings version is user-declared; first desktop entry cold-loads each job."
+      "remaining": "v0.3: automatic default embedding/ASR+runtime installation/readiness, no mandatory paths/Python, resource/error recovery and fresh-user acceptance. Existing manually configured workbench is intermediate only."
     },
     {
       "id": "FR-002",
@@ -110,7 +111,7 @@
         "58064e7: bounded fixture startup, failed child reaped; Task2A quality review approved",
         "Parent actual ChatClient discovery+summary generation against controlled local Qwen3 GGUF llama-server passed; exact selected model,finish_reason,usage recorded in local-qwen-generation-smoke-20261015.json. Temporary service stopped; no app readiness persisted."
       ],
-      "remaining": "SSE, Keychain/configuration UI, task feature probes and permanent configuration-bound readiness remain. One short controlled local model request passed, not complete service/backend acceptance."
+      "remaining": "v0.3: DeepSeek preset+Keychain UI, actual user-key cloud generation, template workflows, capability tests; local LLM remains optional advanced setting."
     },
     {
       "id": "FR-014",
@@ -234,5 +235,6 @@
       "remaining": "Implement and verify full requirement and acceptance criteria."
     }
   ],
-  "goal_complete": false
+  "goal_complete": false,
+  "source_spec": "docs/spec/product-v0.3.md"
 }

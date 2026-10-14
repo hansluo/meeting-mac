@@ -2,11 +2,11 @@
 
 原生macOS会议与个人知识助手，基于Foresight产品流程和Hans的MAC-record构建。
 
-开发目标是可切换Qwen/FunASR转写、本地千问及可选云生成、双来源会议、音频重转录、个人资料RAG、引用、笔记增强、行动项、备会和主动助手。
+开发目标是内置并自动准备Google EmbeddingGemma和MAC-record路线Qwen ASR，默认DeepSeek云端生成（用户填写API Key），保留FunASR/本地生成高级选项、双来源会议、音频重转录、个人资料RAG、引用、笔记增强、行动项、备会和主动助手。
 
 目前正在开发，未完成的功能和验证状态见 `docs/implementation-status.json`。模型注册、代码编译和模拟测试不能替代真实ASR/模型运行与完整验收。
 
-当前产品基线：`docs/spec/product-v0.2.md`；需求与验收：`docs/spec/requirements-v0.2.json`。
+当前产品基线：`docs/spec/product-v0.3.md`；需求与验收：`docs/spec/requirements-v0.3.json`。
 
 本地代码仓库：`https://github.com/hansluo/meeting-mac`。
 
@@ -33,4 +33,4 @@
 
 已验证应用启动、原生窗口控件、生产转写适配流程和任务状态测试。界面自动化连接故障使文件选择、复制、导出、关闭等完整点击验收仍待补全，不能把源码存在当作这些交互已通过。每次文件任务后当前释放模型，桌面入口暂未复用常驻引擎。
 
-这是一份开发版，完整模型连接/Keychain、会议录音、长文件、历史、知识库、引用问答与其余 v0.2 工作流继续实现。
+这是一份过渡开发版；v0.3最终版本将自动管理默认本地模型，不再要求上述手动路径。完整模型连接/Keychain、会议录音、长文件、历史、知识库、引用问答与其余 v0.2 工作流继续实现。

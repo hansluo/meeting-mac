@@ -2,11 +2,17 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development to implement this plan task-by-task, with spec and quality reviews. Steps use checkbox syntax.
 
-**Goal:** 实现完整v0.2产品并提交hansluo/meeting-mac，不把本计划的首个任务当成目标完成。
+**Goal:** 实现完整v0.3产品并提交hansluo/meeting-mac，不把本计划的首个任务当成目标完成。
 
 **Architecture:** Swift Package包含可测试MeetingCore与SwiftUI客户端。原生音频和Qwen ONNX适配MAC-record；FunASR独立本地worker。资料/会议版本层连接ASR、RAG和按任务生成路由。
 
 **Tech Stack:** Swift 6、SwiftUI/AppKit、AVFoundation、ScreenCaptureKit、SQLite、Security、Python/FunASR与sherpa-onnx。
+
+## 2026-10-15 用户目标更新（优先于旧默认）
+
+规格升级docs/spec/product-v0.3.md。所有Foresight功能/整体界面与中文体验仍须完成。默认三角色：内置Google embedding、内置MAC-record Qwen ASR、DeepSeek云端生成。用户只填云API配置，本地模型/runtime由我们下载并管理。原手动路径短WAV工作台是过渡产物，不是最终目标。FunASR/本地生成保留高级项；DeepSeek真实调用缺用户Key不妨碍完成其他实现。
+
+下一步优先：完成当前Keychain事务审查→内置资产manifest/自动下载与路径解析→embedding实际中文检索→Foresight式完整导航与DeepSeek设置→持久化会议/录音/知识闭环。所有旧任务按新默认调整而非删减范围。
 
 ## 全范围执行顺序
 
