@@ -80,7 +80,7 @@ Qwen官方工具的流式示例当前限定vLLM后端；这不证明MAC-record�
 
 FunASR官方区分离线、流式、VAD、标点和说话人管线；实时必须选择对应流式checkpoint并管理独立session cache。工具包的能力不能自动迁移到任意模型。[FunASR官方资料](https://github.com/modelscope/FunASR)。
 
-**初始产品选择**：本次按MAC-record `ASRConfigStore.swift:10`的真实默认值采用SenseVoice INT8，使用匹配的sherpa原生管线。原仓库所带权重精确revision尚未确认，本应用固定官方可校验的同模型族资源，不冒称字节完全相同。Qwen0.6B/1.7B继续作为可切换路线；FunASR本地adapter必须进入基础里程碑，并在同一评测后允许用户设为首选。默认排序是开发选择，不是质量结论。SenseVoice可以保留为轻量备选，但不能替代用户要求的Qwen和FunASR选项。
+**初始产品选择**：本次按MAC-record `ASRConfigStore.swift:10`的真实默认值采用SenseVoice INT8，使用匹配的sherpa原生管线。原仓库所带权重精确revision尚未确认，本应用固定官方可校验的同模型族资源，不冒称字节完全相同。Qwen0.6B/1.7B继续作为可切换路线；FunASR本地adapter必须进入基础里程碑，并在同一评测后允许用户设为首选。默认排序是开发选择，不是质量结论。默认SenseVoice与高级Qwen/FunASR入口分别标示，不隐式切换。
 
 ### 4.2 默认DeepSeek生成与可选本地模型
 
@@ -106,7 +106,7 @@ embedding为独立角色，模型版本、向量维度、归一化和索引gener
 
 EmbeddingGemma输入文本、输出向量，不输出转写文字。即使新一代embedding支持音频输入，音频向量也不等于ASR。Foresight静态证据出现EmbeddingGemma及V2类型标记，尚不能确认原程序所用checkpoint与本方案300M完全相同；本方案是明确选择，不冒称已提取原权重。来源：[Google模型卡](https://ai.google.dev/gemma/docs/embeddinggemma/model_card)。
 
-默认ASR选SenseVoice INT8，原生集成和实测仍待完成；Qwen3-ASR0.6B与FunASR此前已在本机真实短语音跑通，保留为高级选项。Google embedding仍需实际中文检索测试、hash与runtime验证。支持音频的Gemma4替代ASR必须另行对照评测，不因网上能力说明自动替换已跑通路径。
+默认ASR选SenseVoice INT8，原生集成和实测仍待完成；Qwen3-ASR0.6B与FunASR此前已在本机真实短语音跑通，保留为高级选项。Google embedding已下载并通过hash及首次中文检索smoke，完整索引与检索评测仍待完成。支持音频的Gemma4替代ASR必须另行对照评测，不因网上能力说明自动替换已跑通路径。
 
 ## 5. 本地、局域网与云端路由
 
@@ -134,7 +134,7 @@ provider位置为on_device、lan、cloud或unverified。localhost不能单独证
 
 导航以Foresight结构为主：主页/日程、会议、知识库、聊天、笔记、可选知识组织、设置。会议详情吸收MAC-record的音频回放、转写/纪要视图、重新转录与导出。菜单栏提供录音状态和独立语音输入开关。
 
-普通设置以“本地模型准备状态”和“DeepSeek API Key”呈现，云端地址/model预填可改。高级模型设置拆成三组：**转写引擎**、**生成模型**、**检索模型**。用户可以明确看见“Qwen ASR本机”“FunASR本地服务”“本地千问生成”“云端千问生成”等实际组合。高级设置才展开VAD、窗口、重试和token预算。
+普通设置以“本地模型准备状态”和“DeepSeek API Key”呈现，云端地址/model预填可改。高级模型设置拆成三组：**转写引擎**、**生成模型**、**检索模型**。用户可以明确看见默认“SenseVoice本机”“Google本机embedding”“DeepSeek云端生成”；高级设置才显示Qwen/FunASR及本地生成等替换组合。高级设置才展开VAD、窗口、重试和token预算。
 
 连接流程为选择provider → 输入地址/凭据 → 发现或输入模型 → 测试任务能力 → 选择任务用途 → 保存。支持手动model_id，不能因某服务没有models列表就否定其可连接性。
 
