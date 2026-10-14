@@ -59,6 +59,18 @@
 
 Security Keychain更新失败保留旧凭据/配置；临时Key测试不先保存。按task/profile/config revision记录探测证据，修改失效。能力和执行位置分别验证；本地代理云不能标本机。
 
+### Task 2C1: 设置与 Keychain 的可靠提交〔待实施〕
+
+在桌面入口后接入生成连接设置前完成。配置文件不保存Key；Keychain操作不得阻塞UI，不把系统错误正文或凭据写日志。
+
+- [ ] 最小CredentialStore协议与Security实现：专属service、随机不透明reference、read/add/update/delete、稳定可解释错误，删除只涉及本应用reference。不枚举或读取用户其他应用的Key。
+- [ ] 配置提交避免先删旧Key：修改凭据时可创建新reference；Keychain写成功且非敏感配置原子落地后切换，再清理旧项。任一步失败保留旧有效配置；新项回滚/旧项清理失败要报告，不能伪装成功或删掉无关项。
+- [ ] 临时凭据探测走内存，不先保存；测试请求与正式生成使用相同endpoint/model/标准参数入口。
+- [ ] 配置持有revision与probe证据；修改模型/端点/protocol/runtime/路径/凭据后，使相应能力与位置验证失效。发现模型列表不能直接写ready，旧revision迟到探测不能使新配置ready。
+- [ ] 定义位置证据及用户声明的区别。UI不得将loopback地址直接解释为本机模型执行；云task授权和音频/文本范围分开。
+- [ ] TDD覆盖写Key失败、写配置失败、旧Key清理失败、重复profile、无Key连接、临时Key不持久化、修改失效、迟到probe和日志无secret。实际Keychain集成仅使用专属随机测试项，清理且不碰已有凭据。
+- [ ] 独立spec/quality审查、测试与构建，状态仍按完整FR验收记录。
+
 ## Task 3A: Qwen 本机 ASR 与真实运行入口
 
 为优先验证用户要求的 ASR 替换，2A完成后先推进本机适配器；2B/2C仍保留为必须完成的后续工作。
