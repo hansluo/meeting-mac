@@ -96,9 +96,12 @@
       "evidence": [
         "6605251 and 143bb20: explicit route core, rejects duplicate selected IDs",
         "Tests/MeetingCoreTests/RouteResolverTests.swift: 13 behavioral cases, parent scripts/test-core.sh passed 2026-10-14",
-        "Independent spec and quality reviews approved; swift build passed"
+        "Independent spec and quality reviews approved; swift build passed",
+        "37dd595: ChatClient real HTTP discovery and nonstream text generation",
+        "Parent scripts/test-core.sh 31/31 passed; swift build passed 2026-10-14; Task2A spec review approved",
+        "58064e7: bounded fixture startup, failed child reaped; Task2A quality review approved"
       ],
-      "remaining": "HTTP discovery/generation/SSE, endpoint configuration, Keychain and real local service probes still required."
+      "remaining": "SSE, Keychain/configuration UI, task feature probes and real local model acceptance remain. Discovery is not readiness; verified profile evidence still declarative."
     },
     {
       "id": "FR-014",
@@ -128,9 +131,12 @@
       "evidence": [
         "6605251 and 143bb20: explicit route core, rejects duplicate selected IDs",
         "Tests/MeetingCoreTests/RouteResolverTests.swift: 13 behavioral cases, parent scripts/test-core.sh passed 2026-10-14",
-        "Independent spec and quality reviews approved; swift build passed"
+        "Independent spec and quality reviews approved; swift build passed",
+        "37dd595: ChatClient real HTTP discovery and nonstream text generation",
+        "Parent scripts/test-core.sh 31/31 passed; swift build passed 2026-10-14; Task2A spec review approved",
+        "58064e7: bounded fixture startup, failed child reaped; Task2A quality review approved"
       ],
-      "remaining": "Resolver unit-tested only; settings persistence, real task execution, probe invalidation, data scope and explicit LAN policy still required. LAN currently rejected."
+      "remaining": "Settings persistence, actual local/cloud task scenarios, probe invalidation, data scope and explicit LAN policy remain. HTTP rejects non-chat roles, on-device external hosts and redirects; real provider execution location remains unproven."
     },
     {
       "id": "FR-018",

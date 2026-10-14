@@ -16,4 +16,4 @@
 若系统选用 Command Line Tools，脚本使用已安装 Xcode 的 XCTest 框架；不会修改系统开发工具选择或许可证状态。
 可通过 `MEETING_XCODE_DEVELOPER_DIR` 指定其他 Xcode 的 `Contents/Developer` 路径。
 
-当前仅有明确模型路由的基础实现，真实 ASR、生成服务和桌面工作流继续开发中。
+当前已实现明确模型路由及兼容生成接口的 HTTP 基础层，通过本机测试服务器验证。真实 ASR、实际模型服务接入和桌面工作流继续开发中。
