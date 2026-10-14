@@ -11,3 +11,14 @@
 - C API dylib SHA-256：`ab52d37d6452fd18cfe6398cd5a150695c28da089dd38c1c768986426e06e017`。
 
 这仅证明原生依赖能在当前 Mac 加载。尚未创建带真实权重的识别器，没有 ASR 文本、质量或性能证据。模型文件校验、Swift/C 适配器、VAD、时间映射、资源限制以及应用内打包仍待实现。下载文件暂存于系统临时目录，不作为项目长期依赖，也不提交 Git。
+
+## 0.6B 权重来源核验
+
+GitHub 官方 `asr-models` release API 返回以下已存在资产，修正 MAC-record 配置中的 2025 年链接。
+
+- 名称：`sherpa-onnx-qwen3-asr-0.6B-int8-2026-03-25.tar.bz2`
+- 来源：https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-qwen3-asr-0.6B-int8-2026-03-25.tar.bz2
+- 大小：878,702,423 bytes。
+- 上游 API digest：`sha256:393f8a14e2f5fb96746aaab342997a40641001fbd5bf9592a080a8329178ee96`。
+
+下载进行中；必须完整下载并核对摘要才能解压/使用。此处没有将模型标为下载完成或识别就绪。
