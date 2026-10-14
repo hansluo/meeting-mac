@@ -19,31 +19,65 @@ final class ChatClientTests: XCTestCase, @unchecked Sendable {
     }
 }
 
+private enum ChatServerError: Error { case startupTimedOut }
+
 private final class ChatServer {
-    let process = Process()
+    let process: Process
     let baseURL: URL
-    init() throws {
+    init(process: Process = Process(), startupTimeout: TimeInterval = 5, startupDelay: TimeInterval = 0) throws {
+        self.process = process
         let output = Pipe()
         process.executableURL = URL(fileURLWithPath: "/usr/bin/env")
         let fixture = URL(fileURLWithPath: #filePath).deletingLastPathComponent()
             .deletingLastPathComponent().appendingPathComponent("Fixtures/chat_server.py")
-        process.arguments = ["python3", fixture.path]
+        process.arguments = ["python3", fixture.path, "--startup-delay", String(startupDelay)]
         process.standardOutput = output
         process.standardError = FileHandle.nullDevice
         try process.run()
-        let data = output.fileHandleForReading.availableData
-        guard let line = String(data: data, encoding: .utf8), let port = Int(line.trimmingCharacters(in: .whitespacesAndNewlines)) else {
-            kill(process.processIdentifier, SIGKILL)
-            throw CocoaError(.fileReadCorruptFile)
+        try? output.fileHandleForWriting.close()
+        defer { try? output.fileHandleForReading.close() }
+        do {
+            let data = try Self.readStartupLine(from: output.fileHandleForReading, timeout: startupTimeout)
+            guard let line = String(data: data, encoding: .utf8), let port = Int(line.trimmingCharacters(in: .whitespacesAndNewlines)), (1...65535).contains(port) else {
+                throw CocoaError(.fileReadCorruptFile)
+            }
+            baseURL = URL(string: "http://127.0.0.1:\(port)")!
+        } catch {
+            Self.stopProcess(process)
+            throw error
         }
-        baseURL = URL(string: "http://127.0.0.1:\(port)")!
     }
-    func stop() {
+    private static func readStartupLine(from handle: FileHandle, timeout: TimeInterval) throws -> Data {
+        guard timeout.isFinite, timeout > 0 else { throw ChatServerError.startupTimedOut }
+        let deadline = ProcessInfo.processInfo.systemUptime + timeout
+        var data = Data()
+        while data.count < 128 {
+            let remaining = deadline - ProcessInfo.processInfo.systemUptime
+            guard remaining > 0 else { throw ChatServerError.startupTimedOut }
+            var descriptor = pollfd(fd: handle.fileDescriptor, events: Int16(POLLIN), revents: 0)
+            let milliseconds = Int32(min(ceil(remaining * 1000), Double(Int32.max)))
+            let ready = poll(&descriptor, 1, milliseconds)
+            if ready == 0 { throw ChatServerError.startupTimedOut }
+            if ready < 0 {
+                if errno == EINTR { continue }
+                throw CocoaError(.fileReadUnknown)
+            }
+            var byte: UInt8 = 0
+            let count = Darwin.read(handle.fileDescriptor, &byte, 1)
+            if count < 0 && errno == EINTR { continue }
+            guard count == 1 else { throw CocoaError(.fileReadCorruptFile) }
+            if byte == 10 { return data }
+            data.append(byte)
+        }
+        throw CocoaError(.fileReadCorruptFile)
+    }
+    private static func stopProcess(_ process: Process) {
         if process.isRunning { kill(process.processIdentifier, SIGKILL) }
         // Foundation reaps the child; avoid waitUntilExit's run-loop dependency in async XCTest.
         for _ in 0..<100 where process.isRunning { usleep(10_000) }
         XCTAssertFalse(process.isRunning, "Fixture must exit")
     }
+    func stop() { Self.stopProcess(process) }
     func url(_ prefix: String = "") -> URL { baseURL.appendingPathComponent(prefix) }
     func records() async throws -> [[String: Any]] {
         let (data, _) = try await URLSession.shared.data(from: url("records"))
@@ -286,5 +320,25 @@ extension ChatClientTests {
         }
         let records = try await server.records()
         XCTAssertEqual(records.compactMap { $0["path"] as? String }, ["/api/tags", "/proxy/api/tags", "/proxy/api/tags"])
+    }
+}
+
+extension ChatClientTests {
+    func testFixtureStartupTimeoutIsBoundedAndReapsChild() throws {
+        let child = Process()
+        let started = ProcessInfo.processInfo.systemUptime
+        do {
+            let server = try ChatServer(process: child, startupTimeout: 0.1, startupDelay: 1.5)
+            server.stop()
+            XCTFail("Expected fixture startup timeout")
+        } catch {
+            guard case ChatServerError.startupTimedOut = error else {
+                return XCTFail("Expected typed startup timeout")
+            }
+        }
+        XCTAssertLessThan(ProcessInfo.processInfo.systemUptime - started, 1)
+        XCTAssertFalse(child.isRunning)
+        XCTAssertEqual(kill(child.processIdentifier, 0), -1)
+        XCTAssertEqual(errno, ESRCH, "Fixture child must be reaped")
     }
 }

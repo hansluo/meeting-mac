@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import json, sys, time, threading
+import argparse, json, time, threading
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 records = []
@@ -52,6 +52,10 @@ class Handler(BaseHTTPRequestHandler):
             else: self.reply(200, {'data': [{'id': 'chosen'}, {'id': 'other'}]})
         else:
             self.reply(200, {'model': 'chosen', 'choices': [{'message': {'role': 'assistant', 'content': 'answer'}, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 3, 'completion_tokens': 2, 'total_tokens': 5}})
+parser = argparse.ArgumentParser()
+parser.add_argument('--startup-delay', type=float, default=0)
+args = parser.parse_args()
+time.sleep(args.startup_delay)
 server = ThreadingHTTPServer(('127.0.0.1', 0), Handler)
 server.daemon_threads = True
 print(server.server_port, flush=True)
