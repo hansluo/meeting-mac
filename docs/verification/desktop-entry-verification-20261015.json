@@ -1,0 +1,58 @@
+{
+  "source_commit": "e557ae0",
+  "scope": "Task4A native short-WAV entry; incomplete v0.2 product",
+  "parent_verification": {
+    "swift_tests": {
+      "passed": 73,
+      "failures": 0
+    },
+    "python_tests": {
+      "passed": 10,
+      "failures": 0
+    },
+    "release_build": "pass",
+    "plist_lint": "pass",
+    "ad_hoc_codesign_strict_verify": "pass",
+    "bundle_executable_sha256": "aa2df01dd1bb5b2af0b7e41e446ed4a9a6232521ab78e5f96b15745e6f19e2c7"
+  },
+  "native_ui": {
+    "launch": "pass",
+    "initial_accessibility_tree": "observed",
+    "observed_controls": [
+      "模型设置",
+      "Qwen",
+      "FunASR",
+      "选择 WAV 音频…",
+      "开始转写 (disabled until configured)",
+      "复制 (disabled until result)",
+      "导出文本… (disabled until result)"
+    ],
+    "clicked_workflow": "not_verified",
+    "reason": "Sky Computer Use native pipe closed before response at first click; same handle and reset/reconnect failed. No alternate UI automation used.",
+    "remaining": [
+      "settings entry/persistence across relaunch",
+      "actual file picker/import click",
+      "display of actual transcript",
+      "copy and save panel export",
+      "cancel and close window drain"
+    ]
+  },
+  "production_adapter": {
+    "evidence": "desktop-adapter-smoke-20261015.json",
+    "qwen": "actual synthetic Mandarin success",
+    "funasr": "actual synthetic Mandarin success using bundled production worker",
+    "stderr_bytes": 0,
+    "remaining_owned_job_cache_directories": 0
+  },
+  "reviews": {
+    "source_spec": "pass",
+    "code_quality": "pass (source review only)"
+  },
+  "limitations": [
+    "No live recording or long-file conversion",
+    "No LLM connection UI/Keychain yet",
+    "Each current desktop file job cold-loads then unloads its engine",
+    "Version field is user declaration; desktop model hash verification not implemented",
+    "No complete clicked GUI acceptance or full meeting/RAG acceptance"
+  ]
+}

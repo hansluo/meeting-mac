@@ -11,9 +11,11 @@
         "Independent spec and quality reviews approved; swift build passed",
         "f5521ee,86d5c71: pinned native runtime installer SHA/ABI/version; required model files + optional streaming SHA validation; bounded one-job engine",
         "a39f73b,d6e399e: resident FunASR CPU worker, explicit checkpoint and bounded process lifecycle; real toolkit probe passed",
-        "10e987e: resident Qwen with async drain/shutdown, failure invalidation and per-clip file-signature validation; independent spec/quality reviews passed; reviewer rerun66/66."
+        "10e987e: resident Qwen with async drain/shutdown, failure invalidation and per-clip file-signature validation; independent spec/quality reviews passed; reviewer rerun66/66.",
+        "e557ae0: native explicit Qwen/FunASR settings, nonsecret persisted paths, required-field guidance. Build and first native window verified.",
+        "Task4A independent source spec and code-quality reviews passed. Parent73Swift+10Python, release/plist/signature passed; GUI clicked-flow remains pending, see desktop-entry-verification-20261015.json."
       ],
-      "remaining": "Model registration/readiness UI, full download/resource manager and damaged real checkpoint coverage remain. Qwen short synthetic ASR now succeeds; full quality acceptance remains."
+      "remaining": "Native model download/registration/hash verification UI, full resource manager and probe readiness remain. Settings version is user-declared; first desktop entry cold-loads each job."
     },
     {
       "id": "FR-002",
@@ -88,9 +90,12 @@
     {
       "id": "FR-012",
       "title": "历史、导出、删除与诊断",
-      "status": "not_started",
-      "evidence": [],
-      "remaining": "Implement and verify full requirement and acceptance criteria."
+      "status": "partial",
+      "evidence": [
+        "e557ae0: copy/UTF8 plain text export UI implemented. Native controls observed, but actual copy/save-panel export clicks remain unverified.",
+        "Task4A independent source spec and code-quality reviews passed. Parent73Swift+10Python, release/plist/signature passed; GUI clicked-flow remains pending, see desktop-entry-verification-20261015.json."
+      ],
+      "remaining": "Durable history, rich manifest/ZIP/audio/summary export, delete cascade and complete clicked export acceptance remain."
     },
     {
       "id": "FR-013",
@@ -114,18 +119,22 @@
         "f5521ee,86d5c71: Qwen offline adapter and MeetingASRCheck; parent47/47 tests, build and actual runtime1.13.7 probe passed",
         "a39f73b,d6e399e: FunASR worker with real pipe lifecycle tests and actual1.4.16CPU import probe; Qwen verified checkpoint actual3synthetic-language cold-load results in docs/verification/qwen-synthetic-smoke-20261015.json",
         "Real FunASR SenseVoiceSmall CPU via Swift->production NDJSON worker: zh/en/yue same synthetic WAVs succeeded with same worker PID; checkpoint SHA verified. docs/verification/funasr-synthetic-smoke-20261015.json",
-        "10e987e: resident Qwen with async drain/shutdown, failure invalidation and per-clip file-signature validation; independent spec/quality reviews passed; reviewer rerun66/66."
+        "10e987e: resident Qwen with async drain/shutdown, failure invalidation and per-clip file-signature validation; independent spec/quality reviews passed; reviewer rerun66/66.",
+        "e557ae0: LocalTranscription dispatches explicit Qwen/FunASR production backends; parent actual Mandarin inference through both desktop adapter paths passed, bundled FunASR worker used.",
+        "Task4A independent source spec and code-quality reviews passed. Parent73Swift+10Python, release/plist/signature passed; GUI clicked-flow remains pending, see desktop-entry-verification-20261015.json."
       ],
-      "remaining": "live segmentation, app routing and same-audio quality/latency acceptance remain. Native Qwen cancellation waits for native call completion. Resident core verified; end-to-end capture and live-session orchestration remain."
+      "remaining": "Live segmentation, capture/session orchestration, same-audio quality/latency acceptance, complete clicked GUI workflow and streaming capabilities remain."
     },
     {
       "id": "FR-015",
       "title": "音频导入、回放与重转录",
       "status": "partial",
       "evidence": [
-        "f5521ee: bounded strict PCM16 mono16k WAV parser + offline CLI entry"
+        "f5521ee: bounded strict PCM16 mono16k WAV parser + offline CLI entry",
+        "e557ae0: short WAV native import entry and production pipeline with bounded snapshot; tests preserve prior result + source on failure/cancel; full clicked file-picker path not yet verified.",
+        "Task4A independent source spec and code-quality reviews passed. Parent73Swift+10Python, release/plist/signature passed; GUI clicked-flow remains pending, see desktop-entry-verification-20261015.json."
       ],
-      "remaining": "App file import/conversion, playback, long-file chunking, progress/cancel, revision comparison/adoption and real ASR acceptance remain."
+      "remaining": "Other audio format conversion, long-file chunking, playback, durable revisions/adoption/index invalidation and complete GUI acceptance remain."
     },
     {
       "id": "FR-016",
@@ -197,9 +206,12 @@
     {
       "id": "NFR-006",
       "title": "资源预算",
-      "status": "not_started",
-      "evidence": [],
-      "remaining": "Implement and verify full requirement and acceptance criteria."
+      "status": "partial",
+      "evidence": [
+        "e557ae0: bounded<=30second desktop input, max1MB file read, one active job including cleanup; 73tests passed.",
+        "Task4A independent source spec and code-quality reviews passed. Parent73Swift+10Python, release/plist/signature passed; GUI clicked-flow remains pending, see desktop-entry-verification-20261015.json."
+      ],
+      "remaining": "Long-meeting and minimum-hardware concurrent capture/ASR/LLM budgets and benchmarks remain."
     },
     {
       "id": "NFR-007",

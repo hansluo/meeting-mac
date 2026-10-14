@@ -1,0 +1,15 @@
+{
+  "results" : [
+    {
+      "engine" : "Qwen",
+      "provenance" : "Qwen · sherpa-onnx 1.13.7 · sherpa-onnx-qwen3-asr-0.6B-int8-2026-03-25\n模型：\/Users\/hansluo\/Desktop\/meeting-mac\/models\/qwen3-asr\/sherpa-onnx-qwen3-asr-0.6B-int8-2026-03-25\n运行库：\/Users\/hansluo\/Desktop\/meeting-mac\/.build\/native\/sherpa-onnx-v1.13.7-osx-arm64-shared-no-tts-lib\/lib\/libsherpa-onnx-c-api.dylib\n音频：117093 samples \/ 16000 Hz · 耗时 2.39 秒\n版本由用户声明；未进行模型哈希验证。",
+      "text" : "明天下午三点讨论项目预算，总金额是两万五千元，请王明准备方案。"
+    },
+    {
+      "engine" : "FunASR",
+      "provenance" : "FunASR · 3847d57b6bdf2dd8875cb1508d2af43d80a16bf7 · model.pt\n模型：\/Users\/hansluo\/Desktop\/meeting-mac\/models\/sensevoice-small\/3847d57b6bdf2dd8875cb1508d2af43d80a16bf7\nPython：\/Users\/hansluo\/Desktop\/meeting-mac\/.venv\/funasr\/bin\/python\nWorker：\/Users\/hansluo\/Desktop\/meeting-mac\/dist\/Meeting Mac.app\/Contents\/Resources\/FunASR\/worker.py\n音频：117093 samples \/ 16000 Hz\n版本由用户声明；未进行模型哈希验证。",
+      "text" : "明天下午三点讨论项目预算总金额是两万五千元请王明准备方案"
+    }
+  ],
+  "scope" : "Real desktop LocalTranscription adapter, not clicked GUI flow"
+}

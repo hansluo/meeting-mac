@@ -114,13 +114,16 @@ Task3C1独立spec/quality审查后实施。先让用户能在原生窗口选择�
 
 **Files:** Package.swift、Sources/MeetingMacApp/、scripts/build-app.sh；必要的可测状态逻辑放MeetingCore及Tests。
 
-- [ ] SwiftUI macOS14可执行目标与.app打包脚本，Info.plist/唯一bundle ID，无需接受Xcode license或改系统工具链。不打包模型权重、Python环境、API Key。不依赖/private/tmp路径。
-- [ ] 转写界面选择Qwen/FunASR，显式本机runtime/model/revision或Python/worker/checkpoint；保存非敏感路径与选项。模型未配置显示可操作原因，不用假成功/样本文字。
-- [ ] 文件选择仅承诺已实现的PCM16/16k/mono WAV≤30秒；显示所选文件、进行中、错误、取消、真实文本与来源。后续长文件/转换另有任务。原文可复制和导出UTF8，成功结果不因下一次失败消失。静音导致空转写时明确显示未识别到语音，不伪造文本。
-- [ ] 单任务、重复点击有界，参数变更不改变活动任务，取消及关闭窗口清理原生/worker；UI不阻塞主线程；Qwen先await shutdown再释放。
-- [ ] 引擎路由显式，无first默认模型、无云回退；FunASR后台与Qwen能力说明分开，不能把文件转写标为原生流式或会议已完成。
+- [x] SwiftUI macOS14可执行目标与.app打包脚本，Info.plist/唯一bundle ID，无需接受Xcode license或改系统工具链。不打包模型权重、Python环境、API Key。不依赖/private/tmp路径。
+- [x] 转写界面选择Qwen/FunASR，显式本机runtime/model/revision或Python/worker/checkpoint；保存非敏感路径与选项。模型未配置显示可操作原因，不用假成功/样本文字。
+- [x] 文件选择仅承诺已实现的PCM16/16k/mono WAV≤30秒；显示所选文件、进行中、错误、取消、真实文本与来源。后续长文件/转换另有任务。原文可复制和导出UTF8，成功结果不因下一次失败消失。静音导致空转写时明确显示未识别到语音，不伪造文本。
+- [x] 单任务、重复点击有界，参数变更不改变活动任务，取消及关闭窗口清理原生/worker；UI不阻塞主线程；Qwen先await shutdown再释放。
+- [x] 引擎路由显式，无first默认模型、无云回退；FunASR后台与Qwen能力说明分开，不能把文件转写标为原生流式或会议已完成。
 - [ ] 测试可测状态：开始/失败保留旧结果、取消禁止迟到结果、活动任务配置snapshot、busy与清理。脚本构建.app后实际启动、检查进程和原生界面，使用合成WAV跑一条真实Qwen路径。
-- [ ] spec/quality审查，更新真实实现状态并提交；会议录音、LLM连接UI、资料问答等缺口继续保留。
+- [x] 源码spec/quality审查通过，更新真实实现状态并提交；完整GUI点击验收仍未通过，会议录音、LLM连接UI、资料问答等缺口继续保留。
+
+
+73测试及release构建/签名通过；初始原生窗口AX已确认，桌面生产adapter两条真实转写通过。CUA在首次点击时native pipe关闭，重连仍失败，完整导入/取消/导出/关闭的点击验收保持未完成。独立源码spec/quality审查均通过。
 
 ## 完成审计
 
