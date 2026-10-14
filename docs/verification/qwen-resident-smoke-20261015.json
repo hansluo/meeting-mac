@@ -1,0 +1,44 @@
+[
+  {
+    "decodeSeconds" : 0.873054875,
+    "elapsedSeconds" : 2.2851615,
+    "integrityManifestVerified" : true,
+    "loadSeconds" : 1.4121075,
+    "modelDirectory" : "\/Users\/hansluo\/Desktop\/meeting-mac\/models\/qwen3-asr\/sherpa-onnx-qwen3-asr-0.6B-int8-2026-03-25",
+    "reusedRecognizer" : false,
+    "revision" : "sherpa-onnx-qwen3-asr-0.6B-int8-2026-03-25",
+    "runtimePath" : "\/Users\/hansluo\/Desktop\/meeting-mac\/.build\/native\/sherpa-onnx-v1.13.7-osx-arm64-shared-no-tts-lib\/lib\/libsherpa-onnx-c-api.dylib",
+    "runtimeVersion" : "1.13.7",
+    "sampleCount" : 117093,
+    "sampleRate" : 16000,
+    "text" : "明天下午三点讨论项目预算，总金额是两万五千元，请王明准备方案。"
+  },
+  {
+    "decodeSeconds" : 0.87346375,
+    "elapsedSeconds" : 0.873705834,
+    "integrityManifestVerified" : true,
+    "loadSeconds" : 0,
+    "modelDirectory" : "\/Users\/hansluo\/Desktop\/meeting-mac\/models\/qwen3-asr\/sherpa-onnx-qwen3-asr-0.6B-int8-2026-03-25",
+    "reusedRecognizer" : true,
+    "revision" : "sherpa-onnx-qwen3-asr-0.6B-int8-2026-03-25",
+    "runtimePath" : "\/Users\/hansluo\/Desktop\/meeting-mac\/.build\/native\/sherpa-onnx-v1.13.7-osx-arm64-shared-no-tts-lib\/lib\/libsherpa-onnx-c-api.dylib",
+    "runtimeVersion" : "1.13.7",
+    "sampleCount" : 117093,
+    "sampleRate" : 16000,
+    "text" : "明天下午三点讨论项目预算，总金额是两万五千元，请王明准备方案。"
+  },
+  {
+    "decodeSeconds" : 0.731716792,
+    "elapsedSeconds" : 2.104141333,
+    "integrityManifestVerified" : true,
+    "loadSeconds" : 1.372424583,
+    "modelDirectory" : "\/Users\/hansluo\/Desktop\/meeting-mac\/models\/qwen3-asr\/sherpa-onnx-qwen3-asr-0.6B-int8-2026-03-25",
+    "reusedRecognizer" : false,
+    "revision" : "sherpa-onnx-qwen3-asr-0.6B-int8-2026-03-25",
+    "runtimePath" : "\/Users\/hansluo\/Desktop\/meeting-mac\/.build\/native\/sherpa-onnx-v1.13.7-osx-arm64-shared-no-tts-lib\/lib\/libsherpa-onnx-c-api.dylib",
+    "runtimeVersion" : "1.13.7",
+    "sampleCount" : 117093,
+    "sampleRate" : 16000,
+    "text" : "明天下午三点讨论项目预算，总金额是两万五千元，请王明准备方案。"
+  }
+]

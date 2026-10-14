@@ -1,0 +1,42 @@
+{
+  "checkpoint_sha256": "833ca2dcfdf8ec91bd4f31cfac36d6124e0c459074d5e909aec9cabe6204a3ea",
+  "model_revision": "3847d57b6bdf2dd8875cb1508d2af43d80a16bf7",
+  "results": [
+    {
+      "backend_fields": {},
+      "elapsed_seconds": 7.449738958,
+      "language": "zh",
+      "raw_text": "<|zh|><|NEUTRAL|><|Speech|><|woitn|>明天下午三点讨论项目预算总金额是两万五千元请王明准备方案",
+      "sample_count": 117093,
+      "text": "明天下午三点讨论项目预算总金额是两万五千元请王明准备方案",
+      "worker_pid": 80545
+    },
+    {
+      "backend_fields": {},
+      "elapsed_seconds": 0.479804583,
+      "language": "en",
+      "raw_text": "<|en|><|NEUTRAL|><|Speech|><|woitn|>we will review the project budget at3 tomorrow afternoon alice will prepare the proposal the total is 25000",
+      "sample_count": 121340,
+      "text": "we will review the project budget at3 tomorrow afternoon alice will prepare the proposal the total is 25000",
+      "worker_pid": 80545
+    },
+    {
+      "backend_fields": {},
+      "elapsed_seconds": 0.460156208,
+      "language": "yue",
+      "raw_text": "<|yue|><|NEUTRAL|><|Speech|><|woitn|>听日下午三点开会讨论项目预算请陈先生准备方案",
+      "sample_count": 93651,
+      "text": "听日下午三点开会讨论项目预算请陈先生准备方案",
+      "worker_pid": 80545
+    }
+  ],
+  "scope": "three synthetic short clips, not full meeting acceptance",
+  "hardware": "Apple M4,16GiB RAM,macOS26.6.2",
+  "package_versions": {
+    "funasr": "1.4.16",
+    "torch": "2.8.0",
+    "torchaudio": "2.8.0"
+  },
+  "model_download_source": "https://www.modelscope.cn/models/iic/SenseVoiceSmall/resolve/master/model.pt",
+  "identity": "Downloaded mirrored checkpoint matches fixed HuggingFace revision SHA256; master URL alone is not pinned provenance."
+}

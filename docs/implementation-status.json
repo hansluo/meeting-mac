@@ -9,9 +9,11 @@
         "6605251 and 143bb20: explicit route core, rejects duplicate selected IDs",
         "Tests/MeetingCoreTests/RouteResolverTests.swift: 13 behavioral cases, parent scripts/test-core.sh passed 2026-10-14",
         "Independent spec and quality reviews approved; swift build passed",
-        "f5521ee,86d5c71: pinned native runtime installer SHA/ABI/version; required model files + optional streaming SHA validation; bounded one-job engine"
+        "f5521ee,86d5c71: pinned native runtime installer SHA/ABI/version; required model files + optional streaming SHA validation; bounded one-job engine",
+        "a39f73b,d6e399e: resident FunASR CPU worker, explicit checkpoint and bounded process lifecycle; real toolkit probe passed",
+        "10e987e: resident Qwen with async drain/shutdown, failure invalidation and per-clip file-signature validation; independent spec/quality reviews passed; reviewer rerun66/66."
       ],
-      "remaining": "Actual model downloads/registration/readiness, persistent model pool, damaged checkpoint coverage and full resource policy remain. Actual Qwen successful ASR unverified."
+      "remaining": "Model registration/readiness UI, full download/resource manager and damaged real checkpoint coverage remain. Qwen short synthetic ASR now succeeds; full quality acceptance remains."
     },
     {
       "id": "FR-002",
@@ -109,9 +111,12 @@
       "title": "可切换Qwen/FunASR引擎",
       "status": "partial",
       "evidence": [
-        "f5521ee,86d5c71: Qwen offline adapter and MeetingASRCheck; parent47/47 tests, build and actual runtime1.13.7 probe passed"
+        "f5521ee,86d5c71: Qwen offline adapter and MeetingASRCheck; parent47/47 tests, build and actual runtime1.13.7 probe passed",
+        "a39f73b,d6e399e: FunASR worker with real pipe lifecycle tests and actual1.4.16CPU import probe; Qwen verified checkpoint actual3synthetic-language cold-load results in docs/verification/qwen-synthetic-smoke-20261015.json",
+        "Real FunASR SenseVoiceSmall CPU via Swift->production NDJSON worker: zh/en/yue same synthetic WAVs succeeded with same worker PID; checkpoint SHA verified. docs/verification/funasr-synthetic-smoke-20261015.json",
+        "10e987e: resident Qwen with async drain/shutdown, failure invalidation and per-clip file-signature validation; independent spec/quality reviews passed; reviewer rerun66/66."
       ],
-      "remaining": "Actual Qwen checkpoint transcription/quality/latency, FunASR worker, live segmentation/resident pool, capability tests and app routing remain. Native calls cannot be interrupted mid-call."
+      "remaining": "live segmentation, app routing and same-audio quality/latency acceptance remain. Native Qwen cancellation waits for native call completion. Resident core verified; end-to-end capture and live-session orchestration remain."
     },
     {
       "id": "FR-015",
@@ -169,9 +174,11 @@
       "title": "可恢复",
       "status": "partial",
       "evidence": [
-        "f5521ee,86d5c71: bounded job/cancellation/native cleanup and malformed model/ABI failure tests"
+        "f5521ee,86d5c71: bounded job/cancellation/native cleanup and malformed model/ABI failure tests",
+        "a39f73b,d6e399e: tested worker reaping/restart/cancel/deadlines, pipe SIGPIPE protection",
+        "10e987e: resident Qwen with async drain/shutdown, failure invalidation and per-clip file-signature validation; independent spec/quality reviews passed; reviewer rerun66/66."
       ],
-      "remaining": "Capture and durable saves, sleep/device/disk failure recovery, worker crash handling and full workflow recovery remain."
+      "remaining": "Capture and durable saves, sleep/device/disk failure recovery and full workflow recovery remain."
     },
     {
       "id": "NFR-004",
@@ -199,9 +206,11 @@
       "title": "能力真实",
       "status": "partial",
       "evidence": [
-        "Native CLI output explicitly symbol-version-probe-only; fixture tests not counted as actual ASR; full spec/quality reviews approved"
+        "Native CLI output explicitly symbol-version-probe-only; fixture tests not counted as actual ASR; Task3A spec/quality reviews approved",
+        "Actual Qwen checkpoint short synthetic zh/en/yue inference succeeds; cold-load integrity manifest passed. Results are smoke evidence only, not full quality or streaming acceptance.",
+        "FunASR actual checkpoint3short clips succeeded; English omitted currency unit, so model quality is not assumed from successful inference."
       ],
-      "remaining": "Real checkpoint ASR and per-profile streaming/time/hotword/speaker capability evidence remain. No quality/latency claim yet."
+      "remaining": "Per-profile streaming/time/hotword/speaker capability, real meeting quality, latency/resource baseline and complete app acceptance remain."
     },
     {
       "id": "NFR-008",
