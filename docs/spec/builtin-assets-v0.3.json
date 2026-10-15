@@ -96,13 +96,15 @@
     }
   ],
   "acceptance_pending": [
-    "Full model load/readiness and concurrent resource budgets, not only asset integrity",
-    "Owned embedding-runtime lifecycle and app retrieval integration",
+    "Full concurrent resource budgets and persisted profile capabilities, not only asset integrity",
+    "Persistent index/source/RAG and normal application retrieval UI",
     "Complete GUI settings/cancellation/relaunch acceptance",
     "Actual full Chinese meeting and RAG evaluation"
   ],
   "weights_committed_to_git": false,
   "notes": "Only SenseVoice, Google embedding and their runtimes are default assets. Existing Qwen download remains optional; no Python/FunASR or local generation model required for first use.",
   "managed_asset_implementation": "5a0e003",
-  "managed_asset_proof": "managed-defaults-smoke-20261015.json"
+  "managed_asset_proof": "managed-defaults-smoke-20261015.json",
+  "managed_embedding_implementation": "011dd954247d7dd64e599e679a864b9de576b373",
+  "managed_embedding_proof": "managed-embedding-service-smoke-20261015.json"
 }

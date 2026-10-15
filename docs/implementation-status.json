@@ -16,9 +16,10 @@
         "Task4A independent source spec and code-quality reviews passed. Parent73Swift+10Python, release/plist/signature passed; GUI clicked-flow remains pending, see desktop-entry-verification-20261015.json.",
         "v0.3 default Google EmbeddingGemma300M GGUF downloaded621867104bytes, fixedSHA passed; actual Chinese query/document768d retrieval smoke passed. App-managed install/readiness remains pending.",
         "4adba38: native SenseVoice INT8 adapter and explicit CLI; independent spec/quality approved, parent126/126 and swift build passed. Official archive and payload SHA verified; actual zh/en/yue speech and cold/reuse/shutdown/reload proven in sensevoice-synthetic-smoke-20261015.json. Digital silence hallucinated 我.; product guard/VAD still pending.",
-        "5a0e003: managed immutable default catalog, streamed seed/hash/download and fixed whitelist extraction, cancel/retry/atomic activation with old-version preservation;139 tests and independent spec/quality passed. Complete default.app release/plist/strict signature passed. Real bundled-seed install and all3 official archives via loopback download/extract/hash succeeded, with production SenseVoice Mandarin and digital-silence guard. Native GUI default-ready/import/transcribe/export and export bytes verified; see managed-defaults-smoke-20261015.json."
+        "5a0e003: managed immutable default catalog, streamed seed/hash/download and fixed whitelist extraction, cancel/retry/atomic activation with old-version preservation;139 tests and independent spec/quality passed. Complete default.app release/plist/strict signature passed. Real bundled-seed install and all3 official archives via loopback download/extract/hash succeeded, with production SenseVoice Mandarin and digital-silence guard. Native GUI default-ready/import/transcribe/export and export bytes verified; see managed-defaults-smoke-20261015.json.",
+        "011dd95: owned authenticated offline CPU embedding helper and production client, pinned managed model/runtime, token preflight <=2046,768 finite normalized vectors, bounded batch/HTTP/total deadlines, reuse/cancel/shutdown UUID-safe drain. Parent144/144, actual production Chinese ranking + second resident request and cleanup passed; full default.app release/plist/strict signature passed. Independent spec and quality reviews passed."
       ],
-      "remaining": "Owned embedding service/client and Chinese retrieval in normal app, model/index isolation, loaded capability readiness and full resource/error/fresh-user acceptance remain. Default local model/runtime preparation and path-free short ASR now implemented."
+      "remaining": "Persistent index/source/RAG and normal app Chinese retrieval UI, model/index-space isolation, persisted profile readiness and full resource/error/fresh-user acceptance remain. Path-free default assets, short ASR and controlled embedding core are verified."
     },
     {
       "id": "FR-002",
@@ -197,16 +198,19 @@
         "f5521ee,86d5c71: bounded job/cancellation/native cleanup and malformed model/ABI failure tests",
         "a39f73b,d6e399e: tested worker reaping/restart/cancel/deadlines, pipe SIGPIPE protection",
         "10e987e: resident Qwen with async drain/shutdown, failure invalidation and per-clip file-signature validation; independent spec/quality reviews passed; reviewer rerun66/66.",
-        "5a0e003: managed immutable default catalog, streamed seed/hash/download and fixed whitelist extraction, cancel/retry/atomic activation with old-version preservation;139 tests and independent spec/quality passed. Complete default.app release/plist/strict signature passed. Real bundled-seed install and all3 official archives via loopback download/extract/hash succeeded, with production SenseVoice Mandarin and digital-silence guard. Native GUI default-ready/import/transcribe/export and export bytes verified; see managed-defaults-smoke-20261015.json."
+        "5a0e003: managed immutable default catalog, streamed seed/hash/download and fixed whitelist extraction, cancel/retry/atomic activation with old-version preservation;139 tests and independent spec/quality passed. Complete default.app release/plist/strict signature passed. Real bundled-seed install and all3 official archives via loopback download/extract/hash succeeded, with production SenseVoice Mandarin and digital-silence guard. Native GUI default-ready/import/transcribe/export and export bytes verified; see managed-defaults-smoke-20261015.json.",
+        "011dd95: owned authenticated offline CPU embedding helper and production client, pinned managed model/runtime, token preflight <=2046,768 finite normalized vectors, bounded batch/HTTP/total deadlines, reuse/cancel/shutdown UUID-safe drain. Parent144/144, actual production Chinese ranking + second resident request and cleanup passed; full default.app release/plist/strict signature passed. Independent spec and quality reviews passed."
       ],
       "remaining": "Capture and durable saves, sleep/device/disk failure recovery and full workflow recovery remain."
     },
     {
       "id": "NFR-004",
       "title": "执行位置",
-      "status": "not_started",
-      "evidence": [],
-      "remaining": "Implement and verify full requirement and acceptance criteria."
+      "status": "partial",
+      "evidence": [
+        "011dd95: owned authenticated offline CPU embedding helper and production client, pinned managed model/runtime, token preflight <=2046,768 finite normalized vectors, bounded batch/HTTP/total deadlines, reuse/cancel/shutdown UUID-safe drain. Parent144/144, actual production Chinese ranking + second resident request and cleanup passed; full default.app release/plist/strict signature passed. Independent spec and quality reviews passed."
+      ],
+      "remaining": "Default owned embedding CPU helper is directly controlled and verified local; all task routes, LAN/cloud provider actual location, proxy-cloud detection and complete offline/data-scope acceptance remain."
     },
     {
       "id": "NFR-005",
@@ -221,7 +225,8 @@
       "status": "partial",
       "evidence": [
         "e557ae0: bounded<=30second desktop input, max1MB file read, one active job including cleanup; 73tests passed.",
-        "Task4A independent source spec and code-quality reviews passed. Parent73Swift+10Python, release/plist/signature passed; GUI clicked-flow remains pending, see desktop-entry-verification-20261015.json."
+        "Task4A independent source spec and code-quality reviews passed. Parent73Swift+10Python, release/plist/signature passed; GUI clicked-flow remains pending, see desktop-entry-verification-20261015.json.",
+        "011dd95: owned authenticated offline CPU embedding helper and production client, pinned managed model/runtime, token preflight <=2046,768 finite normalized vectors, bounded batch/HTTP/total deadlines, reuse/cancel/shutdown UUID-safe drain. Parent144/144, actual production Chinese ranking + second resident request and cleanup passed; full default.app release/plist/strict signature passed. Independent spec and quality reviews passed."
       ],
       "remaining": "Long-meeting and minimum-hardware concurrent capture/ASR/LLM budgets and benchmarks remain."
     },
@@ -234,7 +239,8 @@
         "Actual Qwen checkpoint short synthetic zh/en/yue inference succeeds; cold-load integrity manifest passed. Results are smoke evidence only, not full quality or streaming acceptance.",
         "FunASR actual checkpoint3short clips succeeded; English omitted currency unit, so model quality is not assumed from successful inference.",
         "Actual SenseVoice INT8 synthetic speech succeeds, but digital silence yields 我. and English duplicates tomorrowrow. These raw negative results are retained; successful execution does not establish model quality.",
-        "5a0e003: product pipeline rejects exact digital-zero PCM before ASR, empty result/provenance tested for every backend and actual default path. This is not general VAD/noise handling or a corpus quality claim."
+        "5a0e003: product pipeline rejects exact digital-zero PCM before ASR, empty result/provenance tested for every backend and actual default path. This is not general VAD/noise handling or a corpus quality claim.",
+        "011dd95: owned authenticated offline CPU embedding helper and production client, pinned managed model/runtime, token preflight <=2046,768 finite normalized vectors, bounded batch/HTTP/total deadlines, reuse/cancel/shutdown UUID-safe drain. Parent144/144, actual production Chinese ranking + second resident request and cleanup passed; full default.app release/plist/strict signature passed. Independent spec and quality reviews passed."
       ],
       "remaining": "Per-profile streaming/time/hotword/speaker capability, real meeting quality, latency/resource baseline and complete app acceptance remain."
     },
