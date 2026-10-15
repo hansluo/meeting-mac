@@ -2,8 +2,10 @@ import Foundation
 import Observation
 
 public struct TranscriptionConfiguration: Codable, Equatable, Sendable {
-    public enum Engine: String, Codable, CaseIterable, Sendable { case qwen = "Qwen", funASR = "FunASR" }
-    public var engine: Engine = .qwen
+    public enum Engine: String, Codable, CaseIterable, Sendable { case senseVoice = "SenseVoice", qwen = "Qwen", funASR = "FunASR" }
+    public var engine: Engine = .senseVoice
+    public var senseVoiceModel = ""
+    public var senseVoiceRuntime = ""
     public var qwenModel = ""
     public var qwenRuntime = ""
     public var qwenRevision = ""
@@ -13,7 +15,27 @@ public struct TranscriptionConfiguration: Codable, Equatable, Sendable {
     public var checkpoint = "model.pt"
     public var funRevision = ""
     public init() {}
+    private enum CodingKeys: String, CodingKey {
+        case engine, senseVoiceModel, senseVoiceRuntime, qwenModel, qwenRuntime, qwenRevision, python, worker, funModel, checkpoint, funRevision
+    }
+    public init(from decoder: Decoder) throws {
+        self.init()
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        engine = try c.decodeIfPresent(Engine.self, forKey: .engine) ?? .senseVoice
+        senseVoiceModel = try c.decodeIfPresent(String.self, forKey: .senseVoiceModel) ?? ""
+        senseVoiceRuntime = try c.decodeIfPresent(String.self, forKey: .senseVoiceRuntime) ?? ""
+        qwenModel = try c.decodeIfPresent(String.self, forKey: .qwenModel) ?? ""
+        qwenRuntime = try c.decodeIfPresent(String.self, forKey: .qwenRuntime) ?? ""
+        qwenRevision = try c.decodeIfPresent(String.self, forKey: .qwenRevision) ?? ""
+        python = try c.decodeIfPresent(String.self, forKey: .python) ?? ""
+        worker = try c.decodeIfPresent(String.self, forKey: .worker) ?? ""
+        funModel = try c.decodeIfPresent(String.self, forKey: .funModel) ?? ""
+        checkpoint = try c.decodeIfPresent(String.self, forKey: .checkpoint) ?? "model.pt"
+        funRevision = try c.decodeIfPresent(String.self, forKey: .funRevision) ?? ""
+    }
     public var missingConfiguration: String? {
+        if engine == .senseVoice { return senseVoiceModel.isEmpty || senseVoiceRuntime.isEmpty ? "默认本地模型尚未准备完成。" : nil }
+
         let required: [(String, String)] = engine == .qwen
             ? [(qwenModel, "Qwen 模型目录"), (qwenRuntime, "sherpa 运行库 dylib"), (qwenRevision, "Qwen 模型版本")]
             : [(python, "Python 可执行文件"), (worker, "FunASR worker 脚本"), (funModel, "FunASR 模型目录"), (checkpoint, "checkpoint 文件名"), (funRevision, "FunASR 模型版本")]
@@ -73,11 +95,15 @@ public struct TranscriptionOutput: Sendable {
 public enum LocalTranscription {
     /// Called by the detached job, never by a view's main-actor file-reading path.
     public static func run(_ configuration: TranscriptionConfiguration, _ url: URL) async throws -> TranscriptionOutput {
-        if let missing = configuration.missingConfiguration { throw ConfigurationError.missing(missing) }
         try Task.checkCancellation()
-        let paths = configuration.engine == .qwen ? [configuration.qwenModel, configuration.qwenRuntime]
-            : [configuration.python, configuration.worker, configuration.funModel]
-        guard url.isFileURL, paths.allSatisfy({ $0.hasPrefix("/") && !$0.contains("\0") }) else {
+        guard url.isFileURL else { throw ConfigurationError.missing("音频必须使用本地绝对路径，请重新浏览选择。") }
+        let paths: [String]
+        switch configuration.engine {
+        case .senseVoice: paths = [configuration.senseVoiceModel, configuration.senseVoiceRuntime]
+        case .qwen: paths = [configuration.qwenModel, configuration.qwenRuntime]
+        case .funASR: paths = [configuration.python, configuration.worker, configuration.funModel]
+        }
+        guard paths.filter({ !$0.isEmpty }).allSatisfy({ $0.hasPrefix("/") && !$0.contains("\0") }) else {
             throw ConfigurationError.missing("音频、模型和运行时必须使用本地绝对路径，请重新浏览选择。")
         }
         let values = try url.resourceValues(forKeys: [.fileSizeKey, .isRegularFileKey])
@@ -90,7 +116,24 @@ public enum LocalTranscription {
         let samples = try QwenPCM16WAV.parse(data)
         try QwenASREngine.validatePCM(samples, sampleRate: 16000, maximumSeconds: 30)
         try Task.checkCancellation()
+        // A zero signal contains no speech. Do not let model hallucinations become a transcript.
+        // This exact guard is not a general VAD or a claim about background-noise handling.
+        if samples.allSatisfy({ $0 == 0 }) {
+            return .init(text: "", provenance: "数字静音 · 未调用 ASR 模型\n音频：\(samples.count) samples / 16000 Hz")
+        }
+        if let missing = configuration.missingConfiguration { throw ConfigurationError.missing(missing) }
         switch configuration.engine {
+        case .senseVoice:
+            let asset = BuiltinAssetCatalog.assets.first { $0.id == "sensevoice-int8" }!
+            let hashes = Dictionary(uniqueKeysWithValues: asset.files.map { ($0.path, $0.sha256) })
+            let engine = SenseVoiceASREngine(configuration: .init(modelDirectory: URL(fileURLWithPath: configuration.senseVoiceModel), runtimePath: configuration.senseVoiceRuntime, revision: "official-int8-2024-07-17", expectedSHA256: hashes))
+            let outcome: Result<SenseVoiceASRResult, Error>
+            do { outcome = .success(try await engine.transcribe(samples: samples, sampleRate: 16000)) }
+            catch { outcome = .failure(error) }
+            try await engine.shutdown()
+            let r = try outcome.get()
+            return .init(text: r.text, provenance: "SenseVoice INT8 · 本地 · sherpa-onnx \(r.runtimeVersion)\n模型：\(r.revision) · SHA256 校验通过\n音频：\(r.sampleCount) samples / \(r.sampleRate) Hz · 耗时 \(String(format: "%.2f", r.elapsedSeconds)) 秒")
+
         case .qwen:
             let engine = QwenASREngine(configuration: .init(modelDirectory: URL(fileURLWithPath: configuration.qwenModel), runtimePath: configuration.qwenRuntime, revision: configuration.qwenRevision))
             let outcome: Result<QwenASRResult, Error>
@@ -129,6 +172,7 @@ public enum LocalTranscription {
             default: return "Qwen 运行失败：\(error)。请检查模型目录、版本与 sherpa-onnx 1.13.7 运行库。"
             }
         }
+        if let error = error as? SenseVoiceASRError { return "默认本地转写失败：\(error)。请重新准备内置模型后重试。" }
         if let error = error as? FunASRWorkerError { return "FunASR 运行失败：\(error)。请检查 Python 环境、worker、模型目录、checkpoint 与版本。" }
         return "无法完成转写：\(error.localizedDescription)"
     }

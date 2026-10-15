@@ -76,6 +76,7 @@ final class TranscriptionJobTests: XCTestCase {
     }
     func testProductionRejectsNonFileURLAndRelativeModelPath() async {
         var configuration = TranscriptionConfiguration()
+        configuration.engine = .qwen
         configuration.qwenModel = "relative-model"
         configuration.qwenRuntime = "/runtime.dylib"
         configuration.qwenRevision = "revision"
@@ -90,6 +91,7 @@ final class TranscriptionJobTests: XCTestCase {
     }
     func testProductionRejectsOversizedLocalFileBeforeModelLoad() async throws {
         var configuration = TranscriptionConfiguration()
+        configuration.engine = .qwen
         configuration.qwenModel = "/model"
         configuration.qwenRuntime = "/runtime.dylib"
         configuration.qwenRevision = "revision"
@@ -98,6 +100,31 @@ final class TranscriptionJobTests: XCTestCase {
         defer { try? FileManager.default.removeItem(at: url) }
         do { _ = try await LocalTranscription.run(configuration, url); XCTFail() }
         catch { XCTAssertEqual(error as? QwenASRError, .audioTooLong) }
+    }
+    func testDigitalSilenceSkipsEveryEngineEvenWhenRuntimeIsInvalid() async throws {
+        let url = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString + ".wav")
+        defer { try? FileManager.default.removeItem(at: url) }
+        var data = Data("RIFF".utf8)
+        func u32(_ value: UInt32) { var n = value.littleEndian; withUnsafeBytes(of: &n) { data.append(contentsOf: $0) } }
+        func u16(_ value: UInt16) { var n = value.littleEndian; withUnsafeBytes(of: &n) { data.append(contentsOf: $0) } }
+        u32(36 + 32000); data.append(Data("WAVEfmt ".utf8)); u32(16); u16(1); u16(1); u32(16000); u32(32000); u16(2); u16(16)
+        data.append(Data("data".utf8)); u32(32000); data.append(Data(repeating: 0, count: 32000))
+        try data.write(to: url)
+        for engine in TranscriptionConfiguration.Engine.allCases {
+            var config = TranscriptionConfiguration(); config.engine = engine
+            let output = try await LocalTranscription.run(config, url)
+            XCTAssertEqual(output.text, "")
+            XCTAssertTrue(output.provenance.contains("数字静音"))
+            XCTAssertTrue(output.provenance.contains("未调用"))
+        }
+    }
+    func testPreviousSettingsDecodeRetainsAdvancedPathsWithoutSelectingThemForNewUsers() throws {
+        let old = Data(#"{"engine":"Qwen","qwenModel":"/old/model","qwenRevision":"old"}"#.utf8)
+        let configuration = try JSONDecoder().decode(TranscriptionConfiguration.self, from: old)
+        XCTAssertEqual(configuration.engine, .qwen)
+        XCTAssertEqual(configuration.qwenModel, "/old/model")
+        XCTAssertEqual(configuration.senseVoiceModel, "")
+        XCTAssertEqual(TranscriptionConfiguration().engine, .senseVoice)
     }
     @MainActor func testEmptyActualTextHasExplicitStatus() async {
         let job = TranscriptionJob()

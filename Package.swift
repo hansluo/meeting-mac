@@ -9,7 +9,8 @@ let package = Package(
                .executable(name: "MeetingMacApp", targets: ["MeetingMacApp"])],
     targets: [
         .target(name: "CSherpaBridge"),
-        .target(name: "MeetingCore", dependencies: ["CSherpaBridge"]),
+        .target(name: "CManagedArchive", linkerSettings: [.linkedLibrary("archive")]),
+        .target(name: "MeetingCore", dependencies: ["CSherpaBridge", "CManagedArchive"], resources: [.process("Resources")]),
         .executableTarget(name: "MeetingASRCheck", dependencies: ["MeetingCore"]),
         .executableTarget(name: "MeetingMacApp", dependencies: ["MeetingCore"]),
         .testTarget(name: "MeetingCoreTests", dependencies: ["MeetingCore"])

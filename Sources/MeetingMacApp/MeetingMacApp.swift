@@ -5,12 +5,14 @@ import MeetingCore
 
 @MainActor final class AppDelegate: NSObject, NSApplicationDelegate {
     var job: TranscriptionJob?
+    var models: BuiltinModelPreparation?
     private var terminating = false
     func applicationShouldTerminate(_ sender: NSApplication) -> NSApplication.TerminateReply {
         guard !terminating else { return .terminateLater }
         terminating = true
         Task {
             await job?.shutdown()
+            await models?.shutdown()
             sender.reply(toApplicationShouldTerminate: true)
         }
         return .terminateLater
@@ -21,11 +23,12 @@ import MeetingCore
 @main struct MeetingMacApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) private var delegate
     @State private var job = TranscriptionJob()
+    @State private var models = BuiltinModelPreparation(store: ManagedAssetStore(seedRoot: Bundle.main.resourceURL?.appendingPathComponent("BuiltinModels")))
     var body: some Scene {
         Window("Meeting Mac", id: "workspace") {
-            WorkspaceView(job: job)
-                .onAppear { delegate.job = job; NSApp.setActivationPolicy(.regular); NSApp.activate(ignoringOtherApps: true) }
-                .onDisappear { job.cancel() }
+            WorkspaceView(job: job, models: models)
+                .onAppear { delegate.job = job; delegate.models = models; NSApp.setActivationPolicy(.regular); NSApp.activate(ignoringOtherApps: true) }
+                .onDisappear { job.cancel(); models.cancel() }
         }
         .defaultSize(width: 1000, height: 740)
         .commands { CommandGroup(replacing: .newItem) {} }
@@ -34,16 +37,21 @@ import MeetingCore
 
 @MainActor struct WorkspaceView: View {
     let job: TranscriptionJob
+    let models: BuiltinModelPreparation
     @State private var configuration = Self.loadConfiguration()
     @State private var audioURL: URL?
     @State private var showSettings = false
     @State private var exportError: String?
-    private static let settingsKey = "MeetingMac.transcription.v1"
+    private static let settingsKey = "MeetingMac.transcription.v2"
     private static func loadConfiguration() -> TranscriptionConfiguration {
         if let data = UserDefaults.standard.data(forKey: settingsKey),
            let saved = try? JSONDecoder().decode(TranscriptionConfiguration.self, from: data) { return saved }
-        var initial = TranscriptionConfiguration()
-        initial.worker = Bundle.main.resourceURL?.appendingPathComponent("FunASR/worker.py").path ?? ""
+        // Preserve the old optional paths, while migrating the old default to built-in SenseVoice.
+        var initial = UserDefaults.standard.data(forKey: "MeetingMac.transcription.v1")
+            .flatMap { try? JSONDecoder().decode(TranscriptionConfiguration.self, from: $0) } ?? TranscriptionConfiguration()
+        initial.engine = .senseVoice
+        initial.senseVoiceModel = ""; initial.senseVoiceRuntime = ""
+        if initial.worker.isEmpty { initial.worker = Bundle.main.resourceURL?.appendingPathComponent("FunASR/worker.py").path ?? "" }
         let runtime = Bundle.main.bundleURL.appendingPathComponent("Contents/Frameworks/libsherpa-onnx-c-api.dylib")
         if FileManager.default.fileExists(atPath: runtime.path) { initial.qwenRuntime = runtime.path }
         return initial
@@ -57,6 +65,22 @@ import MeetingCore
                 }
                 Spacer()
                 Button("模型设置", systemImage: "slider.horizontal.3") { showSettings = true }
+            }
+            GroupBox("内置本地模型") {
+                VStack(alignment: .leading, spacing: 10) {
+                    Text("SenseVoice INT8 语音转写 · Google EmbeddingGemma 资料向量")
+                    Text(models.status).font(.callout).foregroundStyle(.secondary)
+                    if models.isBusy {
+                        HStack {
+                            if let progress = models.progress { ProgressView(value: progress).frame(maxWidth: 340) }
+                            else { ProgressView().controlSize(.small) }
+                            Button("取消准备") { models.cancel() }
+                        }
+                    } else if models.configuration == nil {
+                        Button("准备内置模型") { models.start() }.buttonStyle(.borderedProminent)
+                    }
+                    if let error = models.errorMessage { Text(error).font(.callout).foregroundStyle(.red).textSelection(.enabled) }
+                }.padding(8).frame(maxWidth: .infinity, alignment: .leading)
             }
             GroupBox {
                 VStack(alignment: .leading, spacing: 14) {
@@ -74,12 +98,19 @@ import MeetingCore
                             Button("取消") { job.cancel() }
                         } else {
                             Button("开始转写") {
-                                if let audioURL { job.start(configuration: configuration, audioURL: audioURL) }
+                                if let audioURL {
+                                    var snapshot = configuration
+                                    if snapshot.engine == .senseVoice, let builtIn = models.configuration {
+                                        snapshot.senseVoiceModel = builtIn.senseVoiceModel
+                                        snapshot.senseVoiceRuntime = builtIn.senseVoiceRuntime
+                                    }
+                                    job.start(configuration: snapshot, audioURL: audioURL)
+                                }
                             }.buttonStyle(.borderedProminent)
-                                .disabled(audioURL == nil || configuration.missingConfiguration != nil)
+                                .disabled(audioURL == nil || (configuration.engine == .senseVoice ? models.configuration == nil : configuration.missingConfiguration != nil))
                         }
                     }
-                    if let missing = configuration.missingConfiguration {
+                    if configuration.engine != .senseVoice, let missing = configuration.missingConfiguration {
                         Label(missing, systemImage: "exclamationmark.circle").font(.callout).foregroundStyle(.orange)
                     }
                     HStack(spacing: 10) {
@@ -116,6 +147,7 @@ import MeetingCore
                 .font(.caption).foregroundStyle(.secondary)
         }
         .padding(26).frame(minWidth: 820, minHeight: 620)
+        .task { if models.configuration == nil, !models.isBusy { models.start() } }
         .sheet(isPresented: $showSettings) { SettingsView(configuration: $configuration) }
         .onChange(of: configuration) { _, value in
             if let data = try? JSONEncoder().encode(value) { UserDefaults.standard.set(data, forKey: Self.settingsKey) }
@@ -147,10 +179,15 @@ import MeetingCore
     var body: some View {
         VStack(alignment: .leading, spacing: 18) {
             HStack { Text("模型设置").font(.title2.bold()); Spacer(); Button("完成") { dismiss() }.keyboardShortcut(.defaultAction) }
-            Text("设置仅保存在此 Mac。模型与 Python 环境需预先安装；应用不会下载模型或启动服务。任务开始后使用当时的设置。")
+            Text("默认 SenseVoice 与 Google 向量模型由应用自动准备，无需填写路径。以下是可选的高级引擎设置；任务使用开始时的设置。")
                 .font(.callout).foregroundStyle(.secondary)
             ScrollView {
                 VStack(alignment: .leading, spacing: 20) {
+                    GroupBox("默认模型") {
+                        Text("SenseVoice INT8 用于本地转写，EmbeddingGemma 300M 用于文字向量。模型完整性会校验；本地转写不上传音频。向量模型已准备不代表资料问答功能已完成。")
+                            .font(.callout).frame(maxWidth: .infinity, alignment: .leading).padding(8)
+                    }
+                    DisclosureGroup("高级：可选 Qwen / FunASR 引擎") {
                     GroupBox("Qwen · sherpa-onnx 1.13.7") {
                         VStack(spacing: 12) {
                             pathRow("模型目录", path: $configuration.qwenModel, directory: true)
@@ -170,6 +207,7 @@ import MeetingCore
                             Text("Python 需已安装兼容的 FunASR 依赖。Checkpoint 填模型目录内的相对文件名，例如 model.pt。")
                                 .font(.caption).foregroundStyle(.secondary).frame(maxWidth: .infinity, alignment: .leading)
                         }.padding(8)
+                    }
                     }
                 }
             }
