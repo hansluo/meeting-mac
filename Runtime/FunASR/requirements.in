@@ -1,0 +1,4 @@
+# CPU toolkit, paired PyTorch packages for macOS arm64 / Python 3.12.
+funasr==1.4.16
+torch==2.8.0
+torchaudio==2.8.0

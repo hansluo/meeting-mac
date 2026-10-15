@@ -1,0 +1,59 @@
+{
+  "content": "明天下午三点讨论项目预算，总金额是两万五千元，请王明准备方案。",
+  "discovered_models": [
+    "meeting-qwen3-0.6b-q4"
+  ],
+  "elapsed_seconds": 0.356907958,
+  "finish_reason": "stop",
+  "input": "明天下午三点讨论项目预算，总金额是两万五千元，请王明准备方案。",
+  "returned_model": "meeting-qwen3-0.6b-q4",
+  "scope": "Controlled actual local Qwen generation through production ChatClient, not app UI or permanent profile readiness",
+  "selected_model": "meeting-qwen3-0.6b-q4",
+  "usage": {
+    "completion_tokens": 21,
+    "prompt_tokens": 67,
+    "total_tokens": 88
+  },
+  "hardware": "Apple M4,16GiB RAM,macOS26.6.2",
+  "runtime": {
+    "source": "https://github.com/ollama/ollama/releases/tag/v0.40.4",
+    "asset": "ollama-darwin.tgz",
+    "asset_id": 638733391,
+    "asset_size": 167884528,
+    "asset_sha256": "a4ceae4b2aaf18df37ebcbfb56ba3a37a87838631112d66c2be07268693c8d58",
+    "binary": "bundled llama-server, not the Ollama daemon",
+    "version": "0.6.0-dev build1 commitb42b7e6d3",
+    "binary_sha256": "5f42e3e4457e869a152e2a8ee52084935b22d6c54c2077a44cb1d495d9eba18d"
+  },
+  "model": {
+    "source": "https://registry.ollama.ai/v2/library/qwen3/manifests/0.6b",
+    "manifest_sha256": "7df6b6e09427a769808717c0a93cadc4ae99ed4eb8bf5ca557c90846becea435",
+    "blob_sha256": "7f4030143c1c477224c5434f8272c662a8b042079a0a584f0a27a1684fe2e1fa",
+    "bytes": 522640096,
+    "format": "GGUF Q4_K_M",
+    "registered_tag": "qwen3:0.6b",
+    "served_alias": "meeting-qwen3-0.6b-q4"
+  },
+  "service": {
+    "host": "127.0.0.1",
+    "port": 50686,
+    "ctx_size": 4096,
+    "parallel": 1,
+    "threads": 4,
+    "reasoning": "off configured on controlled server; no private request parameter",
+    "offline_flag": true,
+    "environment": "only PATH supplied; no credentials/home override",
+    "process_owned": true,
+    "terminated_after_probe": true,
+    "post_stop_health": "connection_refused",
+    "persistent_app_configuration_changed": false
+  },
+  "limitations": [
+    "One short synthetic prompt, not long-meeting summary quality",
+    "Not a supported-model default or hardware recommendation",
+    "No actual SSE/embedding/tool-call acceptance",
+    "Preflight used ephemeral explicit verified route fields for a controlled owned process; never committed app readiness",
+    "Runtime/model bytes and environments stay ignored; no runtime installation or user daemon/account changes",
+    "Device placement not recorded beyond Apple M4 host; no CPU/GPU benchmark claim"
+  ]
+}

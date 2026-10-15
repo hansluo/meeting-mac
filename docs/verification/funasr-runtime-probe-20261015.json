@@ -1,0 +1,27 @@
+{
+  "exit_code": 0,
+  "records": [
+    {
+      "version": 1,
+      "job_id": null,
+      "type": "started"
+    },
+    {
+      "version": 1,
+      "job_id": "43705610-53a7-4ff1-a589-282727b32228",
+      "type": "probe",
+      "package_version": "1.4.16",
+      "device": "cpu",
+      "model_loaded": false,
+      "asr_verified": false,
+      "capabilities": {
+        "batch": true,
+        "native_streaming": false,
+        "hotwords": false,
+        "word_alignment": false,
+        "diarization": false
+      }
+    }
+  ],
+  "stderr_empty": true
+}

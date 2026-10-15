@@ -1,0 +1,14 @@
+{
+  "decodeSeconds" : 0.455976,
+  "elapsedSeconds" : 2.370646875,
+  "integrityManifestVerified" : true,
+  "loadSeconds" : 1.914667917,
+  "modelDirectory" : "\/Users\/hansluo\/Desktop\/meeting-mac\/models\/qwen3-asr\/sherpa-onnx-qwen3-asr-0.6B-int8-2026-03-25",
+  "reusedRecognizer" : false,
+  "revision" : "sherpa-onnx-qwen3-asr-0.6B-int8-2026-03-25",
+  "runtimePath" : "\/Users\/hansluo\/Desktop\/meeting-mac\/.build\/native\/sherpa-onnx-v1.13.7-osx-arm64-shared-no-tts-lib\/lib\/libsherpa-onnx-c-api.dylib",
+  "runtimeVersion" : "1.13.7",
+  "sampleCount" : 80000,
+  "sampleRate" : 16000,
+  "text" : ""
+}

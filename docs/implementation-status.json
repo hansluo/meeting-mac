@@ -1,26 +1,44 @@
 {
-  "goal": "Complete Meeting Mac v0.2 and deliver to hansluo/meeting-mac",
+  "goal": "Complete Meeting Mac v0.3: full Foresight workflows and Chinese UI, auto-prepared local Google embedding + MAC-record default SenseVoice INT8 ASR, default DeepSeek generation",
   "requirements": [
     {
       "id": "FR-001",
       "title": "模型清单、下载与资源管理",
-      "status": "not_started",
-      "evidence": [],
-      "remaining": "Implement and verify full requirement and acceptance criteria."
+      "status": "partial",
+      "evidence": [
+        "6605251 and 143bb20: explicit route core, rejects duplicate selected IDs",
+        "Tests/MeetingCoreTests/RouteResolverTests.swift: 13 behavioral cases, parent scripts/test-core.sh passed 2026-10-14",
+        "Independent spec and quality reviews approved; swift build passed",
+        "f5521ee,86d5c71: pinned native runtime installer SHA/ABI/version; required model files + optional streaming SHA validation; bounded one-job engine",
+        "a39f73b,d6e399e: resident FunASR CPU worker, explicit checkpoint and bounded process lifecycle; real toolkit probe passed",
+        "10e987e: resident Qwen with async drain/shutdown, failure invalidation and per-clip file-signature validation; independent spec/quality reviews passed; reviewer rerun66/66.",
+        "e557ae0: native explicit Qwen/FunASR settings, nonsecret persisted paths, required-field guidance. Build and first native window verified.",
+        "Task4A independent source spec and code-quality reviews passed. Parent73Swift+10Python, release/plist/signature passed; GUI clicked-flow remains pending, see desktop-entry-verification-20261015.json.",
+        "v0.3 default Google EmbeddingGemma300M GGUF downloaded621867104bytes, fixedSHA passed; actual Chinese query/document768d retrieval smoke passed. App-managed install/readiness remains pending.",
+        "4adba38: native SenseVoice INT8 adapter and explicit CLI; independent spec/quality approved, parent126/126 and swift build passed. Official archive and payload SHA verified; actual zh/en/yue speech and cold/reuse/shutdown/reload proven in sensevoice-synthetic-smoke-20261015.json. Digital silence hallucinated 我.; product guard/VAD still pending.",
+        "5a0e003: managed immutable default catalog, streamed seed/hash/download and fixed whitelist extraction, cancel/retry/atomic activation with old-version preservation;139 tests and independent spec/quality passed. Complete default.app release/plist/strict signature passed. Real bundled-seed install and all3 official archives via loopback download/extract/hash succeeded, with production SenseVoice Mandarin and digital-silence guard. Native GUI default-ready/import/transcribe/export and export bytes verified; see managed-defaults-smoke-20261015.json.",
+        "011dd95: owned authenticated offline CPU embedding helper and production client, pinned managed model/runtime, token preflight <=2046,768 finite normalized vectors, bounded batch/HTTP/total deadlines, reuse/cancel/shutdown UUID-safe drain. Parent144/144, actual production Chinese ranking + second resident request and cleanup passed; full default.app release/plist/strict signature passed. Independent spec and quality reviews passed.",
+        "d7d8a94: SQLite source snapshots/revisions/chunks/vector spaces, atomic activation with rollback/epoch and scope filtering, native TXT/MD/PDF and bounded streaming cosine. Parent157/157 + full.app release/plist/strict signature passed; independent spec/quality approved. Real SourceIndex+default Google corpus proof validates duplicate, edited-file snapshot, new revision/reopen, correct Chinese ranking, PDF page anchor and deleted/revoked/empty scope exclusion; helper stopped. See source-index-production-smoke-20261015.json."
+      ],
+      "remaining": "Normal application source/retrieval UI, persisted profile readiness and full concurrent resource/error/fresh-user acceptance remain. Controlled default assets, ASR, embedding and persistent source index core verified."
     },
     {
       "id": "FR-002",
       "title": "资料摄取与版本管理",
-      "status": "not_started",
-      "evidence": [],
-      "remaining": "Implement and verify full requirement and acceptance criteria."
+      "status": "partial",
+      "evidence": [
+        "d7d8a94: SQLite source snapshots/revisions/chunks/vector spaces, atomic activation with rollback/epoch and scope filtering, native TXT/MD/PDF and bounded streaming cosine. Parent157/157 + full.app release/plist/strict signature passed; independent spec/quality approved. Real SourceIndex+default Google corpus proof validates duplicate, edited-file snapshot, new revision/reopen, correct Chinese ranking, PDF page anchor and deleted/revoked/empty scope exclusion; helper stopped. See source-index-production-smoke-20261015.json."
+      ],
+      "remaining": "Native library import/list/detail and full GUI acceptance, progress/cancel/retry UX and explicit reimport after deletion remain. Office/OCR extensions and final file/text/page/resource limits are not established by short corpus proof."
     },
     {
       "id": "FR-003",
       "title": "资料问答与引用",
-      "status": "not_started",
-      "evidence": [],
-      "remaining": "Implement and verify full requirement and acceptance criteria."
+      "status": "partial",
+      "evidence": [
+        "d7d8a94: SQLite source snapshots/revisions/chunks/vector spaces, atomic activation with rollback/epoch and scope filtering, native TXT/MD/PDF and bounded streaming cosine. Parent157/157 + full.app release/plist/strict signature passed; independent spec/quality approved. Real SourceIndex+default Google corpus proof validates duplicate, edited-file snapshot, new revision/reopen, correct Chinese ranking, PDF page anchor and deleted/revoked/empty scope exclusion; helper stopped. See source-index-production-smoke-20261015.json."
+      ],
+      "remaining": "Scoped persisted vector retrieval core is verified; generated answers, stable citation rendering/support validation, local/cloud same-corpus acceptance and native UI remain."
     },
     {
       "id": "FR-004",
@@ -60,9 +78,11 @@
     {
       "id": "FR-009",
       "title": "来源同步与权限撤销",
-      "status": "not_started",
-      "evidence": [],
-      "remaining": "Implement and verify full requirement and acceptance criteria."
+      "status": "partial",
+      "evidence": [
+        "d7d8a94: SQLite source snapshots/revisions/chunks/vector spaces, atomic activation with rollback/epoch and scope filtering, native TXT/MD/PDF and bounded streaming cosine. Parent157/157 + full.app release/plist/strict signature passed; independent spec/quality approved. Real SourceIndex+default Google corpus proof validates duplicate, edited-file snapshot, new revision/reopen, correct Chinese ranking, PDF page anchor and deleted/revoked/empty scope exclusion; helper stopped. See source-index-production-smoke-20261015.json."
+      ],
+      "remaining": "Core source/account eligibility and revoke/delete gates verified with synthetic scopes. Calendar/Drive connectors, real account authorization/incremental sync/retries/cache retention and revoke events remain."
     },
     {
       "id": "FR-010",
@@ -81,30 +101,58 @@
     {
       "id": "FR-012",
       "title": "历史、导出、删除与诊断",
-      "status": "not_started",
-      "evidence": [],
-      "remaining": "Implement and verify full requirement and acceptance criteria."
+      "status": "partial",
+      "evidence": [
+        "e557ae0: copy/UTF8 plain text export UI implemented. Native controls observed, but actual copy/save-panel export clicks remain unverified.",
+        "Task4A independent source spec and code-quality reviews passed. Parent73Swift+10Python, release/plist/signature passed; GUI clicked-flow remains pending, see desktop-entry-verification-20261015.json.",
+        "5a0e003: managed immutable default catalog, streamed seed/hash/download and fixed whitelist extraction, cancel/retry/atomic activation with old-version preservation;139 tests and independent spec/quality passed. Complete default.app release/plist/strict signature passed. Real bundled-seed install and all3 official archives via loopback download/extract/hash succeeded, with production SenseVoice Mandarin and digital-silence guard. Native GUI default-ready/import/transcribe/export and export bytes verified; see managed-defaults-smoke-20261015.json.",
+        "d7d8a94: SQLite source snapshots/revisions/chunks/vector spaces, atomic activation with rollback/epoch and scope filtering, native TXT/MD/PDF and bounded streaming cosine. Parent157/157 + full.app release/plist/strict signature passed; independent spec/quality approved. Real SourceIndex+default Google corpus proof validates duplicate, edited-file snapshot, new revision/reopen, correct Chinese ranking, PDF page anchor and deleted/revoked/empty scope exclusion; helper stopped. See source-index-production-smoke-20261015.json."
+      ],
+      "remaining": "Native short-transcript UTF8 save-panel export now clicked and file bytes verified. Durable history, rich manifest/ZIP/audio/summary export, delete cascade and copy-content/other export acceptance remain."
     },
     {
       "id": "FR-013",
       "title": "本地生成模型发现与连接",
-      "status": "not_started",
-      "evidence": [],
-      "remaining": "Implement and verify full requirement and acceptance criteria."
+      "status": "partial",
+      "evidence": [
+        "6605251 and 143bb20: explicit route core, rejects duplicate selected IDs",
+        "Tests/MeetingCoreTests/RouteResolverTests.swift: 13 behavioral cases, parent scripts/test-core.sh passed 2026-10-14",
+        "Independent spec and quality reviews approved; swift build passed",
+        "37dd595: ChatClient real HTTP discovery and nonstream text generation",
+        "Parent scripts/test-core.sh 31/31 passed; swift build passed 2026-10-14; Task2A spec review approved",
+        "58064e7: bounded fixture startup, failed child reaped; Task2A quality review approved",
+        "Parent actual ChatClient discovery+summary generation against controlled local Qwen3 GGUF llama-server passed; exact selected model,finish_reason,usage recorded in local-qwen-generation-smoke-20261015.json. Temporary service stopped; no app readiness persisted.",
+        "eba4c95: actor-serialized atomic generation config + Keychain UUID references; rollback/shared-ref/cleanup warning/evidence revision tests; parent99/99 and real own-item Keychain roundtrip passed; independent source spec+quality approved."
+      ],
+      "remaining": "v0.3: DeepSeek preset+Keychain UI, actual user-key cloud generation, template workflows, capability tests; local LLM remains optional advanced setting."
     },
     {
       "id": "FR-014",
       "title": "可切换Qwen/FunASR引擎",
-      "status": "not_started",
-      "evidence": [],
-      "remaining": "Implement and verify full requirement and acceptance criteria."
+      "status": "partial",
+      "evidence": [
+        "f5521ee,86d5c71: Qwen offline adapter and MeetingASRCheck; parent47/47 tests, build and actual runtime1.13.7 probe passed",
+        "a39f73b,d6e399e: FunASR worker with real pipe lifecycle tests and actual1.4.16CPU import probe; Qwen verified checkpoint actual3synthetic-language cold-load results in docs/verification/qwen-synthetic-smoke-20261015.json",
+        "Real FunASR SenseVoiceSmall CPU via Swift->production NDJSON worker: zh/en/yue same synthetic WAVs succeeded with same worker PID; checkpoint SHA verified. docs/verification/funasr-synthetic-smoke-20261015.json",
+        "10e987e: resident Qwen with async drain/shutdown, failure invalidation and per-clip file-signature validation; independent spec/quality reviews passed; reviewer rerun66/66.",
+        "e557ae0: LocalTranscription dispatches explicit Qwen/FunASR production backends; parent actual Mandarin inference through both desktop adapter paths passed, bundled FunASR worker used.",
+        "Task4A independent source spec and code-quality reviews passed. Parent73Swift+10Python, release/plist/signature passed; GUI clicked-flow remains pending, see desktop-entry-verification-20261015.json.",
+        "4adba38: native SenseVoice INT8 adapter and explicit CLI; independent spec/quality approved, parent126/126 and swift build passed. Official archive and payload SHA verified; actual zh/en/yue speech and cold/reuse/shutdown/reload proven in sensevoice-synthetic-smoke-20261015.json. Digital silence hallucinated 我.; product guard/VAD still pending.",
+        "5a0e003: managed immutable default catalog, streamed seed/hash/download and fixed whitelist extraction, cancel/retry/atomic activation with old-version preservation;139 tests and independent spec/quality passed. Complete default.app release/plist/strict signature passed. Real bundled-seed install and all3 official archives via loopback download/extract/hash succeeded, with production SenseVoice Mandarin and digital-silence guard. Native GUI default-ready/import/transcribe/export and export bytes verified; see managed-defaults-smoke-20261015.json."
+      ],
+      "remaining": "Default SenseVoice path-free short-WAV production/GUI and exact digital-silence guard verified. General VAD, live segmentation, capture, optional backend GUI and full Chinese meeting quality remain."
     },
     {
       "id": "FR-015",
       "title": "音频导入、回放与重转录",
-      "status": "not_started",
-      "evidence": [],
-      "remaining": "Implement and verify full requirement and acceptance criteria."
+      "status": "partial",
+      "evidence": [
+        "f5521ee: bounded strict PCM16 mono16k WAV parser + offline CLI entry",
+        "e557ae0: short WAV native import entry and production pipeline with bounded snapshot; tests preserve prior result + source on failure/cancel; full clicked file-picker path not yet verified.",
+        "Task4A independent source spec and code-quality reviews passed. Parent73Swift+10Python, release/plist/signature passed; GUI clicked-flow remains pending, see desktop-entry-verification-20261015.json.",
+        "5a0e003: managed immutable default catalog, streamed seed/hash/download and fixed whitelist extraction, cancel/retry/atomic activation with old-version preservation;139 tests and independent spec/quality passed. Complete default.app release/plist/strict signature passed. Real bundled-seed install and all3 official archives via loopback download/extract/hash succeeded, with production SenseVoice Mandarin and digital-silence guard. Native GUI default-ready/import/transcribe/export and export bytes verified; see managed-defaults-smoke-20261015.json."
+      ],
+      "remaining": "Other audio format conversion, long-file chunking, playback, durable revisions/adoption/index invalidation and complete GUI acceptance remain."
     },
     {
       "id": "FR-016",
@@ -116,9 +164,18 @@
     {
       "id": "FR-017",
       "title": "按任务选择本地/云端模型",
-      "status": "not_started",
-      "evidence": [],
-      "remaining": "Implement and verify full requirement and acceptance criteria."
+      "status": "partial",
+      "evidence": [
+        "6605251 and 143bb20: explicit route core, rejects duplicate selected IDs",
+        "Tests/MeetingCoreTests/RouteResolverTests.swift: 13 behavioral cases, parent scripts/test-core.sh passed 2026-10-14",
+        "Independent spec and quality reviews approved; swift build passed",
+        "37dd595: ChatClient real HTTP discovery and nonstream text generation",
+        "Parent scripts/test-core.sh 31/31 passed; swift build passed 2026-10-14; Task2A spec review approved",
+        "58064e7: bounded fixture startup, failed child reaped; Task2A quality review approved",
+        "Parent actual ChatClient discovery+summary generation against controlled local Qwen3 GGUF llama-server passed; exact selected model,finish_reason,usage recorded in local-qwen-generation-smoke-20261015.json. Temporary service stopped; no app readiness persisted.",
+        "eba4c95: actor-serialized atomic generation config + Keychain UUID references; rollback/shared-ref/cleanup warning/evidence revision tests; parent99/99 and real own-item Keychain roundtrip passed; independent source spec+quality approved."
+      ],
+      "remaining": "Settings persistence, actual local/cloud task scenarios, probe invalidation, data scope and explicit LAN policy remain. HTTP rejects non-chat roles, on-device external hosts and redirects; real provider execution location remains unproven."
     },
     {
       "id": "FR-018",
@@ -130,9 +187,11 @@
     {
       "id": "NFR-001",
       "title": "数据一致",
-      "status": "not_started",
-      "evidence": [],
-      "remaining": "Implement and verify full requirement and acceptance criteria."
+      "status": "partial",
+      "evidence": [
+        "d7d8a94: SQLite source snapshots/revisions/chunks/vector spaces, atomic activation with rollback/epoch and scope filtering, native TXT/MD/PDF and bounded streaming cosine. Parent157/157 + full.app release/plist/strict signature passed; independent spec/quality approved. Real SourceIndex+default Google corpus proof validates duplicate, edited-file snapshot, new revision/reopen, correct Chinese ranking, PDF page anchor and deleted/revoked/empty scope exclusion; helper stopped. See source-index-production-smoke-20261015.json."
+      ],
+      "remaining": "Source revision/index atomicity and delete/revoke filtering verified; capture/transcript/retranscription/generated citations/export/sync consistency across full workflows remains."
     },
     {
       "id": "NFR-002",
@@ -144,16 +203,24 @@
     {
       "id": "NFR-003",
       "title": "可恢复",
-      "status": "not_started",
-      "evidence": [],
-      "remaining": "Implement and verify full requirement and acceptance criteria."
+      "status": "partial",
+      "evidence": [
+        "f5521ee,86d5c71: bounded job/cancellation/native cleanup and malformed model/ABI failure tests",
+        "a39f73b,d6e399e: tested worker reaping/restart/cancel/deadlines, pipe SIGPIPE protection",
+        "10e987e: resident Qwen with async drain/shutdown, failure invalidation and per-clip file-signature validation; independent spec/quality reviews passed; reviewer rerun66/66.",
+        "5a0e003: managed immutable default catalog, streamed seed/hash/download and fixed whitelist extraction, cancel/retry/atomic activation with old-version preservation;139 tests and independent spec/quality passed. Complete default.app release/plist/strict signature passed. Real bundled-seed install and all3 official archives via loopback download/extract/hash succeeded, with production SenseVoice Mandarin and digital-silence guard. Native GUI default-ready/import/transcribe/export and export bytes verified; see managed-defaults-smoke-20261015.json.",
+        "011dd95: owned authenticated offline CPU embedding helper and production client, pinned managed model/runtime, token preflight <=2046,768 finite normalized vectors, bounded batch/HTTP/total deadlines, reuse/cancel/shutdown UUID-safe drain. Parent144/144, actual production Chinese ranking + second resident request and cleanup passed; full default.app release/plist/strict signature passed. Independent spec and quality reviews passed."
+      ],
+      "remaining": "Capture and durable saves, sleep/device/disk failure recovery and full workflow recovery remain."
     },
     {
       "id": "NFR-004",
       "title": "执行位置",
-      "status": "not_started",
-      "evidence": [],
-      "remaining": "Implement and verify full requirement and acceptance criteria."
+      "status": "partial",
+      "evidence": [
+        "011dd95: owned authenticated offline CPU embedding helper and production client, pinned managed model/runtime, token preflight <=2046,768 finite normalized vectors, bounded batch/HTTP/total deadlines, reuse/cancel/shutdown UUID-safe drain. Parent144/144, actual production Chinese ranking + second resident request and cleanup passed; full default.app release/plist/strict signature passed. Independent spec and quality reviews passed."
+      ],
+      "remaining": "Default owned embedding CPU helper is directly controlled and verified local; all task routes, LAN/cloud provider actual location, proxy-cloud detection and complete offline/data-scope acceptance remain."
     },
     {
       "id": "NFR-005",
@@ -165,24 +232,38 @@
     {
       "id": "NFR-006",
       "title": "资源预算",
-      "status": "not_started",
-      "evidence": [],
-      "remaining": "Implement and verify full requirement and acceptance criteria."
+      "status": "partial",
+      "evidence": [
+        "e557ae0: bounded<=30second desktop input, max1MB file read, one active job including cleanup; 73tests passed.",
+        "Task4A independent source spec and code-quality reviews passed. Parent73Swift+10Python, release/plist/signature passed; GUI clicked-flow remains pending, see desktop-entry-verification-20261015.json.",
+        "011dd95: owned authenticated offline CPU embedding helper and production client, pinned managed model/runtime, token preflight <=2046,768 finite normalized vectors, bounded batch/HTTP/total deadlines, reuse/cancel/shutdown UUID-safe drain. Parent144/144, actual production Chinese ranking + second resident request and cleanup passed; full default.app release/plist/strict signature passed. Independent spec and quality reviews passed."
+      ],
+      "remaining": "Long-meeting and minimum-hardware concurrent capture/ASR/LLM budgets and benchmarks remain."
     },
     {
       "id": "NFR-007",
       "title": "能力真实",
-      "status": "not_started",
-      "evidence": [],
-      "remaining": "Implement and verify full requirement and acceptance criteria."
+      "status": "partial",
+      "evidence": [
+        "Native CLI output explicitly symbol-version-probe-only; fixture tests not counted as actual ASR; Task3A spec/quality reviews approved",
+        "Actual Qwen checkpoint short synthetic zh/en/yue inference succeeds; cold-load integrity manifest passed. Results are smoke evidence only, not full quality or streaming acceptance.",
+        "FunASR actual checkpoint3short clips succeeded; English omitted currency unit, so model quality is not assumed from successful inference.",
+        "Actual SenseVoice INT8 synthetic speech succeeds, but digital silence yields 我. and English duplicates tomorrowrow. These raw negative results are retained; successful execution does not establish model quality.",
+        "5a0e003: product pipeline rejects exact digital-zero PCM before ASR, empty result/provenance tested for every backend and actual default path. This is not general VAD/noise handling or a corpus quality claim.",
+        "011dd95: owned authenticated offline CPU embedding helper and production client, pinned managed model/runtime, token preflight <=2046,768 finite normalized vectors, bounded batch/HTTP/total deadlines, reuse/cancel/shutdown UUID-safe drain. Parent144/144, actual production Chinese ranking + second resident request and cleanup passed; full default.app release/plist/strict signature passed. Independent spec and quality reviews passed."
+      ],
+      "remaining": "Per-profile streaming/time/hotword/speaker capability, real meeting quality, latency/resource baseline and complete app acceptance remain."
     },
     {
       "id": "NFR-008",
       "title": "模型可替换",
-      "status": "not_started",
-      "evidence": [],
-      "remaining": "Implement and verify full requirement and acceptance criteria."
+      "status": "partial",
+      "evidence": [
+        "d7d8a94: SQLite source snapshots/revisions/chunks/vector spaces, atomic activation with rollback/epoch and scope filtering, native TXT/MD/PDF and bounded streaming cosine. Parent157/157 + full.app release/plist/strict signature passed; independent spec/quality approved. Real SourceIndex+default Google corpus proof validates duplicate, edited-file snapshot, new revision/reopen, correct Chinese ranking, PDF page anchor and deleted/revoked/empty scope exclusion; helper stopped. See source-index-production-smoke-20261015.json."
+      ],
+      "remaining": "Source index has explicit injectable embedding boundary and space isolation; current implementation supports768d/prefix1/chunker1. Actual alternate embeddings and full meeting/RAG provider switching remain."
     }
   ],
-  "goal_complete": false
+  "goal_complete": false,
+  "source_spec": "docs/spec/product-v0.3.md"
 }

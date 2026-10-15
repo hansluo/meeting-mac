@@ -1,0 +1,46 @@
+{
+  "scope": "Local Google EmbeddingGemma actual Chinese retrieval smoke, not full RAG acceptance",
+  "model": "embeddinggemma-300m-bf16 GGUF",
+  "checkpoint_sha256": "0800cbac9c2064dde519420e75e512a83cb360de3ad5df176185dc69652fc515",
+  "checkpoint_bytes": 621867104,
+  "runtime": "llama-server0.6.0-dev b42b7e6d3 from verified Ollama0.40.4 release",
+  "input": [
+    "task: search result | query: 明天下午讨论什么预算，谁准备方案？",
+    "title: 项目会议 | text: 明天下午三点讨论项目预算，总金额是两万五千元，请王明准备方案。",
+    "title: 午餐 | text: 今天中午去食堂吃面条和青菜。",
+    "title: 旅行 | text: 周末坐火车去海边度假，预订两晚酒店。"
+  ],
+  "dimensions": [
+    768,
+    768,
+    768,
+    768
+  ],
+  "norms": [
+    0.9999999664792677,
+    0.9999999638671319,
+    0.9999999779518902,
+    0.999999989618009
+  ],
+  "document_cosine_scores": [
+    0.7159074562894028,
+    0.24996139180827578,
+    0.2104738421411496
+  ],
+  "expected_top_document": 0,
+  "actual_top_document": 0,
+  "elapsed_seconds": 0.20087124999999997,
+  "usage": {
+    "prompt_tokens": 96,
+    "total_tokens": 96
+  },
+  "model_returns": "vectors, not ASR transcripts",
+  "limitations": [
+    "Single synthetic query and three documents",
+    "Not original Foresight checkpoint identity proof",
+    "No application retrieval integration yet",
+    "No permanent service or app readiness implied"
+  ],
+  "service_terminated_after_probe": true,
+  "hardware": "Apple M4,16GiB RAM,macOS26.6.2"
+}

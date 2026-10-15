@@ -1,0 +1,77 @@
+{
+  "scope": "Bundled defaults and production adapter acceptance; short synthetic WAV only",
+  "base_commit": "c667331",
+  "swift_tests_before_seed_recovery_fix": 138,
+  "bundled_seed_managed_install": {
+    "installed": {
+      "embeddinggemma300m": "/var/folders/gn/pvbdz00102s68pyqxnsypr700000gn/T/meeting-default-proof-A8939106-4B3B-46C7-A092-56E2B766225B/embeddinggemma300m/0800cbac9c2064dde519420e75e512a83cb360de3ad5df176185dc69652fc515",
+      "llama-server-ollama0.40.4": "/var/folders/gn/pvbdz00102s68pyqxnsypr700000gn/T/meeting-default-proof-A8939106-4B3B-46C7-A092-56E2B766225B/llama-server-ollama0.40.4/a4ceae4b2aaf18df37ebcbfb56ba3a37a87838631112d66c2be07268693c8d58",
+      "sensevoice-int8": "/var/folders/gn/pvbdz00102s68pyqxnsypr700000gn/T/meeting-default-proof-A8939106-4B3B-46C7-A092-56E2B766225B/sensevoice-int8/7d1efa2138a65b0b488df37f8b89e3d91a60676e416f515b952358d83dfd347e",
+      "sherpa-onnx1.13.7": "/var/folders/gn/pvbdz00102s68pyqxnsypr700000gn/T/meeting-default-proof-A8939106-4B3B-46C7-A092-56E2B766225B/sherpa-onnx1.13.7/b3a5484f071094d3a922062e6793aca3e0ccc7388bfa5797959fa51fabffc906"
+    },
+    "scope": "Real complete bundled seed -> isolated managed install -> production LocalTranscription; no clicked GUI acceptance",
+    "silence_provenance": "数字静音 · 未调用 ASR 模型\n音频：80000 samples / 16000 Hz",
+    "silence_text": "",
+    "speech_provenance": "SenseVoice INT8 · 本地 · sherpa-onnx 1.13.7\n模型：official-int8-2024-07-17 · SHA256 校验通过\n音频：117093 samples / 16000 Hz · 耗时 1.98 秒",
+    "speech_text": "明天下午3点讨论项目预算，总金额是25000元，请王明准备方案。"
+  },
+  "native_ui": {
+    "tool": "cua_repl native accessibility",
+    "launch": "Observed default SenseVoice selected, both local model roles prepared without any path entry",
+    "input": "/private/tmp/meeting-mac-dependencies/benchmark/zh.wav",
+    "actions_verified": [
+      "native WAV picker selected zh.wav",
+      "start transcription clicked",
+      "completed transcript and SHA256 provenance observed",
+      "native save panel saved UTF8 text",
+      "export file decoded and exact text asserted"
+    ],
+    "speech_text": "明天下午3点讨论项目预算，总金额是25000元，请王明准备方案。",
+    "displayed_elapsed_seconds": 1.58,
+    "export_sha256": "81d382d8b7260aa5735c118f2284b0e7cd5c2d3265e19a1faf9e66dce20ddb6e",
+    "settings_clicked_acceptance": "Unverified: clicking model settings caused native computer-use pipe closure again; no alternate UI automation used",
+    "remaining_clicked_acceptance": [
+      "settings advanced controls",
+      "copy clipboard content",
+      "cancel active inference",
+      "quit and relaunch readiness"
+    ],
+    "build_note": "Observed source-equivalent initial Task3E bundle before final seed-recovery and settings migration fixes; final release rebuilt and signed. Core revised installer covered by139 tests and real official-archive loopback proof."
+  },
+  "limits": [
+    "Not general VAD: exact digital-zero PCM guard only",
+    "Not live microphone/system audio or long-file acceptance",
+    "Embedding assets prepared; owned app embedding service and retrieval integration are separate remaining work",
+    "DeepSeek user-key generation is not established by this proof"
+  ],
+  "implementation_commit": "5a0e003",
+  "swift_tests": 139,
+  "archive_install": {
+    "provenance": "SenseVoice INT8 · 本地 · sherpa-onnx 1.13.7\n模型：official-int8-2024-07-17 · SHA256 校验通过\n音频：117093 samples / 16000 Hz · 耗时 1.54 秒",
+    "scope": "Exact official archive bytes served over owned loopback HTTP, production download/extract/hash install; no public-CDN fresh download claim",
+    "speech_text": "明天下午3点讨论项目预算，总金额是25000元，请王明准备方案。",
+    "verified_archives": [
+      "sherpa-onnx1.13.7",
+      "llama-server-ollama0.40.4",
+      "sensevoice-int8"
+    ]
+  },
+  "reviews": {
+    "spec": "Passed after missing/corrupt seed recovery and saved worker migration fixes",
+    "quality": "Approved; conservative seed disk-space budget noted as nonblocking"
+  },
+  "bundle": {
+    "path": "/Users/hansluo/Desktop/meeting-mac/dist/Meeting Mac.app",
+    "default_assets": 4,
+    "executable_sha256": "06479b395973ce3f7998e1953b868e77ff22926f23d6998c15c23ab0ace1e43a",
+    "catalog_sha256": "915bcc1c322afd644ac1d3827c5339780b3a9c841ddb47054340dad8744fdfa4",
+    "file_bytes": 914259161,
+    "release_build": true,
+    "plist_lint": true,
+    "ad_hoc_strict_signature": true,
+    "public_distribution_notarization": false,
+    "gemma_required_notice_retained": true
+  },
+  "archive_test_server_terminated": true,
+  "hardware": "Apple M4,16GiB RAM,macOS26.6.2"
+}

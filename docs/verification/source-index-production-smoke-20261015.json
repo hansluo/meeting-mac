@@ -1,0 +1,61 @@
+{
+  "deleted_and_revoked_excluded": true,
+  "duplicate_revision_retained": true,
+  "embedding_space": {
+    "checkpointSHA256": "0800cbac9c2064dde519420e75e512a83cb360de3ad5df176185dc69652fc515",
+    "chunkerRevision": 1,
+    "dimensions": 768,
+    "model": "meeting-embeddinggemma300m",
+    "prefixRevision": 1,
+    "runtimeRevision": "llama-server-ollama0.40.4:5f42e3e4457e869a152e2a8ee52084935b22d6c54c2077a44cb1d495d9eba18d"
+  },
+  "empty_scope_empty": true,
+  "first_scores": [
+    0.7155606549871157,
+    0.24670794425545076,
+    0.21603330036314664
+  ],
+  "first_top_source_matches": true,
+  "ingested_sources": 3,
+  "original_revision": "014B29E0-F31A-4B9A-8E54-B0596D77888F",
+  "pdf_page": 1,
+  "saved_snapshot_unchanged_after_file_edit": true,
+  "scope": "Production SQLite source index + default verified Google embedding; controlled TXT/MD/native PDF corpus, not RAG answer/UI acceptance",
+  "shutdown_returned": true,
+  "updated_revision": "53AECF5A-0F6F-43F7-BCA9-81ADBA544E26",
+  "updated_revision_after_reopen": true,
+  "source_commit": "d7d8a94",
+  "hardware": "Apple M4,16GiB RAM,macOS26.6.2",
+  "parent_swift_tests": 157,
+  "parent_test_failures": 0,
+  "parent_test_seconds": 47.798,
+  "probe_source": "docs/verification/probes/SourceIndexReal.swift",
+  "probe_sha256": "2dca589aa17dff7a622c1ab0513e40a01993e28bade51b4a8a284c0e8da80b5a",
+  "stderr_bytes": 0,
+  "owned_helper_absent_after_shutdown": true,
+  "reviews": {
+    "spec": "Scoped PASS",
+    "quality": "Independent source approval, no blocking findings"
+  },
+  "full_app_build": {
+    "release": true,
+    "default_assets_verified": 4,
+    "plist_lint": true,
+    "ad_hoc_strict_signature": true,
+    "executable_sha256": "943e783b133a585476e68d8eaba308466c0c991807a6dd77c780d558e008426d"
+  },
+  "limits": {
+    "file_bytes": 8388608,
+    "extracted_text_bytes": 2097152,
+    "pdf_pages": 500,
+    "chunks": 4096,
+    "chunk_unicode_scalars": 384,
+    "ocr": false,
+    "restore_deleted_or_revoked_source": false
+  },
+  "acceptance_boundaries": [
+    "Controlled TXT/MD/native PDF corpus and one query, not complete retrieval/meeting quality",
+    "Persistence, active revisions and permission filtering through production API; native library UI and generated answers remain subsequent tasks",
+    "No personal documents or accounts used; only disposable synthetic files and isolated SQLite, removed after proof"
+  ]
+}

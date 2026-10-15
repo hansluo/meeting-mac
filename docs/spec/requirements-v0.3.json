@@ -1,0 +1,422 @@
+{
+  "spec_version": "0.3",
+  "current": true,
+  "source_spec": "product-v0.3.md",
+  "repository_commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+  "classification": "new product requirements; source and reverse evidence separately labelled",
+  "functional_requirements": [
+    {
+      "id": "FR-001",
+      "title": "模型清单、下载与资源管理",
+      "milestone": "M0",
+      "depends_on": [],
+      "spec_text": "必须自动准备默认本地ASR与embedding的模型和runtime，普通用户无需手填路径或安装Python。分角色管理格式、revision、hash、能力和就绪状态。下载、校验、加载和探活分开；允许受支持ASR的本地模型路径。文件缺失、错误权重、tokenizer不匹配或内存不足不得标ready。外部LLM服务由连接配置管理，不假装由App下载其模型。\n\n验收 AC-001：全新用户正常入口无需手填本地路径，默认模型实际下载、校验、加载成功并完成中文转写与检索；损坏/缺文件/不匹配拒绝加载；切换embedding触发索引隔离；ASR忙时不会重复创建无限实例。来源 E-MAC-ASR、E-FS。",
+      "acceptance": {
+        "id": "AC-001",
+        "criteria": "全新用户正常入口无需手填本地路径，默认模型实际下载、校验、加载成功并完成中文转写与检索；损坏/缺文件/不匹配拒绝加载；切换embedding触发索引隔离；ASR忙时不会重复创建无限实例。"
+      },
+      "evidence_refs": [
+        "E-FS",
+        "E-MAC-ASR"
+      ]
+    },
+    {
+      "id": "FR-002",
+      "title": "资料摄取与版本管理",
+      "milestone": "M1",
+      "depends_on": [
+        "FR-001"
+      ],
+      "spec_text": "支持TXT/MD和可提取文本PDF，Office/OCR逐步扩展。保留URI、来源账号、内容fingerprint、parser版本、解析状态和索引revision；重复导入幂等，新版本成功后原子切换。音频及会议转写作为资料来源走同一版本机制。\n\n验收 AC-002：重复、修改、损坏、超限和取消有确定结果；未提交索引不显示已索引。来源 E-FS。",
+      "acceptance": {
+        "id": "AC-002",
+        "criteria": "重复、修改、损坏、超限和取消有确定结果；未提交索引不显示已索引。"
+      },
+      "evidence_refs": [
+        "E-FS"
+      ]
+    },
+    {
+      "id": "FR-003",
+      "title": "资料问答与引用",
+      "milestone": "M1",
+      "depends_on": [
+        "FR-002",
+        "FR-013",
+        "FR-017",
+        "FR-012"
+      ],
+      "spec_text": "按来源范围、账号、删除/撤权和版本过滤，召回后控制上下文预算，再通过用户选定本地或云生成模型回答。引用定位到原文/会议时间范围；没有依据时拒绝编造。向量基线先行，图谱和重排按效果加入。\n\n验收 AC-003：同一资料集在本地Qwen和显式云route都产生可解析引用；切换provider不改变访问范围；无答案和冲突场景符合规则。来源 E-FS、E-MAC-LLM。",
+      "acceptance": {
+        "id": "AC-003",
+        "criteria": "同一资料集在本地Qwen和显式云route都产生可解析引用；切换provider不改变访问范围；无答案和冲突场景符合规则。"
+      },
+      "evidence_refs": [
+        "E-FS",
+        "E-MAC-LLM"
+      ]
+    },
+    {
+      "id": "FR-004",
+      "title": "会议与音频采集",
+      "milestone": "M1",
+      "depends_on": [
+        "FR-001",
+        "FR-014"
+      ],
+      "spec_text": "提供麦克风、系统和双来源模式。双来源新增共享单调时钟、独立source_id、重采样与时间偏移记录；两个音轨保留来源，不默认混成失去归因的一轨。暂停/恢复/结束、权限撤销、设备切换和睡眠都具有明确状态。\n\n验收 AC-004：双来源同录、单来源故障、蓝牙切换、睡眠与恢复无假录音；结束即停止采集并保存稳定内容。来源 E-MAC-AUDIO、E-FS。",
+      "acceptance": {
+        "id": "AC-004",
+        "criteria": "双来源同录、单来源故障、蓝牙切换、睡眠与恢复无假录音；结束即停止采集并保存稳定内容。"
+      },
+      "evidence_refs": [
+        "E-FS",
+        "E-MAC-AUDIO"
+      ]
+    },
+    {
+      "id": "FR-005",
+      "title": "转写片段、时间与修订",
+      "milestone": "M1",
+      "depends_on": [
+        "FR-004",
+        "FR-014"
+      ],
+      "spec_text": "片段ID不由可变文本拼成；保存session、source、audio range、revision、engine/model与稳定状态。区分VAD分段时间、词级对齐时间和估计值，不伪造细粒度时间。暂定修订更新同一逻辑片段；不把Mic/Remote或匿名说话人当实名。\n\n验收 AC-005：同句修订不重复；分段边界无明显丢字/重复；引用能回放准确音频范围；无时间能力的后端显示限制。来源 E-MAC-ASR、E-FS。",
+      "acceptance": {
+        "id": "AC-005",
+        "criteria": "同句修订不重复；分段边界无明显丢字/重复；引用能回放准确音频范围；无时间能力的后端显示限制。"
+      },
+      "evidence_refs": [
+        "E-FS",
+        "E-MAC-ASR"
+      ]
+    },
+    {
+      "id": "FR-006",
+      "title": "摘要、行动项与长会议信息",
+      "milestone": "M1",
+      "depends_on": [
+        "FR-005",
+        "FR-013",
+        "FR-017"
+      ],
+      "spec_text": "保留Foresight各任务提示词语义，结合MAC-record的分段归并流程，升级为实际token预算和输出验证。每个结果绑定转写revision、prompt版本、provider/model与证据片段。尾段关键决策必须覆盖；行动项区分请求、提议、承诺和未明确负责人。\n\n验收 AC-006：本地Qwen和云模型分别测试长会议；尾段结论和责任人保留；JSON修复失败可退出，不静默生成空纪要。来源 E-FS、E-MAC-LLM。",
+      "acceptance": {
+        "id": "AC-006",
+        "criteria": "本地Qwen和云模型分别测试长会议；尾段结论和责任人保留；JSON修复失败可退出，不静默生成空纪要。"
+      },
+      "evidence_refs": [
+        "E-FS",
+        "E-MAC-LLM"
+      ]
+    },
+    {
+      "id": "FR-007",
+      "title": "用户笔记增强",
+      "milestone": "M2",
+      "depends_on": [
+        "FR-005",
+        "FR-006",
+        "FR-015"
+      ],
+      "spec_text": "原始笔记、AI增强与用户编辑分开。每条笔记只使用关联转写片段，保持用户专名与数字；短句和超精简可选；遗漏议题独立建议。重转录后旧增强结果标stale，不能覆盖用户编辑。\n\n验收 AC-007：原文可恢复；转写错误不能替换正确专名；版本冲突明确；不同笔记不串用证据。来源 E-FS。",
+      "acceptance": {
+        "id": "AC-007",
+        "criteria": "原文可恢复；转写错误不能替换正确专名；版本冲突明确；不同笔记不串用证据。"
+      },
+      "evidence_refs": [
+        "E-FS"
+      ]
+    },
+    {
+      "id": "FR-008",
+      "title": "日程、备会与历史会议搜索",
+      "milestone": "M2",
+      "depends_on": [
+        "FR-009",
+        "FR-003"
+      ],
+      "spec_text": "先解析时间、时区、参会人和事件身份，再补充语义检索。会前简报结合附件、历史会议和个人资料；保留事实来源。手动录音无需日历账号，之后可关联事件。\n\n验收 AC-008：跨时区、全天、同名事件和不存在事件正确；准备材料不凭空补充；列表不漏符合条件事件。来源 E-FS。",
+      "acceptance": {
+        "id": "AC-008",
+        "criteria": "跨时区、全天、同名事件和不存在事件正确；准备材料不凭空补充；列表不漏符合条件事件。"
+      },
+      "evidence_refs": [
+        "E-FS"
+      ]
+    },
+    {
+      "id": "FR-009",
+      "title": "来源同步与权限撤销",
+      "milestone": "M2",
+      "depends_on": [
+        "FR-002",
+        "FR-012"
+      ],
+      "spec_text": "可选Calendar/Drive接入，定义账号与同步范围、增量游标、重试和缓存保留。新增、更新、删除、授权失效与解绑及时改变检索范围。模型供应商选择不等于资料源供应商选择。\n\n验收 AC-009：重复同步无重复资料；撤权后新回答不能使用受影响正文；恢复不跳过失败项。来源 E-FS。",
+      "acceptance": {
+        "id": "AC-009",
+        "criteria": "重复同步无重复资料；撤权后新回答不能使用受影响正文；恢复不跳过失败项。"
+      },
+      "evidence_refs": [
+        "E-FS"
+      ]
+    },
+    {
+      "id": "FR-010",
+      "title": "主动问题检测与sidecar",
+      "milestone": "M3",
+      "depends_on": [
+        "FR-005",
+        "FR-003"
+      ],
+      "spec_text": "默认关闭；使用可替换本地DetectorAdapter，不绑定Google专用模型。候选、去重、冷却、检索与显示独立，绑定会议与转写snapshot。实时回答优先低延迟route，跨云按该任务策略。\n\n验收 AC-010：反问、闲聊、重复与快速换话题按标注集评测；取消/结束后旧答案不显示；检测任务不过度挤占ASR。来源 E-FS。",
+      "acceptance": {
+        "id": "AC-010",
+        "criteria": "反问、闲聊、重复与快速换话题按标注集评测；取消/结束后旧答案不显示；检测任务不过度挤占ASR。"
+      },
+      "evidence_refs": [
+        "E-FS"
+      ]
+    },
+    {
+      "id": "FR-011",
+      "title": "多模态与知识组织",
+      "milestone": "M3",
+      "depends_on": [
+        "FR-001",
+        "FR-003"
+      ],
+      "spec_text": "图像、音频embedding、标签、Wiki及图谱为Foresight主线扩展；按provider实际能力启用。ASR能识别音频不代表生成模型能听音频，embedding模型与聊天模型不得混用。\n\n验收 AC-011：能力不支持时明确降级；新索引版本隔离；新增检索路由必须在固定集证明收益。来源 E-FS、E-UPSTREAM。",
+      "acceptance": {
+        "id": "AC-011",
+        "criteria": "能力不支持时明确降级；新索引版本隔离；新增检索路由必须在固定集证明收益。"
+      },
+      "evidence_refs": [
+        "E-FS",
+        "E-UPSTREAM"
+      ]
+    },
+    {
+      "id": "FR-012",
+      "title": "历史、导出、删除与诊断",
+      "milestone": "M1",
+      "depends_on": [],
+      "spec_text": "继承MAC-record的音频/文本/纪要/ZIP导出，扩展模型、prompt、转写/资料revision和引用manifest。删除先阻止新访问，再清理资料、向量与缓存。日志默认阶段、耗时和错误，无全文正文/Key。\n\n验收 AC-012：导出可解释“由哪版输入、哪种模型生成”；删除影响所有route；诊断能定位音频/ASR/检索/生成的独立失败。来源 E-MAC-DATA、E-FS。",
+      "acceptance": {
+        "id": "AC-012",
+        "criteria": "导出可解释“由哪版输入、哪种模型生成”；删除影响所有route；诊断能定位音频/ASR/检索/生成的独立失败。"
+      },
+      "evidence_refs": [
+        "E-FS",
+        "E-MAC-DATA"
+      ]
+    },
+    {
+      "id": "FR-013",
+      "title": "本地生成模型发现与连接",
+      "milestone": "M0",
+      "depends_on": [],
+      "spec_text": "默认DeepSeek云端连接，预填官方base URL与当前模型，用户主要填写API Key；Ollama、LM Studio、oMLX和自定义兼容服务保留高级入口。配置完整base URL、API路径、model_id与Keychain凭据。发现列表、连接鉴权、短生成、流式、工具/JSON等能力分别测试。标准协议与provider私有参数分开，不能向所有服务强塞 `enable_thinking`。\n\n验收 AC-013：DeepSeek默认连接与真实账号生成通过；缺Key时本地录音/索引可用；自定义端口/路径、401、无models接口但有生成接口、未加载模型、超时和不支持参数都有清楚结果；发现不等于ready。来源 E-MAC-LLM。",
+      "acceptance": {
+        "id": "AC-013",
+        "criteria": "DeepSeek默认连接与真实账号生成通过；缺Key时本地录音/索引可用；自定义端口/路径、401、无models接口但有生成接口、未加载模型、超时和不支持参数都有清楚结果；发现不等于ready。"
+      },
+      "evidence_refs": [
+        "E-MAC-LLM"
+      ]
+    },
+    {
+      "id": "FR-014",
+      "title": "默认SenseVoice与可切换Qwen/FunASR引擎",
+      "milestone": "M0",
+      "depends_on": [
+        "FR-001"
+      ],
+      "spec_text": "建立统一FileASR/RealtimeASR adapter，默认SenseVoice INT8原生管线，Qwen本机ONNX与FunASR本地服务均可选择。分别报告file、segment-realtime/native-streaming、timestamps、hotwords和speaker能力；不支持不能悄悄忽略。每个实时session缓存隔离，flush、取消和结束可验证。\n\n验收 AC-014：同一音频可在默认SenseVoice及Qwen/FunASR三条路线重现并保留engine/model；文件与实时分开测；切换不覆盖活动session；真实流式不足时明确标为分段实时。来源 E-MAC-ASR、E-UPSTREAM。",
+      "acceptance": {
+        "id": "AC-014",
+        "criteria": "同一音频可在默认SenseVoice及Qwen/FunASR三条路线重现并保留engine/model；文件与实时分开测；切换不覆盖活动session；真实流式不足时明确标为分段实时。"
+      },
+      "evidence_refs": [
+        "E-MAC-ASR",
+        "E-UPSTREAM"
+      ]
+    },
+    {
+      "id": "FR-015",
+      "title": "音频导入、回放与重转录",
+      "milestone": "M1",
+      "depends_on": [
+        "FR-001",
+        "FR-014",
+        "FR-012"
+      ],
+      "spec_text": "继承MP3/M4A/WAV/AIFF入口，真实格式可解码后才标支持。逐块读取，显示进度和取消；在保存音频的条件下允许换引擎重转录。旧转写不覆盖，用户采用新revision后更新索引，摘要/行动项/增强笔记标过时并可重算。\n\n验收 AC-015：长音频不会全量无界驻留内存；取消保留旧有效结果；采用新转写不留下指向错误时间/旧内容的活跃引用；没有音频时说明无法重转录。来源 E-MAC-DATA、E-MAC-ASR。",
+      "acceptance": {
+        "id": "AC-015",
+        "criteria": "长音频不会全量无界驻留内存；取消保留旧有效结果；采用新转写不留下指向错误时间/旧内容的活跃引用；没有音频时说明无法重转录。"
+      },
+      "evidence_refs": [
+        "E-MAC-ASR",
+        "E-MAC-DATA"
+      ]
+    },
+    {
+      "id": "FR-016",
+      "title": "全局语音输入",
+      "milestone": "M2",
+      "depends_on": [
+        "FR-014",
+        "FR-013",
+        "FR-017"
+      ],
+      "spec_text": "继承按住热键、浮窗、松开识别、可选LLM纠错和文字注入。使用独立短session；纠错保留数字/专名，不把润色结果当原始ASR。焦点变化、识别失败或权限不足时保留可复制结果，不向错误窗口注入；不自动发送。\n\n验收 AC-016：中文/英文、短句、长句、热键冲突、焦点变化和会议并行输入通过；纠错云route独立于会议route。来源 E-MAC-INPUT。",
+      "acceptance": {
+        "id": "AC-016",
+        "criteria": "中文/英文、短句、长句、热键冲突、焦点变化和会议并行输入通过；纠错云route独立于会议route。"
+      },
+      "evidence_refs": [
+        "E-MAC-INPUT"
+      ]
+    },
+    {
+      "id": "FR-017",
+      "title": "按任务选择本地/云端模型",
+      "milestone": "M0",
+      "depends_on": [
+        "FR-013"
+      ],
+      "spec_text": "实时ASR、文件ASR、问答、摘要、笔记增强、语音输入纠错、embedding和检测各自路由。云端可选，ASR音频上传与LLM文本上传分别定义；保存实际执行位置、provider/model与route变化。\n\n验收 AC-017：只启用云摘要时音频不因此上传；本地故障且未允许云时停止/提示；允许云的任务只发送所需snapshot；网络/Key失败不污染本地状态。来源 E-MAC-LLM、用户本次要求。",
+      "acceptance": {
+        "id": "AC-017",
+        "criteria": "只启用云摘要时音频不因此上传；本地故障且未允许云时停止/提示；允许云的任务只发送所需snapshot；网络/Key失败不污染本地状态。"
+      },
+      "evidence_refs": [
+        "E-MAC-LLM"
+      ]
+    },
+    {
+      "id": "FR-018",
+      "title": "说话人分离与身份关联",
+      "milestone": "M2",
+      "depends_on": [
+        "FR-005",
+        "FR-015"
+      ],
+      "spec_text": "复用可验证的离线分离组件，输出录音内匿名speaker cluster及时间范围。与文本对齐是独立步骤；允许用户关联实名，保存来源与确认记录。采集来源、匿名speaker与联系人是三种身份。\n\n验收 AC-018：重叠说话、单人、多人与用户改名可回查；不支持分离的引擎仍能转写；未确认匿名标签不会成为真实行动项责任人。来源 E-MAC-ASR、E-FS。",
+      "acceptance": {
+        "id": "AC-018",
+        "criteria": "重叠说话、单人、多人与用户改名可回查；不支持分离的引擎仍能转写；未确认匿名标签不会成为真实行动项责任人。"
+      },
+      "evidence_refs": [
+        "E-FS",
+        "E-MAC-ASR"
+      ]
+    }
+  ],
+  "nonfunctional_requirements": [
+    {
+      "id": "NFR-001",
+      "title": "数据一致",
+      "requirement": "revision、索引、引用、删除、撤权与幂等一致",
+      "acceptance": "重转录采用、文件变更、删除及并发任务"
+    },
+    {
+      "id": "NFR-002",
+      "title": "输出可信",
+      "requirement": "引用真实支持结论；行动项不冒认姓名和承诺",
+      "acceptance": "标注资料与会议集"
+    },
+    {
+      "id": "NFR-003",
+      "title": "可恢复",
+      "requirement": "稳定音频/转写持久化、有限重试与取消",
+      "acceptance": "睡眠、设备切换、服务崩溃、磁盘满"
+    },
+    {
+      "id": "NFR-004",
+      "title": "执行位置",
+      "requirement": "本地/局域网/云实际位置与route一致",
+      "acceptance": "离线运行、本地代理云、仅开启云摘要"
+    },
+    {
+      "id": "NFR-005",
+      "title": "可观察",
+      "requirement": "每阶段耗时、模型/runtime/prompt/index、失败分类可追踪",
+      "acceptance": "日志默认无Key/全文；失败可归因"
+    },
+    {
+      "id": "NFR-006",
+      "title": "资源预算",
+      "requirement": "采集不断流；模型、队列、输入和并发有界",
+      "acceptance": "最低支持设备长会与并发任务"
+    },
+    {
+      "id": "NFR-007",
+      "title": "能力真实",
+      "requirement": "file/流式/时间/热词/说话人等逐profile验证",
+      "acceptance": "注册、models列表和README不能替代测试"
+    },
+    {
+      "id": "NFR-008",
+      "title": "模型可替换",
+      "requirement": "上层会议/RAG不绑定Google或某个ASR ABI",
+      "acceptance": "Qwen/FunASR、本地/云模型切换与能力降级"
+    }
+  ],
+  "unresolved_questions": [
+    {
+      "id": "U-001",
+      "question": "原应用问题检测格式/阈值",
+      "impact": "用自主DetectorAdapter，不声称完全复现"
+    },
+    {
+      "id": "U-002",
+      "question": "原V1/V2权重、图谱与重排",
+      "impact": "先向量基线与评测，按收益增加"
+    },
+    {
+      "id": "U-003",
+      "question": "目标设备上Qwen/FunASR质量、延迟、内存",
+      "impact": "M0关键门槛；决定live/file默认组合"
+    },
+    {
+      "id": "U-004",
+      "question": "原提示词消息角色与拼接",
+      "impact": "保留语义，按所选Qwen/runtime验证"
+    },
+    {
+      "id": "U-005",
+      "question": "双音轨回声、时间漂移、同步与分离",
+      "impact": "MAC-record当前二选一，必须新增并实测"
+    },
+    {
+      "id": "U-006",
+      "question": "本地服务各能力与资源共存",
+      "impact": "profile级探测，不能仅凭model_id推断"
+    },
+    {
+      "id": "U-007",
+      "question": "云ASR/生成实际协议与上传范围",
+      "impact": "分开adapter与任务授权，按选定provider验证"
+    },
+    {
+      "id": "U-008",
+      "question": "模型格式、转换权重来源、分发与校验",
+      "impact": "固定可信revision/hash，不能复用坏下载链接"
+    },
+    {
+      "id": "U-009",
+      "question": "Foresight隐藏功能、状态与完整数据库",
+      "impact": "逆向继续补证据，新设计不冒称原schema"
+    }
+  ],
+  "milestones": {
+    "M0": "swappable ASR and local/cloud generation adapters",
+    "M1": "meeting and knowledge closed loop",
+    "M2": "notes, calendar/sync, voice input and optional speakers",
+    "M3": "proactive and knowledge organization"
+  }
+}
