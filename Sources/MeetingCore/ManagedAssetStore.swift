@@ -86,6 +86,14 @@ public actor ManagedAssetStore {
         config.senseVoiceRuntime = runtime.appendingPathComponent("lib/libsherpa-onnx-c-api.dylib").path
         return config
     }
+    // Resolve provenance from the same immutable/injected catalog that verified the payload.
+    func embeddingDefinitions() throws -> (String, String) {
+        guard let model = assets.first(where: { $0.id == "embeddinggemma300m" }),
+              let runtime = assets.first(where: { $0.id == "llama-server-ollama0.40.4" }),
+              let modelFile = model.files.first(where: { $0.path == "model.gguf" }),
+              let runtimeFile = runtime.files.first(where: { $0.path == "llama-server" }) else { throw ManagedEmbeddingError.assetsUnavailable }
+        return (modelFile.sha256, "llama-server-ollama0.40.4:" + runtimeFile.sha256)
+    }
     public static func message(for error: Error) -> String {
         if error is CancellationError { return "已取消模型准备，可重试；已安装的有效版本保留。" }
         switch error as? ManagedAssetError {
