@@ -8,9 +8,10 @@ let package = Package(
                .executable(name: "MeetingASRCheck", targets: ["MeetingASRCheck"]),
                .executable(name: "MeetingMacApp", targets: ["MeetingMacApp"])],
     targets: [
+        .systemLibrary(name: "CSQLite"),
         .target(name: "CSherpaBridge"),
         .target(name: "CManagedArchive", linkerSettings: [.linkedLibrary("archive")]),
-        .target(name: "MeetingCore", dependencies: ["CSherpaBridge", "CManagedArchive"], resources: [.process("Resources")]),
+        .target(name: "MeetingCore", dependencies: ["CSherpaBridge", "CManagedArchive", "CSQLite"], resources: [.process("Resources")]),
         .executableTarget(name: "MeetingASRCheck", dependencies: ["MeetingCore"]),
         .executableTarget(name: "MeetingMacApp", dependencies: ["MeetingCore"]),
         .testTarget(name: "MeetingCoreTests", dependencies: ["MeetingCore"])
