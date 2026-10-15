@@ -135,11 +135,21 @@ Task3C1独立spec/quality审查后实施。先让用户能在原生窗口选择�
 
 18项FR、8项NFR及各AC全部列于implementation-status.json。每项保存代码、单元/集成测试、真实场景验证与缺口。真实ASR、云route、系统权限、双轨、引用/删除、同步、语音输入和主动触发等没有证据时不标完成。
 
-## Task 3D: MAC-record默认SenseVoice原生入口〔进行中〕
+## Task 3D: MAC-record默认SenseVoice原生入口〔核心完成，产品验收待后续〕
 
-- [ ] 固定sherpa1.13.7原生SenseVoice配置，model.int8.onnx/tokens.txt、语言与ITN；Qwen现有ABI不破坏。
-- [ ] 有界PCM、显式模型来源/可选hash、常驻复用/取消/关闭/失败清理与文件变更失效。
-- [ ] CLI按显式backend调用，真实权重下载SHA通过后跑合成中文/英文/粤语，不把PyTorch版本当作ONNX实际验证。
-- [ ] 新ABI与生命周期TDD、全套回归、独立双审；之后接内置模型管理及普通用户界面。
+- [x] 固定sherpa1.13.7原生SenseVoice配置，model.int8.onnx/tokens.txt、语言与ITN；Qwen现有ABI不破坏。
+- [x] 有界PCM、显式模型来源/可选hash、常驻复用/取消/关闭/失败清理与文件变更失效。
+- [x] CLI按显式backend调用，真实权重下载SHA通过后跑合成中文/英文/粤语，不把PyTorch版本当作ONNX实际验证。
+- [x] 新ABI与生命周期TDD、全套回归、独立双审；之后接内置模型管理及普通用户界面。
 
 Task2C1核心已完成eba4c95：父任务99测试通过、真实新建Keychain项读删通过，独立spec/quality审查通过。网络探测与DeepSeek设置UI仍待接入，不能将现有证据API当作真实网络探测。
+
+4adba38已通过独立spec/quality审查，父任务126/126及构建通过。真实ONNX合成zh/en/yue转写与常驻复用/关闭重载通过。纯静音输出“我.”，英文有重复，原样记录；产品静音保护、VAD与真实会议质量仍待完成。
+
+## Task 3E: 内置模型托管与无路径默认入口〔进行中〕
+
+- [ ] 固定默认Google embedding、SenseVoice与runtime的清单/hash，应用自动定位管理目录。
+- [ ] 已打包资源优先，缺失时真实下载、进度/取消/重试，校验后原子激活，失败保留旧安装。
+- [ ] 默认.app包含已验证模型和运行时及许可；常规用户不填写本地路径/Python。
+- [ ] 默认SenseVoice接入无路径UI，数字静音在模型调用前拦截；Qwen/FunASR保留高级配置。
+- [ ] 安装故障/取消/并发/路径安全/离线seed/真实loopback下载测试、回归构建、独立双审及实际打包验证。

@@ -1,0 +1,166 @@
+{
+  "scope": "Real SenseVoice ONNX short synthetic Mandarin/English/Cantonese/silence smoke, not full meeting acceptance",
+  "hardware": "Apple M4,16GiB RAM,macOS26.6.2",
+  "source_commit": "4adba38",
+  "archive_bytes": 163002883,
+  "archive_sha256": "7d1efa2138a65b0b488df37f8b89e3d91a60676e416f515b952358d83dfd347e",
+  "model_file_sha256": {
+    "model.int8.onnx": "c71f0ce00bec95b07744e116345e33d8cbbe08cef896382cf907bf4b51a2cd51",
+    "tokens.txt": "f449eb28dc567533d7fa59be34e2abca8784f771850c78a47fb731a31429a1dc"
+  },
+  "default_family_source": "MAC-record ASRConfigStore.swift:10 senseVoiceInt8; exact original bundled checkpoint bytes unknown",
+  "results": [
+    {
+      "language": "zh",
+      "reference": "明天下午三点讨论项目预算，总金额是两万五千元。请王明准备方案。",
+      "audio_seconds": 7.3183125,
+      "exit_code": 0,
+      "process_seconds": 1.437728958,
+      "stderr_bytes": 0,
+      "result": {
+        "decodeSeconds": 0.084639291,
+        "elapsedSeconds": 0.630231834,
+        "integrityManifestVerified": true,
+        "language": "auto",
+        "loadSeconds": 0.54558925,
+        "modelDirectory": "/Users/hansluo/Desktop/meeting-mac/models/sensevoice-int8/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2024-07-17",
+        "reusedRecognizer": false,
+        "revision": "official-int8-2024-07-17",
+        "runtimePath": "/Users/hansluo/Desktop/meeting-mac/.build/native/sherpa-onnx-v1.13.7-osx-arm64-shared-no-tts-lib/lib/libsherpa-onnx-c-api.dylib",
+        "runtimeVersion": "1.13.7",
+        "sampleCount": 117093,
+        "sampleRate": 16000,
+        "text": "明天下午3点讨论项目预算，总金额是25000元，请王明准备方案。",
+        "useITN": true
+      }
+    },
+    {
+      "language": "en",
+      "reference": "We will review the project budget at three tomorrow afternoon. Alice will prepare the proposal. The total is twenty five thousand dollars.",
+      "audio_seconds": 7.58375,
+      "exit_code": 0,
+      "process_seconds": 0.5698866250000001,
+      "stderr_bytes": 0,
+      "result": {
+        "decodeSeconds": 0.084010584,
+        "elapsedSeconds": 0.528262333,
+        "integrityManifestVerified": true,
+        "language": "auto",
+        "loadSeconds": 0.444247041,
+        "modelDirectory": "/Users/hansluo/Desktop/meeting-mac/models/sensevoice-int8/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2024-07-17",
+        "reusedRecognizer": false,
+        "revision": "official-int8-2024-07-17",
+        "runtimePath": "/Users/hansluo/Desktop/meeting-mac/.build/native/sherpa-onnx-v1.13.7-osx-arm64-shared-no-tts-lib/lib/libsherpa-onnx-c-api.dylib",
+        "runtimeVersion": "1.13.7",
+        "sampleCount": 121340,
+        "sampleRate": 16000,
+        "text": "We will review the project budget at3 tomorrowrow afternoon. Alice will prepare the proposal, The total is $25,000.",
+        "useITN": true
+      }
+    },
+    {
+      "language": "yue",
+      "reference": "聽日下午三點開會，討論項目預算。請陳先生準備方案。",
+      "audio_seconds": 5.8531875,
+      "exit_code": 0,
+      "process_seconds": 0.5505149999999999,
+      "stderr_bytes": 0,
+      "result": {
+        "decodeSeconds": 0.082441125,
+        "elapsedSeconds": 0.510620792,
+        "integrityManifestVerified": true,
+        "language": "auto",
+        "loadSeconds": 0.428176209,
+        "modelDirectory": "/Users/hansluo/Desktop/meeting-mac/models/sensevoice-int8/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2024-07-17",
+        "reusedRecognizer": false,
+        "revision": "official-int8-2024-07-17",
+        "runtimePath": "/Users/hansluo/Desktop/meeting-mac/.build/native/sherpa-onnx-v1.13.7-osx-arm64-shared-no-tts-lib/lib/libsherpa-onnx-c-api.dylib",
+        "runtimeVersion": "1.13.7",
+        "sampleCount": 93651,
+        "sampleRate": 16000,
+        "text": "听日下午三点开会讨论项目预算，请陈先生准备方案。",
+        "useITN": true
+      }
+    },
+    {
+      "language": "silence",
+      "reference": "",
+      "audio_seconds": 5.0,
+      "exit_code": 0,
+      "process_seconds": 0.5212642500000002,
+      "stderr_bytes": 0,
+      "result": {
+        "decodeSeconds": 0.056589917,
+        "elapsedSeconds": 0.487060875,
+        "integrityManifestVerified": true,
+        "language": "auto",
+        "loadSeconds": 0.430465,
+        "modelDirectory": "/Users/hansluo/Desktop/meeting-mac/models/sensevoice-int8/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2024-07-17",
+        "reusedRecognizer": false,
+        "revision": "official-int8-2024-07-17",
+        "runtimePath": "/Users/hansluo/Desktop/meeting-mac/.build/native/sherpa-onnx-v1.13.7-osx-arm64-shared-no-tts-lib/lib/libsherpa-onnx-c-api.dylib",
+        "runtimeVersion": "1.13.7",
+        "sampleCount": 80000,
+        "sampleRate": 16000,
+        "text": "我.",
+        "useITN": true
+      }
+    }
+  ],
+  "resident_lifecycle": [
+    {
+      "decodeSeconds": 0.080229417,
+      "elapsedSeconds": 0.548843667,
+      "integrityManifestVerified": true,
+      "language": "auto",
+      "loadSeconds": 0.468614792,
+      "modelDirectory": "/Users/hansluo/Desktop/meeting-mac/models/sensevoice-int8/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2024-07-17",
+      "reusedRecognizer": false,
+      "revision": "official-int8-2024-07-17",
+      "runtimePath": "/Users/hansluo/Desktop/meeting-mac/.build/native/sherpa-onnx-v1.13.7-osx-arm64-shared-no-tts-lib/lib/libsherpa-onnx-c-api.dylib",
+      "runtimeVersion": "1.13.7",
+      "sampleCount": 117093,
+      "sampleRate": 16000,
+      "text": "明天下午3点讨论项目预算，总金额是25000元，请王明准备方案。",
+      "useITN": true
+    },
+    {
+      "decodeSeconds": 0.083266542,
+      "elapsedSeconds": 0.083402583,
+      "integrityManifestVerified": true,
+      "language": "auto",
+      "loadSeconds": 0,
+      "modelDirectory": "/Users/hansluo/Desktop/meeting-mac/models/sensevoice-int8/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2024-07-17",
+      "reusedRecognizer": true,
+      "revision": "official-int8-2024-07-17",
+      "runtimePath": "/Users/hansluo/Desktop/meeting-mac/.build/native/sherpa-onnx-v1.13.7-osx-arm64-shared-no-tts-lib/lib/libsherpa-onnx-c-api.dylib",
+      "runtimeVersion": "1.13.7",
+      "sampleCount": 117093,
+      "sampleRate": 16000,
+      "text": "明天下午3点讨论项目预算，总金额是25000元，请王明准备方案。",
+      "useITN": true
+    },
+    {
+      "decodeSeconds": 0.079176209,
+      "elapsedSeconds": 0.467736625,
+      "integrityManifestVerified": true,
+      "language": "auto",
+      "loadSeconds": 0.388561084,
+      "modelDirectory": "/Users/hansluo/Desktop/meeting-mac/models/sensevoice-int8/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2024-07-17",
+      "reusedRecognizer": false,
+      "revision": "official-int8-2024-07-17",
+      "runtimePath": "/Users/hansluo/Desktop/meeting-mac/.build/native/sherpa-onnx-v1.13.7-osx-arm64-shared-no-tts-lib/lib/libsherpa-onnx-c-api.dylib",
+      "runtimeVersion": "1.13.7",
+      "sampleCount": 117093,
+      "sampleRate": 16000,
+      "text": "明天下午3点讨论项目预算，总金额是25000元，请王明准备方案。",
+      "useITN": true
+    }
+  ],
+  "interpretation": {
+    "speech_smoke": "Mandarin, English and Cantonese synthetic short clips completed with verified actual ONNX weights. English duplication retained. Not a corpus quality score.",
+    "silence_negative": "Five seconds of digital silence produced 我.; raw engine smoke exposes hallucination. Product-level silence guard and general VAD acceptance remain required.",
+    "lifecycle": "One resident engine: cold load, reuse, explicit shutdown, cold reload; identical text, reusedRecognizer false/true/false.",
+    "default_equivalence": "Matches MAC-record default model family; exact checkpoint byte equivalence to its bundled model is unverified."
+  }
+}
