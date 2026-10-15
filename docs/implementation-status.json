@@ -15,9 +15,10 @@
         "e557ae0: native explicit Qwen/FunASR settings, nonsecret persisted paths, required-field guidance. Build and first native window verified.",
         "Task4A independent source spec and code-quality reviews passed. Parent73Swift+10Python, release/plist/signature passed; GUI clicked-flow remains pending, see desktop-entry-verification-20261015.json.",
         "v0.3 default Google EmbeddingGemma300M GGUF downloaded621867104bytes, fixedSHA passed; actual Chinese query/document768d retrieval smoke passed. App-managed install/readiness remains pending.",
-        "4adba38: native SenseVoice INT8 adapter and explicit CLI; independent spec/quality approved, parent126/126 and swift build passed. Official archive and payload SHA verified; actual zh/en/yue speech and cold/reuse/shutdown/reload proven in sensevoice-synthetic-smoke-20261015.json. Digital silence hallucinated 我.; product guard/VAD still pending."
+        "4adba38: native SenseVoice INT8 adapter and explicit CLI; independent spec/quality approved, parent126/126 and swift build passed. Official archive and payload SHA verified; actual zh/en/yue speech and cold/reuse/shutdown/reload proven in sensevoice-synthetic-smoke-20261015.json. Digital silence hallucinated 我.; product guard/VAD still pending.",
+        "5a0e003: managed immutable default catalog, streamed seed/hash/download and fixed whitelist extraction, cancel/retry/atomic activation with old-version preservation;139 tests and independent spec/quality passed. Complete default.app release/plist/strict signature passed. Real bundled-seed install and all3 official archives via loopback download/extract/hash succeeded, with production SenseVoice Mandarin and digital-silence guard. Native GUI default-ready/import/transcribe/export and export bytes verified; see managed-defaults-smoke-20261015.json."
       ],
-      "remaining": "v0.3: automatic default embedding/ASR+runtime installation/readiness, no mandatory paths/Python, resource/error recovery and fresh-user acceptance. Existing manually configured workbench is intermediate only."
+      "remaining": "Owned embedding service/client and Chinese retrieval in normal app, model/index isolation, loaded capability readiness and full resource/error/fresh-user acceptance remain. Default local model/runtime preparation and path-free short ASR now implemented."
     },
     {
       "id": "FR-002",
@@ -95,9 +96,10 @@
       "status": "partial",
       "evidence": [
         "e557ae0: copy/UTF8 plain text export UI implemented. Native controls observed, but actual copy/save-panel export clicks remain unverified.",
-        "Task4A independent source spec and code-quality reviews passed. Parent73Swift+10Python, release/plist/signature passed; GUI clicked-flow remains pending, see desktop-entry-verification-20261015.json."
+        "Task4A independent source spec and code-quality reviews passed. Parent73Swift+10Python, release/plist/signature passed; GUI clicked-flow remains pending, see desktop-entry-verification-20261015.json.",
+        "5a0e003: managed immutable default catalog, streamed seed/hash/download and fixed whitelist extraction, cancel/retry/atomic activation with old-version preservation;139 tests and independent spec/quality passed. Complete default.app release/plist/strict signature passed. Real bundled-seed install and all3 official archives via loopback download/extract/hash succeeded, with production SenseVoice Mandarin and digital-silence guard. Native GUI default-ready/import/transcribe/export and export bytes verified; see managed-defaults-smoke-20261015.json."
       ],
-      "remaining": "Durable history, rich manifest/ZIP/audio/summary export, delete cascade and complete clicked export acceptance remain."
+      "remaining": "Native short-transcript UTF8 save-panel export now clicked and file bytes verified. Durable history, rich manifest/ZIP/audio/summary export, delete cascade and copy-content/other export acceptance remain."
     },
     {
       "id": "FR-013",
@@ -126,9 +128,10 @@
         "10e987e: resident Qwen with async drain/shutdown, failure invalidation and per-clip file-signature validation; independent spec/quality reviews passed; reviewer rerun66/66.",
         "e557ae0: LocalTranscription dispatches explicit Qwen/FunASR production backends; parent actual Mandarin inference through both desktop adapter paths passed, bundled FunASR worker used.",
         "Task4A independent source spec and code-quality reviews passed. Parent73Swift+10Python, release/plist/signature passed; GUI clicked-flow remains pending, see desktop-entry-verification-20261015.json.",
-        "4adba38: native SenseVoice INT8 adapter and explicit CLI; independent spec/quality approved, parent126/126 and swift build passed. Official archive and payload SHA verified; actual zh/en/yue speech and cold/reuse/shutdown/reload proven in sensevoice-synthetic-smoke-20261015.json. Digital silence hallucinated 我.; product guard/VAD still pending."
+        "4adba38: native SenseVoice INT8 adapter and explicit CLI; independent spec/quality approved, parent126/126 and swift build passed. Official archive and payload SHA verified; actual zh/en/yue speech and cold/reuse/shutdown/reload proven in sensevoice-synthetic-smoke-20261015.json. Digital silence hallucinated 我.; product guard/VAD still pending.",
+        "5a0e003: managed immutable default catalog, streamed seed/hash/download and fixed whitelist extraction, cancel/retry/atomic activation with old-version preservation;139 tests and independent spec/quality passed. Complete default.app release/plist/strict signature passed. Real bundled-seed install and all3 official archives via loopback download/extract/hash succeeded, with production SenseVoice Mandarin and digital-silence guard. Native GUI default-ready/import/transcribe/export and export bytes verified; see managed-defaults-smoke-20261015.json."
       ],
-      "remaining": "v0.3 native MAC-record default SenseVoice INT8 core and real short speech are verified; app-managed default integration, silence protection/VAD, live segmentation, capture and full GUI/quality acceptance remain. Qwen/FunASR stay optional."
+      "remaining": "Default SenseVoice path-free short-WAV production/GUI and exact digital-silence guard verified. General VAD, live segmentation, capture, optional backend GUI and full Chinese meeting quality remain."
     },
     {
       "id": "FR-015",
@@ -137,7 +140,8 @@
       "evidence": [
         "f5521ee: bounded strict PCM16 mono16k WAV parser + offline CLI entry",
         "e557ae0: short WAV native import entry and production pipeline with bounded snapshot; tests preserve prior result + source on failure/cancel; full clicked file-picker path not yet verified.",
-        "Task4A independent source spec and code-quality reviews passed. Parent73Swift+10Python, release/plist/signature passed; GUI clicked-flow remains pending, see desktop-entry-verification-20261015.json."
+        "Task4A independent source spec and code-quality reviews passed. Parent73Swift+10Python, release/plist/signature passed; GUI clicked-flow remains pending, see desktop-entry-verification-20261015.json.",
+        "5a0e003: managed immutable default catalog, streamed seed/hash/download and fixed whitelist extraction, cancel/retry/atomic activation with old-version preservation;139 tests and independent spec/quality passed. Complete default.app release/plist/strict signature passed. Real bundled-seed install and all3 official archives via loopback download/extract/hash succeeded, with production SenseVoice Mandarin and digital-silence guard. Native GUI default-ready/import/transcribe/export and export bytes verified; see managed-defaults-smoke-20261015.json."
       ],
       "remaining": "Other audio format conversion, long-file chunking, playback, durable revisions/adoption/index invalidation and complete GUI acceptance remain."
     },
@@ -192,7 +196,8 @@
       "evidence": [
         "f5521ee,86d5c71: bounded job/cancellation/native cleanup and malformed model/ABI failure tests",
         "a39f73b,d6e399e: tested worker reaping/restart/cancel/deadlines, pipe SIGPIPE protection",
-        "10e987e: resident Qwen with async drain/shutdown, failure invalidation and per-clip file-signature validation; independent spec/quality reviews passed; reviewer rerun66/66."
+        "10e987e: resident Qwen with async drain/shutdown, failure invalidation and per-clip file-signature validation; independent spec/quality reviews passed; reviewer rerun66/66.",
+        "5a0e003: managed immutable default catalog, streamed seed/hash/download and fixed whitelist extraction, cancel/retry/atomic activation with old-version preservation;139 tests and independent spec/quality passed. Complete default.app release/plist/strict signature passed. Real bundled-seed install and all3 official archives via loopback download/extract/hash succeeded, with production SenseVoice Mandarin and digital-silence guard. Native GUI default-ready/import/transcribe/export and export bytes verified; see managed-defaults-smoke-20261015.json."
       ],
       "remaining": "Capture and durable saves, sleep/device/disk failure recovery and full workflow recovery remain."
     },
@@ -228,7 +233,8 @@
         "Native CLI output explicitly symbol-version-probe-only; fixture tests not counted as actual ASR; Task3A spec/quality reviews approved",
         "Actual Qwen checkpoint short synthetic zh/en/yue inference succeeds; cold-load integrity manifest passed. Results are smoke evidence only, not full quality or streaming acceptance.",
         "FunASR actual checkpoint3short clips succeeded; English omitted currency unit, so model quality is not assumed from successful inference.",
-        "Actual SenseVoice INT8 synthetic speech succeeds, but digital silence yields 我. and English duplicates tomorrowrow. These raw negative results are retained; successful execution does not establish model quality."
+        "Actual SenseVoice INT8 synthetic speech succeeds, but digital silence yields 我. and English duplicates tomorrowrow. These raw negative results are retained; successful execution does not establish model quality.",
+        "5a0e003: product pipeline rejects exact digital-zero PCM before ASR, empty result/provenance tested for every backend and actual default path. This is not general VAD/noise handling or a corpus quality claim."
       ],
       "remaining": "Per-profile streaming/time/hotword/speaker capability, real meeting quality, latency/resource baseline and complete app acceptance remain."
     },

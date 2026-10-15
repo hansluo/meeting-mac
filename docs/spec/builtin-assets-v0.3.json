@@ -96,12 +96,13 @@
     }
   ],
   "acceptance_pending": [
-    "Application-managed download/install/resume/cancel/retry/atomic activation",
-    "Fresh-user path-free launch",
-    "Bundled/runtime redistribution notices and exact resource manifest",
-    "Owned embedding-runtime lifecycle and app integration",
+    "Full model load/readiness and concurrent resource budgets, not only asset integrity",
+    "Owned embedding-runtime lifecycle and app retrieval integration",
+    "Complete GUI settings/cancellation/relaunch acceptance",
     "Actual full Chinese meeting and RAG evaluation"
   ],
   "weights_committed_to_git": false,
-  "notes": "Only SenseVoice, Google embedding and their runtimes are default assets. Existing Qwen download remains optional; no Python/FunASR or local generation model required for first use."
+  "notes": "Only SenseVoice, Google embedding and their runtimes are default assets. Existing Qwen download remains optional; no Python/FunASR or local generation model required for first use.",
+  "managed_asset_implementation": "5a0e003",
+  "managed_asset_proof": "managed-defaults-smoke-20261015.json"
 }
