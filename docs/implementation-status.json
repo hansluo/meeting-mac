@@ -17,23 +17,28 @@
         "v0.3 default Google EmbeddingGemma300M GGUF downloaded621867104bytes, fixedSHA passed; actual Chinese query/document768d retrieval smoke passed. App-managed install/readiness remains pending.",
         "4adba38: native SenseVoice INT8 adapter and explicit CLI; independent spec/quality approved, parent126/126 and swift build passed. Official archive and payload SHA verified; actual zh/en/yue speech and cold/reuse/shutdown/reload proven in sensevoice-synthetic-smoke-20261015.json. Digital silence hallucinated 我.; product guard/VAD still pending.",
         "5a0e003: managed immutable default catalog, streamed seed/hash/download and fixed whitelist extraction, cancel/retry/atomic activation with old-version preservation;139 tests and independent spec/quality passed. Complete default.app release/plist/strict signature passed. Real bundled-seed install and all3 official archives via loopback download/extract/hash succeeded, with production SenseVoice Mandarin and digital-silence guard. Native GUI default-ready/import/transcribe/export and export bytes verified; see managed-defaults-smoke-20261015.json.",
-        "011dd95: owned authenticated offline CPU embedding helper and production client, pinned managed model/runtime, token preflight <=2046,768 finite normalized vectors, bounded batch/HTTP/total deadlines, reuse/cancel/shutdown UUID-safe drain. Parent144/144, actual production Chinese ranking + second resident request and cleanup passed; full default.app release/plist/strict signature passed. Independent spec and quality reviews passed."
+        "011dd95: owned authenticated offline CPU embedding helper and production client, pinned managed model/runtime, token preflight <=2046,768 finite normalized vectors, bounded batch/HTTP/total deadlines, reuse/cancel/shutdown UUID-safe drain. Parent144/144, actual production Chinese ranking + second resident request and cleanup passed; full default.app release/plist/strict signature passed. Independent spec and quality reviews passed.",
+        "d7d8a94: SQLite source snapshots/revisions/chunks/vector spaces, atomic activation with rollback/epoch and scope filtering, native TXT/MD/PDF and bounded streaming cosine. Parent157/157 + full.app release/plist/strict signature passed; independent spec/quality approved. Real SourceIndex+default Google corpus proof validates duplicate, edited-file snapshot, new revision/reopen, correct Chinese ranking, PDF page anchor and deleted/revoked/empty scope exclusion; helper stopped. See source-index-production-smoke-20261015.json."
       ],
-      "remaining": "Persistent index/source/RAG and normal app Chinese retrieval UI, model/index-space isolation, persisted profile readiness and full resource/error/fresh-user acceptance remain. Path-free default assets, short ASR and controlled embedding core are verified."
+      "remaining": "Normal application source/retrieval UI, persisted profile readiness and full concurrent resource/error/fresh-user acceptance remain. Controlled default assets, ASR, embedding and persistent source index core verified."
     },
     {
       "id": "FR-002",
       "title": "资料摄取与版本管理",
-      "status": "not_started",
-      "evidence": [],
-      "remaining": "Implement and verify full requirement and acceptance criteria."
+      "status": "partial",
+      "evidence": [
+        "d7d8a94: SQLite source snapshots/revisions/chunks/vector spaces, atomic activation with rollback/epoch and scope filtering, native TXT/MD/PDF and bounded streaming cosine. Parent157/157 + full.app release/plist/strict signature passed; independent spec/quality approved. Real SourceIndex+default Google corpus proof validates duplicate, edited-file snapshot, new revision/reopen, correct Chinese ranking, PDF page anchor and deleted/revoked/empty scope exclusion; helper stopped. See source-index-production-smoke-20261015.json."
+      ],
+      "remaining": "Native library import/list/detail and full GUI acceptance, progress/cancel/retry UX and explicit reimport after deletion remain. Office/OCR extensions and final file/text/page/resource limits are not established by short corpus proof."
     },
     {
       "id": "FR-003",
       "title": "资料问答与引用",
-      "status": "not_started",
-      "evidence": [],
-      "remaining": "Implement and verify full requirement and acceptance criteria."
+      "status": "partial",
+      "evidence": [
+        "d7d8a94: SQLite source snapshots/revisions/chunks/vector spaces, atomic activation with rollback/epoch and scope filtering, native TXT/MD/PDF and bounded streaming cosine. Parent157/157 + full.app release/plist/strict signature passed; independent spec/quality approved. Real SourceIndex+default Google corpus proof validates duplicate, edited-file snapshot, new revision/reopen, correct Chinese ranking, PDF page anchor and deleted/revoked/empty scope exclusion; helper stopped. See source-index-production-smoke-20261015.json."
+      ],
+      "remaining": "Scoped persisted vector retrieval core is verified; generated answers, stable citation rendering/support validation, local/cloud same-corpus acceptance and native UI remain."
     },
     {
       "id": "FR-004",
@@ -73,9 +78,11 @@
     {
       "id": "FR-009",
       "title": "来源同步与权限撤销",
-      "status": "not_started",
-      "evidence": [],
-      "remaining": "Implement and verify full requirement and acceptance criteria."
+      "status": "partial",
+      "evidence": [
+        "d7d8a94: SQLite source snapshots/revisions/chunks/vector spaces, atomic activation with rollback/epoch and scope filtering, native TXT/MD/PDF and bounded streaming cosine. Parent157/157 + full.app release/plist/strict signature passed; independent spec/quality approved. Real SourceIndex+default Google corpus proof validates duplicate, edited-file snapshot, new revision/reopen, correct Chinese ranking, PDF page anchor and deleted/revoked/empty scope exclusion; helper stopped. See source-index-production-smoke-20261015.json."
+      ],
+      "remaining": "Core source/account eligibility and revoke/delete gates verified with synthetic scopes. Calendar/Drive connectors, real account authorization/incremental sync/retries/cache retention and revoke events remain."
     },
     {
       "id": "FR-010",
@@ -98,7 +105,8 @@
       "evidence": [
         "e557ae0: copy/UTF8 plain text export UI implemented. Native controls observed, but actual copy/save-panel export clicks remain unverified.",
         "Task4A independent source spec and code-quality reviews passed. Parent73Swift+10Python, release/plist/signature passed; GUI clicked-flow remains pending, see desktop-entry-verification-20261015.json.",
-        "5a0e003: managed immutable default catalog, streamed seed/hash/download and fixed whitelist extraction, cancel/retry/atomic activation with old-version preservation;139 tests and independent spec/quality passed. Complete default.app release/plist/strict signature passed. Real bundled-seed install and all3 official archives via loopback download/extract/hash succeeded, with production SenseVoice Mandarin and digital-silence guard. Native GUI default-ready/import/transcribe/export and export bytes verified; see managed-defaults-smoke-20261015.json."
+        "5a0e003: managed immutable default catalog, streamed seed/hash/download and fixed whitelist extraction, cancel/retry/atomic activation with old-version preservation;139 tests and independent spec/quality passed. Complete default.app release/plist/strict signature passed. Real bundled-seed install and all3 official archives via loopback download/extract/hash succeeded, with production SenseVoice Mandarin and digital-silence guard. Native GUI default-ready/import/transcribe/export and export bytes verified; see managed-defaults-smoke-20261015.json.",
+        "d7d8a94: SQLite source snapshots/revisions/chunks/vector spaces, atomic activation with rollback/epoch and scope filtering, native TXT/MD/PDF and bounded streaming cosine. Parent157/157 + full.app release/plist/strict signature passed; independent spec/quality approved. Real SourceIndex+default Google corpus proof validates duplicate, edited-file snapshot, new revision/reopen, correct Chinese ranking, PDF page anchor and deleted/revoked/empty scope exclusion; helper stopped. See source-index-production-smoke-20261015.json."
       ],
       "remaining": "Native short-transcript UTF8 save-panel export now clicked and file bytes verified. Durable history, rich manifest/ZIP/audio/summary export, delete cascade and copy-content/other export acceptance remain."
     },
@@ -179,9 +187,11 @@
     {
       "id": "NFR-001",
       "title": "数据一致",
-      "status": "not_started",
-      "evidence": [],
-      "remaining": "Implement and verify full requirement and acceptance criteria."
+      "status": "partial",
+      "evidence": [
+        "d7d8a94: SQLite source snapshots/revisions/chunks/vector spaces, atomic activation with rollback/epoch and scope filtering, native TXT/MD/PDF and bounded streaming cosine. Parent157/157 + full.app release/plist/strict signature passed; independent spec/quality approved. Real SourceIndex+default Google corpus proof validates duplicate, edited-file snapshot, new revision/reopen, correct Chinese ranking, PDF page anchor and deleted/revoked/empty scope exclusion; helper stopped. See source-index-production-smoke-20261015.json."
+      ],
+      "remaining": "Source revision/index atomicity and delete/revoke filtering verified; capture/transcript/retranscription/generated citations/export/sync consistency across full workflows remains."
     },
     {
       "id": "NFR-002",
@@ -247,9 +257,11 @@
     {
       "id": "NFR-008",
       "title": "模型可替换",
-      "status": "not_started",
-      "evidence": [],
-      "remaining": "Implement and verify full requirement and acceptance criteria."
+      "status": "partial",
+      "evidence": [
+        "d7d8a94: SQLite source snapshots/revisions/chunks/vector spaces, atomic activation with rollback/epoch and scope filtering, native TXT/MD/PDF and bounded streaming cosine. Parent157/157 + full.app release/plist/strict signature passed; independent spec/quality approved. Real SourceIndex+default Google corpus proof validates duplicate, edited-file snapshot, new revision/reopen, correct Chinese ranking, PDF page anchor and deleted/revoked/empty scope exclusion; helper stopped. See source-index-production-smoke-20261015.json."
+      ],
+      "remaining": "Source index has explicit injectable embedding boundary and space isolation; current implementation supports768d/prefix1/chunker1. Actual alternate embeddings and full meeting/RAG provider switching remain."
     }
   ],
   "goal_complete": false,
