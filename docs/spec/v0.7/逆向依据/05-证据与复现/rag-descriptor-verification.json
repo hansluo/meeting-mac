@@ -1,0 +1,24 @@
+{
+  "source": "/Applications/Foresight.app/Contents/Resources/ForesightHelper_tar.tar",
+  "member": "research/xeno/labs/foresight/launch_agent/ForesightHelper",
+  "helper_sha256": "c96e3fbbd5769932dc5dac04b95a185af06f9e40eb2b51a7168841b7c69c1a0e",
+  "descriptor_file_offset": "0x3138698",
+  "descriptor_byte_length": 3578,
+  "end_offset_exclusive": "0x3139492",
+  "descriptor_sha256": "cfe21cde2beef249413a8fb90ea4de10e4ffc1e8ab438ca4a5cc6e794f84446a",
+  "messages": 22,
+  "fields": 45,
+  "rpc": 11,
+  "independent_parser_wire_records_consumed": 337,
+  "checks": [
+    "Installed tar member bytes equal delivered descriptor exactly.",
+    "Independent BytesIO protobuf wire reader consumes descriptor and nested records through end without trailing bytes.",
+    "All 22 message names unique; per message field names/numbers unique; all 45 fields present in JSON.",
+    "All 11 RPC names unique and request/response/streaming mapping matches JSON.",
+    "Reproduction script produces identical descriptor bytes and readable proto."
+  ],
+  "limitations": [
+    "Independent parser shares the published protobuf field-number semantics; no third-party decoder used.",
+    "Readable proto compilation and custom options semantics not verified."
+  ]
+}

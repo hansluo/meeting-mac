@@ -1,0 +1,18 @@
+﻿parameter,observed_value,file_offset,evidence_type,limits
+TranscriptBuffer.maxWordCount,200,0x592ed40,initialization log,not verified for all contexts
+TranscriptBuffer.maxUiLines,4,0x592ed40,initialization log,"UI limit, not storage limit"
+TranscriptBuffer.fillGapMs,2000 ms,0x592ed40,initialization log,runtime override unknown
+selected-file limit,50 MB,0x59a2520,UI text,other import routes unknown
+RAG daemon init timeout,15 s,0x5afed60,timeout log,runtime override unknown
+audio recovery cap,2 attempts / 30 s,0x5a3ea70,recovery limit log,trigger unknown
+recorder warning interval,30 min,0x61e62b0,timer log,configurability unknown
+stale meeting notification,ended > 15 min,0x596a1c0,skip log,applies to notification path
+ChatService.default on-device maxTokens,4096,0x61c0f00,default value log,model config can override; not context window
+web search default,off,0x5fa0dc0,network disclosure,not dynamically verified
+transcription server fallback,removed; only on-device,0x5fd5cd0,diagnostic text,cannot generalize to all tasks
+discovery roots,"Downloads, Documents, Desktop",0x60cdca0,UI text,depth/filter unknown
+query debounce,unknown,0x5a16d80,method name,duration unknown
+retrieval topK/minSimilarityScore,unknown,0x5e2cb50 / 0x5d188d0,field names,default unknown
+chunkOverlap/maxTokensPerChunk,unknown,0x5d47f20 / 0x5ca7a10,field names,default unknown
+inactivity timeout,unknown,0x5d68a80,timer log,value assembled at runtime
+LiteRT-LM recovery limit,unknown,0x5ce3700,limit log,numeric value unknown

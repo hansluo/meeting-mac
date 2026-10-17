@@ -1,0 +1,202 @@
+[
+  {
+    "object_header_offset": "0x5968b40",
+    "data_offset": "0x5968b50",
+    "byte_length": 30,
+    "code_unit_length": 30,
+    "encoding": "latin-1",
+    "header_cid_candidate": 95,
+    "raw_sha256": "7e366eae48eb41fbd410eb5df16bfeffbc153ce061058582a36ec797090e708a",
+    "text": "\n</shorthand_notes>\n\n<output>\n"
+  },
+  {
+    "object_header_offset": "0x5998f00",
+    "data_offset": "0x5998f10",
+    "byte_length": 38,
+    "code_unit_length": 38,
+    "encoding": "latin-1",
+    "header_cid_candidate": 95,
+    "raw_sha256": "15e2edfa1a787939d8e0a5917f3a90576f3f26b3429001d6ee72fb5f7a22daf6",
+    "text": "\n</instructions>\n\n<relevant_excerpts>\n"
+  },
+  {
+    "object_header_offset": "0x59a2ba0",
+    "data_offset": "0x59a2bb0",
+    "byte_length": 20,
+    "code_unit_length": 20,
+    "encoding": "latin-1",
+    "header_cid_candidate": 95,
+    "raw_sha256": "dc6e68a2d967a994fa2a301acc3701b24ad2f92071cd45983be64009b7699799",
+    "text": "</previous_enhanced>"
+  },
+  {
+    "object_header_offset": "0x59d7720",
+    "data_offset": "0x59d7730",
+    "byte_length": 19,
+    "code_unit_length": 19,
+    "encoding": "latin-1",
+    "header_cid_candidate": 95,
+    "raw_sha256": "9f9f32144b6aba8c8ec35905b534478cb58da61a21bbfc6a0a67b4691e741296",
+    "text": "\n<shorthand_notes>\n"
+  },
+  {
+    "object_header_offset": "0x59db480",
+    "data_offset": "0x59db490",
+    "byte_length": 15,
+    "code_unit_length": 15,
+    "encoding": "latin-1",
+    "header_cid_candidate": 95,
+    "raw_sha256": "d767909007751ff6b2cbdf47213b473c8e5e89d5adcda0897c57bf27fd73d010",
+    "text": "[Current Date: "
+  },
+  {
+    "object_header_offset": "0x5ab5de0",
+    "data_offset": "0x5ab5df0",
+    "byte_length": 29,
+    "code_unit_length": 29,
+    "encoding": "latin-1",
+    "header_cid_candidate": 95,
+    "raw_sha256": "81ae8b68de5a98a9637444fc34cb80420e5786a65f0ae08bca23466eabef416c",
+    "text": "</uncovered_meeting_excerpts>"
+  },
+  {
+    "object_header_offset": "0x5b3e710",
+    "data_offset": "0x5b3e720",
+    "byte_length": 43,
+    "code_unit_length": 43,
+    "encoding": "latin-1",
+    "header_cid_candidate": 95,
+    "raw_sha256": "fd03c91ea7f351efe3a35f84a5c29ad58e41a495650fd0d603c332a4a30525ae",
+    "text": "Provide a cohesive summary of the meeting \""
+  },
+  {
+    "object_header_offset": "0x5b44db0",
+    "data_offset": "0x5b44dc0",
+    "byte_length": 26,
+    "code_unit_length": 26,
+    "encoding": "latin-1",
+    "header_cid_candidate": 95,
+    "raw_sha256": "54a23eada7726e7340de6d2bd9aa7e3ac587332c4800e845da6d417a48566ccc",
+    "text": "--- Partial Summary (Part "
+  },
+  {
+    "object_header_offset": "0x5d464d0",
+    "data_offset": "0x5d464e0",
+    "byte_length": 22,
+    "code_unit_length": 22,
+    "encoding": "latin-1",
+    "header_cid_candidate": 95,
+    "raw_sha256": "a952a02229ad50fab3c58020f5b519ead90a7f9b0887b79137861b33d9558bf6",
+    "text": "\n</relevant_excerpts>\n"
+  },
+  {
+    "object_header_offset": "0x5d7e5e0",
+    "data_offset": "0x5d7e5f0",
+    "byte_length": 19,
+    "code_unit_length": 19,
+    "encoding": "latin-1",
+    "header_cid_candidate": 95,
+    "raw_sha256": "616c4555b79f514a3c1b0453709255ba8d95bbdaffa031a0eee4a2fcc7e6e09f",
+    "text": "<previous_enhanced>"
+  },
+  {
+    "object_header_offset": "0x5daa4e0",
+    "data_offset": "0x5daa4f0",
+    "byte_length": 23,
+    "code_unit_length": 23,
+    "encoding": "latin-1",
+    "header_cid_candidate": 95,
+    "raw_sha256": "270e31afe2d0dad5d3fc6ffddf55cc521d94744cc0a2b07c2e17f2025146f9a2",
+    "text": "\n</meeting_transcript>\n"
+  },
+  {
+    "object_header_offset": "0x5e2acc0",
+    "data_offset": "0x5e2acd0",
+    "byte_length": 28,
+    "code_unit_length": 28,
+    "encoding": "latin-1",
+    "header_cid_candidate": 95,
+    "raw_sha256": "c5dd150e46aee852eefdb5a7efbf7589a96e96837126fe9e5aa82931c92051e5",
+    "text": "<uncovered_meeting_excerpts>"
+  },
+  {
+    "object_header_offset": "0x5e2e4f0",
+    "data_offset": "0x5e2e500",
+    "byte_length": 89,
+    "code_unit_length": 89,
+    "encoding": "latin-1",
+    "header_cid_candidate": 95,
+    "raw_sha256": "2e97eb1d9e573c60a366e9e167e7f6dc190457adc0fa0103b225b5cbd59a9392",
+    "text": "The following are partial summaries of different sections of the meeting transcript:\n\"\"\"\n"
+  },
+  {
+    "object_header_offset": "0x5ea97c0",
+    "data_offset": "0x5ea97d0",
+    "byte_length": 21,
+    "code_unit_length": 21,
+    "encoding": "latin-1",
+    "header_cid_candidate": 95,
+    "raw_sha256": "4143474a1e94aa32eab13fc476bc13f285079873249ff5e8b799dfc8c7a5dd84",
+    "text": "\n</transcript_chunk>\n"
+  },
+  {
+    "object_header_offset": "0x5f0bbc0",
+    "data_offset": "0x5f0bbd0",
+    "byte_length": 19,
+    "code_unit_length": 19,
+    "encoding": "latin-1",
+    "header_cid_candidate": 95,
+    "raw_sha256": "6abdfc36a5ab3202d0b9997988a6764511c38f60439c8794f40ce5e2b18a04da",
+    "text": "<transcript_chunk>\n"
+  },
+  {
+    "object_header_offset": "0x5f103d0",
+    "data_offset": "0x5f103e0",
+    "byte_length": 49,
+    "code_unit_length": 49,
+    "encoding": "latin-1",
+    "header_cid_candidate": 95,
+    "raw_sha256": "ca7b21e7fc2e8121310ed4ca217367253f0ad190015b412e5f88e2f272dedb0e",
+    "text": "Concise summarize the following document chunk:\n\n"
+  },
+  {
+    "object_header_offset": "0x5fbe770",
+    "data_offset": "0x5fbe780",
+    "byte_length": 9,
+    "code_unit_length": 9,
+    "encoding": "latin-1",
+    "header_cid_candidate": 95,
+    "raw_sha256": "56b39c58ac0438805b25015019539347f37135857653f0da39b37e8d853e9874",
+    "text": "</output>"
+  },
+  {
+    "object_header_offset": "0x60ccd70",
+    "data_offset": "0x60ccd80",
+    "byte_length": 71,
+    "code_unit_length": 71,
+    "encoding": "latin-1",
+    "header_cid_candidate": 95,
+    "raw_sha256": "f3b6a462838cbd36844a4de1f72da244457f4f4613b6044e5a7e26adeb8a4a26",
+    "text": "Provide a cohesive summary of the following document chunk summaries:\n\n"
+  },
+  {
+    "object_header_offset": "0x6198690",
+    "data_offset": "0x61986a0",
+    "byte_length": 21,
+    "code_unit_length": 21,
+    "encoding": "latin-1",
+    "header_cid_candidate": 95,
+    "raw_sha256": "3f675aa314a82ef87a693007427d81b1ecc7e74dd3b7f4bbd71d617b35ebbf1a",
+    "text": "<meeting_transcript>\n"
+  },
+  {
+    "object_header_offset": "0x61fbb10",
+    "data_offset": "0x61fbb20",
+    "byte_length": 42,
+    "code_unit_length": 42,
+    "encoding": "latin-1",
+    "header_cid_candidate": 95,
+    "raw_sha256": "6d9400cb34759f676a117adc08474186fdc56c7c354ba2332a5b7c6d63d84e32",
+    "text": "New discussion recorded since this summary"
+  }
+]

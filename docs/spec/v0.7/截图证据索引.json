@@ -1,0 +1,20 @@
+[
+  {
+    "id": "S01",
+    "file": "参考截图/S01-Foresight-会议时间线.png",
+    "width_px": 2676,
+    "height_px": 1532,
+    "sha256": "32b44957e29a9efd244d959429938b44783d0d2a77478aa4ab0239b7ea4bc590",
+    "evidence": "user_supplied_visible_ui",
+    "limits": "static screenshot; physical display scale and hidden interactions unknown"
+  },
+  {
+    "id": "S02",
+    "file": "参考截图/S02-Foresight-知识来源.png",
+    "width_px": 2556,
+    "height_px": 1506,
+    "sha256": "7326b33ea1ff081c5680b9d315bfd1437c8cbe2fe5f2719b94bb51146f8b115d",
+    "evidence": "user_supplied_visible_ui",
+    "limits": "static screenshot; physical display scale and hidden interactions unknown"
+  }
+]

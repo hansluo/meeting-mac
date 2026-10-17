@@ -1,0 +1,94 @@
+name: MacRecord
+options:
+  bundleIdPrefix: com.hansluo
+  deploymentTarget:
+    macOS: "14.0"
+  xcodeVersion: "16.0"
+  createIntermediateGroups: true
+  generateEmptyDirectories: true
+
+schemes:
+  MacRecord:
+    build:
+      targets:
+        MacRecord: all
+        MacRecordTests: [test]
+    test:
+      targets:
+        - MacRecordTests
+      environmentVariables:
+        MACRECORD_TESTING: "1"
+
+targets:
+  MacRecord:
+    type: application
+    platform: macOS
+    sources:
+      - MacRecord
+    resources:
+      - path: MacRecord/Resources/sensevoice-model
+        buildPhase: resources
+      - path: MacRecord/Resources/vad
+        buildPhase: resources
+      - path: MacRecord/Resources/speaker-diarization
+        buildPhase: resources
+    dependencies:
+      - framework: Frameworks/sherpa-onnx.xcframework
+        embed: false
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.hansluo.mac-record
+        PRODUCT_NAME: Mac-Record
+        PRODUCT_MODULE_NAME: MacRecord
+        MARKETING_VERSION: "1.2.2"
+        CURRENT_PROJECT_VERSION: "6"
+        INFOPLIST_FILE: MacRecord/Info.plist
+        CODE_SIGN_ENTITLEMENTS: MacRecord/MacRecord.entitlements
+        CODE_SIGN_STYLE: Automatic
+        SWIFT_VERSION: "5.10"
+        ARCHS: arm64
+        MACOSX_DEPLOYMENT_TARGET: "14.0"
+        DEAD_CODE_STRIPPING: YES
+        ENABLE_USER_SCRIPT_SANDBOXING: NO
+        SWIFT_STRICT_CONCURRENCY: minimal
+        COMBINE_HIDPI_IMAGES: YES
+        ENABLE_HARDENED_RUNTIME: YES
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        SWIFT_OBJC_BRIDGING_HEADER: MacRecord/SherpaOnnx-Bridging-Header.h
+        HEADER_SEARCH_PATHS:
+          - "$(PROJECT_DIR)/Frameworks/sherpa-onnx.xcframework/macos-arm64/Headers"
+        LIBRARY_SEARCH_PATHS:
+          - "$(PROJECT_DIR)/Frameworks/sherpa-onnx.xcframework/macos-arm64"
+        OTHER_LDFLAGS:
+          - "-lc++"
+          - "-framework"
+          - "Accelerate"
+          - "-framework"
+          - "Foundation"
+      configs:
+        Debug:
+          CONFIGURATION_BUILD_DIR: "$(PROJECT_DIR)/build.noindex/Xcode/Debug"
+        Release:
+          CONFIGURATION_BUILD_DIR: "$(PROJECT_DIR)/build.noindex/Xcode/Release"
+
+  MacRecordTests:
+    type: bundle.unit-test
+    platform: macOS
+    deploymentTarget: "14.0"
+    sources:
+      - MacRecordTests
+    dependencies:
+      - target: MacRecord
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.hansluo.mac-record.tests
+        GENERATE_INFOPLIST_FILE: YES
+        SWIFT_VERSION: "5.10"
+        ARCHS: arm64
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/Mac-Record.app/Contents/MacOS/Mac-Record"
+        BUNDLE_LOADER: "$(TEST_HOST)"
+      configs:
+        Debug:
+          CONFIGURATION_BUILD_DIR: "$(PROJECT_DIR)/build.noindex/Xcode/Debug"
+        Release:
+          CONFIGURATION_BUILD_DIR: "$(PROJECT_DIR)/build.noindex/Xcode/Release"

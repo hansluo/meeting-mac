@@ -1,0 +1,19 @@
+{
+  "status": "pass",
+  "main_sha256": "fa98b856bfbe9b40cdebfb9f975f7867ec5c0a3ca75b81214a096a60b6db8326",
+  "helper_sha256": "c96e3fbbd5769932dc5dac04b95a185af06f9e40eb2b51a7168841b7c69c1a0e",
+  "verified": {
+    "candidate_strings": 49463,
+    "business_prompt_items": 20,
+    "dynamic_fragments": 20,
+    "runtime_templates": 6,
+    "mechanism_strings": 503,
+    "contract_strings": 110,
+    "json_documents": 18
+  },
+  "limitations": [
+    "Byte accuracy does not establish runtime reachability or behavior.",
+    "Candidate Dart object layout is inferred for this exact build.",
+    "RPC descriptor has a separate independent wire verification report."
+  ]
+}

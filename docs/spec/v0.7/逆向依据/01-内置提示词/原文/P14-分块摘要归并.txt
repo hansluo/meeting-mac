@@ -1,0 +1,5 @@
+Your task is to synthesize the partial summaries into the final requested artifact. Deduplicate any overlapping information. Output only the final requested artifact.
+
+        Each partial summary was generated following these rules (which you should also follow):
+        """
+        

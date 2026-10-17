@@ -1,0 +1,252 @@
+{
+  "repository": "hansluo/MAC-record",
+  "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+  "files": [
+    {
+      "path": "README.md",
+      "expected_git_blob_sha": "ad576a5c71696d96927ca65794919991685a53f7",
+      "actual_git_blob_sha": "ad576a5c71696d96927ca65794919991685a53f7",
+      "matches": true,
+      "sha256": "cb7cad00c1a0f3a855d9547d1799499a5e8fa85efefabd17e4992a7fb8fe70c0",
+      "size": 8453
+    },
+    {
+      "path": "MacRecord/Services/ModelRegistry.swift",
+      "expected_git_blob_sha": "159a07f793c7a797b6100dfac7ba6859561ca500",
+      "actual_git_blob_sha": "159a07f793c7a797b6100dfac7ba6859561ca500",
+      "matches": true,
+      "sha256": "77a5e2d3d07d063a3dc3eceb325edd825aeab4a13471ad0d49a9556e399ddccf",
+      "size": 12707
+    },
+    {
+      "path": "MacRecord/Services/ASRBackendTypes.swift",
+      "expected_git_blob_sha": "b7e009c6eed00e418a60c6da28bacd6723a574aa",
+      "actual_git_blob_sha": "b7e009c6eed00e418a60c6da28bacd6723a574aa",
+      "matches": true,
+      "sha256": "81d09650226b399841ef36074f8b4f636392adc08f8b4efa2f7b483ce44e8147",
+      "size": 2329
+    },
+    {
+      "path": "MacRecord/Services/NativeASRBackend.swift",
+      "expected_git_blob_sha": "22df296463c39d7382ebf12d4e671f4f10679361",
+      "actual_git_blob_sha": "22df296463c39d7382ebf12d4e671f4f10679361",
+      "matches": true,
+      "sha256": "0902483beff010c83afc395e4bc2505d85e58b111dc376c5c6aa2763ca51ee80",
+      "size": 913
+    },
+    {
+      "path": "MacRecord/Services/NativeASRService.swift",
+      "expected_git_blob_sha": "7cb1c62d5880e9cb3dd9851407791140d1e2ef78",
+      "actual_git_blob_sha": "7cb1c62d5880e9cb3dd9851407791140d1e2ef78",
+      "matches": true,
+      "sha256": "33ffa886e7866fc9fcacf16dbacfbf8eed9ab858dc3250b7efd916a5aff98b6f",
+      "size": 27053
+    },
+    {
+      "path": "MacRecord/Services/SherpaOnnxWrapper.swift",
+      "expected_git_blob_sha": "62b8fa79a5cb2d4ac2488aea7bdad488b01deb50",
+      "actual_git_blob_sha": "62b8fa79a5cb2d4ac2488aea7bdad488b01deb50",
+      "matches": true,
+      "sha256": "47a142eceaae0a2abb5bad7f35d5837a0cf4f3871152bee4cad0999c21daf40c",
+      "size": 8155
+    },
+    {
+      "path": "MacRecord/Services/LLMService.swift",
+      "expected_git_blob_sha": "4a7ab786aaec114e397afb237a77e1eceeb887d9",
+      "actual_git_blob_sha": "4a7ab786aaec114e397afb237a77e1eceeb887d9",
+      "matches": true,
+      "sha256": "c47823d5200e9c6b07ec22c8985a0bf8256d9e00b24d7f9c3e186108fc61eb83",
+      "size": 24313
+    },
+    {
+      "path": "MacRecord/Stores/LLMConfigStore.swift",
+      "expected_git_blob_sha": "35c4652231d1f8a86fbd076f9f4b7c1990f4d870",
+      "actual_git_blob_sha": "35c4652231d1f8a86fbd076f9f4b7c1990f4d870",
+      "matches": true,
+      "sha256": "636dbc9cc02bf8a407b338b69186f133f600ae4440b71ac52bbba5a1d4034d02",
+      "size": 10190
+    },
+    {
+      "path": "docs/feature-audit.md",
+      "expected_git_blob_sha": "1016c99edd7dfbac42b3cf27552ce15ffe77ec80",
+      "actual_git_blob_sha": "1016c99edd7dfbac42b3cf27552ce15ffe77ec80",
+      "matches": true,
+      "sha256": "81d710bd6d919d22905b5de4b2a042f009b6f4a53c140187b14c502ead909276",
+      "size": 15073
+    },
+    {
+      "path": "MacRecord/Services/AudioRecorder.swift",
+      "expected_git_blob_sha": "82058051915e49337bbcbb67b7210a76b0fe4ca8",
+      "actual_git_blob_sha": "82058051915e49337bbcbb67b7210a76b0fe4ca8",
+      "matches": true,
+      "sha256": "565f7734ac1e99f25bac26d3d49d2557163fa480fd085c41b75d1b5ddb12a7fc",
+      "size": 13682
+    },
+    {
+      "path": "MacRecord/Services/SystemAudioRecorder.swift",
+      "expected_git_blob_sha": "a2899dba570e2d4afd6e9985d48a83928ea12a3c",
+      "actual_git_blob_sha": "a2899dba570e2d4afd6e9985d48a83928ea12a3c",
+      "matches": true,
+      "sha256": "7df81e823be5d24198b92a932ed5dc833b06c50e19e1e7a0a2fec2af562e4c56",
+      "size": 13000
+    },
+    {
+      "path": "MacRecord/Services/AudioEnhancer.swift",
+      "expected_git_blob_sha": "d5cd487149f3e25879f106a7078c3aeeffbc91cf",
+      "actual_git_blob_sha": "d5cd487149f3e25879f106a7078c3aeeffbc91cf",
+      "matches": true,
+      "sha256": "a05a685c9f207e45b31e6bcc5fa78751d0938221ee7cdc5e8525a36d272a0e07",
+      "size": 25017
+    },
+    {
+      "path": "MacRecord/Services/SummaryGenerator.swift",
+      "expected_git_blob_sha": "d8fe34afa32be8f476c5ae739b43ae28f4b081da",
+      "actual_git_blob_sha": "d8fe34afa32be8f476c5ae739b43ae28f4b081da",
+      "matches": true,
+      "sha256": "81df098e64969780dd93d7d3fdbdfe95aee501f68af1d7279c0f5fa20ac9a858",
+      "size": 15654
+    },
+    {
+      "path": "MacRecord/Services/VoiceInputService.swift",
+      "expected_git_blob_sha": "9e418cbaa967414cbf20a12afd291dd51db9ec8b",
+      "actual_git_blob_sha": "9e418cbaa967414cbf20a12afd291dd51db9ec8b",
+      "matches": true,
+      "sha256": "e2a629f172ca304658ec6bed0c3fd3c29dc4a32e971269e16d8afab191402c57",
+      "size": 11497
+    },
+    {
+      "path": "MacRecord/Services/VoiceInputCorrectionService.swift",
+      "expected_git_blob_sha": "192a65689f1ac24c7554078e42d04e25c0c2f782",
+      "actual_git_blob_sha": "192a65689f1ac24c7554078e42d04e25c0c2f782",
+      "matches": true,
+      "sha256": "b00e863cb77649328b11d78b377a61dee1e2510a41201cc338cfd358566e9486",
+      "size": 6011
+    },
+    {
+      "path": "MacRecord/Services/RecordingPersistenceCoordinator.swift",
+      "expected_git_blob_sha": "868a8c8f61ffaea156e3915a9df5c45ee0301104",
+      "actual_git_blob_sha": "868a8c8f61ffaea156e3915a9df5c45ee0301104",
+      "matches": true,
+      "sha256": "cf9bd13486203522228d74f2767a7ee16f805ef1b8ad4c62123b380f51d508d8",
+      "size": 5462
+    },
+    {
+      "path": "MacRecord/Services/SleepWakeManager.swift",
+      "expected_git_blob_sha": "f84d09514b46eddc66c5299593f57fdd8fefa185",
+      "actual_git_blob_sha": "f84d09514b46eddc66c5299593f57fdd8fefa185",
+      "matches": true,
+      "sha256": "fcc347b831a3e55273003894c2e0206bca88be05cabe3cb077a281fac0b75717",
+      "size": 4798
+    },
+    {
+      "path": "MacRecord/Services/SherpaOnnxDiarizationWrapper.swift",
+      "expected_git_blob_sha": "dabcc0ac4d8be2a59dcf656341525972cf8664de",
+      "actual_git_blob_sha": "dabcc0ac4d8be2a59dcf656341525972cf8664de",
+      "matches": true,
+      "sha256": "351845838652f24de0c1e6deefeaa23186eb2a5fc421c5d5d4e8eba122b43c75",
+      "size": 5774
+    },
+    {
+      "path": "MacRecord/Services/ModelDownloadManager.swift",
+      "expected_git_blob_sha": "1a9ad8d536cca4d1e37daadf619edf4db2dee6f1",
+      "actual_git_blob_sha": "1a9ad8d536cca4d1e37daadf619edf4db2dee6f1",
+      "matches": true,
+      "sha256": "5cd4c62c06ec2ce67900f600019499eb4579c1e7b7af495914a198920e1192e1",
+      "size": 16189
+    },
+    {
+      "path": "MacRecord/App/AppState+Recording.swift",
+      "expected_git_blob_sha": "7ae12e2b1392645dfb8e74a7a79aca4dbaac06d2",
+      "actual_git_blob_sha": "7ae12e2b1392645dfb8e74a7a79aca4dbaac06d2",
+      "matches": true,
+      "sha256": "26e6a5daf81a8f2c6cc725b1a574b728b09c851db31f49f0c0d003b5eb4d25fe",
+      "size": 9758
+    },
+    {
+      "path": "MacRecord/Models/Recording.swift",
+      "expected_git_blob_sha": "087538e00df68234fdabbb0f12f51896a63df31c",
+      "actual_git_blob_sha": "087538e00df68234fdabbb0f12f51896a63df31c",
+      "matches": true,
+      "sha256": "95e7fe2b1cc0c9b31d385920264d3b1ec6a29a0f60c2a2ad6f4b05b0462e3fc3",
+      "size": 1869
+    },
+    {
+      "path": "MacRecord/Services/ExportManager.swift",
+      "expected_git_blob_sha": "9f9a484bcd6e59bc03b25a22bb39f0da750b630d",
+      "actual_git_blob_sha": "9f9a484bcd6e59bc03b25a22bb39f0da750b630d",
+      "matches": true,
+      "sha256": "ff52b201befbbc40dbb64cdb87c51ff6550f1cb637aaff76945f1fab10a769c7",
+      "size": 3490
+    },
+    {
+      "path": "MacRecord/Stores/ASRConfigStore.swift",
+      "expected_git_blob_sha": "a45d4048302d1fab1d97dc41df197bcae256b3a9",
+      "actual_git_blob_sha": "a45d4048302d1fab1d97dc41df197bcae256b3a9",
+      "matches": true,
+      "sha256": "fc983489b61efed7941c310371dfdb1578e28d2d8a2f5dae72f45c85f3e8e595",
+      "size": 1631
+    },
+    {
+      "path": "project.yml",
+      "expected_git_blob_sha": "540d9602950b523a3cdb6f99e496fa00f0ec2a34",
+      "actual_git_blob_sha": "540d9602950b523a3cdb6f99e496fa00f0ec2a34",
+      "matches": true,
+      "sha256": "93717f17308817c8cc231c6888195e8c9fca02a645d49038c5802ce8d91ad165",
+      "size": 2858
+    },
+    {
+      "path": "MacRecord/App/AppState.swift",
+      "expected_git_blob_sha": "375b5a7a19152822dc0e5ab0c2a43ca4c3a0b499",
+      "actual_git_blob_sha": "375b5a7a19152822dc0e5ab0c2a43ca4c3a0b499",
+      "matches": true,
+      "sha256": "dbee4a6d665255d1b4f5fe3182f0eea49a96f500d62b345386496dd546ab3b6a",
+      "size": 16874
+    },
+    {
+      "path": "MacRecord/Services/SherpaOnnxVADWrapper.swift",
+      "expected_git_blob_sha": "6a2e6bc62bca7310101f89bd4ae4ce475c7da82b",
+      "actual_git_blob_sha": "6a2e6bc62bca7310101f89bd4ae4ce475c7da82b",
+      "matches": true,
+      "sha256": "6cbacdb6c19e0ed8b27fbce5b1347bf4e2e5573ba96689b151f2eae45d838899",
+      "size": 2934
+    },
+    {
+      "path": "MacRecord/Services/RealtimeAudioPump.swift",
+      "expected_git_blob_sha": "b2710cf73c46ae990bec6999e8c4aebb70573016",
+      "actual_git_blob_sha": "b2710cf73c46ae990bec6999e8c4aebb70573016",
+      "matches": true,
+      "sha256": "18713250e32a2e584a0b82d95c4a2dc48af5b1bad25fcef381f2b4101986b49b",
+      "size": 1108
+    },
+    {
+      "path": "MacRecord/Services/TextInjector.swift",
+      "expected_git_blob_sha": "705f8ccc0e7f8347b7b0892041feaaa3cf6ae8ca",
+      "actual_git_blob_sha": "705f8ccc0e7f8347b7b0892041feaaa3cf6ae8ca",
+      "matches": true,
+      "sha256": "81ef0a35bfb25145b562caf6cd95a17fbd70c024d8bde6bed3d60cef28528a18",
+      "size": 5865
+    },
+    {
+      "path": "MacRecord/Stores/VoiceInputConfigStore.swift",
+      "expected_git_blob_sha": "49136707575242ffa2c3a3da156bb14fcc7ebc8f",
+      "actual_git_blob_sha": "49136707575242ffa2c3a3da156bb14fcc7ebc8f",
+      "matches": true,
+      "sha256": "3032eb0abec833522049781b60b8a45e60afaa304fd3378e38222bb0279c58e4",
+      "size": 3394
+    },
+    {
+      "path": "MacRecord/Utilities/KeychainHelper.swift",
+      "expected_git_blob_sha": "97df8c1892a379e3e486eeaa6afa568026e52162",
+      "actual_git_blob_sha": "97df8c1892a379e3e486eeaa6afa568026e52162",
+      "matches": true,
+      "sha256": "dde952dddfbdaa378dbec2581d9295c9b1145bdf53a6555a7f47af071ac3ab02",
+      "size": 3145
+    }
+  ],
+  "license": {
+    "path": "LICENSE",
+    "git_blob_sha": "f4b2994c840b284e3bddf6f2038d2d5df1f5f329",
+    "sha256": "2b26ed91d3d7f39a13854c8e5759d1939f8f1d7aa94607c0426b4b36b6198320"
+  },
+  "selection_scope": "30 selectively inspected files plus LICENSE; not a complete build checkout"
+}

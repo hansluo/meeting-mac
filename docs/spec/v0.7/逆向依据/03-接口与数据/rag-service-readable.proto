@@ -1,0 +1,132 @@
+// Readable reconstruction of embedded descriptor, NOT recovered source.
+// All field numbers/types and RPC mappings are decoded. Custom options omitted.
+// Edition mapping: https://raw.githubusercontent.com/protocolbuffers/protobuf/main/src/google/protobuf/descriptor.proto
+edition = "2024";
+package research.xeno.labs.foresight.launch_agent.proto;
+
+message IndexRequest {
+  string document_id = 1; // source 0x313871d
+  string content = 2; // source 0x3138732
+  string user_id = 3; // source 0x3138743
+  int32 max_tokens_per_chunk = 4; // source 0x3138754
+  int32 chunk_overlap = 5; // source 0x3138772
+  bytes image_bytes = 6; // source 0x3138789
+  string mime_type = 7; // source 0x313879e
+}
+
+message IndexResponse {
+  bool success = 1; // source 0x31387c2
+  string error_message = 2; // source 0x31387d3
+}
+
+message Query {
+  oneof query {
+    string text_query = 1; // source 0x31387f3
+    bytes audio_query = 2; // source 0x3138809
+  }
+}
+
+message RetrieveRequest {
+  .research.xeno.labs.foresight.launch_agent.proto.Query query = 1; // source 0x313883d
+  int32 max_results = 2; // source 0x3138884
+  double min_similarity_score = 3; // source 0x3138899
+  string user_id = 4; // source 0x31388b7
+  repeated string allowed_document_ids = 5; // source 0x31388c8
+}
+
+message RetrieveResponse {
+  repeated .research.xeno.labs.foresight.launch_agent.proto.RetrievedChunk chunks = 1; // source 0x31388fa
+}
+
+message RetrievedChunk {
+  string text = 1; // source 0x313895d
+  double relevance_score = 2; // source 0x313896b
+  string document_id = 3; // source 0x3138984
+  string mime_type = 4; // source 0x3138999
+}
+
+message UpdateModelPathsRequest {
+  string embedding_model_path = 1; // source 0x31389c7
+  string sentence_piece_model_path = 2; // source 0x31389e5
+  bool use_gpu = 3; // source 0x3138a08
+  string cache_dir = 4; // source 0x3138a19
+}
+
+message UpdateModelPathsResponse {
+  bool success = 1; // source 0x3138a48
+  string error_message = 2; // source 0x3138a59
+}
+
+message DeleteRequest {
+  string document_id = 1; // source 0x3138a81
+  string user_id = 2; // source 0x3138a96
+}
+
+message DeleteResponse {
+  bool success = 1; // source 0x3138ab9
+  string error_message = 2; // source 0x3138aca
+}
+
+message EncodeRequest {
+  string text = 1; // source 0x3138af2
+}
+
+message EncodeResponse {
+  repeated int32 tokens = 1; // source 0x3138b12
+}
+
+message ChunkTextRequest {
+  string text = 1; // source 0x3138b36
+  int32 max_tokens_per_chunk = 2; // source 0x3138b44
+}
+
+message ChunkTextResponse {
+  repeated string chunks = 1; // source 0x3138b77
+}
+
+message TruncateTextRequest {
+  string text = 1; // source 0x3138b9e
+  int32 max_tokens = 2; // source 0x3138bac
+}
+
+message TruncateTextResponse {
+  string truncated_text = 1; // source 0x3138bd8
+}
+
+message ComputeEmbeddingRequest {
+  string text = 1; // source 0x3138c0b
+}
+
+message ComputeEmbeddingResponse {
+  repeated double embedding = 1; // source 0x3138c35
+}
+
+message ComputeImageEmbeddingRequest {
+  bytes image_bytes = 1; // source 0x3138c68
+}
+
+message ComputeAudioEmbeddingRequest {
+  bytes audio_bytes = 1; // source 0x3138c9d
+}
+
+message PingRequest {
+}
+
+message PingResponse {
+  bool success = 1; // source 0x3138cd1
+  string version = 2; // source 0x3138ce2
+}
+
+service RagService {
+  rpc IndexDocument (.research.xeno.labs.foresight.launch_agent.proto.IndexRequest) returns (.research.xeno.labs.foresight.launch_agent.proto.IndexResponse); // source 0x3138d02
+  rpc RetrieveContext (.research.xeno.labs.foresight.launch_agent.proto.RetrieveRequest) returns (.research.xeno.labs.foresight.launch_agent.proto.RetrieveResponse); // source 0x3138d9e
+  rpc UpdateModelPaths (.research.xeno.labs.foresight.launch_agent.proto.UpdateModelPathsRequest) returns (.research.xeno.labs.foresight.launch_agent.proto.UpdateModelPathsResponse); // source 0x3138e42
+  rpc DeleteDocument (.research.xeno.labs.foresight.launch_agent.proto.DeleteRequest) returns (.research.xeno.labs.foresight.launch_agent.proto.DeleteResponse); // source 0x3138ef7
+  rpc Encode (.research.xeno.labs.foresight.launch_agent.proto.EncodeRequest) returns (.research.xeno.labs.foresight.launch_agent.proto.EncodeResponse); // source 0x3138f96
+  rpc ChunkText (.research.xeno.labs.foresight.launch_agent.proto.ChunkTextRequest) returns (.research.xeno.labs.foresight.launch_agent.proto.ChunkTextResponse); // source 0x313902d
+  rpc TruncateText (.research.xeno.labs.foresight.launch_agent.proto.TruncateTextRequest) returns (.research.xeno.labs.foresight.launch_agent.proto.TruncateTextResponse); // source 0x31390cd
+  rpc ComputeEmbedding (.research.xeno.labs.foresight.launch_agent.proto.ComputeEmbeddingRequest) returns (.research.xeno.labs.foresight.launch_agent.proto.ComputeEmbeddingResponse); // source 0x3139176
+  rpc ComputeImageEmbedding (.research.xeno.labs.foresight.launch_agent.proto.ComputeImageEmbeddingRequest) returns (.research.xeno.labs.foresight.launch_agent.proto.ComputeEmbeddingResponse); // source 0x313922b
+  rpc ComputeAudioEmbedding (.research.xeno.labs.foresight.launch_agent.proto.ComputeAudioEmbeddingRequest) returns (.research.xeno.labs.foresight.launch_agent.proto.ComputeEmbeddingResponse); // source 0x31392ea
+  rpc Ping (.research.xeno.labs.foresight.launch_agent.proto.PingRequest) returns (.research.xeno.labs.foresight.launch_agent.proto.PingResponse); // source 0x31393a9
+}

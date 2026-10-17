@@ -1,0 +1,755 @@
+{
+  "scope": "独立正则字符串常量，未恢复大小写/多行/Unicode标志与调用优先级。用途分类为依据字符串含义的推断。",
+  "items": [
+    {
+      "object_header_offset": "0x5929940",
+      "data_offset": "0x5929950",
+      "byte_length": 39,
+      "code_unit_length": 39,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "b56b3dc87a5292acc293435ebba27d00a323b0f521fe7dc8cf69e40196d98f2b",
+      "text": "\\b(?:Microphone|Remote)\\s+said\\s+that\\b"
+    },
+    {
+      "object_header_offset": "0x59529f0",
+      "data_offset": "0x5952a00",
+      "byte_length": 67,
+      "code_unit_length": 67,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "e979f9f9420cc03f04d1f809470f3a40d170620a623ce9f683815ea46d368fca",
+      "text": "\\b(?:Microphone|Remote)\\s+(?:questioned|asked|inquired)\\s+whether\\b"
+    },
+    {
+      "object_header_offset": "0x596afc0",
+      "data_offset": "0x596afd0",
+      "byte_length": 46,
+      "code_unit_length": 46,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "91aa850c5eb89aba4d4f46a9c5fcd80521ed8c976e9061092c632f65c9a0bdf4",
+      "text": "\\b(?:Microphone|Remote)\\s+raised\\s+concerns?\\b"
+    },
+    {
+      "object_header_offset": "0x5970530",
+      "data_offset": "0x5970540",
+      "byte_length": 48,
+      "code_unit_length": 48,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "fc7c0d22976d1ec1246f331a847f655a79d3b7317f6d8f5414cfe7f64d582f73",
+      "text": "\\b(?:Microphone|Remote)\\s+pointed\\s+out\\s+that\\b"
+    },
+    {
+      "object_header_offset": "0x599dc40",
+      "data_offset": "0x599dc50",
+      "byte_length": 44,
+      "code_unit_length": 44,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "4754893d0a313a4be6ff875127fffdf6cc3c2c9590690900ef9fc361099351d7",
+      "text": "\\b(?:Microphone|Remote)\\s+explained\\s+that\\b"
+    },
+    {
+      "object_header_offset": "0x59b5a70",
+      "data_offset": "0x59b5a80",
+      "byte_length": 34,
+      "code_unit_length": 34,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "9f6a07489604e0a16d0a1321dcb7b233e20486bd922c91d664c8157e52361eb5",
+      "text": "\\b(?:Microphone|Remote)\\s+shared\\b"
+    },
+    {
+      "object_header_offset": "0x59b5ce0",
+      "data_offset": "0x59b5cf0",
+      "byte_length": 93,
+      "code_unit_length": 93,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "a9c8944951e73a5532e11c81ca0be618bd639e23b34aa653e66d700c797a8853",
+      "text": "\\b(?:Both\\s+)?(?:Microphone and Remote|Remote and Microphone)\\s+(?:discussed|agreed)\\s+that\\b"
+    },
+    {
+      "object_header_offset": "0x59b7c60",
+      "data_offset": "0x59b7c70",
+      "byte_length": 91,
+      "code_unit_length": 91,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "1da56b03b119caa5d172b69c4dd54c72d2a160f75ea8b772814691e2127e4434",
+      "text": "\\b(?:Both\\s+)?(?:Microphone and Remote|Remote and Microphone)\\s+(?:observed|noted)\\s+that\\b"
+    },
+    {
+      "object_header_offset": "0x5a2b670",
+      "data_offset": "0x5a2b680",
+      "byte_length": 97,
+      "code_unit_length": 97,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "8574791d9548837f6c7c622b1f47e9acf03f955a9dce6f330e7a0e277e56c3ee",
+      "text": "(?:meeting|meetings|sync|syncs|call|calls)\\s+(?:of|about|for|on|regarding|concerning|with)\\s+(.+)"
+    },
+    {
+      "object_header_offset": "0x5a2c1c0",
+      "data_offset": "0x5a2c1d0",
+      "byte_length": 164,
+      "code_unit_length": 164,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "245cfa3911bb27b58251b87a8edccd1642d828e163fa9fecdefade549a3f834a",
+      "text": "(?:meet\\s+with|scheduled\\s+with|meetings?\\s+with|prepare\\s+for|prep\\s+for|sync\\s+with|chat\\s+with|talk\\s+to|catch\\s+up\\s+with|meeting|meet|see)\\s+(?:vendor\\s+)?(.+)"
+    },
+    {
+      "object_header_offset": "0x5a3dba0",
+      "data_offset": "0x5a3dbb0",
+      "byte_length": 37,
+      "code_unit_length": 37,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "cc87bffdac76b127a9e924980b6e0df421dac5ce700644281bc6632f53483734",
+      "text": "\\b(?:Microphone|Remote)\\s+clarified\\b"
+    },
+    {
+      "object_header_offset": "0x5a3f470",
+      "data_offset": "0x5a3f480",
+      "byte_length": 45,
+      "code_unit_length": 45,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "516bea8368c6ac90898da6a74fd74d787d1d91ffcfaa6a7d275dc0d3ab478259",
+      "text": "\\b(?:Microphone|Remote)\\s+emphasized\\s+that\\b"
+    },
+    {
+      "object_header_offset": "0x5ab5330",
+      "data_offset": "0x5ab5340",
+      "byte_length": 13,
+      "code_unit_length": 13,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "b1dde171fd005056b89702340d2d22f812709a50f0912c88f3e6a850753c8eb8",
+      "text": "\\blast week\\b"
+    },
+    {
+      "object_header_offset": "0x5ab8160",
+      "data_offset": "0x5ab8170",
+      "byte_length": 39,
+      "code_unit_length": 39,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "ce85c53b87c65a1e557481bde881ddd934e4b3ecff8a46bcb3f0fdf52e93ca78",
+      "text": "\\b(?:Microphone|Remote)\\s+highlighted\\b"
+    },
+    {
+      "object_header_offset": "0x5ad0400",
+      "data_offset": "0x5ad0410",
+      "byte_length": 326,
+      "code_unit_length": 326,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "4963dc0bff75e8c53a3ade94790bec7274948dbb1c4f0af656a76dccb6c1c4bb",
+      "text": "\\[(?:noise|spoken_noise|laughs?|laughter|applause|cheers?|cheering|music|silence|crosstalk|inaudible|unclear|unknown|coughing|cough|sighs?|gasp|groan|snort|throat-clearing|snicker|giggle|chuckle|whispering)\\]|<(?:noise|spoken_noise|laughs?|laughter|applause|cheers?|cheering|music|silence|crosstalk|inaudible|unclear|unknown)>"
+    },
+    {
+      "object_header_offset": "0x5ae89f0",
+      "data_offset": "0x5ae8a00",
+      "byte_length": 36,
+      "code_unit_length": 36,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "ce47d174aec8889dc1dc7827cd1fe6e7f17b909332fd0ca8dbcbc751f0e6cfc4",
+      "text": "\\b(?:Microphone|Remote)\\s+proposed\\b"
+    },
+    {
+      "object_header_offset": "0x5b01370",
+      "data_offset": "0x5b01380",
+      "byte_length": 73,
+      "code_unit_length": 73,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "2b3f2ea36df289cc97d5620c90e9021db760b6e6d3a76246fc169d0215f5d98b",
+      "text": "\\b(?:Both\\s+)?(?:Microphone and Remote|Remote and Microphone)\\s+debated\\b"
+    },
+    {
+      "object_header_offset": "0x5b32e80",
+      "data_offset": "0x5b32e90",
+      "byte_length": 121,
+      "code_unit_length": 121,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "cd2c3bfdd5d1a0e640965254a37c9151269b7ac994177d1c256885bc570f0503",
+      "text": "\\b([a-zA-Z0-9_\\-]+(?:\\s+[a-zA-Z0-9_\\-]+)?)\\s+(?:meeting|meetings|sync|syncs|call|calls|session|sessions|review|reviews)\\b"
+    },
+    {
+      "object_header_offset": "0x5b383d0",
+      "data_offset": "0x5b383e0",
+      "byte_length": 44,
+      "code_unit_length": 44,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "2a805ee08cb57918a55685e0b7f034bc4a9c58c0b8d0feeb93a7524d55c34ea1",
+      "text": "\\b(?:Microphone|Remote)\\s+clarified\\s+that\\b"
+    },
+    {
+      "object_header_offset": "0x5b43f70",
+      "data_offset": "0x5b43f80",
+      "byte_length": 93,
+      "code_unit_length": 93,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "48e306c91ccba905c0afa90af99561265cba42e7295b7c3c538a8b28ab900c11",
+      "text": "\\b(?:Both\\s+)?(?:Microphone and Remote|Remote and Microphone)\\s+(?:agreed|concluded)\\s+that\\b"
+    },
+    {
+      "object_header_offset": "0x5b448c0",
+      "data_offset": "0x5b448d0",
+      "byte_length": 176,
+      "code_unit_length": 176,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "998ba7becc58426dcb3f062deb959b92810c5ba5ffffffdbcb4d4fa387436be0",
+      "text": "(?:meet\\s+with|met\\s+with|sync\\s+with|synced\\s+with|chat\\s+with|chatted\\s+with|talk\\s+to|talked\\s+to|catch\\s+up\\s+with|caught\\s+up\\s+with|met|meet|saw|see)\\s+(?:vendor\\s+)?(.+)"
+    },
+    {
+      "object_header_offset": "0x5ba9c20",
+      "data_offset": "0x5ba9c30",
+      "byte_length": 37,
+      "code_unit_length": 37,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "b0123a4291c3031ddd525b49b6daf2dcf4106ec802cde0a6c9d46dd9b89cd8ad",
+      "text": "\\b(?:Microphone|Remote)\\s+suggested\\b"
+    },
+    {
+      "object_header_offset": "0x5bbdde0",
+      "data_offset": "0x5bbddf0",
+      "byte_length": 37,
+      "code_unit_length": 37,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "819fd1b6b1698dc7804611ecad5dfd89d5e5883aef7283b69c7e080c9cadd44c",
+      "text": "\\b(?:Microphone|Remote)\\s+indicated\\b"
+    },
+    {
+      "object_header_offset": "0x5bbee20",
+      "data_offset": "0x5bbee30",
+      "byte_length": 43,
+      "code_unit_length": 43,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "31ae85f163dd2d73a897657cca6f92fa36e8fa1ec9b80268ecc4c3faf8d6b804",
+      "text": "\\b(?:Microphone|Remote)\\s+proposed\\s+that\\b"
+    },
+    {
+      "object_header_offset": "0x5be6010",
+      "data_offset": "0x5be6020",
+      "byte_length": 304,
+      "code_unit_length": 304,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "cb21c53351197bbbae7d646b781d2fb75e7e7277fa219967416ff65997b0ad0e",
+      "text": "\\b(today|tomorrow|yesterday|days?|weeks?|months?|quarters?|years?|monday|tuesday|wednesday|thursday|friday|saturday|sunday|mon|tue|wed|thu|fri|sat|sun|january|february|march|april|may|june|july|august|september|october|november|december|jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec|on my plate)\\b"
+    },
+    {
+      "object_header_offset": "0x5be9c40",
+      "data_offset": "0x5be9c50",
+      "byte_length": 41,
+      "code_unit_length": 41,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "1b43e9c98200eba314aff3b9b9cec4dfa73dc9272e765d1224ad6c83179c77c5",
+      "text": "\\b(?:Microphone|Remote)\\s+pointed\\s+out\\b"
+    },
+    {
+      "object_header_offset": "0x5bfc910",
+      "data_offset": "0x5bfc920",
+      "byte_length": 43,
+      "code_unit_length": 43,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "835bd10408b63d305cbba3ecfa3ead24ad080c4c41049a2c26db5bcef7345168",
+      "text": "\\b(?:Microphone|Remote)\\s+reported\\s+that\\b"
+    },
+    {
+      "object_header_offset": "0x5c6b2d0",
+      "data_offset": "0x5c6b2e0",
+      "byte_length": 65,
+      "code_unit_length": 65,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "cf9e48a7bafe3c205c57d0495589f5ba249f97bbcc8e05b98acf6ce1655a9c60",
+      "text": "\\b(meet|meeting|meetings|sync|syncs|chat|catch up|talk|1:1|1-1)\\b"
+    },
+    {
+      "object_header_offset": "0x5c6e7c0",
+      "data_offset": "0x5c6e7d0",
+      "byte_length": 111,
+      "code_unit_length": 111,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "8c09574cf5dbb32e86b562e1c77a4fc5f9ab41e0b19a27545ec83c9518212bf1",
+      "text": "\\b(future|upcoming|next|scheduled|coming up|plan to meet|planning to meet|prepare|prep|talking points|agenda)\\b"
+    },
+    {
+      "object_header_offset": "0x5c6ebf0",
+      "data_offset": "0x5c6ec00",
+      "byte_length": 73,
+      "code_unit_length": 73,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "22c8f9e0aeed9e375dbe91eb08ce797aa0c74697676a29d050a838ab1fc39a5d",
+      "text": "\\b(meet|met|meeting|meetings|sync|syncs|chat|discussed|talked|catch up)\\b"
+    },
+    {
+      "object_header_offset": "0x5c83390",
+      "data_offset": "0x5c833a0",
+      "byte_length": 44,
+      "code_unit_length": 44,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "883cf8e39fefa29b76d197253c4074eb43def76d97ca872df7255931f462cfa6",
+      "text": "\\b(?:Microphone|Remote)\\s+discussed\\s+that\\b"
+    },
+    {
+      "object_header_offset": "0x5cce240",
+      "data_offset": "0x5cce250",
+      "byte_length": 110,
+      "code_unit_length": 110,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "d1d614b241e002a0cc9ab45302a3a8350caf6b5e9388956a340252add597c197",
+      "text": "\\b(last|past|previously|earlier|previous|yesterday|history|did we have|have we had|we had|quarter|month|ago)\\b"
+    },
+    {
+      "object_header_offset": "0x5d05740",
+      "data_offset": "0x5d05750",
+      "byte_length": 156,
+      "code_unit_length": 156,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "a3f00af41d352a8acd9eaca1c3634eff16d0c48e0c010bfba8307eac2acc05a0",
+      "text": "(?:last|previous|prior|past)\\s+(?:the\\s+|our\\s+|my\\s+|a\\s+|an\\s+)?(.+?)\\s+(?:meeting|meetings|sync|syncs|call|calls|1:1|1-1|session|sessions|review|reviews)"
+    },
+    {
+      "object_header_offset": "0x5d2c2c0",
+      "data_offset": "0x5d2c2d0",
+      "byte_length": 306,
+      "code_unit_length": 306,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "6058dcdb10d63520162a21b1f65a55e4838b1089e0124b3e6f6150cb3752075a",
+      "text": "\\b(what do i have|what do we have|what are my|what are our|what.s on my|what is on my|show my|list my|my upcoming|any upcoming|my meetings|my schedule|query meeting|query meetings|list meetings|show meetings|view meetings|get meetings|how many meetings|how many syncs|check my calendar|check my schedule)\\b"
+    },
+    {
+      "object_header_offset": "0x5d45310",
+      "data_offset": "0x5d45320",
+      "byte_length": 62,
+      "code_unit_length": 62,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "0bed0b9ea17b40ac5d84e75723964509b630d8d00733bc83b0f2b593f26a91c8",
+      "text": "\\b(?:Microphone|Remote)\\s+(?:questioned|asked|inquired)\\s+if\\b"
+    },
+    {
+      "object_header_offset": "0x5d49c60",
+      "data_offset": "0x5d49c70",
+      "byte_length": 46,
+      "code_unit_length": 46,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "c78f0a2aa466d842f69e876f1c4e5e4d9c48ebde4f1ca3d3b93a7d7094833d5c",
+      "text": "\\b(?:Microphone|Remote)\\s+highlighted\\s+that\\b"
+    },
+    {
+      "object_header_offset": "0x5d5aad0",
+      "data_offset": "0x5d5aae0",
+      "byte_length": 37,
+      "code_unit_length": 37,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "7f9f014491453e10e4aadf4666618d387264069469607e9cc59f5c2139b75047",
+      "text": "\\b(?:Microphone|Remote)\\s+explained\\b"
+    },
+    {
+      "object_header_offset": "0x5d5edc0",
+      "data_offset": "0x5d5edd0",
+      "byte_length": 57,
+      "code_unit_length": 57,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "bbf2eb7528396166d3c622d744444f1be12c61a3c1de8f1715b960e287365c99",
+      "text": "\\b(?:Microphone|Remote)\\s+(?:questioned|asked|inquired)\\b"
+    },
+    {
+      "object_header_offset": "0x5d60b80",
+      "data_offset": "0x5d60b90",
+      "byte_length": 198,
+      "code_unit_length": 198,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "89580196ac353935a9ae97f2ff6b914587550caa418cd9b678909e7260d293aa",
+      "text": "\\b(?:(?:in|for|over)\\s+(?:the\\s+)?(?:past|last|previous)\\s+|(?:past|last|previous)\\s+)(\\d+|a|one|two|three|four|five|six|seven|eight|nine|ten)\\s+(day|days|week|weeks|month|months|quarter|quarters)\\b"
+    },
+    {
+      "object_header_offset": "0x5d678e0",
+      "data_offset": "0x5d678f0",
+      "byte_length": 44,
+      "code_unit_length": 44,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "42ec2c297dd2f75295fb4eea58c5baa3ceba95fd445dbf6258c2f96b35b16286",
+      "text": "\\b(?:Microphone|Remote)\\s+cautioned\\s+that\\b"
+    },
+    {
+      "object_header_offset": "0x5d67bd0",
+      "data_offset": "0x5d67be0",
+      "byte_length": 38,
+      "code_unit_length": 38,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "000833558e285fb8e33e7c1fc56ed11d8d400220655627ea3571499e8dcab86e",
+      "text": "\\b(this week|upcoming week|the week)\\b"
+    },
+    {
+      "object_header_offset": "0x5d68d00",
+      "data_offset": "0x5d68d10",
+      "byte_length": 44,
+      "code_unit_length": 44,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "04125c2b110ea0416e79dacf7f361e5b4f79e9b3929476f10c27b3d618bb4feb",
+      "text": "\\b(?:Microphone|Remote)\\s+suggested\\s+that\\b"
+    },
+    {
+      "object_header_offset": "0x5da4f90",
+      "data_offset": "0x5da4fa0",
+      "byte_length": 204,
+      "code_unit_length": 204,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "e4b3dcc4f2e024000b5d32d9ab70983eefbaad1cdfedede5f2b9424ee975934e",
+      "text": "(?:next|upcoming|scheduled|future|plan\\s+to\\s+meet|prepare\\s+for|prep\\s+for)\\s+(?:the\\s+|our\\s+|my\\s+|a\\s+|an\\s+)?(.+?)\\s+(?:meeting|meetings|sync|syncs|call|calls|1:1|1-1|session|sessions|review|reviews)"
+    },
+    {
+      "object_header_offset": "0x5da58d0",
+      "data_offset": "0x5da58e0",
+      "byte_length": 109,
+      "code_unit_length": 109,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "3da9880e75f4e48e14a11d03b4630209c98dd41dc77ad4e40192e1beba8b7bfb",
+      "text": "\\b(decision to|decision on|when was the decision|who decided|who approved|who concluded|when did we decide)\\b"
+    },
+    {
+      "object_header_offset": "0x5da5ea0",
+      "data_offset": "0x5da5eb0",
+      "byte_length": 36,
+      "code_unit_length": 36,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "06ef3f74221aac4106019dfed2d2e3794451154b0e399d4f5ee0c5ae446f493b",
+      "text": "\\b(?:Microphone|Remote)\\s+observed\\b"
+    },
+    {
+      "object_header_offset": "0x5da9b20",
+      "data_offset": "0x5da9b30",
+      "byte_length": 75,
+      "code_unit_length": 75,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "4407fceb363d56d57904a42e2193a5f486f7a2d17dd338fb089c45a6e7d5785c",
+      "text": "\\b(?:Both\\s+)?(?:Microphone and Remote|Remote and Microphone)\\s+discussed\\b"
+    },
+    {
+      "object_header_offset": "0x5dd3140",
+      "data_offset": "0x5dd3150",
+      "byte_length": 30,
+      "code_unit_length": 30,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "d85446e2cdce559018a39920cc91ca50098a9b544eadc63fdd090fb9174bbaa9",
+      "text": "\\bby\\s+(?:Microphone|Remote)\\b"
+    },
+    {
+      "object_header_offset": "0x5e23fe0",
+      "data_offset": "0x5e23ff0",
+      "byte_length": 40,
+      "code_unit_length": 40,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "b81e1f9df3f2e91004b315d36c3478d310bcebbe6b56be2e84c8ab85e5ebc462",
+      "text": "\\b(?:Microphone|Remote)\\s+noted\\s+that\\b"
+    },
+    {
+      "object_header_offset": "0x5e96cf0",
+      "data_offset": "0x5e96d00",
+      "byte_length": 39,
+      "code_unit_length": 39,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "19f22fb09694d9d55f7068043afa50a375f44cde9f7216dc445311afbd3a800a",
+      "text": "\\b(?:Microphone|Remote)\\s+recommended\\b"
+    },
+    {
+      "object_header_offset": "0x5ebd830",
+      "data_offset": "0x5ebd840",
+      "byte_length": 173,
+      "code_unit_length": 173,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "e905b5c4513108630b67eedb3b417ed5e55ddfc14f9603e8033317203402465b",
+      "text": "\\b(prep|prepare|ready for|agenda|meeting|meetings|schedule|calendar|what do i have|what do we have|what is on|what.s on|what are my|what are our|plans for|free on|busy on)\\b"
+    },
+    {
+      "object_header_offset": "0x5f0e380",
+      "data_offset": "0x5f0e390",
+      "byte_length": 44,
+      "code_unit_length": 44,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "0054a8a39f102dfeb93d29be7e49ac03896dff018f44e514157b23d7f5a0c66b",
+      "text": "\\b(?:Microphone|Remote)\\s+indicated\\s+that\\b"
+    },
+    {
+      "object_header_offset": "0x5f105c0",
+      "data_offset": "0x5f105d0",
+      "byte_length": 43,
+      "code_unit_length": 43,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "6754d273b56eb78b2ace16696d37ec278a6146086886d01e45998d794a4abe59",
+      "text": "\\bAccording to\\s+(?:Microphone|Remote),?\\s*"
+    },
+    {
+      "object_header_offset": "0x5f10f70",
+      "data_offset": "0x5f10f80",
+      "byte_length": 9,
+      "code_unit_length": 9,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "a8d6383f353daba3219f3d5ee17bd779fa17441d794fa52dbf95ea3a0229f973",
+      "text": "\\btoday\\b"
+    },
+    {
+      "object_header_offset": "0x5f46140",
+      "data_offset": "0x5f46150",
+      "byte_length": 34,
+      "code_unit_length": 34,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "9543bce7c12f1311c0e56805651ee49aa7361c6aa95c3e7fbb83c5f3f75f5b83",
+      "text": "\\b(?:Microphone|Remote)\\s+stated\\b"
+    },
+    {
+      "object_header_offset": "0x5f46660",
+      "data_offset": "0x5f46670",
+      "byte_length": 67,
+      "code_unit_length": 67,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "18ac90e718e85d48435c8826fe6023c33bcebdb36139bdf4109cfe6ece4b2bbe",
+      "text": "(?:decision to|decision on|decide on|decide to|decision for)\\s+(.+)"
+    },
+    {
+      "object_header_offset": "0x5f5a3e0",
+      "data_offset": "0x5f5a3f0",
+      "byte_length": 63,
+      "code_unit_length": 63,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "425a73ed99afe7eca7f4cffa01f1510a0fec5684f8391d0e1cf2c8f34b851c15",
+      "text": "\\b(?:Both\\s+)?(?:Microphone and Remote|Remote and Microphone)\\b"
+    },
+    {
+      "object_header_offset": "0x5f5aad0",
+      "data_offset": "0x5f5aae0",
+      "byte_length": 37,
+      "code_unit_length": 37,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "06c0ad7fa72c7cec91cb32f32e8eff79d3e9490113034a1bf0b7f11852796044",
+      "text": "\\b(?:Microphone|Remote)\\s+cautioned\\b"
+    },
+    {
+      "object_header_offset": "0x5fa5830",
+      "data_offset": "0x5fa5840",
+      "byte_length": 46,
+      "code_unit_length": 46,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "2b49ed18ce8d02672ddb191e1a05f428135b11d1ca48856fc5c901e6b7284bcc",
+      "text": "\\b(?:as\\s+)?noted by\\s+(?:Microphone|Remote)\\b"
+    },
+    {
+      "object_header_offset": "0x5fa95b0",
+      "data_offset": "0x5fa95c0",
+      "byte_length": 13,
+      "code_unit_length": 13,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "6aef8e07f7c90c646d42485fc2a10f8fc839e319ccdf8f76a47474172df8bd94",
+      "text": "\\bnext week\\b"
+    },
+    {
+      "object_header_offset": "0x5fac300",
+      "data_offset": "0x5fac310",
+      "byte_length": 201,
+      "code_unit_length": 201,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "27e93bbef368158875f9bb13640c96fda8b0b32e0967034556b85571150528a6",
+      "text": "\\b(?:(?:in|for|over)\\s+(?:the\\s+)?(?:next|upcoming)\\s+|(?:next|upcoming)\\s+|(?:in|for|over)\\s+(?:the\\s+)?)(\\d+|a|one|two|three|four|five|six|seven|eight|nine|ten)\\s+(day|days|week|weeks|month|months)\\b"
+    },
+    {
+      "object_header_offset": "0x5fac440",
+      "data_offset": "0x5fac450",
+      "byte_length": 38,
+      "code_unit_length": 38,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "e059d7fee055d029f67bec417e8874a46cc9dc964dbac6af9be366e920537f10",
+      "text": "\\b(?:Microphone|Remote)\\s+emphasized\\b"
+    },
+    {
+      "object_header_offset": "0x5fbfba0",
+      "data_offset": "0x5fbfbb0",
+      "byte_length": 144,
+      "code_unit_length": 144,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "681eee819935f08d241114ca21c73dff4537e3e1183a58ac7e201e7a4d3daf06",
+      "text": "\\b(when do we meet|when are we meeting|next meet|meet next|next time|help me prepare|prepare for my next|prep for next|prepare me for my next)\\b"
+    },
+    {
+      "object_header_offset": "0x6031020",
+      "data_offset": "0x6031030",
+      "byte_length": 12,
+      "code_unit_length": 12,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "d8e85d5b4196a3a7cab06676875a09383083ced9acc119eac4a520910efafa3e",
+      "text": "\\btomorrow\\b"
+    },
+    {
+      "object_header_offset": "0x60418d0",
+      "data_offset": "0x60418e0",
+      "byte_length": 33,
+      "code_unit_length": 33,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "38c46c53eca87058a46f02e351dd6c2233f8f38b01e25fe3ea09f752cbb351ea",
+      "text": "\\b(?:Microphone|Remote)\\s+noted\\b"
+    },
+    {
+      "object_header_offset": "0x606eb70",
+      "data_offset": "0x606eb80",
+      "byte_length": 43,
+      "code_unit_length": 43,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "8a5df43424f246c3a44e66d8b321604ec15c66d185920055748f06101470f207",
+      "text": "\\b(?:Microphone|Remote)\\s+observed\\s+that\\b"
+    },
+    {
+      "object_header_offset": "0x60aefd0",
+      "data_offset": "0x60aefe0",
+      "byte_length": 36,
+      "code_unit_length": 36,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "7e3c814de5289a87714630071e34545ec6640325573fee5e50cc5943a4a66c17",
+      "text": "\\b(?:Microphone|Remote)\\s+reported\\b"
+    },
+    {
+      "object_header_offset": "0x60b4610",
+      "data_offset": "0x60b4620",
+      "byte_length": 46,
+      "code_unit_length": 46,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "04b6b1e8b03aa817b51f8552bd9d44b024b37f3342a8b3d7845ea125f0b05639",
+      "text": "\\b(?:Microphone|Remote)\\s+recommended\\s+that\\b"
+    },
+    {
+      "object_header_offset": "0x60b8e10",
+      "data_offset": "0x60b8e20",
+      "byte_length": 133,
+      "code_unit_length": 133,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "21afe4080bd5dbef9be7776519d491ec5457470dc2733bb1eaa0e194056662f3",
+      "text": "\\b(decided|decision|agreed|action item|next step|deadline|due date|launch|blocker|risk|approved|budget|assigned|follow up|priority)\\b"
+    },
+    {
+      "object_header_offset": "0x61619c0",
+      "data_offset": "0x61619d0",
+      "byte_length": 194,
+      "code_unit_length": 194,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "18b26bc67924a6d97ed19a8d84bb6713771050762caed79809c9087a9a1de6f9",
+      "text": "\\b(last meet|last met|last time|last chat|last sync|last discuss|previously met|earlier met|last talked|when did we last|what did we agree|agreed on|when did we meet|what meetings did we have)\\b"
+    },
+    {
+      "object_header_offset": "0x6171490",
+      "data_offset": "0x61714a0",
+      "byte_length": 32,
+      "code_unit_length": 32,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "cdfbf8cb8a30691b0ae49490315cc02beca8e323f43126e6293c55506e3cd2a7",
+      "text": "\\b(?:Microphone|Remote)\\s+said\\b"
+    },
+    {
+      "object_header_offset": "0x6179c70",
+      "data_offset": "0x6179c80",
+      "byte_length": 41,
+      "code_unit_length": 41,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "45982c52bda9c17a5167683e9279229cf2fc09b52ac5bcf9926b360081fe2520",
+      "text": "\\b(?:Microphone|Remote)\\s+stated\\s+that\\b"
+    },
+    {
+      "object_header_offset": "0x61984a0",
+      "data_offset": "0x61984b0",
+      "byte_length": 47,
+      "code_unit_length": 47,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "bbc4817b78c613830a70f2e8753e4f8b075eefea1293b9cf1bcb19259e52b7ef",
+      "text": "\\b(?:Microphone|Remote)\\s+expressed\\s+doubts?\\b"
+    },
+    {
+      "object_header_offset": "0x61aa070",
+      "data_offset": "0x61aa080",
+      "byte_length": 41,
+      "code_unit_length": 41,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "7215957097720db5adb6ffc8e2dca3bf43761162f8cef30111598cfde41bae4b",
+      "text": "\\b(?:Microphone|Remote)\\s+shared\\s+that\\b"
+    },
+    {
+      "object_header_offset": "0x61fba00",
+      "data_offset": "0x61fba10",
+      "byte_length": 61,
+      "code_unit_length": 61,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "9e001684c511ed847becddcb6873817074f7841f5851859034dc3c137f182761",
+      "text": "\\bbetween\\s+(?:Microphone and Remote|Remote and Microphone)\\b"
+    },
+    {
+      "object_header_offset": "0x61fbd60",
+      "data_offset": "0x61fbd70",
+      "byte_length": 37,
+      "code_unit_length": 37,
+      "encoding": "latin-1",
+      "header_cid_candidate": 95,
+      "raw_sha256": "212454e1e67031a5c29e16fc7fbca3f2e028daf7ccadb2da64211ce87d882678",
+      "text": "\\b(?:Microphone|Remote)\\s+discussed\\b"
+    }
+  ]
+}

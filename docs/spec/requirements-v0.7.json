@@ -1,0 +1,908 @@
+{
+  "spec_version": "0.7",
+  "status": "draft_for_user_review",
+  "current": true,
+  "date": "2026-10-17",
+  "source_spec": "product-v0.7.md",
+  "supersedes_after_approval": "product-v0.6.md",
+  "implementation_authorized": false,
+  "functional_requirements": [
+    {
+      "id": "FR-001",
+      "title": "模型清单、下载与资源管理",
+      "phase": "P0/P1",
+      "requirement": "默认ASR与embedding及运行时由应用准备、固定hash并实际短任务验证；缺失可修复，激活失败保留旧版。P0无高级设置、模型替换或路径/Python入口；后续P1另验替换。",
+      "acceptance": {
+        "id": "AC-001",
+        "criteria": "首版仅默认资源可用；检查设置无高级区/模型替换；断网可转写检索；损坏/取消/重试/旧版回退有确定结果。P1另验索引空间替换。",
+        "scenarios": [
+          "UAT-01",
+          "UAT-03",
+          "UAT-16",
+          "UAT-17",
+          "UAT-33"
+        ]
+      },
+      "previous_requirement": "requirements-v0.5.json#FR-001"
+    },
+    {
+      "id": "FR-002",
+      "title": "资料摄取与版本管理",
+      "phase": "P0/P2",
+      "requirement": "P0导入TXT/MD/文本PDF及会议转写；保存来源、账号、快照hash、parser、索引空间及revision。幂等更新，全部成功后原子激活。P2扩展DOCX/OCR。",
+      "acceptance": {
+        "id": "AC-002",
+        "criteria": "重复不增生；修改产生新revision；取消/损坏/超限保留旧版；退出重开可回查；P2识别结果有锚点及来源。",
+        "scenarios": [
+          "UAT-09",
+          "UAT-18",
+          "UAT-28",
+          "UAT-29"
+        ]
+      },
+      "previous_requirement": "requirements-v0.5.json#FR-002"
+    },
+    {
+      "id": "FR-003",
+      "title": "资料问答与引用",
+      "phase": "P0/P1",
+      "requirement": "限定来源、账号、活动版本、删除/撤权后召回，预算内生成，引用绑定真实快照及时间/页码。P0默认DeepSeek，P1本地生成同集验证。普通聊天与资料问答分开保存会话、scope、消息、模型和引用；重开、停止、切换不串写。",
+      "acceptance": {
+        "id": "AC-003",
+        "criteria": "所选/全部/空范围不越界；无答案及冲突明确；引用可定位且支持结论；本地/云切换不扩大权限；并发撤权取消失效输出。",
+        "scenarios": [
+          "UAT-10",
+          "UAT-11",
+          "UAT-17",
+          "UAT-22",
+          "UAT-29",
+          "UAT-34",
+          "UAT-38"
+        ]
+      },
+      "previous_requirement": "requirements-v0.5.json#FR-003"
+    },
+    {
+      "id": "FR-004",
+      "title": "会议与音频采集",
+      "phase": "P0",
+      "requirement": "首版必须提供麦克风外界声音、直接采集电脑系统声音、同一场同时采集双来源三种录音模式；独立音轨、统一时间线、实际电平及状态，保存和回放；不依赖ASR/Key就绪。",
+      "acceptance": {
+        "id": "AC-004",
+        "criteria": "分别录外界讲话、戴耳机电脑播放音频、同场讲话+播放并核对保存文件及两轨；不可用麦克风回录替代系统采集。暂停恢复/停止/权限设备睡眠故障和两小时恢复通过，ASR失败仍保留音频。",
+        "scenarios": [
+          "UAT-04",
+          "UAT-05",
+          "UAT-24",
+          "UAT-26",
+          "UAT-27",
+          "UAT-30",
+          "UAT-31",
+          "UAT-33"
+        ]
+      },
+      "previous_requirement": "requirements-v0.5.json#FR-004"
+    },
+    {
+      "id": "FR-005",
+      "title": "转写片段、时间与修订",
+      "phase": "P0",
+      "requirement": "稳定片段ID、音频范围、模型版本和修订链；暂定/稳定分开，人工修订不抹去原ASR；无词级能力只提供段级时间。",
+      "acceptance": {
+        "id": "AC-005",
+        "criteria": "尾句不丢，同句修订不重复；分段边界无明显丢字；点击回放正确；无能力不伪造时间/实名；人工修改后派生产物标过时。",
+        "scenarios": [
+          "UAT-07",
+          "UAT-08",
+          "UAT-19",
+          "UAT-34"
+        ]
+      },
+      "previous_requirement": "requirements-v0.5.json#FR-005"
+    },
+    {
+      "id": "FR-006",
+      "title": "摘要、行动项与长会议信息",
+      "phase": "P0/P1",
+      "requirement": "通用/项目/访谈模板、真实token预算的分段归并及结构校验；绑定输入、prompt、模型和证据；P1本地模型完成同流程。",
+      "acceptance": {
+        "id": "AC-006",
+        "criteria": "长会尾段决策保留；行动项不编姓名/日期/承诺；修复失败有可读草稿；取消保留输入；用户编辑不被覆盖；两条生成路线分别验证。",
+        "scenarios": [
+          "UAT-08",
+          "UAT-17",
+          "UAT-19",
+          "UAT-21",
+          "UAT-36",
+          "UAT-37"
+        ]
+      },
+      "previous_requirement": "requirements-v0.5.json#FR-006"
+    },
+    {
+      "id": "FR-007",
+      "title": "用户笔记增强",
+      "phase": "P0/P1",
+      "requirement": "P0手动会议笔记；P1原文/AI增强/用户采用版本分开，仅用关联转写，差异预览后采用，旧产物过时可重算。",
+      "acceptance": {
+        "id": "AC-007",
+        "criteria": "原文可恢复；专名数字保留；笔记不串用证据；输入revision变化不覆盖用户编辑。",
+        "scenarios": [
+          "UAT-08",
+          "UAT-13",
+          "UAT-20",
+          "UAT-37"
+        ]
+      },
+      "previous_requirement": "requirements-v0.5.json#FR-007"
+    },
+    {
+      "id": "FR-008",
+      "title": "日程、备会与历史会议搜索",
+      "phase": "P1",
+      "requirement": "EventKit日历、结构化时间/事件过滤结合语义检索；备会关联附件、历史和个人资料并保留来源；手动会议独立使用。",
+      "acceptance": {
+        "id": "AC-008",
+        "criteria": "跨时区、全天、同名/重复实例及不存在事件正确；不漏匹配事件；备会不虚构资料。",
+        "scenarios": [
+          "UAT-14",
+          "UAT-27"
+        ]
+      },
+      "previous_requirement": "requirements-v0.5.json#FR-008"
+    },
+    {
+      "id": "FR-009",
+      "title": "来源同步与权限撤销",
+      "phase": "P1",
+      "requirement": "可选Calendar/Drive连接，独立账号/范围/凭据/游标；增量幂等和有限重试；删除、撤权、解绑及时阻断检索并清理缓存。",
+      "acceptance": {
+        "id": "AC-009",
+        "criteria": "重复同步不增生；失败项可恢复；撤权不再用于新回答，旧缓存引用正文清除；重新授权重新确认范围。",
+        "scenarios": [
+          "UAT-14",
+          "UAT-22",
+          "UAT-38"
+        ]
+      },
+      "previous_requirement": "requirements-v0.5.json#FR-009"
+    },
+    {
+      "id": "FR-010",
+      "title": "主动问题检测与sidecar",
+      "phase": "P2",
+      "requirement": "默认关闭；本地可替换检测、去重、冷却，绑定会话和转写snapshot；检索生成按单独任务路由，不自动对外操作。",
+      "acceptance": {
+        "id": "AC-010",
+        "criteria": "真实问题/反问/闲聊/重复标注评测达标；结束取消及话题变化后旧结果不显示；检测不挤占采集。",
+        "scenarios": [
+          "UAT-18",
+          "UAT-35",
+          "UAT-36"
+        ]
+      },
+      "previous_requirement": "requirements-v0.5.json#FR-010"
+    },
+    {
+      "id": "FR-011",
+      "title": "多模态与知识组织",
+      "phase": "P2",
+      "requirement": "按实测能力接入图像/音频embedding、OCR/Office、标签/Wiki/图谱；索引版本隔离，知识视图保留来源；图谱/重排路由需收益证据。",
+      "acceptance": {
+        "id": "AC-011",
+        "criteria": "不支持能力明示；删除/更新传播；新增检索在固定集证明收益；未通过路由不得称完成。",
+        "scenarios": [
+          "UAT-18",
+          "UAT-28",
+          "UAT-29",
+          "UAT-35"
+        ]
+      },
+      "previous_requirement": "requirements-v0.5.json#FR-011"
+    },
+    {
+      "id": "FR-012",
+      "title": "历史、导出、删除与诊断",
+      "phase": "P0/P1",
+      "requirement": "P0持久历史、音频/文本/纪要/JSON/ZIP及版本manifest、访问阻断后清理、脱敏诊断；P1完成备份重导入校验。统计只展示实际计数/usage，无依据不宣称token节省；帮助含版本、权限和脱敏诊断，关闭窗口与退出应用分开。",
+      "acceptance": {
+        "id": "AC-012",
+        "criteria": "重启结果保留；导出说明输入/模型/prompt/引用来源且无Key；删除影响所有route；并发旧任务不复活；P1恢复验证后才称备份。",
+        "scenarios": [
+          "UAT-12",
+          "UAT-22",
+          "UAT-24",
+          "UAT-32"
+        ]
+      },
+      "previous_requirement": "requirements-v0.5.json#FR-012"
+    },
+    {
+      "id": "FR-013",
+      "title": "生成模型配置、发现与连接",
+      "phase": "P0/P1",
+      "requirement": "P0默认DeepSeek预填地址/model、Keychain设置和真实短生成测试；P1本地及兼容服务。列表发现/鉴权/生成/流式/结构化能力分别验证。",
+      "acceptance": {
+        "id": "AC-013",
+        "criteria": "真实账号调用通过；缺Key不阻断本地；自定义前缀/无models接口/401/超时/模型失效有确定结果；配置变更使旧测试失效，发现不等于ready。",
+        "scenarios": [
+          "UAT-02",
+          "UAT-03",
+          "UAT-17",
+          "UAT-23",
+          "UAT-33"
+        ]
+      },
+      "previous_requirement": "requirements-v0.5.json#FR-013"
+    },
+    {
+      "id": "FR-014",
+      "title": "默认SenseVoice与可切换Qwen/FunASR引擎",
+      "phase": "P0/P1",
+      "requirement": "P0默认原生SenseVoice分段实时/文件解码；P1Qwen本机ONNX和FunASR完整高级入口；逐profile报告file/流式/时间/热词/说话人。",
+      "acceptance": {
+        "id": "AC-014",
+        "criteria": "三条路线同一音频有引擎/模型记录；文件与实时分测；切换不影响活动会话；session缓存隔离、flush/取消/结束通过。",
+        "scenarios": [
+          "UAT-01",
+          "UAT-07",
+          "UAT-16"
+        ]
+      },
+      "previous_requirement": "requirements-v0.5.json#FR-014"
+    },
+    {
+      "id": "FR-015",
+      "title": "音频导入、回放与重转录",
+      "phase": "P0/P1",
+      "requirement": "逐块解码四类音频，保存应用媒体副本、进度/取消/回放；重转录产生候选，明确采用后更新索引并标旧派生产物过时。首版仅默认ASR重转录，换引擎留待P1。",
+      "acceptance": {
+        "id": "AC-015",
+        "criteria": "四格式及长音频实际成功；无界内存禁止；失败/取消保留旧结果；原文件删除仍可回放应用副本；无音频清楚说明限制。",
+        "scenarios": [
+          "UAT-06",
+          "UAT-07",
+          "UAT-24",
+          "UAT-34"
+        ]
+      },
+      "previous_requirement": "requirements-v0.5.json#FR-015"
+    },
+    {
+      "id": "FR-016",
+      "title": "全局语音输入",
+      "phase": "P1",
+      "requirement": "独立短会话：按住热键、浮窗、松开识别、可选LLM纠错及文字注入；原始ASR与纠错分开，焦点验证，不自动发送。",
+      "acceptance": {
+        "id": "AC-016",
+        "criteria": "中英/长短句/热键冲突/焦点变化/无权限可恢复或复制；与会议并发不丢采集；纠错route独立。",
+        "scenarios": [
+          "UAT-15"
+        ]
+      },
+      "previous_requirement": "requirements-v0.5.json#FR-016"
+    },
+    {
+      "id": "FR-017",
+      "title": "按任务选择本地/云端模型",
+      "phase": "P0/P1",
+      "requirement": "P0固定明确的默认任务位置及云发送范围，P1完整任务级编辑及本地/局域网/云provider；实际执行记录，不隐式跨云回退。P0不提供路由编辑或模型替换设置。",
+      "acceptance": {
+        "id": "AC-017",
+        "criteria": "只启用云纪要不上传音频；无云授权本地失败就停止；只发所需snapshot；网络/Key失败不污染本地；本机声明有证据等级。",
+        "scenarios": [
+          "UAT-03",
+          "UAT-17",
+          "UAT-38"
+        ]
+      },
+      "previous_requirement": "requirements-v0.5.json#FR-017"
+    },
+    {
+      "id": "FR-018",
+      "title": "说话人分离与身份关联",
+      "phase": "P1",
+      "requirement": "独立离线分离/对齐，匿名cluster及时间范围；采集来源、speaker、联系人分开；手工实名确认有记录。",
+      "acceptance": {
+        "id": "AC-018",
+        "criteria": "单人/多人/重叠及改名可回查；不支持分离仍可转写；匿名标签不成为真实行动项责任人。",
+        "scenarios": [
+          "UAT-16"
+        ]
+      },
+      "previous_requirement": "requirements-v0.5.json#FR-018"
+    }
+  ],
+  "nonfunctional_requirements": [
+    {
+      "id": "NFR-001",
+      "title": "数据一致",
+      "requirement": "revision、索引、引用、删除、撤权与幂等一致",
+      "acceptance_source": "product-v0.6.md 第11节 NFR-001",
+      "previous_requirement": "requirements-v0.5.json#NFR-001"
+    },
+    {
+      "id": "NFR-002",
+      "title": "输出可信",
+      "requirement": "引用真实支持结论；行动项不冒认姓名和承诺",
+      "acceptance_source": "product-v0.6.md 第11节 NFR-002",
+      "previous_requirement": "requirements-v0.5.json#NFR-002"
+    },
+    {
+      "id": "NFR-003",
+      "title": "可恢复",
+      "requirement": "稳定音频/转写持久化、有限重试与取消",
+      "acceptance_source": "product-v0.6.md 第11节 NFR-003",
+      "previous_requirement": "requirements-v0.5.json#NFR-003"
+    },
+    {
+      "id": "NFR-004",
+      "title": "执行位置",
+      "requirement": "本地/局域网/云实际位置与route一致",
+      "acceptance_source": "product-v0.6.md 第11节 NFR-004",
+      "previous_requirement": "requirements-v0.5.json#NFR-004"
+    },
+    {
+      "id": "NFR-005",
+      "title": "可观察",
+      "requirement": "每阶段耗时、模型/runtime/prompt/index、失败分类可追踪",
+      "acceptance_source": "product-v0.6.md 第11节 NFR-005",
+      "previous_requirement": "requirements-v0.5.json#NFR-005"
+    },
+    {
+      "id": "NFR-006",
+      "title": "资源预算",
+      "requirement": "采集不断流；模型、队列、输入和并发有界",
+      "acceptance_source": "product-v0.6.md 第11节 NFR-006",
+      "previous_requirement": "requirements-v0.5.json#NFR-006"
+    },
+    {
+      "id": "NFR-007",
+      "title": "能力真实",
+      "requirement": "file/流式/时间/热词/说话人等逐profile验证",
+      "acceptance_source": "product-v0.6.md 第11节 NFR-007",
+      "previous_requirement": "requirements-v0.5.json#NFR-007"
+    },
+    {
+      "id": "NFR-008",
+      "title": "模型可替换",
+      "requirement": "上层会议/RAG不绑定Google或某个ASR ABI",
+      "acceptance_source": "product-v0.6.md 第11节 NFR-008",
+      "previous_requirement": "requirements-v0.5.json#NFR-008"
+    }
+  ],
+  "phases": {
+    "P0": "核心可用版；默认模型与DeepSeek完整链路",
+    "P1": "工作流完整版；本地替换、日程同步、笔记增强、语音输入与说话人",
+    "P2": "完整目标版；主动助手、多模态和知识组织"
+  },
+  "revision_of": "product-v0.5.md",
+  "first_release": {
+    "phase": "P0",
+    "advanced_settings": false,
+    "model_replacement": false,
+    "recording_modes": [
+      "microphone",
+      "system_audio",
+      "simultaneous_microphone_and_system_audio"
+    ],
+    "recording_independent_of_asr_and_cloud": true,
+    "system_audio_must_work_with_headphones": true,
+    "system_audio_backend": "CoreAudio Process Tap",
+    "screen_recording_permission": false,
+    "screen_capture_fallback": false,
+    "system_audio_minimum_macos": "14.2"
+  },
+  "additional_acceptance_scenarios": [
+    {
+      "id": "UAT-19",
+      "spec_section": "附录 B.5"
+    },
+    {
+      "id": "UAT-20",
+      "spec_section": "附录 B.5"
+    },
+    {
+      "id": "UAT-21",
+      "spec_section": "附录 B.5"
+    },
+    {
+      "id": "UAT-22",
+      "spec_section": "附录 B.5"
+    },
+    {
+      "id": "UAT-23",
+      "spec_section": "附录 B.5"
+    },
+    {
+      "id": "UAT-24",
+      "spec_section": "附录 B.5"
+    },
+    {
+      "id": "UAT-25",
+      "spec_section": "4.3、附录B.5"
+    },
+    {
+      "id": "UAT-26",
+      "criteria": "全局外壳与S01/S02并排：同色背景贯穿、窄图标导航完整顺序、顶部徽标/录音位置；无白色大工作台替代。",
+      "phase": "P0",
+      "spec_section": "附录E"
+    },
+    {
+      "id": "UAT-27",
+      "criteria": "会议时间线空/有数据、今天/历史日期、现在横线、搜索/返回、日历状态与批量导出范围；不是简单历史表格。",
+      "phase": "P0",
+      "spec_section": "附录E"
+    },
+    {
+      "id": "UAT-28",
+      "criteria": "知识来源文件/图表页签、搜索+添加、标签、真实索引数、排序、列表/网格、无登录本地导入；空态及部分失败正确。",
+      "phase": "P0结构/P1-P2扩展",
+      "spec_section": "附录E"
+    },
+    {
+      "id": "UAT-29",
+      "criteria": "来源多选、标签筛选、稳定排序、空范围不扩为全部；切换列表/网格保留选择；删标签不删资料。",
+      "phase": "P0范围/P2组织",
+      "spec_section": "附录E"
+    },
+    {
+      "id": "UAT-30",
+      "criteria": "录音中跨会议/提问/来源/统计/设置切换、关闭重开窗口；进程和音频持续，不新建采集器、不重复请求屏幕权限。",
+      "phase": "P0",
+      "spec_section": "附录E"
+    },
+    {
+      "id": "UAT-31",
+      "criteria": "1440×810、1280×800、960×640及大字号；保持层级，搜索/主按钮不溢出，右助手先收起，键盘/可访问名称可用。",
+      "phase": "P0",
+      "spec_section": "附录E"
+    },
+    {
+      "id": "UAT-32",
+      "criteria": "统计实际计数和usage、无虚构token节省；帮助、版本和诊断；侧栏退出与关闭窗口分开，录音时确认保存再退出。",
+      "phase": "P0",
+      "spec_section": "附录E"
+    },
+    {
+      "id": "UAT-33",
+      "criteria": "所有页面首次/加载/失败/取消/无Key/离线状态；本地功能不登录、不启云；未实现功能不显示假成功。",
+      "phase": "P0并各阶段继承",
+      "spec_section": "附录E"
+    },
+    {
+      "id": "UAT-34",
+      "criteria": "详情固定播放器、笔记/转写/纪要/助手布局；精确audioFile与时间引用、候选采用/旧版本失效；960宽可用。",
+      "phase": "P0",
+      "spec_section": "附录E"
+    },
+    {
+      "id": "UAT-35",
+      "criteria": "标签/Wiki/图谱关系有来源，算法建议与用户关联分开；删除/撤权失效；多模态与图检索收益有对照。",
+      "phase": "P2",
+      "spec_section": "附录E"
+    },
+    {
+      "id": "UAT-36",
+      "criteria": "20原始prompt/20片段/6runtime模板与提取索引hash一致；RP-01～12任务映射、版本及调用边界明确，未恢复部分不伪称恢复。",
+      "phase": "文档/P0-P2运行继承",
+      "spec_section": "附录E"
+    },
+    {
+      "id": "UAT-37",
+      "criteria": "纪要/行动项/笔记模板实际输出过schema/证据/责任人/相对日期/尾段覆盖，坏JSON修复一次、600秒总截止与取消真实终止。",
+      "phase": "P0/P1笔记增强",
+      "spec_section": "附录E"
+    },
+    {
+      "id": "UAT-38",
+      "criteria": "提示词注入/空scope/撤权/会话切换/压缩：不扩大范围、不造引用，保存模型/模板/输入版本，历史失效正文清理与禁跳转。",
+      "phase": "P0/P1",
+      "spec_section": "附录E"
+    }
+  ],
+  "interface_requirement": {
+    "id": "UI-001",
+    "requirement": "以S01/S02为最高布局依据；12项UI详见第4节，未见页面标为补全设计，不以通用工作台代替",
+    "acceptance": [
+      "UAT-25",
+      "UAT-26",
+      "UAT-27",
+      "UAT-28",
+      "UAT-29",
+      "UAT-30",
+      "UAT-31",
+      "UAT-32",
+      "UAT-33",
+      "UAT-34",
+      "UAT-35"
+    ],
+    "phase": "P0; inherited by P1/P2",
+    "spec_section": "4"
+  },
+  "limited_implementation_authorization": {
+    "date": "2026-10-16",
+    "scope": [
+      "replace screen-based audio capture with audio-only CoreAudio Tap",
+      "fix reported unexpected exits when switching/starting capture"
+    ],
+    "full_product_implementation_authorized": false,
+    "superseded_by_full_authorization": "2026-10-17",
+    "historical_only": true
+  },
+  "authorization_note": "Latest user request is specification first; implementation/build/install/download paused until explicit execution instruction.",
+  "interface_requirements": [
+    {
+      "id": "UI-001",
+      "title": "公共外壳",
+      "source": "S01/S02",
+      "status": "specified_not_implemented"
+    },
+    {
+      "id": "UI-002",
+      "title": "侧栏顺序",
+      "source": "S01/S02",
+      "status": "specified_not_implemented"
+    },
+    {
+      "id": "UI-003",
+      "title": "全局徽标与录音",
+      "source": "S01/S02",
+      "status": "specified_not_implemented"
+    },
+    {
+      "id": "UI-004",
+      "title": "会议时间线",
+      "source": "S01/S02",
+      "status": "specified_not_implemented"
+    },
+    {
+      "id": "UI-005",
+      "title": "录音工作区",
+      "source": "product_design_with_reference_shell",
+      "status": "specified_not_implemented"
+    },
+    {
+      "id": "UI-006",
+      "title": "会议详情",
+      "source": "product_design_with_reference_shell",
+      "status": "specified_not_implemented"
+    },
+    {
+      "id": "UI-007",
+      "title": "来源列表",
+      "source": "S01/S02",
+      "status": "specified_not_implemented"
+    },
+    {
+      "id": "UI-008",
+      "title": "多选标签排序",
+      "source": "S01/S02",
+      "status": "specified_not_implemented"
+    },
+    {
+      "id": "UI-009",
+      "title": "图表与来源详情",
+      "source": "S01/S02",
+      "status": "specified_not_implemented"
+    },
+    {
+      "id": "UI-010",
+      "title": "提问",
+      "source": "product_design_with_reference_shell",
+      "status": "specified_not_implemented"
+    },
+    {
+      "id": "UI-011",
+      "title": "统计",
+      "source": "product_design_with_reference_shell",
+      "status": "specified_not_implemented"
+    },
+    {
+      "id": "UI-012",
+      "title": "设置帮助退出",
+      "source": "product_design_with_reference_shell",
+      "status": "specified_not_implemented"
+    }
+  ],
+  "prompt_requirements": [
+    {
+      "id": "RP-01",
+      "status": "designed_not_model_verified"
+    },
+    {
+      "id": "RP-02",
+      "status": "designed_not_model_verified"
+    },
+    {
+      "id": "RP-03",
+      "status": "designed_not_model_verified"
+    },
+    {
+      "id": "RP-04",
+      "status": "designed_not_model_verified"
+    },
+    {
+      "id": "RP-05",
+      "status": "designed_not_model_verified"
+    },
+    {
+      "id": "RP-06",
+      "status": "designed_not_model_verified"
+    },
+    {
+      "id": "RP-07",
+      "status": "designed_not_model_verified"
+    },
+    {
+      "id": "RP-08",
+      "status": "designed_not_model_verified"
+    },
+    {
+      "id": "RP-09",
+      "status": "designed_not_model_verified"
+    },
+    {
+      "id": "RP-10",
+      "status": "designed_not_model_verified"
+    },
+    {
+      "id": "RP-11",
+      "status": "designed_not_model_verified"
+    },
+    {
+      "id": "RP-12",
+      "status": "designed_not_model_verified"
+    }
+  ],
+  "screenshots": [
+    {
+      "id": "S01",
+      "file": "参考截图/S01-Foresight-会议时间线.png",
+      "width_px": 2676,
+      "height_px": 1532,
+      "sha256": "32b44957e29a9efd244d959429938b44783d0d2a77478aa4ab0239b7ea4bc590",
+      "evidence": "user_supplied_visible_ui",
+      "limits": "static screenshot; physical display scale and hidden interactions unknown"
+    },
+    {
+      "id": "S02",
+      "file": "参考截图/S02-Foresight-知识来源.png",
+      "width_px": 2556,
+      "height_px": 1506,
+      "sha256": "7326b33ea1ff081c5680b9d315bfd1437c8cbe2fe5f2719b94bb51146f8b115d",
+      "evidence": "user_supplied_visible_ui",
+      "limits": "static screenshot; physical display scale and hidden interactions unknown"
+    }
+  ],
+  "acceptance_scenarios": [
+    {
+      "id": "UAT-01",
+      "criteria": "新安装完整包，无高级设置、模型替换/路径/Python入口；仅默认模型即能断网转写和embedding；资源损坏修复，失败保留旧版",
+      "phase": "P0",
+      "status": "not_executed_v07"
+    },
+    {
+      "id": "UAT-02",
+      "criteria": "设置预填 DeepSeek，用户在界面填 Key；真实短调用、普通聊天及纪要成功；401/失效模型/取消不假就绪",
+      "phase": "P0",
+      "status": "not_executed_v07"
+    },
+    {
+      "id": "UAT-03",
+      "criteria": "缺 Key 或断网仍录音、转写、导入、搜索；生成显示待配置或网络错误且保留文本",
+      "phase": "P0",
+      "status": "not_executed_v07"
+    },
+    {
+      "id": "UAT-04",
+      "criteria": "麦克风单录外界讲话；戴耳机直接录电脑播放声；同场双路录讲话+电脑声音并分别回放；暂停恢复/停止/故障符合状态；缺Key或ASR失败仍保存音频",
+      "phase": "P0",
+      "status": "not_executed_v07"
+    },
+    {
+      "id": "UAT-05",
+      "criteria": "2 小时录音、进程异常恢复、睡眠/权限撤销/磁盘不足，保存稳定段且说明缺口",
+      "phase": "P0",
+      "status": "not_executed_v07"
+    },
+    {
+      "id": "UAT-06",
+      "criteria": "导入四种音频及4小时样本；损坏/超限明确拒绝；逐块处理、取消后旧结果不变",
+      "phase": "P0",
+      "status": "not_executed_v07"
+    },
+    {
+      "id": "UAT-07",
+      "criteria": "转写搜索/编辑/点击回放；默认引擎重转录候选不覆盖旧版；采用后索引同步，旧产物过时；P1另测换引擎",
+      "phase": "P0默认/P1替换",
+      "status": "not_executed_v07"
+    },
+    {
+      "id": "UAT-08",
+      "criteria": "三种模板实际生成；长会尾段决策保留；行动项证据、负责人/日期可核查；用户编辑不被覆盖",
+      "phase": "P0",
+      "status": "not_executed_v07"
+    },
+    {
+      "id": "UAT-09",
+      "criteria": "TXT/MD/PDF 导入、重复/修改/损坏/超限/取消、退出重开；原文快照与版本正确",
+      "phase": "P0",
+      "status": "not_executed_v07"
+    },
+    {
+      "id": "UAT-10",
+      "criteria": "所选/全部/空范围问答，有答案/无答案/冲突；点引用到原文页或音频；删除并发时旧答案不落地",
+      "phase": "P0",
+      "status": "not_executed_v07"
+    },
+    {
+      "id": "UAT-11",
+      "criteria": "普通聊天与资料问答模式明确；会话保存重开；切会话及停止后无结果串写",
+      "phase": "P0",
+      "status": "not_executed_v07"
+    },
+    {
+      "id": "UAT-12",
+      "criteria": "历史持久化；导出音频/转写/纪要/ZIP manifest；删除级联；诊断无 Key/正文；完整包可重装",
+      "phase": "P0",
+      "status": "not_executed_v07"
+    },
+    {
+      "id": "UAT-13",
+      "criteria": "笔记增强有差异/证据，保留原文、正确专名和数字；转写更新只标过时",
+      "phase": "P1",
+      "status": "not_executed_v07"
+    },
+    {
+      "id": "UAT-14",
+      "criteria": "日历跨时区/全天/重复事件、备会引用、无事件；Drive 增量/删除/撤权/解绑/恢复不越范围",
+      "phase": "P1",
+      "status": "not_executed_v07"
+    },
+    {
+      "id": "UAT-15",
+      "criteria": "全局语音输入热键/纠错/复制/注入；焦点变化不误输入，会议并发不丢音频",
+      "phase": "P1",
+      "status": "not_executed_v07"
+    },
+    {
+      "id": "UAT-16",
+      "criteria": "三 ASR 路线同集与界面选择；匿名分离/手动姓名/重叠说话/不支持能力明示",
+      "phase": "P1",
+      "status": "not_executed_v07"
+    },
+    {
+      "id": "UAT-17",
+      "criteria": "本地生成及自定义兼容连接真实运行；任务路由独立；离线/云失效/Keychain错误不越界回退",
+      "phase": "P1",
+      "status": "not_executed_v07"
+    },
+    {
+      "id": "UAT-18",
+      "criteria": "sidecar 标注集和失效取消、多模态能力/锚点/重建、知识组织与检索收益记录",
+      "phase": "P2",
+      "status": "not_executed_v07"
+    },
+    {
+      "id": "UAT-19",
+      "criteria": "A采用转写/纪要时切到B；A可独立完成，B标题、文本、笔记和行动项始终属于B，继续编辑不串写",
+      "phase": "P0",
+      "status": "not_executed_v07"
+    },
+    {
+      "id": "UAT-20",
+      "criteria": "慢速读取笔记、切换会议、快速输入和连续保存；加载期间不开放编辑，晚到读取/写入不覆盖新版本；失败可恢复文本",
+      "phase": "P0",
+      "status": "not_executed_v07"
+    },
+    {
+      "id": "UAT-21",
+      "criteria": "R1纪要分段中取消，采用R2，退出重启；R1草稿仍标输入和未完成状态，证据回放指R1；整任务超时确实终止请求",
+      "phase": "P0",
+      "status": "not_executed_v07"
+    },
+    {
+      "id": "UAT-22",
+      "criteria": "正在生成/索引时删除资料或会议；旧任务不能落地或复活；显式重导入本地资料与重新授权远端来源分开处理",
+      "phase": "P0/P1远端",
+      "status": "not_executed_v07"
+    },
+    {
+      "id": "UAT-23",
+      "criteria": "测试错误的新Key/model/地址及取消；旧配置/Key不丢；原配置明确失败时不假ready；日志与导出不含Key",
+      "phase": "P0",
+      "status": "not_executed_v07"
+    },
+    {
+      "id": "UAT-24",
+      "criteria": "一个损坏会议清单、导入过程中源文件改变、导出中断、升级迁移失败；其他历史可用，原数据保留，不产生假成功",
+      "phase": "P0；迁移恢复随发行",
+      "status": "not_executed_v07"
+    },
+    {
+      "id": "UAT-25",
+      "criteria": "按第4节逐页对照S01/S02和明确标记的补全设计；同尺寸截图/布局稿验证导航、列表详情、内容面板、录音控制和聊天入口；未观察页面及差异明确，不以通用录音工作台代替",
+      "phase": "P0，P1/P2继承",
+      "status": "not_executed_v07"
+    },
+    {
+      "id": "UAT-26",
+      "criteria": "全局外壳与S01/S02并排：同色背景贯穿、窄图标导航完整顺序、顶部徽标/录音位置；无白色大工作台替代。",
+      "phase": "P0",
+      "status": "not_executed_v07"
+    },
+    {
+      "id": "UAT-27",
+      "criteria": "会议时间线空/有数据、今天/历史日期、现在横线、搜索/返回、日历状态与批量导出范围；不是简单历史表格。",
+      "phase": "P0",
+      "status": "not_executed_v07"
+    },
+    {
+      "id": "UAT-28",
+      "criteria": "知识来源文件/图表页签、搜索+添加、标签、真实索引数、排序、列表/网格、无登录本地导入；空态及部分失败正确。",
+      "phase": "P0结构/P1-P2扩展",
+      "status": "not_executed_v07"
+    },
+    {
+      "id": "UAT-29",
+      "criteria": "来源多选、标签筛选、稳定排序、空范围不扩为全部；切换列表/网格保留选择；删标签不删资料。",
+      "phase": "P0范围/P2组织",
+      "status": "not_executed_v07"
+    },
+    {
+      "id": "UAT-30",
+      "criteria": "录音中跨会议/提问/来源/统计/设置切换、关闭重开窗口；进程和音频持续，不新建采集器、不重复请求屏幕权限。",
+      "phase": "P0",
+      "status": "not_executed_v07"
+    },
+    {
+      "id": "UAT-31",
+      "criteria": "1440×810、1280×800、960×640及大字号；保持层级，搜索/主按钮不溢出，右助手先收起，键盘/可访问名称可用。",
+      "phase": "P0",
+      "status": "not_executed_v07"
+    },
+    {
+      "id": "UAT-32",
+      "criteria": "统计实际计数和usage、无虚构token节省；帮助、版本和诊断；侧栏退出与关闭窗口分开，录音时确认保存再退出。",
+      "phase": "P0",
+      "status": "not_executed_v07"
+    },
+    {
+      "id": "UAT-33",
+      "criteria": "所有页面首次/加载/失败/取消/无Key/离线状态；本地功能不登录、不启云；未实现功能不显示假成功。",
+      "phase": "P0并各阶段继承",
+      "status": "not_executed_v07"
+    },
+    {
+      "id": "UAT-34",
+      "criteria": "详情固定播放器、笔记/转写/纪要/助手布局；精确audioFile与时间引用、候选采用/旧版本失效；960宽可用。",
+      "phase": "P0",
+      "status": "not_executed_v07"
+    },
+    {
+      "id": "UAT-35",
+      "criteria": "标签/Wiki/图谱关系有来源，算法建议与用户关联分开；删除/撤权失效；多模态与图检索收益有对照。",
+      "phase": "P2",
+      "status": "not_executed_v07"
+    },
+    {
+      "id": "UAT-36",
+      "criteria": "20原始prompt/20片段/6runtime模板与提取索引hash一致；RP-01～12任务映射、版本及调用边界明确，未恢复部分不伪称恢复。",
+      "phase": "文档/P0-P2运行继承",
+      "status": "not_executed_v07"
+    },
+    {
+      "id": "UAT-37",
+      "criteria": "纪要/行动项/笔记模板实际输出过schema/证据/责任人/相对日期/尾段覆盖，坏JSON修复一次、600秒总截止与取消真实终止。",
+      "phase": "P0/P1笔记增强",
+      "status": "not_executed_v07"
+    },
+    {
+      "id": "UAT-38",
+      "criteria": "提示词注入/空scope/撤权/会话切换/压缩：不扩大范围、不造引用，保存模型/模板/输入版本，历史失效正文清理与禁跳转。",
+      "phase": "P0/P1",
+      "status": "not_executed_v07"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+# Foresight Guide
+
+**Google AI Edge Foresight** is designed to eliminate the cognitive load of fragmented information by functioning as your on-device, privacy-first "Second Brain" or knowledge hub. Because it processes everything natively on your device, you can use it confidently with sensitive business or personal data.
+
+Here is a breakdown of what you can do with Foresight and how to integrate it into your daily workflow.
+
+---
+
+## What You Can Do with Foresight
+
+- **Build a Secure Local Knowledge Hub:** Ingest PDFs, shorthand notes, audio files, and Google Drive files into one centralized place. It operates 100% offline and keeps your proprietary data local.
+- **Get Live AI Assistant In-Meeting Assistance:** Use the live assistant Heads-Up Display (HUD) during calls. Foresight detects spoken questions ambiently and proactively surfaces the exact answers, statistics, or documents you need in real-time.
+- **Conduct Omnimodal Semantic Search:** Search across disconnected file formats simultaneously. You can use natural language to locate unlabelled images, audio recordings, meeting transcripts, and text files.
+- **Auto-Enhance Post-Meeting Notes:** Convert messy shorthand notes into structured documentation. Foresight cross-references your notes with full local meeting transcripts to fill in blanks and enrich your summaries.
+- **Generate "Second Brain" Wiki Summaries:** Group related project documentation under semantic labels. Foresight can synthesize this grouped data into a Wiki-style overview and flag contradictions (like mismatched budget numbers in two separate proposals).
+
+---
+
+## How to Use Foresight in Your Daily Workflow
+
+### 1. Pre-Meeting Preparation (Daily Briefings)
+
+- **Action:** Look at your Foresight Daily Briefings panel.
+- **Result:** Foresight evaluates your calendar meeting titles and dynamically pre-indexes and surfaces relevant files, previous meeting summaries, or agendas to help you prepare.
+
+### 2. Live Meeting Ingestion & Querying
+
+- **Action:** Join a call (Google Meet, Zoom, Teams) and enable Foresight's live assistant.
+- **Result:** Foresight captures local system audio/transcripts. Lightweight on-device AI detects when a question is posed to you. It queries your local vector base and immediately outputs high-signal, objective cues or answers on your screen.
+
+### 3. Post-Meeting Action items
+
+- **Action:** Click the "Auto-Enhance" function on your user notes post-call.
+- **Result:** Foresight supplements your manual notes with transcript summaries, extracting clear action items and saving them into your knowledge base.
+
+### 4. Organization & Auditing
+
+- **Action:** Apply a semantic label (e.g., `Client-Project-X`) to multiple PDFs, URLs, and image diagrams.
+- **Result:** Foresight projects all media formats into one unified vector space. You can query the label, and Foresight will synthesize a Wiki topic outlining the project and warning you of any conflicting details.
+
+---
+
+# Google AI Edge Foresight - Frequently Asked Questions (FAQ)
+
+## General Questions
+
+### What is Google AI Edge Foresight?
+
+Google AI Edge Foresight is a secure, on-device personal knowledge hub and AI work partner that acts as a secure "Second Brain." It captures and synthesizes fragmented files, transcripts, and notes into structured, actionable insights completely on your local computer.
+
+### Who is this app designed for?
+
+The app is designed for knowledge workers, independent creators, solopreneurs, and small business owners who spend time managing fragmented meeting notes, project files, media, and client communications.
+
+---
+
+## Privacy & Security
+
+### How does Foresight protect my privacy?
+
+Unlike typical AI assistants, Foresight processes all information directly on your local device hardware. Your files, meeting transcripts, and queries are not uploaded to cloud servers, keeping sensitive business and personal data private.
+
+### Do I need an internet connection to use Foresight?
+
+No. Foresight works 100% offline because its underlying AI models operate natively on your local hardware.
+
+---
+
+## Features & Functionality
+
+### What kind of information can I add to my Knowledge Hub?
+
+You can manually add or sync multiple types of context:
+
+- **Audio & Transcripts:** Live recordings or meeting audio are transcribed natively.
+- **Local Files:** PDFs, Markdown documents, text files, and media (images/audio).
+- **Workspace Connectors:** Integration for Google Docs and local calendar feeds.
+
+### How does the search function work?
+
+Foresight uses omni-modal search powered by Google's on-device embedding models. This allows you to search across untagged visual assets, diagrams, documents, and meeting notes at once using a single natural language query (e.g., searching for "budget updates" will retrieve relevant audio clips, PDF charts, and text notes together).
+
+### Can Foresight automatically take actions for me (like sending emails or deleting files)?
+
+No. Foresight acts as a read-only local assistant. It synthesizes, summarizes, and answers questions based on your private files, but it does not have the capability to invoke state-changing tools (such as sending emails or modifying remote APIs).
+
+### What is the "Live AI Assistant" mode?
+
+During meetings or transcription sessions, you can activate a "Live AI Assistant" mode. This utilizes lightweight query detection models to identify your spoken questions in real time and provide answers without requiring you to stop and type.

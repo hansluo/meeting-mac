@@ -1,0 +1,136 @@
+{
+  "spec_version": "0.7",
+  "platform": "macOS arm64",
+  "managed_root": "Application Support/MeetingMac (resolved by app, never typed by normal user)",
+  "normal_configuration": [
+    "DeepSeek API Key"
+  ],
+  "assets": [
+    {
+      "id": "embeddinggemma300m",
+      "role": "embedding",
+      "url": "https://registry.ollama.ai/v2/library/embeddinggemma/blobs/sha256:0800cbac9c2064dde519420e75e512a83cb360de3ad5df176185dc69652fc515",
+      "size": 621867104,
+      "sha256": "0800cbac9c2064dde519420e75e512a83cb360de3ad5df176185dc69652fc515",
+      "format": "gguf",
+      "runtime": "llama-server",
+      "developer_download_verified": true,
+      "developer_actual_smoke": "embeddinggemma-chinese-smoke-20261015.json",
+      "license_blob": "https://registry.ollama.ai/v2/library/embeddinggemma/blobs/sha256:1adbfec9dcf025cbf301c072f3847527468dcfa399da7491ee4a1c9e9f1b33e9",
+      "required_by_default": true
+    },
+    {
+      "id": "qwen3-asr-0.6b-int8",
+      "role": "asr",
+      "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-qwen3-asr-0.6B-int8-2026-03-25.tar.bz2",
+      "size": 878702423,
+      "sha256": "393f8a14e2f5fb96746aaab342997a40641001fbd5bf9592a080a8329178ee96",
+      "archive_root": "sherpa-onnx-qwen3-asr-0.6B-int8-2026-03-25",
+      "file_sha256": {
+        "conv_frontend.onnx": "d22dc4423e0940e49884e903d2ea2f7e5567c14fc1aed97e4e26d6b8f208ef9e",
+        "encoder.int8.onnx": "60748d3e6744a57c9c91e1b17424a6c2990567e8adceb0783940c03ed98fa9d9",
+        "decoder.int8.onnx": "4f6885be5959ae26af3089d38ee7972c5fafbeeb1cf8d5e76eab6d8b61ca5771",
+        "tokenizer/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+        "tokenizer/merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+        "tokenizer/tokenizer_config.json": "4942d005604266809309cabc9f4e9cb89ce855d59b14681fdc0e1cc62ea26c4c"
+      },
+      "developer_download_verified": true,
+      "developer_actual_smoke": "qwen-synthetic-smoke-20261015.json",
+      "required_by_default": false
+    },
+    {
+      "id": "sherpa-onnx1.13.7",
+      "role": "asr_runtime",
+      "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/v1.13.7/sherpa-onnx-v1.13.7-osx-arm64-shared-no-tts-lib.tar.bz2",
+      "sha256": "b3a5484f071094d3a922062e6793aca3e0ccc7388bfa5797959fa51fabffc906",
+      "developer_download_verified": true,
+      "required_by_default": true,
+      "install_files_sha256": {
+        "lib/libonnxruntime.dylib": "59665a56e6a95118606bebe583efa8a3528362fc1078f69fc27f36def905bb2c",
+        "lib/libsherpa-onnx-c-api.dylib": "ab52d37d6452fd18cfe6398cd5a150695c28da089dd38c1c768986426e06e017",
+        "lib/libsherpa-onnx-cxx-api.dylib": "2e6fcdd2042411c6672e7ad16926385db9ae145bcb7c845d41c407b183c6c94c"
+      },
+      "archive_root": "sherpa-onnx-v1.13.7-osx-arm64-shared-no-tts-lib"
+    },
+    {
+      "id": "llama-server-ollama0.40.4",
+      "role": "embedding_runtime",
+      "url": "https://github.com/ollama/ollama/releases/download/v0.40.4/ollama-darwin.tgz",
+      "size": 167884528,
+      "sha256": "a4ceae4b2aaf18df37ebcbfb56ba3a37a87838631112d66c2be07268693c8d58",
+      "runtime_version": "0.6.0-dev b42b7e6d3",
+      "developer_download_verified": true,
+      "notes": "Apple Silicon application: verified arm64 executable links only system frameworks/libraries; retain bundled notices. Do not start Ollama daemon or change user home configuration.",
+      "required_by_default": true,
+      "install_files_sha256": {
+        "CPP_HTTPLIB_LICENSE": "4b45cbe16d7b71b89ae6127e26e0d90a029198ca5e958ad8e3d0b8bbed364d8b",
+        "DLPACK_LICENSE": "3e8f6bc39276a586d60c8c5aaece2ff989262181cf2b3d2a128db58f97a9300c",
+        "FMT_LICENSE": "07580f2a3b35709ce703d523f447b242f6dfec7582a8c0df102c7fa2849375f8",
+        "GO_LICENSE": "e1e097d113ea8aef3687cc6451fdfc60b1d57f0cfd06de590aea4c9f9f17b7a4",
+        "LLAMA_CPP_LICENSE": "94f29bbed6a22c35b992c5c6ebf0e7c92f13b836b90f36f461c9cf2f0f1d010d",
+        "LLAMA_CPP_VENDORS_LICENSE": "eb17b411e39c75c4ac40916d66e39287ee9723b8bbe54daf020fc27acf670c11",
+        "MLX_C_LICENSE": "44326a4ea062241ae6fc26ee2ec90bdc81af7eb7b9d3966181b733fa69d42057",
+        "MLX_LICENSE": "ccfab7ccb2ea306f71531c8ca77bb55507606cd90768b1e32b8b52ab5b48cf01",
+        "PICOJSON_LICENSE": "52a7da16781b4b899382c9ddfcf059235cdee73e2f45cfd7402c2ae9a2e9d28d",
+        "XGRAMMAR_LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "XGRAMMAR_NOTICE": "769c6907073c65801bfcfe3ce1c0e80bf0ae4e124e2769d4f026c038ad583c0f",
+        "llama-server": "5f42e3e4457e869a152e2a8ee52084935b22d6c54c2077a44cb1d495d9eba18d"
+      }
+    },
+    {
+      "id": "sensevoice-int8",
+      "role": "default_asr",
+      "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2024-07-17.tar.bz2",
+      "api_asset_id": 288366523,
+      "size": 163002883,
+      "sha256": "7d1efa2138a65b0b488df37f8b89e3d91a60676e416f515b952358d83dfd347e",
+      "developer_download_verified": true,
+      "notes": "Default family from MAC-record; raw native real speech succeeded. Pure silence hallucination requires preprocessing/VAD; app integration not accepted yet.",
+      "required_by_default": true,
+      "developer_actual_smoke": "sensevoice-synthetic-smoke-20261015.json",
+      "archive_root": "sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2024-07-17",
+      "file_sha256": {
+        "model.int8.onnx": "c71f0ce00bec95b07744e116345e33d8cbbe08cef896382cf907bf4b51a2cd51",
+        "tokens.txt": "f449eb28dc567533d7fa59be34e2abca8784f771850c78a47fb731a31429a1dc"
+      }
+    },
+    {
+      "id": "silero-vad",
+      "name": "Silero v4 · 本地语音检测",
+      "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/silero_vad.onnx",
+      "size": 643854,
+      "sha256": "9e2449e1087496d8d4caba907f23e0bd3f78d91fa552479bb9c23ac09cbb1fd6",
+      "archiveRoot": null,
+      "files": [
+        {
+          "path": "silero_vad.onnx",
+          "size": 643854,
+          "sha256": "9e2449e1087496d8d4caba907f23e0bd3f78d91fa552479bb9c23ac09cbb1fd6"
+        }
+      ],
+      "role": "vad_auxiliary",
+      "required_by_default": true,
+      "format": "onnx",
+      "runtime": "sherpa-onnx1.13.7",
+      "developer_download_verified": true,
+      "license": "MIT",
+      "license_notice": "ThirdParty/silero-vad/LICENSE"
+    }
+  ],
+  "acceptance_pending": [
+    "Full concurrent resource budgets and persisted profile capabilities, not only asset integrity",
+    "Persistent index/source/RAG and normal application retrieval UI",
+    "Complete GUI settings/cancellation/relaunch acceptance",
+    "Actual full Chinese meeting and RAG evaluation"
+  ],
+  "weights_committed_to_git": false,
+  "notes": "Only SenseVoice, Google embedding and their runtimes are default assets. Existing Qwen download remains optional; no Python/FunASR or local generation model required for first use.",
+  "managed_asset_implementation": "5a0e003",
+  "managed_asset_proof": "managed-defaults-smoke-20261015.json",
+  "managed_embedding_implementation": "011dd954247d7dd64e599e679a864b9de576b373",
+  "managed_embedding_proof": "managed-embedding-service-smoke-20261015.json",
+  "inherited_from": "builtin-assets-v0.3.json",
+  "status": "pinned_assets_for_proposed_spec_not_runtime_verification",
+  "source_asset_identity": "Inherited fixed v0.6 assets; this specification task performs no new downloads",
+  "model_badge_policy": "Show actual loaded model. Screenshot EmbeddingGemma 2 is not proof existing 300M asset was upgraded."
+}

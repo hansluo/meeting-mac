@@ -1,0 +1,94 @@
+{
+  "classification": "analyst-derived validation contracts based on literal output instructions, not recovered parser implementation",
+  "source": [
+    {
+      "id": "P02",
+      "offset": "0x5afb510"
+    },
+    {
+      "id": "P03",
+      "offset": "0x5b74170"
+    }
+  ],
+  "action_items": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "required": [
+        "assigner",
+        "assignees",
+        "task",
+        "type",
+        "is_confirmed_by_assignee",
+        "specific_enough"
+      ],
+      "properties": {
+        "assigner": {
+          "type": "string"
+        },
+        "assignees": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "task": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "request",
+            "offer",
+            "proposal",
+            "assignment",
+            "other"
+          ]
+        },
+        "is_confirmed_by_assignee": {
+          "type": "boolean"
+        },
+        "specific_enough": {
+          "type": "boolean"
+        }
+      }
+    }
+  },
+  "structured_meeting_brief": {
+    "type": "object",
+    "required": [
+      "overview",
+      "sections"
+    ],
+    "properties": {
+      "overview": {
+        "type": "string"
+      },
+      "sections": {
+        "type": "array",
+        "maxItems": 3,
+        "items": {
+          "type": "object",
+          "required": [
+            "header",
+            "body"
+          ],
+          "properties": {
+            "header": {
+              "type": "string"
+            },
+            "body": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "non_schema_constraints": [
+    "Speaker attribution must refer to valid transcript speakers; cannot validate with JSON types alone.",
+    "Word counts and language-aware sentence constraints require separate validators.",
+    "Initialization OK responses must not be parsed as final business outputs.",
+    "Array/object formatting and prompt instructions are not proof of runtime schema enforcement."
+  ]
+}

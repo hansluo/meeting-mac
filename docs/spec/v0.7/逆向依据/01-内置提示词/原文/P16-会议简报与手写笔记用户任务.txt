@@ -1,0 +1,1 @@
+Your task is to generate a meeting brief from the provided transcript and hand-written notes.

@@ -1,0 +1,691 @@
+{
+  "repository": "hansluo/MAC-record",
+  "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+  "scope": "Read-only fixed source snapshot: LLMService, LLMConfigStore, SummaryGenerator, VoiceInputCorrectionService and KeychainHelper plus verified-source-manifest. No app/model/network executed.",
+  "source_identity_note": "All inspected file Git blob SHA-1 and SHA-256 match verified-source-manifest.json for the fixed commit. Selective source snapshot, not full repository.",
+  "sources": [
+    {
+      "path": "MacRecord/Services/LLMService.swift",
+      "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+      "sha256": "c47823d5200e9c6b07ec22c8985a0bf8256d9e00b24d7f9c3e186108fc61eb83",
+      "git_blob_sha": "4a7ab786aaec114e397afb237a77e1eceeb887d9",
+      "line_count": 594
+    },
+    {
+      "path": "MacRecord/Stores/LLMConfigStore.swift",
+      "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+      "sha256": "636dbc9cc02bf8a407b338b69186f133f600ae4440b71ac52bbba5a1d4034d02",
+      "git_blob_sha": "35c4652231d1f8a86fbd076f9f4b7c1990f4d870",
+      "line_count": 282
+    },
+    {
+      "path": "MacRecord/Services/SummaryGenerator.swift",
+      "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+      "sha256": "81df098e64969780dd93d7d3fdbdfe95aee501f68af1d7279c0f5fa20ac9a858",
+      "git_blob_sha": "d8fe34afa32be8f476c5ae739b43ae28f4b081da",
+      "line_count": 362
+    },
+    {
+      "path": "MacRecord/Services/VoiceInputCorrectionService.swift",
+      "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+      "sha256": "b00e863cb77649328b11d78b377a61dee1e2510a41201cc338cfd358566e9486",
+      "git_blob_sha": "192a65689f1ac24c7554078e42d04e25c0c2f782",
+      "line_count": 151
+    },
+    {
+      "path": "MacRecord/Utilities/KeychainHelper.swift",
+      "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+      "sha256": "dde952dddfbdaa378dbec2581d9295c9b1145bdf53a6555a7f47af071ac3ab02",
+      "git_blob_sha": "97df8c1892a379e3e486eeaa6afa568026e52162",
+      "line_count": 87
+    }
+  ],
+  "findings": [
+    {
+      "id": "M01",
+      "status": "implemented",
+      "claim": "URL只接受HTTPS，HTTP仅localhost/127.0.0.1/::1；归一规则追加chat/completions或v1/chat/completions，其他包含/v的路径保留。",
+      "evidence": [
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Services/LLMService.swift",
+          "line_start": 17,
+          "line_end": 56,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Services/LLMService.swift#L17-L56"
+        }
+      ]
+    },
+    {
+      "id": "M02",
+      "status": "implemented",
+      "claim": "普通生成是POST OpenAI-compatible chat completions：user消息、model、temperature、max_tokens、chat_template_kwargs.enable_thinking=false；非空key加Authorization Bearer；URLSession.shared.data等待整包JSON，超时600秒。",
+      "evidence": [
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Services/LLMService.swift",
+          "line_start": 60,
+          "line_end": 118,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Services/LLMService.swift#L60-L118"
+        }
+      ]
+    },
+    {
+      "id": "M03",
+      "status": "implemented",
+      "claim": "带system的调用同协议，system+user两消息，默认2048 output/0.3温度，request timeout300秒；只读choices[0].message.content字符串，未读取usage/finish_reason/reasoning/tool calls。",
+      "evidence": [
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Services/LLMService.swift",
+          "line_start": 122,
+          "line_end": 174,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Services/LLMService.swift#L122-L174"
+        }
+      ]
+    },
+    {
+      "id": "M04",
+      "status": "bounded_absence",
+      "claim": "所审查LLMService没有SSE增量处理/stream:true、Responses、Anthropic/Gemini原生、tool calls、JSON schema、embedding适配。不能把统一OpenAI-compatible接入等同所有provider功能支持。",
+      "evidence": [
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Services/LLMService.swift",
+          "line_start": 1,
+          "line_end": 595,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Services/LLMService.swift#L1-L595"
+        }
+      ]
+    },
+    {
+      "id": "M05",
+      "status": "implemented",
+      "claim": "本地发现探测Ollama 11434/api/tags，LM Studio 1234/v1/models，oMLX 8000/v1/models；自定义端口尝试localhost/127.0.0.1，两种list接口及root探测。默认探测2/3秒，最多支持生成接口候选，不验证任何实际能力。",
+      "evidence": [
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Services/LLMService.swift",
+          "line_start": 292,
+          "line_end": 475,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Services/LLMService.swift#L292-L475"
+        },
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Services/LLMService.swift",
+          "line_start": 478,
+          "line_end": 530,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Services/LLMService.swift#L478-L530"
+        }
+      ]
+    },
+    {
+      "id": "M06",
+      "status": "implemented",
+      "claim": "连接测试发送hi/max_tokens10，15秒；HTTP200且JSON含choices字段就通过，不验证content结构、不带正式调用中的enable_thinking=false。",
+      "evidence": [
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Services/LLMService.swift",
+          "line_start": 238,
+          "line_end": 276,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Services/LLMService.swift#L238-L276"
+        }
+      ]
+    },
+    {
+      "id": "M07",
+      "status": "inference",
+      "claim": "testConnection通过仍可能正式请求失败：正式请求额外无条件携带chat_template_kwargs，云provider接受情况未验证。",
+      "evidence": [
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Services/LLMService.swift",
+          "line_start": 87,
+          "line_end": 95,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Services/LLMService.swift#L87-L95"
+        },
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Services/LLMService.swift",
+          "line_start": 142,
+          "line_end": 151,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Services/LLMService.swift#L142-L151"
+        },
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Services/LLMService.swift",
+          "line_start": 251,
+          "line_end": 268,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Services/LLMService.swift#L251-L268"
+        }
+      ]
+    },
+    {
+      "id": "M08",
+      "status": "implemented",
+      "claim": "context探测读取context_length/context_window/max_model_len；模型ID精确或子串匹配，未命中时选择任意第一个包含context字段的模型。",
+      "evidence": [
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Services/LLMService.swift",
+          "line_start": 181,
+          "line_end": 233,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Services/LLMService.swift#L181-L233"
+        }
+      ]
+    },
+    {
+      "id": "M09",
+      "status": "implemented",
+      "claim": "summary实际优先用户或缓存context>0，再探测并缓存，再用32768默认；输入字符阈值context/2/1.5并限制4000..64000，输出context*0.4并限制4096..16384。",
+      "evidence": [
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Services/SummaryGenerator.swift",
+          "line_start": 19,
+          "line_end": 60,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Services/SummaryGenerator.swift#L19-L60"
+        }
+      ]
+    },
+    {
+      "id": "M10",
+      "status": "inference",
+      "claim": "对小context模型，4000字符/4096输出最小值可能使输入输出预算超出实际窗口；探测无匹配fallback及永久缓存可能把别的模型上下文写给当前模型。不能视为安全预算或Qwen能力证明。",
+      "evidence": [
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Services/LLMService.swift",
+          "line_start": 213,
+          "line_end": 229,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Services/LLMService.swift#L213-L229"
+        },
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Services/SummaryGenerator.swift",
+          "line_start": 19,
+          "line_end": 60,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Services/SummaryGenerator.swift#L19-L60"
+        }
+      ]
+    },
+    {
+      "id": "M11",
+      "status": "implemented",
+      "claim": "长文顺序切块处理、拼接各段、全局递归整合；段落/句子/字符切分；整合超长最大递归depth2，整合出错保留拼接/原子段。",
+      "evidence": [
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Services/SummaryGenerator.swift",
+          "line_start": 79,
+          "line_end": 180,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Services/SummaryGenerator.swift#L79-L180"
+        },
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Services/SummaryGenerator.swift",
+          "line_start": 253,
+          "line_end": 348,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Services/SummaryGenerator.swift#L253-L348"
+        }
+      ]
+    },
+    {
+      "id": "M12",
+      "status": "implemented",
+      "claim": "上下文错误只切半并对每子段直接调用一次，不是递归缩小；output maxTokens不降低；错误识别任何max_tokens或400+length都可判context错误。",
+      "evidence": [
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Services/SummaryGenerator.swift",
+          "line_start": 202,
+          "line_end": 249,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Services/SummaryGenerator.swift#L202-L249"
+        },
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Services/LLMService.swift",
+          "line_start": 545,
+          "line_end": 564,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Services/LLMService.swift#L545-L564"
+        }
+      ]
+    },
+    {
+      "id": "M13",
+      "status": "implemented",
+      "claim": "默认activePrompt来自builtinDefaultPrompt，内容是ASR清洗、明确禁止summary；generateSummary复用这个默认prompt，merge又要求整合会议纪要；prompt任务语义不一致。",
+      "evidence": [
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Stores/LLMConfigStore.swift",
+          "line_start": 13,
+          "line_end": 35,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Stores/LLMConfigStore.swift#L13-L35"
+        },
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Stores/LLMConfigStore.swift",
+          "line_start": 68,
+          "line_end": 82,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Stores/LLMConfigStore.swift#L68-L82"
+        },
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Services/SummaryGenerator.swift",
+          "line_start": 64,
+          "line_end": 75,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Services/SummaryGenerator.swift#L64-L75"
+        },
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Services/SummaryGenerator.swift",
+          "line_start": 133,
+          "line_end": 141,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Services/SummaryGenerator.swift#L133-L141"
+        }
+      ]
+    },
+    {
+      "id": "M14",
+      "status": "implemented",
+      "claim": "activeModel未找到选中ID时直接选models.first；remove选中模型后切换到first。不存在local-only硬性路由；所审查生成调用不含失败后换模型逻辑。",
+      "evidence": [
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Stores/LLMConfigStore.swift",
+          "line_start": 54,
+          "line_end": 61,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Stores/LLMConfigStore.swift#L54-L61"
+        },
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Stores/LLMConfigStore.swift",
+          "line_start": 104,
+          "line_end": 109,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Stores/LLMConfigStore.swift#L104-L109"
+        },
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Services/SummaryGenerator.swift",
+          "line_start": 64,
+          "line_end": 69,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Services/SummaryGenerator.swift#L64-L69"
+        },
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Services/LLMService.swift",
+          "line_start": 60,
+          "line_end": 174,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Services/LLMService.swift#L60-L174"
+        }
+      ]
+    },
+    {
+      "id": "M15",
+      "status": "implemented",
+      "claim": "addModel调用KeychainHelper保存llm_<modelID>，存入models之前清空apiKey；删除模型调用delete；activeModel由load重新填充key；ai_config.json/ai_prompts.json异步写入Application Support/MacRecord。",
+      "evidence": [
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Stores/LLMConfigStore.swift",
+          "line_start": 54,
+          "line_end": 61,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Stores/LLMConfigStore.swift#L54-L61"
+        },
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Stores/LLMConfigStore.swift",
+          "line_start": 72,
+          "line_end": 78,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Stores/LLMConfigStore.swift#L72-L78"
+        },
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Stores/LLMConfigStore.swift",
+          "line_start": 89,
+          "line_end": 123,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Stores/LLMConfigStore.swift#L89-L123"
+        },
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Stores/LLMConfigStore.swift",
+          "line_start": 129,
+          "line_end": 148,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Stores/LLMConfigStore.swift#L129-L148"
+        }
+      ]
+    },
+    {
+      "id": "M16",
+      "status": "implemented",
+      "claim": "KeychainHelper真实使用macOS Security GenericPassword，service=com.hansluo.mac-record、account=llm_<modelID>、AfterFirstUnlockThisDeviceOnly；SecItemCopyMatching读取，SecItemDelete删除；加载失败尝试旧XOR文件迁移。设置视图未包含在本审查快照，UI保存结果链路仍未知。",
+      "evidence": [
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Utilities/KeychainHelper.swift",
+          "line_start": 6,
+          "line_end": 60,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Utilities/KeychainHelper.swift#L6-L60"
+        },
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Utilities/KeychainHelper.swift",
+          "line_start": 62,
+          "line_end": 85,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Utilities/KeychainHelper.swift#L62-L85"
+        }
+      ]
+    },
+    {
+      "id": "M17",
+      "status": "inference",
+      "claim": "以空key重新add已有模型不会delete旧key；save直接encode models，apiKey字段仍Codable，公开models赋值或加载旧含key配置可能绕过add清空。现有JSON不含密钥只在add路径成立，不是全局强保证。",
+      "evidence": [
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Stores/LLMConfigStore.swift",
+          "line_start": 89,
+          "line_end": 101,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Stores/LLMConfigStore.swift#L89-L101"
+        },
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Stores/LLMConfigStore.swift",
+          "line_start": 129,
+          "line_end": 158,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Stores/LLMConfigStore.swift#L129-L158"
+        },
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Stores/LLMConfigStore.swift",
+          "line_start": 225,
+          "line_end": 254,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Stores/LLMConfigStore.swift#L225-L254"
+        }
+      ]
+    },
+    {
+      "id": "M18",
+      "status": "implemented",
+      "claim": "语音纠错传入显式model，nil保留原ASR；10秒任务竞速deadline，请求仍用300秒request timeout；异常、空输出或超过原文3倍都回原文。didUseLLM=false无法区分没尝试与尝试失败。",
+      "evidence": [
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Services/VoiceInputCorrectionService.swift",
+          "line_start": 30,
+          "line_end": 77,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Services/VoiceInputCorrectionService.swift#L30-L77"
+        },
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Services/VoiceInputCorrectionService.swift",
+          "line_start": 126,
+          "line_end": 139,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Services/VoiceInputCorrectionService.swift#L126-L139"
+        },
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Services/LLMService.swift",
+          "line_start": 140,
+          "line_end": 155,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Services/LLMService.swift#L140-L155"
+        }
+      ]
+    },
+    {
+      "id": "M19",
+      "status": "implemented",
+      "claim": "shortThreshold=10定义但correct里没有短文本skip guard；实际<=15/<=50/>50选择提示词，有model的短句仍调用LLM。",
+      "evidence": [
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Services/VoiceInputCorrectionService.swift",
+          "line_start": 16,
+          "line_end": 20,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Services/VoiceInputCorrectionService.swift#L16-L20"
+        },
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Services/VoiceInputCorrectionService.swift",
+          "line_start": 30,
+          "line_end": 64,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Services/VoiceInputCorrectionService.swift#L30-L64"
+        },
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Services/VoiceInputCorrectionService.swift",
+          "line_start": 82,
+          "line_end": 121,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Services/VoiceInputCorrectionService.swift#L82-L121"
+        }
+      ]
+    },
+    {
+      "id": "M20",
+      "status": "bounded_absence",
+      "claim": "LLMService/SummaryGenerator所审查代码未暴露生成取消句柄、Task.checkCancellation检查或checkpoint；语音纠错有cancelAll，但未验证底层实际取消时延；merge/correction broad catch可能把取消当降级结果。",
+      "evidence": [
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Services/LLMService.swift",
+          "line_start": 60,
+          "line_end": 174,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Services/LLMService.swift#L60-L174"
+        },
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Services/SummaryGenerator.swift",
+          "line_start": 102,
+          "line_end": 180,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Services/SummaryGenerator.swift#L102-L180"
+        },
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Services/VoiceInputCorrectionService.swift",
+          "line_start": 74,
+          "line_end": 77,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Services/VoiceInputCorrectionService.swift#L74-L77"
+        },
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Services/VoiceInputCorrectionService.swift",
+          "line_start": 126,
+          "line_end": 139,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Services/VoiceInputCorrectionService.swift#L126-L139"
+        }
+      ]
+    },
+    {
+      "id": "M21",
+      "status": "unknown",
+      "claim": "当前Qwen具体模型ID、量化、context、RAM、首次token/吞吐、JSON/tools支持和FunASR输出契约不由这四个文件建立；未运行源码、服务或模型。",
+      "evidence": [
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Services/LLMService.swift",
+          "line_start": 283,
+          "line_end": 289,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Services/LLMService.swift#L283-L289"
+        },
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Stores/LLMConfigStore.swift",
+          "line_start": 225,
+          "line_end": 244,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Stores/LLMConfigStore.swift#L225-L244"
+        }
+      ]
+    },
+    {
+      "id": "M22",
+      "status": "inference",
+      "claim": "Keychain save先SecItemDelete再SecItemAdd，Add失败仅print并return Void；旧key可能丢失，store仍清空apiKey并保存config，UI无法从返回值知晓失败。delete忽略OSStatus；legacy load即便迁移保存失败仍返回旧值。应改成可失败的update/add事务，失败保留旧credential并返回typed结果。",
+      "evidence": [
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Utilities/KeychainHelper.swift",
+          "line_start": 8,
+          "line_end": 25,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Utilities/KeychainHelper.swift#L8-L25"
+        },
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Utilities/KeychainHelper.swift",
+          "line_start": 37,
+          "line_end": 48,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Utilities/KeychainHelper.swift#L37-L48"
+        },
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Utilities/KeychainHelper.swift",
+          "line_start": 52,
+          "line_end": 59,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Utilities/KeychainHelper.swift#L52-L59"
+        },
+        {
+          "repository": "hansluo/MAC-record",
+          "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+          "path": "MacRecord/Stores/LLMConfigStore.swift",
+          "line_start": 89,
+          "line_end": 101,
+          "url": "https://github.com/hansluo/MAC-record/blob/ad53c5740e59498d6c9869c04027c2daddd1b48d/MacRecord/Stores/LLMConfigStore.swift#L89-L101"
+        }
+      ]
+    }
+  ],
+  "integration_requirements": [
+    {
+      "id": "R01",
+      "status": "new_requirement",
+      "title": "显式路由与数据去向",
+      "spec": "新config明确execution=local/cloud，按cleanup/summary/QA/entityExtraction/actionExtraction分配modelID；任务创建冻结modelID、endpoint和dataPolicy。local_only下非loopback请求禁止；本地超时/模型移除/选中ID失效均报可恢复错误，绝不first-provider或云fallback；云任务只由用户选择cloud产生。",
+      "derived_from": [
+        "M14",
+        "M20"
+      ]
+    },
+    {
+      "id": "R02",
+      "status": "new_requirement",
+      "title": "Provider类型与验证能力",
+      "spec": "MVP本地Qwen通过外部已启动OpenAI-compatible runtime，云同协议走独立profile。协议枚举openai_chat_completions；其他原生API需单独adapter才可启用。capability每项unknown/verified/unsupported+模型/endpoint版本+验证时间；list/discovered只标discovered。正式生成同payload测试；中文纠错/结构化JSON/stream/cancel/context分别验证。enable_thinking与max_tokens/max_completion_tokens仅在profile允许时发送。",
+      "derived_from": [
+        "M02",
+        "M04",
+        "M05",
+        "M06",
+        "M07",
+        "M21"
+      ]
+    },
+    {
+      "id": "R03",
+      "status": "new_requirement",
+      "title": "云API Key可落地存储",
+      "spec": "设置页字段label/provider/modelID/HTTPS endpoint/apiKey(secure input)，操作保存/测试/替换/删除Key。凭证用macOS Security框架kSecClassGenericPassword、service=新appID.LLM、account=profileID、kSecAttrSynchronizable=false、kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly。SecItemAdd/Update/CopyMatching/Delete返回OSStatus必须处理，失败不展示保存成功。JSON只含credentialRef与hasCredential派生状态，不含apiKey字段；encode export统一清理。密钥只临时进入内存和Authorization，日志/导出/诊断脱敏。清空输入不隐含删Key，用明确删除动作；endpoint/provider変更时禁止复用别的profile密钥。 替换已有Key用SecItemUpdate，必要时Add，不先删除旧Key；存储失败保留旧credential与配置不变。旧XOR迁移仅在Keychain成功后删除legacy文件，读取Keychain出错与未找到分开处理。",
+      "derived_from": [
+        "M15",
+        "M16",
+        "M17",
+        "M22"
+      ]
+    },
+    {
+      "id": "R04",
+      "status": "new_requirement",
+      "title": "流式与取消",
+      "spec": "GenerationRequest包含jobID/taskType/modelID/deadline/cancellation token；SSE adapter分片buffer与[DONE]、增量UI、done/error/cancelled统一状态；取消停止URLSession和所有map/merge任务，不写成成功。connect/first-token/idle/total deadline独立配置，local/cloud可不同；保留原始转写，按阶段checkpoint显示部分完成。",
+      "derived_from": [
+        "M04",
+        "M18",
+        "M20"
+      ]
+    },
+    {
+      "id": "R05",
+      "status": "new_requirement",
+      "title": "长文预算与输出状态",
+      "spec": "context由显式值或匹配当前模型的已验证metadata决定；取消任意模型fallback；保守未知预算标估算。计算system+input+output+reserve总tokens，取消强制4000/4096最小值。context错误递归缩小输入与输出且有最小token/次数限制；429与5xx指数退避但不切provider。解析finish_reason、usage、截断和空输出，结果含完整/部分/失败状态，不仅String。",
+      "derived_from": [
+        "M08",
+        "M09",
+        "M10",
+        "M11",
+        "M12"
+      ]
+    },
+    {
+      "id": "R06",
+      "status": "new_requirement",
+      "title": "Foresight任务化prompt与证据链",
+      "spec": "原始ASR和纠错版本分开保存；分别定义cleanup、summary、overview、QA、entities、actions prompt/schema版本。Action记录sourceRecordingID、segmentID、start/end、原文引用；禁止用“100%保留”提示语作完整性保证。分段结构化产物保留事实/引用，跨段合并去重，未完成合并标partial而不假装全文完整。ASR替换为Qwen/FunASR通过独立ASR协议，不与Qwen生成共享能力假设或secret。",
+      "derived_from": [
+        "M11",
+        "M13",
+        "M18",
+        "M21"
+      ]
+    }
+  ],
+  "acceptance_checks": [
+    "Discovered model not verified until actual typed capability tests pass.",
+    "Local-only summary with stopped local runtime generates no cloud request.",
+    "Missing selected model produces configuration error, never selects first remote model.",
+    "No API Key string appears in JSON/export/logs; Security save failure is user visible.",
+    "Cancel during map or merge yields cancelled and retains partial checkpoint, never complete.",
+    "4k/8k context budget cannot exceed actual window after prompt/output reserve.",
+    "429 is retried boundedly on same profile; unsupported extra parameter is not classed as context overflow.",
+    "ASR original preserved independently of correction; cleanup and summary prompts distinguish task."
+  ]
+}

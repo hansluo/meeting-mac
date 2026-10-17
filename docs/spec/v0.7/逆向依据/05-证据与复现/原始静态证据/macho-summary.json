@@ -1,0 +1,436 @@
+{
+  "evidence_id": "ev_d5e0701b851c86ba9992f9c89cec16c63824cdb4ce85013828b2cc40f78be378",
+  "subject": {
+    "architecture": "arm64",
+    "digest": {
+      "sha256": "fa98b856bfbe9b40cdebfb9f975f7867ec5c0a3ca75b81214a096a60b6db8326"
+    },
+    "format": "mach-o",
+    "local_path": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+    "name": "Foresight"
+  },
+  "provider": {
+    "id": "native-macos",
+    "name": "macOS native inspection utilities",
+    "version": null
+  },
+  "limitations": [
+    "Imports and exports combine dyld_info and nm; stripped or toolchain-hidden symbols may be absent.",
+    "vtool output is retained as provenance but only otool build metadata is normalized."
+  ],
+  "dependencies": {
+    "exhaustive": true,
+    "items": [
+      {
+        "compatibility_version": null,
+        "current_version": null,
+        "kind": "LC_LOAD_DYLINKER",
+        "path": "/usr/lib/dyld"
+      },
+      {
+        "compatibility_version": "0.0.0",
+        "current_version": "0.0.0",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "@rpath/FlutterMacOS.framework/Versions/A/FlutterMacOS"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "1356.0.0",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/usr/lib/libSystem.B.dylib"
+      },
+      {
+        "compatibility_version": "150.0.0",
+        "current_version": "4424.1.255",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "228.0.0",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/usr/lib/libobjc.A.dylib"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "61901.101.4",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/System/Library/Frameworks/Security.framework/Versions/A/Security"
+      },
+      {
+        "compatibility_version": "5.0.0",
+        "current_version": "6.0.0",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/System/Library/Frameworks/Kerberos.framework/Versions/A/Kerberos"
+      },
+      {
+        "compatibility_version": "1.2.0",
+        "current_version": "734.4.0",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/System/Library/Frameworks/CoreVideo.framework/Versions/A/CoreVideo"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "173.7.0",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/System/Library/Frameworks/MetalKit.framework/Versions/A/MetalKit"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "1.0.0",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/System/Library/Frameworks/OpenGL.framework/Versions/A/OpenGL"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "4.0.0",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/System/Library/Frameworks/Accelerate.framework/Versions/A/Accelerate"
+      },
+      {
+        "compatibility_version": "64.0.0",
+        "current_version": "1965.4.5",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "372.16.0",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/System/Library/Frameworks/Metal.framework/Versions/A/Metal"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "1451.4.2",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/System/Library/Frameworks/PDFKit.framework/Versions/A/PDFKit"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "2.0.0",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/System/Library/Frameworks/AVFoundation.framework/Versions/A/AVFoundation"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "1.0.0",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/System/Library/Frameworks/AVFAudio.framework/Versions/A/AVFAudio"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "1000.0.0",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/System/Library/Frameworks/AudioToolbox.framework/Versions/A/AudioToolbox"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "1.0.0",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/System/Library/Frameworks/CoreAudio.framework/Versions/A/CoreAudio"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "1.0.0",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/System/Library/Frameworks/DeviceCheck.framework/Versions/A/DeviceCheck"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "877.4.0",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/System/Library/Frameworks/CoreText.framework/Versions/A/CoreText"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "2005.100.186",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/System/Library/Frameworks/LocalAuthentication.framework/Versions/A/LocalAuthentication"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "624.1.16",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/System/Library/Frameworks/AuthenticationServices.framework/Versions/A/AuthenticationServices"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "1226.0.0",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/System/Library/Frameworks/CoreServices.framework/Versions/A/CoreServices"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "3860.255.112",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/System/Library/Frameworks/CFNetwork.framework/Versions/A/CFNetwork"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "709.0.0",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/System/Library/Frameworks/UniformTypeIdentifiers.framework/Versions/A/UniformTypeIdentifiers"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "275.0.0",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "379.0.0",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/System/Library/Frameworks/StoreKit.framework/Versions/A/StoreKit"
+      },
+      {
+        "compatibility_version": "9.0.0",
+        "current_version": "381.0.0",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/usr/lib/libsqlite3.dylib"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "1.0.0",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/System/Library/Frameworks/UserNotifications.framework/Versions/A/UserNotifications"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "1.2.12",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/usr/lib/libz.1.dylib"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "0.0.0",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/System/Library/Frameworks/CoreTelephony.framework/Versions/A/CoreTelephony"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "1405.100.8",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/System/Library/Frameworks/SystemConfiguration.framework/Versions/A/SystemConfiguration"
+      },
+      {
+        "compatibility_version": "2.0.0",
+        "current_version": "170.0.0",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/System/Library/Frameworks/Carbon.framework/Versions/A/Carbon"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "3305.24.5",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/System/Library/Frameworks/CoreMedia.framework/Versions/A/CoreMedia"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "1.0.0",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/System/Library/Frameworks/IOSurface.framework/Versions/A/IOSurface"
+      },
+      {
+        "compatibility_version": "1.2.0",
+        "current_version": "1195.9.0",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/System/Library/Frameworks/QuartzCore.framework/Versions/A/QuartzCore"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "3102.100.102",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/System/Library/Frameworks/ServiceManagement.framework/Versions/A/ServiceManagement"
+      },
+      {
+        "compatibility_version": "45.0.0",
+        "current_version": "2685.50.120",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit"
+      },
+      {
+        "compatibility_version": "300.0.0",
+        "current_version": "4424.1.255",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "24.0.0",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/System/Library/Frameworks/Cocoa.framework/Versions/A/Cocoa"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "3023.0.0",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/System/Library/Frameworks/Combine.framework/Versions/A/Combine"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "1.0.0",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/System/Library/Frameworks/CryptoKit.framework/Versions/A/CryptoKit"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "2100.43.0",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/usr/lib/libc++.1.dylib"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "2410.24.5",
+        "kind": "LC_LOAD_WEAK_DYLIB",
+        "path": "/usr/lib/swift/libswiftAVFoundation.dylib"
+      },
+      {
+        "compatibility_version": "0.0.0",
+        "current_version": "0.0.0",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/usr/lib/swift/libswiftCore.dylib"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "411.255.0",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/usr/lib/swift/libswiftCoreAudio.dylib"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "120.100.0",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/usr/lib/swift/libswiftCoreFoundation.dylib"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "2.2.0",
+        "kind": "LC_LOAD_WEAK_DYLIB",
+        "path": "/usr/lib/swift/libswiftCoreImage.dylib"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "6.0.0",
+        "kind": "LC_LOAD_WEAK_DYLIB",
+        "path": "/usr/lib/swift/libswiftCoreMIDI.dylib"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "3305.24.5",
+        "kind": "LC_LOAD_WEAK_DYLIB",
+        "path": "/usr/lib/swift/libswiftCoreMedia.dylib"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "377.100.15",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/usr/lib/swift/libswiftDarwin.dylib"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "1542.100.32",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/usr/lib/swift/libswiftDispatch.dylib"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "1.0.0",
+        "kind": "LC_LOAD_WEAK_DYLIB",
+        "path": "/usr/lib/swift/libswiftIOKit.dylib"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "372.16.0",
+        "kind": "LC_LOAD_WEAK_DYLIB",
+        "path": "/usr/lib/swift/libswiftMetal.dylib"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "10.0.0",
+        "kind": "LC_LOAD_WEAK_DYLIB",
+        "path": "/usr/lib/swift/libswiftOSLog.dylib"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "951.7.0",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/usr/lib/swift/libswiftObjectiveC.dylib"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "5.0.0",
+        "kind": "LC_LOAD_WEAK_DYLIB",
+        "path": "/usr/lib/swift/libswiftQuartzCore.dylib"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "1.0.0",
+        "kind": "LC_LOAD_WEAK_DYLIB",
+        "path": "/usr/lib/swift/libswiftSpatial.dylib"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "877.4.9",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "128.100.15",
+        "kind": "LC_LOAD_WEAK_DYLIB",
+        "path": "/usr/lib/swift/libswiftXPC.dylib"
+      },
+      {
+        "compatibility_version": "0.0.0",
+        "current_version": "0.0.0",
+        "kind": "LC_LOAD_DYLIB",
+        "path": "/usr/lib/swift/libswift_Concurrency.dylib"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "1082.0.0",
+        "kind": "LC_LOAD_WEAK_DYLIB",
+        "path": "/usr/lib/swift/libswiftos.dylib"
+      },
+      {
+        "compatibility_version": "1.0.0",
+        "current_version": "23.0.0",
+        "kind": "LC_LOAD_WEAK_DYLIB",
+        "path": "/usr/lib/swift/libswiftsimd.dylib"
+      }
+    ],
+    "limitations": [],
+    "total": 63
+  },
+  "build_metadata": {
+    "exhaustive": true,
+    "items": [
+      {
+        "minimum_os": "14.2",
+        "platform": "1",
+        "sdk": "26.4",
+        "tools": [
+          {
+            "name": "4",
+            "version": "9999.0"
+          }
+        ]
+      }
+    ],
+    "limitations": [],
+    "total": 1
+  },
+  "entrypoints": {
+    "exhaustive": true,
+    "items": [
+      {
+        "file_offset": 3602332
+      }
+    ],
+    "limitations": [],
+    "total": 1
+  },
+  "export_count": null,
+  "import_count": null
+}

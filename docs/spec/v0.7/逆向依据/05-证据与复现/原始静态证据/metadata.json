@@ -1,0 +1,111 @@
+{
+  "info": {
+    "BuildMachineOSBuild": "25F80",
+    "CFBundleDevelopmentRegion": "en",
+    "CFBundleExecutable": "Foresight",
+    "CFBundleIconFile": "AppIcon",
+    "CFBundleIconName": "AppIcon",
+    "CFBundleIdentifier": "com.google.AIEdgeForesight",
+    "CFBundleInfoDictionaryVersion": "6.0",
+    "CFBundleName": "Foresight",
+    "CFBundlePackageType": "APPL",
+    "CFBundleShortVersionString": "1.0.0",
+    "CFBundleSupportedPlatforms": [
+      "MacOSX"
+    ],
+    "CFBundleURLTypes": [
+      {
+        "CFBundleTypeRole": "Editor",
+        "CFBundleURLName": "com.google.AIEdgeForesight.googleSignIn",
+        "CFBundleURLSchemes": [
+          "com.googleusercontent.apps.221565328707-rcm3nmuvo80t0q150oplohkg1ps4dirp",
+          "com.google.sso.221565328707-rcm3nmuvo80t0q150oplohkg1ps4dirp"
+        ]
+      }
+    ],
+    "CFBundleVersion": "1.0.0.28.20261005",
+    "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+    "DTPlatformBuild": "25E251",
+    "DTPlatformName": "macosx",
+    "DTPlatformVersion": "26.4",
+    "DTSDKBuild": "25E251",
+    "DTSDKName": "macosx26.4",
+    "DTXcode": "2641",
+    "DTXcodeBuild": "17E202",
+    "FLTAssetsPath": "macos_prod.assets",
+    "FLTEnableImpeller": false,
+    "GIDClientID": "221565328707-rcm3nmuvo80t0q150oplohkg1ps4dirp.apps.googleusercontent.com",
+    "KSChannelID": "prod",
+    "KSVersion": "1.0.0",
+    "LSMinimumSystemVersion": "14.2",
+    "NSAudioCaptureUsageDescription": "Please allow access in order to capture audio output from other apps.",
+    "NSHumanReadableCopyright": "Copyright \u00a9 2026 Google LLC. All rights reserved.",
+    "NSMainNibFile": "MainMenu",
+    "NSMicrophoneUsageDescription": "Please allow access to the microphone to capture audio input.",
+    "NSPrincipalClass": "NSApplication"
+  },
+  "model_config": {
+    "models": [
+      {
+        "name": "Gemma 4 12B",
+        "modelTypeEnum": 16,
+        "minDeviceMemoryInGb": 30,
+        "enableSpeculativeDecoding": true,
+        "supportsVision": true,
+        "supportsAudio": true,
+        "audioBackend": "gpu",
+        "visionBackend": "gpu",
+        "enableThinking": false,
+        "filterChannelContentFromKvCache": true,
+        "defaultConfig": {
+          "maxContextLength": 4096,
+          "temperature": 0.4,
+          "topK": 40,
+          "topP": 0.9,
+          "repetitionPenalty": 1.05
+        },
+        "visualTokenBudget": 560
+      },
+      {
+        "name": "Gemma 4 E4B",
+        "modelTypeEnum": 15,
+        "minDeviceMemoryInGb": 15,
+        "enableSpeculativeDecoding": true,
+        "supportsVision": true,
+        "supportsAudio": true,
+        "audioBackend": "cpu",
+        "visionBackend": "gpu",
+        "enableThinking": false,
+        "filterChannelContentFromKvCache": true,
+        "defaultConfig": {
+          "maxContextLength": 4096,
+          "temperature": 0.4,
+          "topK": 40,
+          "topP": 0.9,
+          "repetitionPenalty": 1.05
+        },
+        "visualTokenBudget": 280
+      },
+      {
+        "name": "Gemma 4 E2B",
+        "modelTypeEnum": 14,
+        "minDeviceMemoryInGb": 6,
+        "enableSpeculativeDecoding": true,
+        "supportsVision": true,
+        "supportsAudio": true,
+        "audioBackend": "cpu",
+        "visionBackend": "gpu",
+        "enableThinking": false,
+        "filterChannelContentFromKvCache": true,
+        "defaultConfig": {
+          "maxContextLength": 4096,
+          "temperature": 0.4,
+          "topK": 40,
+          "topP": 0.9,
+          "repetitionPenalty": 1.05
+        },
+        "visualTokenBudget": 280
+      }
+    ]
+  }
+}

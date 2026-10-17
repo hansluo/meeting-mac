@@ -1,0 +1,1486 @@
+{
+  "rpc_paths": [
+    {
+      "text": "/research.xeno.labs.foresight.launch_agent.proto.RagService/IndexDocument",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x594bcd0",
+      "byte_length": 73,
+      "encoding": "latin-1",
+      "raw_sha256": "b179a51c0a4d9d92a2206776f42466a92f8faf5d9a1b1ed77dcc3b033605a362",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "/ai_edge.foresight.service.ForesightService/GetSharedConfig",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x59caad0",
+      "byte_length": 59,
+      "encoding": "latin-1",
+      "raw_sha256": "57992a0fefc5e81dfadcc84182511784b573edf6642364fd1486d93d78e8c2ec",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "/research.xeno.labs.foresight.launch_agent.proto.RagService/Encode",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5ab3670",
+      "byte_length": 66,
+      "encoding": "latin-1",
+      "raw_sha256": "b6f943ecc76f2f884cce35e752b4ff3586eae8f58ea0316982d98c1c0aef57be",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "/research.xeno.labs.foresight.launch_agent.proto.RagService/DeleteDocument",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5abc0b0",
+      "byte_length": 74,
+      "encoding": "latin-1",
+      "raw_sha256": "bcb14f2cfdefadd0291a5736aaf2898d53bc329ec307a606dd662ee5b7d23e75",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "/ai_edge.foresight.service.ForesightService/CheckServiceStatus",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5b59280",
+      "byte_length": 62,
+      "encoding": "latin-1",
+      "raw_sha256": "92bbd575434746636d9e6dcb94e736ea8563e973875d31b90f85f9596974d39e",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "/research.xeno.labs.foresight.launch_agent.proto.RagService/TruncateText",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5be6370",
+      "byte_length": 72,
+      "encoding": "latin-1",
+      "raw_sha256": "6f6e093b69f5636d1c227d89fead2a92ca13bf3425eb97c804cbc7d3608ed566",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "/research.xeno.labs.foresight.launch_agent.proto.RagService/ComputeEmbedding",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5c6c600",
+      "byte_length": 76,
+      "encoding": "latin-1",
+      "raw_sha256": "cefed74340d5afc31a166d1ea0825fb61d8c3d5fa0cf40b8593c970b84264408",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "/research.xeno.labs.foresight.launch_agent.proto.RagService/Ping",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5e24f60",
+      "byte_length": 64,
+      "encoding": "latin-1",
+      "raw_sha256": "9fbc232a07c49a8259e7073af40bbfb80b01e41baf78af6e7f9c1d49bf2270db",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "/research.xeno.labs.foresight.launch_agent.proto.RagService/UpdateModelPaths",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5e290d0",
+      "byte_length": 76,
+      "encoding": "latin-1",
+      "raw_sha256": "310265a85fbeea6e102427b62eb27de89b8122775b330204d8e1fe76a12c7c02",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "/research.xeno.labs.foresight.launch_agent.proto.RagService/RetrieveContext",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5e93990",
+      "byte_length": 75,
+      "encoding": "latin-1",
+      "raw_sha256": "52c891170373b6dc96de9b6d8bf36d8501cc76d8a41fed0adfccee4a64283f59",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "/ai_edge.foresight.service.ForesightService/UnsubscribeFromFiles",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x6083ed0",
+      "byte_length": 64,
+      "encoding": "latin-1",
+      "raw_sha256": "4dc5c5accda7bd0c1650b01b347a5034f6dad97a3f39bee62f4d6c6763c78523",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "/ai_edge.foresight.service.ForesightService/ResolveGoLinks",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x6083f50",
+      "byte_length": 58,
+      "encoding": "latin-1",
+      "raw_sha256": "4eb03b59239ff77666c0e9e02151acaa9fb8bd618a25d8ab53f1a40de4b26fd8",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "/ai_edge.foresight.service.ForesightService/UpdateFcmToken",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x61334f0",
+      "byte_length": 58,
+      "encoding": "latin-1",
+      "raw_sha256": "0f10bb26c5a0943e3559c4fa349046f5d4cad7bf86921cff4e6f412c108f51b8",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "/ai_edge.foresight.service.ForesightService/FetchExternalWebsite",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x6160980",
+      "byte_length": 64,
+      "encoding": "latin-1",
+      "raw_sha256": "07c2c076f11abdefe99f7fe7097f94274af9d3b478182672c22a7325de1000d2",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "/research.xeno.labs.foresight.launch_agent.proto.RagService/ComputeImageEmbedding",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x61e5af0",
+      "byte_length": 81,
+      "encoding": "latin-1",
+      "raw_sha256": "e1fb81590aa27ab6a9e7a69a009ffb320f5a8c558ef759ccec31834e66349a9f",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    }
+  ],
+  "database_class_candidates": [
+    {
+      "text": "$SourceTextTableTable",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x596dc60",
+      "byte_length": 21,
+      "encoding": "latin-1",
+      "raw_sha256": "af72976fdd14164d7d796c8f551ad87aecdeff0da4c48668bc90a2e7bed635a5",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "package:research.xeno.labs.foresight.app.database/event_transcript.dart",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x599f0a0",
+      "byte_length": 71,
+      "encoding": "latin-1",
+      "raw_sha256": "0699bd99d3e8d18af2f584c26bee09a68c055bffe9b86ad8e4bdb8e424bb0346",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "package:research.xeno.labs.foresight.app.database/date_time_converter.dart",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x59cad70",
+      "byte_length": 74,
+      "encoding": "latin-1",
+      "raw_sha256": "53448d92993c449c43890dc6bc7f1494a94a8b461f8f92d2b4e0c50b26bafc56",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "package:research.xeno.labs.foresight.app.database/database.drift.dart",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x59f1a10",
+      "byte_length": 69,
+      "encoding": "latin-1",
+      "raw_sha256": "1e6287998b37aba41b985111b7b3a6d2cee64bddbb3c07fa67c61992fd9ad290",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "$ProcessedUriTableTable",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x59f4780",
+      "byte_length": 23,
+      "encoding": "latin-1",
+      "raw_sha256": "3b7f31dbce87159f2fcf77572686bf1088de37a56172c63e0359912eae213fe5",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "package:research.xeno.labs.foresight.app.database/note.dart",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5a17100",
+      "byte_length": 59,
+      "encoding": "latin-1",
+      "raw_sha256": "a59a654db2e55ce7984f1855d29eb63d1f688a474ed798cf8b50d4f26e8dea1b",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "$DriveFileSubscriptionTableTable",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5aa53e0",
+      "byte_length": 32,
+      "encoding": "latin-1",
+      "raw_sha256": "39a6d09a3c2f10d910097cd68bfe95165a1314d76fa34e343fddc6330119203e",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "$ContextSourceTextTableTable",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5ab94b0",
+      "byte_length": 28,
+      "encoding": "latin-1",
+      "raw_sha256": "b85d932599987b559fdbe1450784d315360724a5e381951d9d86b50491bfffb7",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "$EventTranscriptTableTable",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5ab9b00",
+      "byte_length": 26,
+      "encoding": "latin-1",
+      "raw_sha256": "5a33bdcfa4c5d0c1c629728aea76c1a67d7ab85401b3dff5fcd9e27fb1960188",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "$EdgesTableTable",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5ad6980",
+      "byte_length": 16,
+      "encoding": "latin-1",
+      "raw_sha256": "c6e94765d245456e770036b9ac681165747566ffafe42bdfbb166677707bfff0",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "package:research.xeno.labs.foresight.app.database/database.dart",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5b00660",
+      "byte_length": 63,
+      "encoding": "latin-1",
+      "raw_sha256": "0f817de5541b14be308a67a84a0d6c34f9b6f9135d4db4d744c961d5dd30c6d2",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "$DocumentEntitiesTableTable",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5b022b0",
+      "byte_length": 27,
+      "encoding": "latin-1",
+      "raw_sha256": "267d0392f33403b15625f79b204fd4a2550e28b0e03edd83183940ebb8bc2279",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "package:research.xeno.labs.foresight.app.database/document_graph_service.dart",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5bbb0a0",
+      "byte_length": 77,
+      "encoding": "latin-1",
+      "raw_sha256": "28ccff0e77f424f84a1ba059680a6ba1795c463995494866f83a73cedce8fbb0",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "$DocumentClustersTableTable",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5bd3920",
+      "byte_length": 27,
+      "encoding": "latin-1",
+      "raw_sha256": "579d52631fe40d7f3acf3c72314378cc060dc05029968bcfd3e5f1a76463b99c",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "package:research.xeno.labs.foresight.app.database/event_insight.dart",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5c80bd0",
+      "byte_length": 68,
+      "encoding": "latin-1",
+      "raw_sha256": "3f2173cbd21b34e7ff493aecba202256ad0231cdcbee4c39e9173aebcde1446e",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "$DocumentEntityStateTableTable",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5ccf070",
+      "byte_length": 30,
+      "encoding": "latin-1",
+      "raw_sha256": "d1bed499f7d1461ab7107721ee33bf1f94573484001e50f065db6dcad5915e5d",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "$ContactsTableTable",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5d46bb0",
+      "byte_length": 19,
+      "encoding": "latin-1",
+      "raw_sha256": "7ba8c25f09c2c6b8ec4bb4d7a319a75140b10e9f0977854e866232854408d9a9",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "package:research.xeno.labs.foresight.app.database/processed_uri.dart",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5d46c50",
+      "byte_length": 68,
+      "encoding": "latin-1",
+      "raw_sha256": "9904b1c5be7ae5d92b9b483ae1a5ed5fce98f9838a0b4eb7194beaea735b5a73",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "package:research.xeno.labs.foresight.app.database/graph_rag_service.dart",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5d7d740",
+      "byte_length": 72,
+      "encoding": "latin-1",
+      "raw_sha256": "7d087bdc0c584a362480f4ad2aece8ff39dd7a9fd8bb7a7027424c051a6df1fb",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "$KeyValueEntriesTable",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5da5460",
+      "byte_length": 21,
+      "encoding": "latin-1",
+      "raw_sha256": "1a40db92eb785e013d7bf7b7ee1bf17f7086492c25aa821bcf5cc1bdd1eb89f0",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "package:research.xeno.labs.foresight.app.database/source_text.dart",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5e93ce0",
+      "byte_length": 66,
+      "encoding": "latin-1",
+      "raw_sha256": "c82861acf82005c34be0f147d30deec1cd8bf7becb3a8eb726aba8a3f226f364",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "$NodesTableTable",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5e95f50",
+      "byte_length": 16,
+      "encoding": "latin-1",
+      "raw_sha256": "3d50da30c3c73e6952c9cad15a3c29efb6c106e85aa1e8f871b2502eba54d29b",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "$NotesTableTable",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5ef7a70",
+      "byte_length": 16,
+      "encoding": "latin-1",
+      "raw_sha256": "66df07a0e093e90bb1e98c62c9e47d8da195efea5fad3c231b4144231599e91a",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "package:research.xeno.labs.foresight.app.database/source_text_type.dart",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5fd55d0",
+      "byte_length": 71,
+      "encoding": "latin-1",
+      "raw_sha256": "0bd47f13c5d60ec16b91a8a78ffbead18e04ae96e09c75fe9df014bef518b865",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "$DocumentLabelsTableTable",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x60aa7c0",
+      "byte_length": 25,
+      "encoding": "latin-1",
+      "raw_sha256": "9ad2379b6e2af59e422f35681519774e4e51e44bcf81e12dcc315bc9ee7fd41a",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "package:research.xeno.labs.foresight.app.database/drive_file_subscription.dart",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x60b2450",
+      "byte_length": 78,
+      "encoding": "latin-1",
+      "raw_sha256": "fd87ae6c3b4a020470b2e9459b8f2bfb94de91cab360765ecb30e12eafebfe07",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "$EventInsightTableTable",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x60b35c0",
+      "byte_length": 23,
+      "encoding": "latin-1",
+      "raw_sha256": "fb093aeb0a5077967fcdd9c71a9374d2d0d37790c40a95daea151b2b5f77629e",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "package:research.xeno.labs.foresight.app.database/context_source_text.dart",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x60b4c00",
+      "byte_length": 74,
+      "encoding": "latin-1",
+      "raw_sha256": "cbb84263c85abaf8a06cb06dab798e0690d4130c7aa1d0ef367c9617d092da8c",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "package:research.xeno.labs.foresight.app.database/document_entity.dart",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x60cc120",
+      "byte_length": 70,
+      "encoding": "latin-1",
+      "raw_sha256": "34d8746cf863f138549feeb92207150585bac881036de62bea1f2f7188de7e81",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "$EventDocumentTableTable",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x6146d40",
+      "byte_length": 24,
+      "encoding": "latin-1",
+      "raw_sha256": "a805ef37240b35c55ae68e640ca094f4e7f9bad3f884d0c9f88b0f203bb229c6",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "$DocumentEmbeddingsTableTable",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x615df20",
+      "byte_length": 29,
+      "encoding": "latin-1",
+      "raw_sha256": "9404d64d78718b16a51653c2eb49786b5b1b7de6b1bda02e687f51ed3a167c25",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "$DocumentEdgesTableTable",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x6163050",
+      "byte_length": 24,
+      "encoding": "latin-1",
+      "raw_sha256": "ff4d904d52dbbbf0161449e4ec5f2d2c2609a2986a1715399ba76d3b456f2349",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "$NodeEmbeddingsTableTable",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x61a9220",
+      "byte_length": 25,
+      "encoding": "latin-1",
+      "raw_sha256": "e98990a74fa0041aa01ff1a94648a3444f510a1e106bd11a34026c06e4ed86cf",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "package:research.xeno.labs.foresight.app.database/event_document.dart",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x61bfb00",
+      "byte_length": 69,
+      "encoding": "latin-1",
+      "raw_sha256": "b10abc57ad88fb5d95fc4d7375fc329f43fe569f8e820fe0a2cdbce8233305f8",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "$GraphRagDocumentStateTableTable",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x62115a0",
+      "byte_length": 32,
+      "encoding": "latin-1",
+      "raw_sha256": "bf64b132b0f1cea67b00eee9ddbbcde47fcb08d7014e7056cdde26ddecfb90cf",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    }
+  ],
+  "ffi_name_strings": [
+    {
+      "text": "litert_lm_clone_conversation",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5980f10",
+      "byte_length": 28,
+      "encoding": "latin-1",
+      "raw_sha256": "d353ece1e96a2cf779104ec0b74e30a022c9fe4721f0fd9066b7934e7fdb4e50",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "OdmlCreateSpeechProcessorLlmEngine",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5998970",
+      "byte_length": 34,
+      "encoding": "latin-1",
+      "raw_sha256": "59e463b35d10ef85bb1a9fedcfac45d4c1cbfc231f1ae1d33cfb0d37f55440f4",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "litert_lm_initialize_engine",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x599a420",
+      "byte_length": 27,
+      "encoding": "latin-1",
+      "raw_sha256": "1b5eaa2a5e5c8a0b1ce58518712a744a1054cd864aa72c6a35e4e052c4eb5e9a",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "litert_lm_free_response_string",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x599e840",
+      "byte_length": 30,
+      "encoding": "latin-1",
+      "raw_sha256": "124526743c2746e157b85ceb67153201806c8671d4f1241a681dd9a84e0d884a",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "litert_lm_conversation_send_message",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x59f06e0",
+      "byte_length": 35,
+      "encoding": "latin-1",
+      "raw_sha256": "152ccbad1438fe69cbd0fe1eefba91ab1346696fa5a1705f6c4393416e7ea301",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "litert_lm_conversation_cancel_process",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5b24980",
+      "byte_length": 37,
+      "encoding": "latin-1",
+      "raw_sha256": "c412a210094ae0640ef2e9937ef10f4a3a465c7f4d0ae1d2d2ea527f6af8465d",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "OdmlCreateInferenceEngine",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5b5c780",
+      "byte_length": 25,
+      "encoding": "latin-1",
+      "raw_sha256": "002b46488d13134e373fd2755c8ffd5b548ce9f38680b9a2f7fd61b5db90c88a",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "litert_lm_create_conversation",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5ccdad0",
+      "byte_length": 29,
+      "encoding": "latin-1",
+      "raw_sha256": "274059037f650a325be848c05a59d080b32ca4acb15afa84acc445da0b791bb1",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "litert_lm_delete_conversation",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5cd0a80",
+      "byte_length": 29,
+      "encoding": "latin-1",
+      "raw_sha256": "116311eaa42309dfc5af7ace9cb88bfd9fc2ee75af6822673f46f084fc26db01",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "litert_lm_create_conversation_v2",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5d5e060",
+      "byte_length": 32,
+      "encoding": "latin-1",
+      "raw_sha256": "86b90cb4c9e13d6bb3bfdf4dd4bfacc73bddf22b062887576a91eaf9dc3342a3",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "litert_lm_shutdown_engine",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5da76d0",
+      "byte_length": 25,
+      "encoding": "latin-1",
+      "raw_sha256": "e46b31d4fea45b40db7d0c0e74b82064c897d11742840281b94e9da16722648b",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "OdmlCreateInferenceEngineLlmEngine",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5daa100",
+      "byte_length": 34,
+      "encoding": "latin-1",
+      "raw_sha256": "c8c67f86f863698ee50f49320f8ee2d6da90b630ef27c5ebc4e483a752cf5033",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "litert_lm_conversation_send_message_stream",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5dd2d70",
+      "byte_length": 42,
+      "encoding": "latin-1",
+      "raw_sha256": "d4db8cfb0797e4876bb9f9d29fb3ab9f982aec8a8a07b1030ae47ffb07e08195",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "OdmlCreateSpeechPipelineFromProto",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x615c120",
+      "byte_length": 33,
+      "encoding": "latin-1",
+      "raw_sha256": "70cc84d5cba9d45855f632eb95d8d2469ee35c34dded7d967a869d0fd1ba2a12",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "litert_lm_cache",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x6197f10",
+      "byte_length": 15,
+      "encoding": "latin-1",
+      "raw_sha256": "7be68e50483bc78729c257d717ee67f7161ba8c8ba601a81a1a42383e16fa4fd",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    }
+  ],
+  "lifecycle_strings": [
+    {
+      "text": "[BackgroundAgentProxy] Action failed with connection error: ",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5952190",
+      "byte_length": 60,
+      "encoding": "latin-1",
+      "raw_sha256": "16cdaab82c4149380da485c9f9fa8e80a52f778597d88bba39122c2f78b7cea8",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "[BackgroundAgentProxy] Error in onSystemSleep listener: ",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x59a1e80",
+      "byte_length": 56,
+      "encoding": "latin-1",
+      "raw_sha256": "354fbdf2f21fda45322b5f661c16d827d929e45b1a98211403698b002f964715",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "BackgroundAgentProxy",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5ab9110",
+      "byte_length": 20,
+      "encoding": "latin-1",
+      "raw_sha256": "ca0d64015d2f2cee433f6d27041fcbc54f757b2f917bf6011379bb3703aa18aa",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "key_value_store.sqlite",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5abcfb0",
+      "byte_length": 22,
+      "encoding": "latin-1",
+      "raw_sha256": "f44330a32c6afd1d3f845ca0dc92af3d063bfdf44654dbd24160b9ec4a519538",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "key_value.sqlite",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5b188b0",
+      "byte_length": 16,
+      "encoding": "latin-1",
+      "raw_sha256": "f668395c976a5f65e72091805d490e0de863a3a5f0e5e6403de4ac41b01b6d7a",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "[BackgroundAgentProxy] ensureRunning finished.",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5b71380",
+      "byte_length": 46,
+      "encoding": "latin-1",
+      "raw_sha256": "d6668094f672e4ea18b9f1144bf32e7810c4ce00236994518c3450d662173f82",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "BackgroundAgentProxy._@1513400549",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5b75750",
+      "byte_length": 33,
+      "encoding": "latin-1",
+      "raw_sha256": "a5661c6ef9a5c929689f320bb6902cd21ad3d5fb9b5f813ede8fcde508ac480f",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "[BackgroundAgentProxy] Invalidating connection to daemon.",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5c6a710",
+      "byte_length": 57,
+      "encoding": "latin-1",
+      "raw_sha256": "88d05113142c9fc9237f1e0f0a2ad67fdb0965a38768f89c8f9142dd8633e2e1",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "_resolveSocketPath@1513400549",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5d04ec0",
+      "byte_length": 29,
+      "encoding": "latin-1",
+      "raw_sha256": "0323be16f871b5be6f55ccb07c1813af33812f19a43a7ac58741809a851f2522",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "getAgentSocketPath",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5d2cfa0",
+      "byte_length": 18,
+      "encoding": "latin-1",
+      "raw_sha256": "7d6bd5f156f89004264285b6204fea1fe6f957c6ed3ee06b73c3bfe2d5631fa3",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "[BackgroundAgentProxy] Error in onSystemWake listener: ",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5d42400",
+      "byte_length": 55,
+      "encoding": "latin-1",
+      "raw_sha256": "52cbcacd2ec702406a839d665db0f7a21bab74abcd1634ce59bf647a74d4c831",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "[BackgroundAgentProxy] getAgentSocketPath failed: ",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5d7e770",
+      "byte_length": 50,
+      "encoding": "latin-1",
+      "raw_sha256": "9f266243202a7790d71ae0f89acc11a4386ebb4172946284c38e2238f8370436",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "database.sqlite",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5de6420",
+      "byte_length": 15,
+      "encoding": "latin-1",
+      "raw_sha256": "c0b199ff23db4c2e483ece5c7f25ac62446ff21bbacb48152b24c829dd4a71e9",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "[BackgroundAgentProxy] Invoking ensureRunning...",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5e20980",
+      "byte_length": 48,
+      "encoding": "latin-1",
+      "raw_sha256": "b48ebec58772ccbf12d04dc8c3877b3acf420c9dc9b274533a1c3a3a26ccc97d",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "[BackgroundAgentProxy] ensureRunning failed: ",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5e25440",
+      "byte_length": 45,
+      "encoding": "latin-1",
+      "raw_sha256": "b5d008502240ff0b12f444a3330e04a6fb2ccaa397a83c1b7e408177e5b4cf79",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "[BackgroundAgentProxy] Received onSystemSleep event. Notifying sleep listeners...",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5e540f0",
+      "byte_length": 81,
+      "encoding": "latin-1",
+      "raw_sha256": "a0c2bf44dd44f5296081c0d0520044ef6a54cecc928055f5767308774f29bb17",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "DocumentEmbedder: socketPath is null!",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x5e96b40",
+      "byte_length": 37,
+      "encoding": "latin-1",
+      "raw_sha256": "19bd26876ac2ca3daf5eace2ebdb7279f0902b8c0f81fee92a3e6da5275ebb21",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "[RagOrchestrator] Failed to update daemon paths: BackgroundAgentProxy.instance.getRagClient() returned null!",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x600e1f0",
+      "byte_length": 108,
+      "encoding": "latin-1",
+      "raw_sha256": "88639d2026ee83bfac5eb8831d847f98af82c338f98b81eaff6e1042d48aa01e",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "[BackgroundAgentProxy] Error shutting down old channel: ",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x60b2600",
+      "byte_length": 56,
+      "encoding": "latin-1",
+      "raw_sha256": "61aa5f834491c244527020de81c61b3011a636f0e62baf8861b980821b591644",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "[BackgroundAgentProxy] Error in reconnect callback: ",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x61472f0",
+      "byte_length": 52,
+      "encoding": "latin-1",
+      "raw_sha256": "112c1947856dd773f3c03a28c746799022cb18ff16d77c7da92fa68fe8e42120",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "[BackgroundAgentProxy] Received onSystemWake event. Notifying wake listeners and recovering...",
+      "source": "/Applications/Foresight.app/Contents/MacOS/Foresight",
+      "file_offset": "0x61fc350",
+      "byte_length": 94,
+      "encoding": "latin-1",
+      "raw_sha256": "b05c794f9a4fc1bf550b6b31958e683b77a7bad83a998892b41b220392581802",
+      "byte_verified": true,
+      "interpretation": "exact string; use/site and behavioral semantics require verification"
+    },
+    {
+      "text": "unix:",
+      "source": "/Applications/Foresight.app/Contents/Resources/ForesightHelper_tar.tar!/research/xeno/labs/foresight/launch_agent/ForesightHelper",
+      "file_offset": "0x30faed5",
+      "evidence_file": "05-证据与复现/原始静态证据/helper-strings.txt",
+      "line": 118287,
+      "evidence_type": "exact_string_extraction",
+      "encoding": "utf-8",
+      "byte_length": 5,
+      "raw_sha256": "5696f3aba1bc0085cc57a61ea8b1c6d3703c274612bb7cacc3acd0bc6cd7c08f",
+      "byte_verified": true,
+      "original_source_path": "/Users/hansluo/Desktop/study in HK/foresight-reverse/evidence/ForesightHelper",
+      "line_basis": "Python str.splitlines(), including Unicode line separators; use file_offset as canonical locator"
+    },
+    {
+      "text": " <socket_path> <storage_root_path>",
+      "source": "/Applications/Foresight.app/Contents/Resources/ForesightHelper_tar.tar!/research/xeno/labs/foresight/launch_agent/ForesightHelper",
+      "file_offset": "0x3784b23",
+      "evidence_file": "05-证据与复现/原始静态证据/helper-strings.txt",
+      "line": 163315,
+      "evidence_type": "exact_string_extraction",
+      "encoding": "utf-8",
+      "byte_length": 34,
+      "raw_sha256": "bc67105feba6c51fc5a4b2c321e31e9619e067dccd2652cca20f9dc1c569cc7e",
+      "byte_verified": true,
+      "original_source_path": "/Users/hansluo/Desktop/study in HK/foresight-reverse/evidence/ForesightHelper",
+      "line_basis": "Python str.splitlines(), including Unicode line separators; use file_offset as canonical locator"
+    },
+    {
+      "text": "/foresight_helper.log",
+      "source": "/Applications/Foresight.app/Contents/Resources/ForesightHelper_tar.tar!/research/xeno/labs/foresight/launch_agent/ForesightHelper",
+      "file_offset": "0x3784b46",
+      "evidence_file": "05-证据与复现/原始静态证据/helper-strings.txt",
+      "line": 163316,
+      "evidence_type": "exact_string_extraction",
+      "encoding": "utf-8",
+      "byte_length": 21,
+      "raw_sha256": "bbde23cfe512874ce7b8d081da87c1a532bb43c587b803045596f900a3b37190",
+      "byte_verified": true,
+      "original_source_path": "/Users/hansluo/Desktop/study in HK/foresight-reverse/evidence/ForesightHelper",
+      "line_basis": "Python str.splitlines(), including Unicode line separators; use file_offset as canonical locator"
+    },
+    {
+      "text": "/agent_metadata.db",
+      "source": "/Applications/Foresight.app/Contents/Resources/ForesightHelper_tar.tar!/research/xeno/labs/foresight/launch_agent/ForesightHelper",
+      "file_offset": "0x3784bf2",
+      "evidence_file": "05-证据与复现/原始静态证据/helper-strings.txt",
+      "line": 163320,
+      "evidence_type": "exact_string_extraction",
+      "encoding": "utf-8",
+      "byte_length": 18,
+      "raw_sha256": "860006c788f21242ec49301b7495d9f9428d2cb230a622d581c3f368fccff099",
+      "byte_verified": true,
+      "original_source_path": "/Users/hansluo/Desktop/study in HK/foresight-reverse/evidence/ForesightHelper",
+      "line_basis": "Python str.splitlines(), including Unicode line separators; use file_offset as canonical locator"
+    },
+    {
+      "text": "Launch Agent listening on Unix Socket: ",
+      "source": "/Applications/Foresight.app/Contents/Resources/ForesightHelper_tar.tar!/research/xeno/labs/foresight/launch_agent/ForesightHelper",
+      "file_offset": "0x3784c3d",
+      "evidence_file": "05-证据与复现/原始静态证据/helper-strings.txt",
+      "line": 163323,
+      "evidence_type": "exact_string_extraction",
+      "encoding": "utf-8",
+      "byte_length": 39,
+      "raw_sha256": "938eae5d42871eb28ecf46f20fab25229a60eaa5cd05a6bafda282c28cc5558c",
+      "byte_verified": true,
+      "original_source_path": "/Users/hansluo/Desktop/study in HK/foresight-reverse/evidence/ForesightHelper",
+      "line_basis": "Python str.splitlines(), including Unicode line separators; use file_offset as canonical locator"
+    },
+    {
+      "text": "1.0.3",
+      "source": "/Applications/Foresight.app/Contents/Resources/ForesightHelper_tar.tar!/research/xeno/labs/foresight/launch_agent/ForesightHelper",
+      "file_offset": "0x3784c75",
+      "evidence_file": "05-证据与复现/原始静态证据/helper-strings.txt",
+      "line": 163325,
+      "evidence_type": "exact_string_extraction",
+      "encoding": "utf-8",
+      "byte_length": 5,
+      "raw_sha256": "20d2cb096d1ab41a4140246d12f07bf6b8cb743fd48122b72532c03d44c5c14a",
+      "byte_verified": true,
+      "original_source_path": "/Users/hansluo/Desktop/study in HK/foresight-reverse/evidence/ForesightHelper",
+      "line_basis": "Python str.splitlines(), including Unicode line separators; use file_offset as canonical locator"
+    },
+    {
+      "text": "/rag_vector.db",
+      "source": "/Applications/Foresight.app/Contents/Resources/ForesightHelper_tar.tar!/research/xeno/labs/foresight/launch_agent/ForesightHelper",
+      "file_offset": "0x379ed11",
+      "evidence_file": "05-证据与复现/原始静态证据/helper-strings.txt",
+      "line": 166391,
+      "evidence_type": "exact_string_extraction",
+      "encoding": "utf-8",
+      "byte_length": 14,
+      "raw_sha256": "9b90254348ab4caea56381f7b0acacf265d6c8af0f34bf07e8f79d95f1a47d55",
+      "byte_verified": true,
+      "original_source_path": "/Users/hansluo/Desktop/study in HK/foresight-reverse/evidence/ForesightHelper",
+      "line_basis": "Python str.splitlines(), including Unicode line separators; use file_offset as canonical locator"
+    }
+  ],
+  "sql_statements": [
+    {
+      "text": "CREATE TABLE IF NOT EXISTS documents (id TEXT PRIMARY KEY, content TEXT, userId TEXT, maxTokensPerChunk INTEGER, chunkOverlap INTEGER, mimeType TEXT, imageBytes BLOB);",
+      "source": "/Applications/Foresight.app/Contents/Resources/ForesightHelper_tar.tar!/research/xeno/labs/foresight/launch_agent/ForesightHelper",
+      "file_offset": "0x3135af8",
+      "byte_length": 167,
+      "evidence_file": "05-证据与复现/原始静态证据/helper-strings.txt",
+      "line": 120057,
+      "evidence_type": "exact_string_extraction",
+      "scope": "Helper metadata business SQL",
+      "encoding": "utf-8",
+      "raw_sha256": "7c73cbafcf7183ab04fa8a87bf6dce43018ed0689d84aaddcc0296b76d9671ab",
+      "byte_verified": true,
+      "original_source_path": "/Users/hansluo/Desktop/study in HK/foresight-reverse/evidence/ForesightHelper",
+      "line_basis": "Python str.splitlines(), including Unicode line separators; use file_offset as canonical locator"
+    },
+    {
+      "text": "CREATE TABLE IF NOT EXISTS settings (key TEXT PRIMARY KEY, value TEXT);",
+      "source": "/Applications/Foresight.app/Contents/Resources/ForesightHelper_tar.tar!/research/xeno/labs/foresight/launch_agent/ForesightHelper",
+      "file_offset": "0x3135ba0",
+      "byte_length": 71,
+      "evidence_file": "05-证据与复现/原始静态证据/helper-strings.txt",
+      "line": 120058,
+      "evidence_type": "exact_string_extraction",
+      "scope": "Helper metadata business SQL",
+      "encoding": "utf-8",
+      "raw_sha256": "7534ab273fe482828a32230e875109e077aaa71c04b0c7dbd526a3b4167b69ee",
+      "byte_verified": true,
+      "original_source_path": "/Users/hansluo/Desktop/study in HK/foresight-reverse/evidence/ForesightHelper",
+      "line_basis": "Python str.splitlines(), including Unicode line separators; use file_offset as canonical locator"
+    },
+    {
+      "text": "INSERT OR REPLACE INTO documents (id, content, userId, maxTokensPerChunk, chunkOverlap, mimeType, imageBytes) VALUES (?, ?, ?, ?, ?, ?, ?);",
+      "source": "/Applications/Foresight.app/Contents/Resources/ForesightHelper_tar.tar!/research/xeno/labs/foresight/launch_agent/ForesightHelper",
+      "file_offset": "0x3135be8",
+      "byte_length": 139,
+      "evidence_file": "05-证据与复现/原始静态证据/helper-strings.txt",
+      "line": 120059,
+      "evidence_type": "exact_string_extraction",
+      "scope": "Helper metadata business SQL",
+      "encoding": "utf-8",
+      "raw_sha256": "8902ca8652ff99ff02fe972f1937d6ae6e3e22e3e6bd13021717e86a10effb45",
+      "byte_verified": true,
+      "original_source_path": "/Users/hansluo/Desktop/study in HK/foresight-reverse/evidence/ForesightHelper",
+      "line_basis": "Python str.splitlines(), including Unicode line separators; use file_offset as canonical locator"
+    },
+    {
+      "text": "SELECT content, userId, maxTokensPerChunk, chunkOverlap, mimeType, imageBytes FROM documents WHERE id = ?;",
+      "source": "/Applications/Foresight.app/Contents/Resources/ForesightHelper_tar.tar!/research/xeno/labs/foresight/launch_agent/ForesightHelper",
+      "file_offset": "0x3135c74",
+      "byte_length": 106,
+      "evidence_file": "05-证据与复现/原始静态证据/helper-strings.txt",
+      "line": 120060,
+      "evidence_type": "exact_string_extraction",
+      "scope": "Helper metadata business SQL",
+      "encoding": "utf-8",
+      "raw_sha256": "5ff672c27c0f5982f10aa8f44f86a30e117a35103039d9935fea1eafc4c025cd",
+      "byte_verified": true,
+      "original_source_path": "/Users/hansluo/Desktop/study in HK/foresight-reverse/evidence/ForesightHelper",
+      "line_basis": "Python str.splitlines(), including Unicode line separators; use file_offset as canonical locator"
+    },
+    {
+      "text": "DELETE FROM documents WHERE id = ?;",
+      "source": "/Applications/Foresight.app/Contents/Resources/ForesightHelper_tar.tar!/research/xeno/labs/foresight/launch_agent/ForesightHelper",
+      "file_offset": "0x3135cdf",
+      "byte_length": 35,
+      "evidence_file": "05-证据与复现/原始静态证据/helper-strings.txt",
+      "line": 120061,
+      "evidence_type": "exact_string_extraction",
+      "scope": "Helper metadata business SQL",
+      "encoding": "utf-8",
+      "raw_sha256": "95a37f2306a746d38a870dc1357c432a8f88de66f4012e7158337e27cc4e6795",
+      "byte_verified": true,
+      "original_source_path": "/Users/hansluo/Desktop/study in HK/foresight-reverse/evidence/ForesightHelper",
+      "line_basis": "Python str.splitlines(), including Unicode line separators; use file_offset as canonical locator"
+    },
+    {
+      "text": "SELECT id, content, userId, maxTokensPerChunk, chunkOverlap, mimeType, imageBytes FROM documents;",
+      "source": "/Applications/Foresight.app/Contents/Resources/ForesightHelper_tar.tar!/research/xeno/labs/foresight/launch_agent/ForesightHelper",
+      "file_offset": "0x3135d03",
+      "byte_length": 97,
+      "evidence_file": "05-证据与复现/原始静态证据/helper-strings.txt",
+      "line": 120062,
+      "evidence_type": "exact_string_extraction",
+      "scope": "Helper metadata business SQL",
+      "encoding": "utf-8",
+      "raw_sha256": "9d7f61c615459de9f7b98170289a8e1328c6fb90b580e63904e727990e997f98",
+      "byte_verified": true,
+      "original_source_path": "/Users/hansluo/Desktop/study in HK/foresight-reverse/evidence/ForesightHelper",
+      "line_basis": "Python str.splitlines(), including Unicode line separators; use file_offset as canonical locator"
+    },
+    {
+      "text": "SELECT value FROM settings WHERE key = ?;",
+      "source": "/Applications/Foresight.app/Contents/Resources/ForesightHelper_tar.tar!/research/xeno/labs/foresight/launch_agent/ForesightHelper",
+      "file_offset": "0x3135d65",
+      "byte_length": 41,
+      "evidence_file": "05-证据与复现/原始静态证据/helper-strings.txt",
+      "line": 120063,
+      "evidence_type": "exact_string_extraction",
+      "scope": "Helper metadata business SQL",
+      "encoding": "utf-8",
+      "raw_sha256": "dc6c7183f07bf0bbdcdaf8a002d8adc2cc3f0e9a01b4462780e08b6f60cb3263",
+      "byte_verified": true,
+      "original_source_path": "/Users/hansluo/Desktop/study in HK/foresight-reverse/evidence/ForesightHelper",
+      "line_basis": "Python str.splitlines(), including Unicode line separators; use file_offset as canonical locator"
+    },
+    {
+      "text": "INSERT OR REPLACE INTO settings (key, value) VALUES (?, ?);",
+      "source": "/Applications/Foresight.app/Contents/Resources/ForesightHelper_tar.tar!/research/xeno/labs/foresight/launch_agent/ForesightHelper",
+      "file_offset": "0x3135d8f",
+      "byte_length": 59,
+      "evidence_file": "05-证据与复现/原始静态证据/helper-strings.txt",
+      "line": 120064,
+      "evidence_type": "exact_string_extraction",
+      "scope": "Helper metadata business SQL",
+      "encoding": "utf-8",
+      "raw_sha256": "e14ad1233e89cd9c6fb70e60eb3856835d0bbc2d2ecf988bc8020ad48dce3bad",
+      "byte_verified": true,
+      "original_source_path": "/Users/hansluo/Desktop/study in HK/foresight-reverse/evidence/ForesightHelper",
+      "line_basis": "Python str.splitlines(), including Unicode line separators; use file_offset as canonical locator"
+    },
+    {
+      "text": "SELECT node_id, vector_cos_similarity(vector_read_blob(embedding), vector_write_blob(?)) as similarity FROM node_embeddings ORDER BY similarity DESC LIMIT 1",
+      "source": "/Applications/Foresight.app/Contents/Resources/ForesightHelper_tar.tar!/research/xeno/labs/foresight/launch_agent/ForesightHelper",
+      "file_offset": "0x3784c7e",
+      "byte_length": 156,
+      "evidence_file": "05-证据与复现/原始静态证据/helper-strings.txt",
+      "line": 163326,
+      "evidence_type": "exact_string_extraction",
+      "scope": "vector/SQL library query or configuration; use-site unverified",
+      "encoding": "utf-8",
+      "raw_sha256": "e327ba0d2c1fccd665c52f1acc68038db4ab21729a058daff1cb9757d5b12c4a",
+      "byte_verified": true,
+      "original_source_path": "/Users/hansluo/Desktop/study in HK/foresight-reverse/evidence/ForesightHelper",
+      "line_basis": "Python str.splitlines(), including Unicode line separators; use file_offset as canonical locator"
+    },
+    {
+      "text": "SELECT *, vector_cos_similarity(vector_read_blob($1), @query_embeddings) AS temp_similarity_score FROM $0 WHERE temp_similarity_score >= $2 AND ($4 IS NULL OR $4 >= strftime('%s', 'now')) $5 ORDER BY temp_similarity_score DESC LIMIT $3",
+      "source": "/Applications/Foresight.app/Contents/Resources/ForesightHelper_tar.tar!/research/xeno/labs/foresight/launch_agent/ForesightHelper",
+      "file_offset": "0x37a044a",
+      "byte_length": 235,
+      "evidence_file": "05-证据与复现/原始静态证据/helper-strings.txt",
+      "line": 166537,
+      "evidence_type": "exact_string_extraction",
+      "scope": "vector/SQL library query or configuration; use-site unverified",
+      "encoding": "utf-8",
+      "raw_sha256": "6fca86d983f96ae613fc96f732f03198b8de48c1a51ae90b462cde7ab6f33f10",
+      "byte_verified": true,
+      "original_source_path": "/Users/hansluo/Desktop/study in HK/foresight-reverse/evidence/ForesightHelper",
+      "line_basis": "Python str.splitlines(), including Unicode line separators; use file_offset as canonical locator"
+    },
+    {
+      "text": "SELECT *, vector_cos_similarity(vector_read_blob($1), @query_embeddings) AS temp_similarity_score FROM $0 WHERE ($4 IS NULL OR $4 >= strftime('%s', 'now')) $5 ORDER BY temp_similarity_score DESC LIMIT $3",
+      "source": "/Applications/Foresight.app/Contents/Resources/ForesightHelper_tar.tar!/research/xeno/labs/foresight/launch_agent/ForesightHelper",
+      "file_offset": "0x37a0536",
+      "byte_length": 203,
+      "evidence_file": "05-证据与复现/原始静态证据/helper-strings.txt",
+      "line": 166538,
+      "evidence_type": "exact_string_extraction",
+      "scope": "vector/SQL library query or configuration; use-site unverified",
+      "encoding": "utf-8",
+      "raw_sha256": "5b80277d43234329d10071c4c102d8926e5abaa9bc6a99f40a0d6909b3066657",
+      "byte_verified": true,
+      "original_source_path": "/Users/hansluo/Desktop/study in HK/foresight-reverse/evidence/ForesightHelper",
+      "line_basis": "Python str.splitlines(), including Unicode line separators; use file_offset as canonical locator"
+    },
+    {
+      "text": "WITH TopMatches AS (  SELECT rowid, vector_cos_similarity(vector_read_blob($1), @query_embeddings)   AS temp_similarity_score FROM $0   WHERE temp_similarity_score >= $2   ORDER BY temp_similarity_score DESC   LIMIT $3) SELECT t.*, m.temp_similarity_score FROM $0 t JOIN TopMatches m ON t.rowid = m.rowid ORDER BY m.temp_similarity_score DESC",
+      "source": "/Applications/Foresight.app/Contents/Resources/ForesightHelper_tar.tar!/research/xeno/labs/foresight/launch_agent/ForesightHelper",
+      "file_offset": "0x37a8aac",
+      "byte_length": 342,
+      "evidence_file": "05-证据与复现/原始静态证据/helper-strings.txt",
+      "line": 167495,
+      "evidence_type": "exact_string_extraction",
+      "scope": "vector/SQL library query or configuration; use-site unverified",
+      "encoding": "utf-8",
+      "raw_sha256": "14b7d29a6436206f975c40e9f08f4a1a6e3c5faaa3da3d783ac259ff431568d6",
+      "byte_verified": true,
+      "original_source_path": "/Users/hansluo/Desktop/study in HK/foresight-reverse/evidence/ForesightHelper",
+      "line_basis": "Python str.splitlines(), including Unicode line separators; use file_offset as canonical locator"
+    },
+    {
+      "text": "PRAGMA journal_mode=WAL;",
+      "source": "/Applications/Foresight.app/Contents/Resources/ForesightHelper_tar.tar!/research/xeno/labs/foresight/launch_agent/ForesightHelper",
+      "file_offset": "0x37a8c9b",
+      "byte_length": 24,
+      "evidence_file": "05-证据与复现/原始静态证据/helper-strings.txt",
+      "line": 167498,
+      "evidence_type": "exact_string_extraction",
+      "scope": "vector/SQL library query or configuration; use-site unverified",
+      "encoding": "utf-8",
+      "raw_sha256": "424ae722b5750e8e81506c0c0a041670c5dbbd1f55008305b91b599be014b98e",
+      "byte_verified": true,
+      "original_source_path": "/Users/hansluo/Desktop/study in HK/foresight-reverse/evidence/ForesightHelper",
+      "line_basis": "Python str.splitlines(), including Unicode line separators; use file_offset as canonical locator"
+    },
+    {
+      "text": "PRAGMA synchronous=NORMAL;",
+      "source": "/Applications/Foresight.app/Contents/Resources/ForesightHelper_tar.tar!/research/xeno/labs/foresight/launch_agent/ForesightHelper",
+      "file_offset": "0x37a8cb4",
+      "byte_length": 26,
+      "evidence_file": "05-证据与复现/原始静态证据/helper-strings.txt",
+      "line": 167499,
+      "evidence_type": "exact_string_extraction",
+      "scope": "vector/SQL library query or configuration; use-site unverified",
+      "encoding": "utf-8",
+      "raw_sha256": "d78bc7aaa3ec220897b97491a04a29d641d9c848e7252d6358dcbc5a42bb2f98",
+      "byte_verified": true,
+      "original_source_path": "/Users/hansluo/Desktop/study in HK/foresight-reverse/evidence/ForesightHelper",
+      "line_basis": "Python str.splitlines(), including Unicode line separators; use file_offset as canonical locator"
+    },
+    {
+      "text": "BEGIN TRANSACTION;",
+      "source": "/Applications/Foresight.app/Contents/Resources/ForesightHelper_tar.tar!/research/xeno/labs/foresight/launch_agent/ForesightHelper",
+      "file_offset": "0x37a8d88",
+      "byte_length": 18,
+      "evidence_file": "05-证据与复现/原始静态证据/helper-strings.txt",
+      "line": 167507,
+      "evidence_type": "exact_string_extraction",
+      "scope": "vector/SQL library query or configuration; use-site unverified",
+      "encoding": "utf-8",
+      "raw_sha256": "e5615afbef8f97eaa0f9cdc204133f4bf74e677481e0f5454d9fd1ec145a495d",
+      "byte_verified": true,
+      "original_source_path": "/Users/hansluo/Desktop/study in HK/foresight-reverse/evidence/ForesightHelper",
+      "line_basis": "Python str.splitlines(), including Unicode line separators; use file_offset as canonical locator"
+    },
+    {
+      "text": "ROLLBACK;",
+      "source": "/Applications/Foresight.app/Contents/Resources/ForesightHelper_tar.tar!/research/xeno/labs/foresight/launch_agent/ForesightHelper",
+      "file_offset": "0x37a8d9b",
+      "byte_length": 9,
+      "evidence_file": "05-证据与复现/原始静态证据/helper-strings.txt",
+      "line": 167508,
+      "evidence_type": "exact_string_extraction",
+      "scope": "vector/SQL library query or configuration; use-site unverified",
+      "encoding": "utf-8",
+      "raw_sha256": "9be868b5fc7744c6a5fa794bedc41fd4f93c13f4ccbc84805546b17682d2505c",
+      "byte_verified": true,
+      "original_source_path": "/Users/hansluo/Desktop/study in HK/foresight-reverse/evidence/ForesightHelper",
+      "line_basis": "Python str.splitlines(), including Unicode line separators; use file_offset as canonical locator"
+    },
+    {
+      "text": "COMMIT;",
+      "source": "/Applications/Foresight.app/Contents/Resources/ForesightHelper_tar.tar!/research/xeno/labs/foresight/launch_agent/ForesightHelper",
+      "file_offset": "0x37a8da5",
+      "byte_length": 7,
+      "evidence_file": "05-证据与复现/原始静态证据/helper-strings.txt",
+      "line": 167509,
+      "evidence_type": "exact_string_extraction",
+      "scope": "vector/SQL library query or configuration; use-site unverified",
+      "encoding": "utf-8",
+      "raw_sha256": "2db35aa37c4005aa96055e900adc9bfbbd70d106820fefcb83216b7cc3f95422",
+      "byte_verified": true,
+      "original_source_path": "/Users/hansluo/Desktop/study in HK/foresight-reverse/evidence/ForesightHelper",
+      "line_basis": "Python str.splitlines(), including Unicode line separators; use file_offset as canonical locator"
+    }
+  ],
+  "native_export_symbols": [
+    {
+      "symbol_line": "0000000100003cf4 (__TEXT,__text) external _OdmlCreateSpeechPipelineFromProto",
+      "source": "foresight-reverse/evidence/main-symbols.txt",
+      "line": 2105,
+      "evidence_type": "exact_symbol_extraction",
+      "limitations": "Virtual addresses are not file offsets. ABI argument types and ownership not recovered."
+    },
+    {
+      "symbol_line": "0000000100005370 (__TEXT,__text) external _OdmlSpeechPipelineGetBiasingDictionary",
+      "source": "foresight-reverse/evidence/main-symbols.txt",
+      "line": 2117,
+      "evidence_type": "exact_symbol_extraction",
+      "limitations": "Virtual addresses are not file offsets. ABI argument types and ownership not recovered."
+    },
+    {
+      "symbol_line": "0000000100005d0c (__TEXT,__text) external _OdmlDestroyBiasingDictionary",
+      "source": "foresight-reverse/evidence/main-symbols.txt",
+      "line": 2140,
+      "evidence_type": "exact_symbol_extraction",
+      "limitations": "Virtual addresses are not file offsets. ABI argument types and ownership not recovered."
+    },
+    {
+      "symbol_line": "0000000100005d78 (__TEXT,__text) external _OdmlBiasingDictionaryAddPhrase",
+      "source": "foresight-reverse/evidence/main-symbols.txt",
+      "line": 2141,
+      "evidence_type": "exact_symbol_extraction",
+      "limitations": "Virtual addresses are not file offsets. ABI argument types and ownership not recovered."
+    },
+    {
+      "symbol_line": "0000000100005e54 (__TEXT,__text) external _OdmlBiasingDictionaryRemovePhrase",
+      "source": "foresight-reverse/evidence/main-symbols.txt",
+      "line": 2142,
+      "evidence_type": "exact_symbol_extraction",
+      "limitations": "Virtual addresses are not file offsets. ABI argument types and ownership not recovered."
+    },
+    {
+      "symbol_line": "0000000100005f30 (__TEXT,__text) external _OdmlBiasingDictionarySetPhrases",
+      "source": "foresight-reverse/evidence/main-symbols.txt",
+      "line": 2143,
+      "evidence_type": "exact_symbol_extraction",
+      "limitations": "Virtual addresses are not file offsets. ABI argument types and ownership not recovered."
+    },
+    {
+      "symbol_line": "00000001000061b4 (__TEXT,__text) external _OdmlCreateInferenceEngine",
+      "source": "foresight-reverse/evidence/main-symbols.txt",
+      "line": 2145,
+      "evidence_type": "exact_symbol_extraction",
+      "limitations": "Virtual addresses are not file offsets. ABI argument types and ownership not recovered."
+    },
+    {
+      "symbol_line": "0000000100006954 (__TEXT,__text) external _OdmlDestroyInferenceEngine",
+      "source": "foresight-reverse/evidence/main-symbols.txt",
+      "line": 2148,
+      "evidence_type": "exact_symbol_extraction",
+      "limitations": "Virtual addresses are not file offsets. ABI argument types and ownership not recovered."
+    },
+    {
+      "symbol_line": "0000000100006968 (__TEXT,__text) external _OdmlCreateSpeechProcessorLiteRtLm",
+      "source": "foresight-reverse/evidence/main-symbols.txt",
+      "line": 2149,
+      "evidence_type": "exact_symbol_extraction",
+      "limitations": "Virtual addresses are not file offsets. ABI argument types and ownership not recovered."
+    },
+    {
+      "symbol_line": "0000000100007594 (__TEXT,__text) external _OdmlCreateSpeechProcessorLiteRtLmFromProto",
+      "source": "foresight-reverse/evidence/main-symbols.txt",
+      "line": 2151,
+      "evidence_type": "exact_symbol_extraction",
+      "limitations": "Virtual addresses are not file offsets. ABI argument types and ownership not recovered."
+    },
+    {
+      "symbol_line": "0000000100021d68 (__TEXT,__text) external _OdmlCreateSpeechProcessorLlmEngine",
+      "source": "foresight-reverse/evidence/main-symbols.txt",
+      "line": 2494,
+      "evidence_type": "exact_symbol_extraction",
+      "limitations": "Virtual addresses are not file offsets. ABI argument types and ownership not recovered."
+    },
+    {
+      "symbol_line": "00000001000221ac (__TEXT,__text) external _OdmlCreateSpeechProcessorLlmEngineFromProto",
+      "source": "foresight-reverse/evidence/main-symbols.txt",
+      "line": 2496,
+      "evidence_type": "exact_symbol_extraction",
+      "limitations": "Virtual addresses are not file offsets. ABI argument types and ownership not recovered."
+    },
+    {
+      "symbol_line": "00000001000225c4 (__TEXT,__text) external _OdmlCreateInferenceEngineLlmEngine",
+      "source": "foresight-reverse/evidence/main-symbols.txt",
+      "line": 2498,
+      "evidence_type": "exact_symbol_extraction",
+      "limitations": "Virtual addresses are not file offsets. ABI argument types and ownership not recovered."
+    },
+    {
+      "symbol_line": "0000000100022770 (__TEXT,__text) external _OdmlDestroyInferenceEngineLlmEngine",
+      "source": "foresight-reverse/evidence/main-symbols.txt",
+      "line": 2499,
+      "evidence_type": "exact_symbol_extraction",
+      "limitations": "Virtual addresses are not file offsets. ABI argument types and ownership not recovered."
+    },
+    {
+      "symbol_line": "00000001000229e0 (__TEXT,__text) external _OdmlDestroySpeechProcessor",
+      "source": "foresight-reverse/evidence/main-symbols.txt",
+      "line": 2502,
+      "evidence_type": "exact_symbol_extraction",
+      "limitations": "Virtual addresses are not file offsets. ABI argument types and ownership not recovered."
+    },
+    {
+      "symbol_line": "0000000100022a6c (__TEXT,__text) external _OdmlSpeechProcessorTranscribe",
+      "source": "foresight-reverse/evidence/main-symbols.txt",
+      "line": 2503,
+      "evidence_type": "exact_symbol_extraction",
+      "limitations": "Virtual addresses are not file offsets. ABI argument types and ownership not recovered."
+    },
+    {
+      "symbol_line": "0000000100022d08 (__TEXT,__text) external _OdmlSpeechProcessorFinishStream",
+      "source": "foresight-reverse/evidence/main-symbols.txt",
+      "line": 2504,
+      "evidence_type": "exact_symbol_extraction",
+      "limitations": "Virtual addresses are not file offsets. ABI argument types and ownership not recovered."
+    },
+    {
+      "symbol_line": "0000000100022fa4 (__TEXT,__text) external _OdmlSpeechProcessorPrewarm",
+      "source": "foresight-reverse/evidence/main-symbols.txt",
+      "line": 2505,
+      "evidence_type": "exact_symbol_extraction",
+      "limitations": "Virtual addresses are not file offsets. ABI argument types and ownership not recovered."
+    },
+    {
+      "symbol_line": "0000000100023064 (__TEXT,__text) external _OdmlCreateTranscriptionEventSink",
+      "source": "foresight-reverse/evidence/main-symbols.txt",
+      "line": 2506,
+      "evidence_type": "exact_symbol_extraction",
+      "limitations": "Virtual addresses are not file offsets. ABI argument types and ownership not recovered."
+    },
+    {
+      "symbol_line": "0000000100023134 (__TEXT,__text) external _OdmlDestroyTranscriptionEventSink",
+      "source": "foresight-reverse/evidence/main-symbols.txt",
+      "line": 2507,
+      "evidence_type": "exact_symbol_extraction",
+      "limitations": "Virtual addresses are not file offsets. ABI argument types and ownership not recovered."
+    },
+    {
+      "symbol_line": "00000001000231a0 (__TEXT,__text) external _OdmlTranscriptionEventSinkSetListenedEventTypes",
+      "source": "foresight-reverse/evidence/main-symbols.txt",
+      "line": 2508,
+      "evidence_type": "exact_symbol_extraction",
+      "limitations": "Virtual addresses are not file offsets. ABI argument types and ownership not recovered."
+    },
+    {
+      "symbol_line": "0000000100024d7c (__TEXT,__text) external _OdmlDestroyTranscriptionResultList",
+      "source": "foresight-reverse/evidence/main-symbols.txt",
+      "line": 2539,
+      "evidence_type": "exact_symbol_extraction",
+      "limitations": "Virtual addresses are not file offsets. ABI argument types and ownership not recovered."
+    },
+    {
+      "symbol_line": "0000000100024e60 (__TEXT,__text) external _OdmlDestroyStatus",
+      "source": "foresight-reverse/evidence/main-symbols.txt",
+      "line": 2540,
+      "evidence_type": "exact_symbol_extraction",
+      "limitations": "Virtual addresses are not file offsets. ABI argument types and ownership not recovered."
+    },
+    {
+      "symbol_line": "00000001000cae3c (__TEXT,__text) external _litert_lm_shutdown_engine",
+      "source": "foresight-reverse/evidence/main-symbols.txt",
+      "line": 4990,
+      "evidence_type": "exact_symbol_extraction",
+      "limitations": "Virtual addresses are not file offsets. ABI argument types and ownership not recovered."
+    },
+    {
+      "symbol_line": "00000001000caeec (__TEXT,__text) external _litert_lm_create_conversation",
+      "source": "foresight-reverse/evidence/main-symbols.txt",
+      "line": 4991,
+      "evidence_type": "exact_symbol_extraction",
+      "limitations": "Virtual addresses are not file offsets. ABI argument types and ownership not recovered."
+    },
+    {
+      "symbol_line": "00000001000cbe60 (__TEXT,__text) external _litert_lm_create_conversation_v2",
+      "source": "foresight-reverse/evidence/main-symbols.txt",
+      "line": 4999,
+      "evidence_type": "exact_symbol_extraction",
+      "limitations": "Virtual addresses are not file offsets. ABI argument types and ownership not recovered."
+    },
+    {
+      "symbol_line": "00000001000cd980 (__TEXT,__text) external _litert_lm_conversation_send_message",
+      "source": "foresight-reverse/evidence/main-symbols.txt",
+      "line": 5001,
+      "evidence_type": "exact_symbol_extraction",
+      "limitations": "Virtual addresses are not file offsets. ABI argument types and ownership not recovered."
+    },
+    {
+      "symbol_line": "00000001000ceb48 (__TEXT,__text) external _litert_lm_conversation_send_message_stream",
+      "source": "foresight-reverse/evidence/main-symbols.txt",
+      "line": 5006,
+      "evidence_type": "exact_symbol_extraction",
+      "limitations": "Virtual addresses are not file offsets. ABI argument types and ownership not recovered."
+    },
+    {
+      "symbol_line": "00000001000cf304 (__TEXT,__text) external _litert_lm_conversation_send_pending_message",
+      "source": "foresight-reverse/evidence/main-symbols.txt",
+      "line": 5008,
+      "evidence_type": "exact_symbol_extraction",
+      "limitations": "Virtual addresses are not file offsets. ABI argument types and ownership not recovered."
+    },
+    {
+      "symbol_line": "00000001000cf97c (__TEXT,__text) external _litert_lm_free_response_string",
+      "source": "foresight-reverse/evidence/main-symbols.txt",
+      "line": 5009,
+      "evidence_type": "exact_symbol_extraction",
+      "limitations": "Virtual addresses are not file offsets. ABI argument types and ownership not recovered."
+    },
+    {
+      "symbol_line": "00000001000cf988 (__TEXT,__text) external _litert_lm_delete_conversation",
+      "source": "foresight-reverse/evidence/main-symbols.txt",
+      "line": 5010,
+      "evidence_type": "exact_symbol_extraction",
+      "limitations": "Virtual addresses are not file offsets. ABI argument types and ownership not recovered."
+    },
+    {
+      "symbol_line": "00000001000cfa38 (__TEXT,__text) external _litert_lm_conversation_cancel_process",
+      "source": "foresight-reverse/evidence/main-symbols.txt",
+      "line": 5011,
+      "evidence_type": "exact_symbol_extraction",
+      "limitations": "Virtual addresses are not file offsets. ABI argument types and ownership not recovered."
+    },
+    {
+      "symbol_line": "00000001000cfacc (__TEXT,__text) external _litert_lm_clone_conversation",
+      "source": "foresight-reverse/evidence/main-symbols.txt",
+      "line": 5012,
+      "evidence_type": "exact_symbol_extraction",
+      "limitations": "Virtual addresses are not file offsets. ABI argument types and ownership not recovered."
+    },
+    {
+      "symbol_line": "00000001000cfd70 (__TEXT,__text) external _litert_lm_engine_create_session",
+      "source": "foresight-reverse/evidence/main-symbols.txt",
+      "line": 5013,
+      "evidence_type": "exact_symbol_extraction",
+      "limitations": "Virtual addresses are not file offsets. ABI argument types and ownership not recovered."
+    },
+    {
+      "symbol_line": "00000001000cfffc (__TEXT,__text) external _litert_lm_session_generate_content_json",
+      "source": "foresight-reverse/evidence/main-symbols.txt",
+      "line": 5014,
+      "evidence_type": "exact_symbol_extraction",
+      "limitations": "Virtual addresses are not file offsets. ABI argument types and ownership not recovered."
+    },
+    {
+      "symbol_line": "00000001000d0720 (__TEXT,__text) external _litert_lm_delete_session",
+      "source": "foresight-reverse/evidence/main-symbols.txt",
+      "line": 5019,
+      "evidence_type": "exact_symbol_extraction",
+      "limitations": "Virtual addresses are not file offsets. ABI argument types and ownership not recovered."
+    },
+    {
+      "symbol_line": "00000001037dffc0 (__TEXT,__text) external _litert_lm_initialize_engine",
+      "source": "foresight-reverse/evidence/main-symbols.txt",
+      "line": 189336,
+      "evidence_type": "exact_symbol_extraction",
+      "limitations": "Virtual addresses are not file offsets. ABI argument types and ownership not recovered."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "object_header_offset": "0x592fcc0",
+  "data_offset": "0x592fcd0",
+  "byte_length": 106022,
+  "code_unit_length": 53011,
+  "encoding": "utf-16le",
+  "header_cid_candidate": 96,
+  "raw_sha256": "8d2c399996cf5221d5c36422ff086127c03dd1d511adaaa9e9a3a66ad117781c"
+}

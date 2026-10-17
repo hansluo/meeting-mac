@@ -1,0 +1,493 @@
+{
+  "entries": [
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/transcript_embedding_manager.dart",
+      "string_data_offset": "0x59163e0",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/background_agent_proxy.dart",
+      "string_data_offset": "0x596ed90",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/inference_pipeline.dart",
+      "string_data_offset": "0x599a8e0",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/queued_executor.dart",
+      "string_data_offset": "0x599ff00",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/google_drive_file_fetcher.dart",
+      "string_data_offset": "0x59b44b0",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/transcript_aggregator.dart",
+      "string_data_offset": "0x59ca5d0",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/insight_service.dart",
+      "string_data_offset": "0x59dbcc0",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/service_locator.dart",
+      "string_data_offset": "0x59eee30",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/document_manager.dart",
+      "string_data_offset": "0x59efcd0",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/home/attachment_summary_manager.dart",
+      "string_data_offset": "0x5a17090",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/rag/rag_orchestrator.dart",
+      "string_data_offset": "0x5a3dc10",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/odml_service.dart",
+      "string_data_offset": "0x5ab68d0",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/event_manager.dart",
+      "string_data_offset": "0x5ab9040",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/model/query_detector/speaker_id_manager.dart",
+      "string_data_offset": "0x5afb290",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/document_fetcher.dart",
+      "string_data_offset": "0x5afe060",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/source_preview_service.dart",
+      "string_data_offset": "0x5b00ac0",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/rag/rag_reranker.dart",
+      "string_data_offset": "0x5b133e0",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/model/query_detector/transcript_buffer.dart",
+      "string_data_offset": "0x5b18c20",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/gemini_service_model.dart",
+      "string_data_offset": "0x5b43270",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/hotkey_service.dart",
+      "string_data_offset": "0x5b43ff0",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/dictionary_extractor/document_entity_extraction_service.dart",
+      "string_data_offset": "0x5b457f0",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/home/transcript_summary_manager.dart",
+      "string_data_offset": "0x5b70cf0",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/auth_provider.dart",
+      "string_data_offset": "0x5b71000",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/drive_api_error_handler.dart",
+      "string_data_offset": "0x5bbb810",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/calendar_service.dart",
+      "string_data_offset": "0x5bbe330",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/local_file_discovery_service.dart",
+      "string_data_offset": "0x5bd2e40",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/search_service.dart",
+      "string_data_offset": "0x5bd3080",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/home_dashboard_manager.dart",
+      "string_data_offset": "0x5bd3770",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/local_file_fetcher.dart",
+      "string_data_offset": "0x5c53da0",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/rag/rag_model_observer.dart",
+      "string_data_offset": "0x5c6b990",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/home/shared_utils.dart",
+      "string_data_offset": "0x5ce2a90",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/fam_service.dart",
+      "string_data_offset": "0x5d18e10",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/model/query_detector/transcript_manager.dart",
+      "string_data_offset": "0x5d40820",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/google_docs_fetcher.dart",
+      "string_data_offset": "0x5d5ada0",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/google_drive_events_manager.dart",
+      "string_data_offset": "0x5d62aa0",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/relational/meeting_metadata_formatter.dart",
+      "string_data_offset": "0x5d7f0e0",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/home/insight_history_manager.dart",
+      "string_data_offset": "0x5d8f620",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/model/query_detector/text_deduplicator.dart",
+      "string_data_offset": "0x5dbdf60",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/rag/remote_tokenizer.dart",
+      "string_data_offset": "0x5dbe4e0",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/external_web_page_fetcher.dart",
+      "string_data_offset": "0x5dc0830",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/home/recent_meetings_manager.dart",
+      "string_data_offset": "0x5e1ccc0",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/pdf_fetcher.dart",
+      "string_data_offset": "0x5e1f040",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/document_embedder.dart",
+      "string_data_offset": "0x5e22110",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/document_downloader.dart",
+      "string_data_offset": "0x5e27810",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/model/query_detector/query_detector.dart",
+      "string_data_offset": "0x5e2d580",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/contact_manager.dart",
+      "string_data_offset": "0x5e2f610",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/dictionary_extractor/dictionary_extractor.dart",
+      "string_data_offset": "0x5e2f900",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/relational_metadata_resolver.dart",
+      "string_data_offset": "0x5e949b0",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/relational/relational_intent_detector.dart",
+      "string_data_offset": "0x5e962c0",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/home/meeting_search_engine.dart",
+      "string_data_offset": "0x5ea7b70",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/document_fetcher_factory.dart",
+      "string_data_offset": "0x5ee6710",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/model/query_detector/query_detector_on_device.dart",
+      "string_data_offset": "0x5f31c90",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/notes_enhancer.dart",
+      "string_data_offset": "0x5f438b0",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/dictionary_extractor/fine_tuned_dictionary_extractor.dart",
+      "string_data_offset": "0x5fa7600",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/chat_service.dart",
+      "string_data_offset": "0x5faa0f0",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/auth_service.dart",
+      "string_data_offset": "0x5fbcae0",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/home/action_items_manager.dart",
+      "string_data_offset": "0x5fc0530",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/system_prompted_pipeline.dart",
+      "string_data_offset": "0x602ff70",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/relational/schedule_window_parser.dart",
+      "string_data_offset": "0x606ef80",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/model/query_detector/query_entity.dart",
+      "string_data_offset": "0x6084370",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/local_file_processor.dart",
+      "string_data_offset": "0x6097810",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/chat_history.dart",
+      "string_data_offset": "0x60aa430",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/window_service.dart",
+      "string_data_offset": "0x60b5a70",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/g3doc_fetcher.dart",
+      "string_data_offset": "0x60b72e0",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/llm_inference_engine.dart",
+      "string_data_offset": "0x60d05d0",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/map_reduce_executor.dart",
+      "string_data_offset": "0x611d990",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/model/query_detector/prefix_stream_filter.dart",
+      "string_data_offset": "0x6133350",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/model/query_detector/query_dispatcher.dart",
+      "string_data_offset": "0x616da60",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    },
+    {
+      "package_uri": "package:research.xeno.labs.foresight.app/service/home/upcoming_events_manager.dart",
+      "string_data_offset": "0x61e5e00",
+      "evidence_level": "观察",
+      "kind": "模块路径常量；不是还原源码也不是可调用地址",
+      "source_file_present": false
+    }
+  ],
+  "unknown": [
+    "函数原生代码地址与调用链",
+    "async状态机",
+    "私有阈值与配置默认值",
+    "这些模块在当前构建的实际可达性"
+  ]
+}

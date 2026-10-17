@@ -1,0 +1,674 @@
+{
+  "evidence_type": "exact_structured_extraction",
+  "source": "/Users/hansluo/Desktop/study in HK/foresight-reverse/evidence/ForesightHelper",
+  "file_offset": "0x3138698",
+  "byte_length": 3578,
+  "sha256": "cfe21cde2beef249413a8fb90ea4de10e4ffc1e8ab438ca4a5cc6e794f84446a",
+  "name": "research/xeno/labs/foresight/launch_agent/proto/rag_service.proto",
+  "package": "research.xeno.labs.foresight.launch_agent.proto",
+  "syntax": "editions",
+  "edition_numeric": 1001,
+  "messages": [
+    {
+      "name": "IndexRequest",
+      "source_offset": "0x313870c",
+      "fields": [
+        {
+          "name": "document_id",
+          "number": 1,
+          "label": "optional",
+          "type": "string",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x313871d"
+        },
+        {
+          "name": "content",
+          "number": 2,
+          "label": "optional",
+          "type": "string",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x3138732"
+        },
+        {
+          "name": "user_id",
+          "number": 3,
+          "label": "optional",
+          "type": "string",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x3138743"
+        },
+        {
+          "name": "max_tokens_per_chunk",
+          "number": 4,
+          "label": "optional",
+          "type": "int32",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x3138754"
+        },
+        {
+          "name": "chunk_overlap",
+          "number": 5,
+          "label": "optional",
+          "type": "int32",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x3138772"
+        },
+        {
+          "name": "image_bytes",
+          "number": 6,
+          "label": "optional",
+          "type": "bytes",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x3138789"
+        },
+        {
+          "name": "mime_type",
+          "number": 7,
+          "label": "optional",
+          "type": "string",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x313879e"
+        }
+      ],
+      "oneofs": []
+    },
+    {
+      "name": "IndexResponse",
+      "source_offset": "0x31387b1",
+      "fields": [
+        {
+          "name": "success",
+          "number": 1,
+          "label": "optional",
+          "type": "bool",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x31387c2"
+        },
+        {
+          "name": "error_message",
+          "number": 2,
+          "label": "optional",
+          "type": "string",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x31387d3"
+        }
+      ],
+      "oneofs": []
+    },
+    {
+      "name": "Query",
+      "source_offset": "0x31387ea",
+      "fields": [
+        {
+          "name": "text_query",
+          "number": 1,
+          "label": "optional",
+          "type": "string",
+          "type_name": null,
+          "oneof_index": 0,
+          "source_offset": "0x31387f3"
+        },
+        {
+          "name": "audio_query",
+          "number": 2,
+          "label": "optional",
+          "type": "bytes",
+          "type_name": null,
+          "oneof_index": 0,
+          "source_offset": "0x3138809"
+        }
+      ],
+      "oneofs": [
+        "query"
+      ]
+    },
+    {
+      "name": "RetrieveRequest",
+      "source_offset": "0x3138829",
+      "fields": [
+        {
+          "name": "query",
+          "number": 1,
+          "label": "optional",
+          "type": "message",
+          "type_name": ".research.xeno.labs.foresight.launch_agent.proto.Query",
+          "oneof_index": null,
+          "source_offset": "0x313883d"
+        },
+        {
+          "name": "max_results",
+          "number": 2,
+          "label": "optional",
+          "type": "int32",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x3138884"
+        },
+        {
+          "name": "min_similarity_score",
+          "number": 3,
+          "label": "optional",
+          "type": "double",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x3138899"
+        },
+        {
+          "name": "user_id",
+          "number": 4,
+          "label": "optional",
+          "type": "string",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x31388b7"
+        },
+        {
+          "name": "allowed_document_ids",
+          "number": 5,
+          "label": "repeated",
+          "type": "string",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x31388c8"
+        }
+      ],
+      "oneofs": []
+    },
+    {
+      "name": "RetrieveResponse",
+      "source_offset": "0x31388e6",
+      "fields": [
+        {
+          "name": "chunks",
+          "number": 1,
+          "label": "repeated",
+          "type": "message",
+          "type_name": ".research.xeno.labs.foresight.launch_agent.proto.RetrievedChunk",
+          "oneof_index": null,
+          "source_offset": "0x31388fa"
+        }
+      ],
+      "oneofs": []
+    },
+    {
+      "name": "RetrievedChunk",
+      "source_offset": "0x313894b",
+      "fields": [
+        {
+          "name": "text",
+          "number": 1,
+          "label": "optional",
+          "type": "string",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x313895d"
+        },
+        {
+          "name": "relevance_score",
+          "number": 2,
+          "label": "optional",
+          "type": "double",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x313896b"
+        },
+        {
+          "name": "document_id",
+          "number": 3,
+          "label": "optional",
+          "type": "string",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x3138984"
+        },
+        {
+          "name": "mime_type",
+          "number": 4,
+          "label": "optional",
+          "type": "string",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x3138999"
+        }
+      ],
+      "oneofs": []
+    },
+    {
+      "name": "UpdateModelPathsRequest",
+      "source_offset": "0x31389ac",
+      "fields": [
+        {
+          "name": "embedding_model_path",
+          "number": 1,
+          "label": "optional",
+          "type": "string",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x31389c7"
+        },
+        {
+          "name": "sentence_piece_model_path",
+          "number": 2,
+          "label": "optional",
+          "type": "string",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x31389e5"
+        },
+        {
+          "name": "use_gpu",
+          "number": 3,
+          "label": "optional",
+          "type": "bool",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x3138a08"
+        },
+        {
+          "name": "cache_dir",
+          "number": 4,
+          "label": "optional",
+          "type": "string",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x3138a19"
+        }
+      ],
+      "oneofs": []
+    },
+    {
+      "name": "UpdateModelPathsResponse",
+      "source_offset": "0x3138a2c",
+      "fields": [
+        {
+          "name": "success",
+          "number": 1,
+          "label": "optional",
+          "type": "bool",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x3138a48"
+        },
+        {
+          "name": "error_message",
+          "number": 2,
+          "label": "optional",
+          "type": "string",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x3138a59"
+        }
+      ],
+      "oneofs": []
+    },
+    {
+      "name": "DeleteRequest",
+      "source_offset": "0x3138a70",
+      "fields": [
+        {
+          "name": "document_id",
+          "number": 1,
+          "label": "optional",
+          "type": "string",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x3138a81"
+        },
+        {
+          "name": "user_id",
+          "number": 2,
+          "label": "optional",
+          "type": "string",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x3138a96"
+        }
+      ],
+      "oneofs": []
+    },
+    {
+      "name": "DeleteResponse",
+      "source_offset": "0x3138aa7",
+      "fields": [
+        {
+          "name": "success",
+          "number": 1,
+          "label": "optional",
+          "type": "bool",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x3138ab9"
+        },
+        {
+          "name": "error_message",
+          "number": 2,
+          "label": "optional",
+          "type": "string",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x3138aca"
+        }
+      ],
+      "oneofs": []
+    },
+    {
+      "name": "EncodeRequest",
+      "source_offset": "0x3138ae1",
+      "fields": [
+        {
+          "name": "text",
+          "number": 1,
+          "label": "optional",
+          "type": "string",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x3138af2"
+        }
+      ],
+      "oneofs": []
+    },
+    {
+      "name": "EncodeResponse",
+      "source_offset": "0x3138b00",
+      "fields": [
+        {
+          "name": "tokens",
+          "number": 1,
+          "label": "repeated",
+          "type": "int32",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x3138b12"
+        }
+      ],
+      "oneofs": []
+    },
+    {
+      "name": "ChunkTextRequest",
+      "source_offset": "0x3138b22",
+      "fields": [
+        {
+          "name": "text",
+          "number": 1,
+          "label": "optional",
+          "type": "string",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x3138b36"
+        },
+        {
+          "name": "max_tokens_per_chunk",
+          "number": 2,
+          "label": "optional",
+          "type": "int32",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x3138b44"
+        }
+      ],
+      "oneofs": []
+    },
+    {
+      "name": "ChunkTextResponse",
+      "source_offset": "0x3138b62",
+      "fields": [
+        {
+          "name": "chunks",
+          "number": 1,
+          "label": "repeated",
+          "type": "string",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x3138b77"
+        }
+      ],
+      "oneofs": []
+    },
+    {
+      "name": "TruncateTextRequest",
+      "source_offset": "0x3138b87",
+      "fields": [
+        {
+          "name": "text",
+          "number": 1,
+          "label": "optional",
+          "type": "string",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x3138b9e"
+        },
+        {
+          "name": "max_tokens",
+          "number": 2,
+          "label": "optional",
+          "type": "int32",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x3138bac"
+        }
+      ],
+      "oneofs": []
+    },
+    {
+      "name": "TruncateTextResponse",
+      "source_offset": "0x3138bc0",
+      "fields": [
+        {
+          "name": "truncated_text",
+          "number": 1,
+          "label": "optional",
+          "type": "string",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x3138bd8"
+        }
+      ],
+      "oneofs": []
+    },
+    {
+      "name": "ComputeEmbeddingRequest",
+      "source_offset": "0x3138bf0",
+      "fields": [
+        {
+          "name": "text",
+          "number": 1,
+          "label": "optional",
+          "type": "string",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x3138c0b"
+        }
+      ],
+      "oneofs": []
+    },
+    {
+      "name": "ComputeEmbeddingResponse",
+      "source_offset": "0x3138c19",
+      "fields": [
+        {
+          "name": "embedding",
+          "number": 1,
+          "label": "repeated",
+          "type": "double",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x3138c35"
+        }
+      ],
+      "oneofs": []
+    },
+    {
+      "name": "ComputeImageEmbeddingRequest",
+      "source_offset": "0x3138c48",
+      "fields": [
+        {
+          "name": "image_bytes",
+          "number": 1,
+          "label": "optional",
+          "type": "bytes",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x3138c68"
+        }
+      ],
+      "oneofs": []
+    },
+    {
+      "name": "ComputeAudioEmbeddingRequest",
+      "source_offset": "0x3138c7d",
+      "fields": [
+        {
+          "name": "audio_bytes",
+          "number": 1,
+          "label": "optional",
+          "type": "bytes",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x3138c9d"
+        }
+      ],
+      "oneofs": []
+    },
+    {
+      "name": "PingRequest",
+      "source_offset": "0x3138cb2",
+      "fields": [],
+      "oneofs": []
+    },
+    {
+      "name": "PingResponse",
+      "source_offset": "0x3138cc1",
+      "fields": [
+        {
+          "name": "success",
+          "number": 1,
+          "label": "optional",
+          "type": "bool",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x3138cd1"
+        },
+        {
+          "name": "version",
+          "number": 2,
+          "label": "optional",
+          "type": "string",
+          "type_name": null,
+          "oneof_index": null,
+          "source_offset": "0x3138ce2"
+        }
+      ],
+      "oneofs": []
+    }
+  ],
+  "services": [
+    {
+      "name": "RagService",
+      "source_offset": "0x3138cf3",
+      "methods": [
+        {
+          "name": "IndexDocument",
+          "input": ".research.xeno.labs.foresight.launch_agent.proto.IndexRequest",
+          "output": ".research.xeno.labs.foresight.launch_agent.proto.IndexResponse",
+          "client_streaming": false,
+          "server_streaming": false,
+          "source_offset": "0x3138d02"
+        },
+        {
+          "name": "RetrieveContext",
+          "input": ".research.xeno.labs.foresight.launch_agent.proto.RetrieveRequest",
+          "output": ".research.xeno.labs.foresight.launch_agent.proto.RetrieveResponse",
+          "client_streaming": false,
+          "server_streaming": false,
+          "source_offset": "0x3138d9e"
+        },
+        {
+          "name": "UpdateModelPaths",
+          "input": ".research.xeno.labs.foresight.launch_agent.proto.UpdateModelPathsRequest",
+          "output": ".research.xeno.labs.foresight.launch_agent.proto.UpdateModelPathsResponse",
+          "client_streaming": false,
+          "server_streaming": false,
+          "source_offset": "0x3138e42"
+        },
+        {
+          "name": "DeleteDocument",
+          "input": ".research.xeno.labs.foresight.launch_agent.proto.DeleteRequest",
+          "output": ".research.xeno.labs.foresight.launch_agent.proto.DeleteResponse",
+          "client_streaming": false,
+          "server_streaming": false,
+          "source_offset": "0x3138ef7"
+        },
+        {
+          "name": "Encode",
+          "input": ".research.xeno.labs.foresight.launch_agent.proto.EncodeRequest",
+          "output": ".research.xeno.labs.foresight.launch_agent.proto.EncodeResponse",
+          "client_streaming": false,
+          "server_streaming": false,
+          "source_offset": "0x3138f96"
+        },
+        {
+          "name": "ChunkText",
+          "input": ".research.xeno.labs.foresight.launch_agent.proto.ChunkTextRequest",
+          "output": ".research.xeno.labs.foresight.launch_agent.proto.ChunkTextResponse",
+          "client_streaming": false,
+          "server_streaming": false,
+          "source_offset": "0x313902d"
+        },
+        {
+          "name": "TruncateText",
+          "input": ".research.xeno.labs.foresight.launch_agent.proto.TruncateTextRequest",
+          "output": ".research.xeno.labs.foresight.launch_agent.proto.TruncateTextResponse",
+          "client_streaming": false,
+          "server_streaming": false,
+          "source_offset": "0x31390cd"
+        },
+        {
+          "name": "ComputeEmbedding",
+          "input": ".research.xeno.labs.foresight.launch_agent.proto.ComputeEmbeddingRequest",
+          "output": ".research.xeno.labs.foresight.launch_agent.proto.ComputeEmbeddingResponse",
+          "client_streaming": false,
+          "server_streaming": false,
+          "source_offset": "0x3139176"
+        },
+        {
+          "name": "ComputeImageEmbedding",
+          "input": ".research.xeno.labs.foresight.launch_agent.proto.ComputeImageEmbeddingRequest",
+          "output": ".research.xeno.labs.foresight.launch_agent.proto.ComputeEmbeddingResponse",
+          "client_streaming": false,
+          "server_streaming": false,
+          "source_offset": "0x313922b"
+        },
+        {
+          "name": "ComputeAudioEmbedding",
+          "input": ".research.xeno.labs.foresight.launch_agent.proto.ComputeAudioEmbeddingRequest",
+          "output": ".research.xeno.labs.foresight.launch_agent.proto.ComputeEmbeddingResponse",
+          "client_streaming": false,
+          "server_streaming": false,
+          "source_offset": "0x31392ea"
+        },
+        {
+          "name": "Ping",
+          "input": ".research.xeno.labs.foresight.launch_agent.proto.PingRequest",
+          "output": ".research.xeno.labs.foresight.launch_agent.proto.PingResponse",
+          "client_streaming": false,
+          "server_streaming": false,
+          "source_offset": "0x31393a9"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "File/custom options and source comments are not reconstructed in readable proto; raw descriptor preserves them.",
+    "No runtime or handler behavior established by descriptor.",
+    "Only this business descriptor is decoded; unrelated SDK protos are excluded."
+  ]
+}

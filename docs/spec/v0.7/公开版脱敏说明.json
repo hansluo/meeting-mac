@@ -1,0 +1,19 @@
+{
+  "scope": "Public GitHub copy only; original local package preserved.",
+  "redactions": [
+    {
+      "path": "v0.7/逆向依据/05-证据与复现/dart-string-objects.json",
+      "redacted_matches": 2,
+      "original_file_sha256": "c93199cd6798ac740c4229aaf36a2fce41e8fcf25afa39a5fc2f790f5781e202",
+      "public_file_sha256": "ce013cb609b9ae2ef1a29aa3271af8ee6501100049f3a90e80bf9c30a8a886fb"
+    },
+    {
+      "path": "v0.7/逆向依据/05-证据与复现/原始静态证据/main-strings.txt",
+      "redacted_matches": 2,
+      "original_file_sha256": "46e8772382a8170352ef3dcdf601bf670bf6efa13b653fdc086c0680aac4ddb1",
+      "public_file_sha256": "1827330e51d0ebe01724c163ab3de46e36e335d53cbb8cce1d753f08231eb941"
+    }
+  ],
+  "warning": "The original raw-object offsets, byte lengths and raw hashes describe the original artifact. In the two sanitized raw collections they must not be presented as hashes of redacted text. The 20 prompt originals and their own raw-byte hashes are unchanged.",
+  "original_prompts_changed": false
+}

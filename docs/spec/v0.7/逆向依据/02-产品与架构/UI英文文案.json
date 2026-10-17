@@ -1,0 +1,1365 @@
+{
+  "+ Add Label": "+ Add Label",
+  ", and understand that data will be processed according to the ": ", and understand that data will be processed according to the ",
+  ", including the ": ", including the ",
+  "--- Full Transcript ---": "--- Full Transcript ---",
+  "--- Insight ---": "--- Insight ---",
+  "--- Question ---": "--- Question ---",
+  "1 day ago": "1 day ago",
+  "1 hr ago": "1 hr ago",
+  "1 min ago": "1 min ago",
+  "A -> Z": "A -> Z",
+  "AI Chat and live assistances provided": "AI Chat and live assistances provided",
+  "AI models like Gemini run in the cloud, but some are able to run on your computer and mobile devices too, like Gemma and expert models used by Google AI Edge Foresight!": "AI models like Gemini run in the cloud, but some are able to run on your computer and mobile devices too, like Gemma and expert models used by Google AI Edge Foresight!",
+  "AI summary": "AI summary",
+  "Access meetings": "Access meetings",
+  "Access the tutorial anytime": "Access the tutorial anytime",
+  "Access this tutorial again anytime from the help center.": "Access this tutorial again anytime from the help center.",
+  "Accesses microphone audio for transcription.": "Accesses microphone audio for transcription.",
+  "Accesses system audio (including from other apps) for transcription.": "Accesses system audio (including from other apps) for transcription.",
+  "Action Items": "Action Items",
+  "Action Items Extraction": "Action Items Extraction",
+  "Actions": "Actions",
+  "Activates the local semantic knowledge graph pipeline and visualisation page.": "Activates the local semantic knowledge graph pipeline and visualisation page.",
+  "Active account": "Active account",
+  "Add": "Add",
+  "Add Files": "Add Files",
+  "Add a file": "Add a file",
+  "Add an entire Drive folder": "Add an entire Drive folder",
+  "Add another account": "Add another account",
+  "Add documents manually": "Add documents manually",
+  "Add files from Drive": "Add files from Drive",
+  "Add from URL": "Add from URL",
+  "Add label": "Add label",
+  "Add source": "Add source",
+  "Add to notes": "Add to notes",
+  "Added topic to notes": "Added topic to notes",
+  "Adding sources makes AI Edge Foresight smarter and more helpful, including files from your desktop.": "Adding sources makes AI Edge Foresight smarter and more helpful, including files from your desktop.",
+  "All caught up": "All caught up",
+  "All documents have been deleted.": "All documents have been deleted.",
+  "Allow": "Allow",
+  "Allowed": "Allowed",
+  "Answer does not use web search": "Answer does not use web search",
+  "Answer includes web search results": "Answer includes web search results",
+  "Anytime": "Anytime",
+  "Apply": "Apply",
+  "Archives": "Archives",
+  "Are you sure you want to delete all documents? This will remove all documents from the list and clear RAG embeddings.": "Are you sure you want to delete all documents? This will remove all documents from the list and clear RAG embeddings.",
+  "Are you sure you want to delete this insight from your history?": "Are you sure you want to delete this insight from your history?",
+  "Are you sure you want to delete this note?": "Are you sure you want to delete this note?",
+  "Are you sure you want to delete this transcript?": "Are you sure you want to delete this transcript?",
+  "Ask": "Ask",
+  "Ask Foresight": "Ask Foresight",
+  "Ask Foresight AI...": "Ask Foresight AI...",
+  "Ask Foresight about your meetings": "Ask Foresight about your meetings",
+  "Assistive Note-Taking": "Assistive Note-Taking",
+  "At least 2 modifiers are required": "At least 2 modifiers are required",
+  "Attachment Summary": "Attachment Summary",
+  "Attachments": "Attachments",
+  "Attachments Summary": "Attachments Summary",
+  "Attendees": "Attendees",
+  "Audio Queries for Answers": "Audio Queries for Answers",
+  "Audio Queries for Retrieval": "Audio Queries for Retrieval",
+  "Audio Query": "Audio Query",
+  "Auto-stop transcribing after inactivity": "Auto-stop transcribing after inactivity",
+  "Automatically open Foresight when you log in to your computer.": "Automatically open Foresight when you log in to your computer.",
+  "Automatically saves meeting transcripts from the Foresight overlay to history.": "Automatically saves meeting transcripts from the Foresight overlay to history.",
+  "Automatically stop transcribing and finalize notes when no speech or audio is detected.": "Automatically stop transcribing and finalize notes when no speech or audio is detected.",
+  "Awaiting import...": "Awaiting import...",
+  "Back": "Back",
+  "Balances quality and speed. Recommended for most machines.": "Balances quality and speed. Recommended for most machines.",
+  "Bold": "Bold",
+  "Build your knowledge library automatically": "Build your knowledge library automatically",
+  "Build your knowledge library with your own documents. Imported data is stored locally on your device.": "Build your knowledge library with your own documents. Imported data is stored locally on your device.",
+  "Bullet List": "Bullet List",
+  "Bulletized Recap": "Bulletized Recap",
+  "By processing your data and AI interactions locally on your device with Gemma models instead of generating tokens on the server.": "By processing your data and AI interactions locally on your device with Gemma models instead of generating tokens on the server.",
+  "By running AI on your device": "By running AI on your device",
+  "By starting transcribing, you represent and warrant that all speakers have provided consent. Announcement will be made at the start of the transcription and a reminder tone every 30 mins.": "By starting transcribing, you represent and warrant that all speakers have provided consent. Announcement will be made at the start of the transcription and a reminder tone every 30 mins.",
+  "By using Google AI Edge Foresight, you agree to the <tos>Google Terms of Service</tos>, including the <genai>Generative AI prohibited use policy</genai>, and understand that data will be processed according to the <privpol>Google Privacy Policy</privpol>.": "By using Google AI Edge Foresight, you agree to the <tos>Google Terms of Service</tos>, including the <genai>Generative AI prohibited use policy</genai>, and understand that data will be processed according to the <privpol>Google Privacy Policy</privpol>.",
+  "By using this app, you agree to the ": "By using this app, you agree to the ",
+  "Calendar": "Calendar",
+  "Calendar attachment": "Calendar attachment",
+  "Cancel": "Cancel",
+  "Cancel transcribing session?": "Cancel transcribing session?",
+  "Center graph": "Center graph",
+  "Chat": "Chat",
+  "Check for updates": "Check for updates",
+  "Checking for updates...": "Checking for updates...",
+  "Checking permissions...": "Checking permissions...",
+  "Choose a folder instead": "Choose a folder instead",
+  "Choose your Gemma model": "Choose your Gemma model",
+  "Clear": "Clear",
+  "Clear Data": "Clear Data",
+  "Clear Database": "Clear Database",
+  "Clear Model Cache": "Clear Model Cache",
+  "Clear Transcript": "Clear Transcript",
+  "Click here to start your first transcription with Foresight.": "Click here to start your first transcription with Foresight.",
+  "Click to download": "Click to download",
+  "Close": "Close",
+  "Collapse Chat": "Collapse Chat",
+  "Collapse enhanced notes": "Collapse enhanced notes",
+  "Coming soon": "Coming soon",
+  "Complete": "Complete",
+  "Concise": "Concise",
+  "Configure general application settings.": "Configure general application settings.",
+  "Configure how frequently Foresight refreshes data from your Calendar and Drive": "Configure how frequently Foresight refreshes data from your Calendar and Drive",
+  "Connect your Google Drive and Calendar to quickly build your Foresight. Syncing and importing use an internet connection, but data analysis and processing stay on your device.": "Connect your Google Drive and Calendar to quickly build your Foresight. Syncing and importing use an internet connection, but data analysis and processing stay on your device.",
+  "Connect your Google account": "Connect your Google account",
+  "Connect, organize, and chat with your files to seamlessly retrieve the information you need.": "Connect, organize, and chat with your files to seamlessly retrieve the information you need.",
+  "Connected Edges:": "Connected Edges:",
+  "Content from URL": "Content from URL",
+  "Context Size Limit Exceeded": "Context Size Limit Exceeded",
+  "Continue": "Continue",
+  "Control chat answer": "Control chat answer",
+  "Copied enhanced notes to clipboard": "Copied enhanced notes to clipboard",
+  "Copied markdown to clipboard": "Copied markdown to clipboard",
+  "Copied shorthand notes to clipboard": "Copied shorthand notes to clipboard",
+  "Copied to clipboard": "Copied to clipboard",
+  "Copied transcript to clipboard": "Copied transcript to clipboard",
+  "Copy Result": "Copy Result",
+  "Copy all to clipboard": "Copy all to clipboard",
+  "Copy as Markdown": "Copy as Markdown",
+  "Copy enhanced notes": "Copy enhanced notes",
+  "Copy insight to clipboard": "Copy insight to clipboard",
+  "Copy markdown": "Copy markdown",
+  "Copy shorthand notes": "Copy shorthand notes",
+  "Copy summary": "Copy summary",
+  "Copy transcript": "Copy transcript",
+  "Create": "Create",
+  "Create & Auto-Assign": "Create & Auto-Assign",
+  "Create New Label": "Create New Label",
+  "Create New Organization Label": "Create New Organization Label",
+  "Create calendar event": "Create calendar event",
+  "Custom": "Custom",
+  "Customize Token Cost Calculator": "Customize Token Cost Calculator",
+  "Date range": "Date range",
+  "Decrease Font Size": "Decrease Font Size",
+  "Default": "Default",
+  "Default Note Enhancement Style": "Default Note Enhancement Style",
+  "Delete": "Delete",
+  "Delete Document": "Delete Document",
+  "Delete Insight": "Delete Insight",
+  "Delete Label": "Delete Label",
+  "Delete Note": "Delete Note",
+  "Delete Transcript": "Delete Transcript",
+  "Delete all documents": "Delete all documents",
+  "Delete all user data and models": "Delete all user data and models",
+  "Delete all user data but keep models": "Delete all user data but keep models",
+  "Delete insight": "Delete insight",
+  "Deletes model cache files. (Does not delete model files). Models will be reloaded after this operation.": "Deletes model cache files. (Does not delete model files). Models will be reloaded after this operation.",
+  "Delivers alerts for upcoming meetings.": "Delivers alerts for upcoming meetings.",
+  "Denied": "Denied",
+  "Description": "Description",
+  "Desktop": "Desktop",
+  "Details copied to clipboard": "Details copied to clipboard",
+  "Detect queries on device": "Detect queries on device",
+  "Developer": "Developer",
+  "Disable Live Enhance": "Disable Live Enhance",
+  "Dismiss": "Dismiss",
+  "Document Entity Extraction": "Document Entity Extraction",
+  "Documents": "Documents",
+  "Docx": "Docx",
+  "Dogfood Chat": "Dogfood Chat",
+  "Done": "Done",
+  "Double-click to change hotkey": "Double-click to change hotkey",
+  "Download": "Download",
+  "Download markdown": "Download markdown",
+  "Downloaded": "Downloaded",
+  "Downloading": "Downloading",
+  "Downloading Gemma 4 12B...": "Downloading Gemma 4 12B...",
+  "Downloading Gemma 4 E2B...": "Downloading Gemma 4 E2B...",
+  "Downloading Gemma 4 E4B...": "Downloading Gemma 4 E4B...",
+  "Downloading expert models...": "Downloading expert models...",
+  "Downloading update...": "Downloading update...",
+  "Downloads": "Downloads",
+  "Drive File": "Drive File",
+  "Drop a text, PDF, or DocX file here.\n\nIts content will be indexed and search-ready locally.": "Drop a text, PDF, or DocX file here.\n\nIts content will be indexed and search-ready locally.",
+  "EPUB": "EPUB",
+  "Ebooks": "Ebooks",
+  "Edit enhanced notes": "Edit enhanced notes",
+  "Embeds the raw audio of detected queries to search your documents, making retrieval robust to transcription errors.": "Embeds the raw audio of detected queries to search your documents, making retrieval robust to transcription errors.",
+  "Enable Live Enhance": "Enable Live Enhance",
+  "Enable system permissions": "Enable system permissions",
+  "Enables V2 retrieval combining knowledge graph results, expanded vector search, and semantic reranking.": "Enables V2 retrieval combining knowledge graph results, expanded vector search, and semantic reranking.",
+  "End date": "End date",
+  "Enhance": "Enhance",
+  "Enhanced": "Enhanced",
+  "Enhanced Content (Markdown)": "Enhanced Content (Markdown)",
+  "Enhanced notes": "Enhanced notes",
+  "Enhancement is up to date": "Enhancement is up to date",
+  "Enhancing notes with meeting context...": "Enhancing notes with meeting context...",
+  "Enhancing...": "Enhancing...",
+  "Enter a category or topic label. Foresight will automatically attach this label and cluster related documents.": "Enter a category or topic label. Foresight will automatically attach this label and cluster related documents.",
+  "Enter your notes here. Markdown formatting is supported.": "Enter your notes here. Markdown formatting is supported.",
+  "Error": "Error",
+  "Estimated Cost Saved": "Estimated Cost Saved",
+  "Evaluating notes...": "Evaluating notes...",
+  "Event": "Event",
+  "Event Details": "Event Details",
+  "Event Preview": "Event Preview",
+  "Executive Summary": "Executive Summary",
+  "Exit Immersive View": "Exit Immersive View",
+  "Expand Chat": "Expand Chat",
+  "Expand enhanced notes": "Expand enhanced notes",
+  "Expert models": "Expert models",
+  "Export meeting notes": "Export meeting notes",
+  "Extracted Entities": "Extracted Entities",
+  "Extracting event details...": "Extracting event details...",
+  "Extracts names, acronyms and other named entities from indexed documents in the background.": "Extracts names, acronyms and other named entities from indexed documents in the background.",
+  "Failed": "Failed",
+  "Failed to check for updates": "Failed to check for updates",
+  "Failed to download required models.": "Failed to download required models.",
+  "Failed to download update": "Failed to download update",
+  "Failed to fetch Drive files content.": "Failed to fetch Drive files content.",
+  "Failed to fetch web content": "Failed to fetch web content",
+  "Failed to get any files from the Drive folder.": "Failed to get any files from the Drive folder.",
+  "Failed to save the selected file.": "Failed to save the selected file.",
+  "Fast, lightweight, and low resource usage": "Fast, lightweight, and low resource usage",
+  "Fastest and lightest model. Best for machines with limited memory.": "Fastest and lightest model. Best for machines with limited memory.",
+  "Fetching files content...": "Fetching files content...",
+  "Fetching folder content...": "Fetching folder content...",
+  "File": "File",
+  "File a Bug / Feedback": "File a Bug / Feedback",
+  "File list": "File list",
+  "File not found or no permission to access the Google Drive file. You may no longer have permission to download this file or the file may be deleted.": "File not found or no permission to access the Google Drive file. You may no longer have permission to download this file or the file may be deleted.",
+  "Files found on this Mac": "Files found on this Mac",
+  "Filter meeting notes": "Filter meeting notes",
+  "Find files on this Mac": "Find files on this Mac",
+  "Finding Related Docs..": "Finding Related Docs..",
+  "Foresight": "Foresight",
+  "Foresight Status Bar Icon": "Foresight Status Bar Icon",
+  "Foresight did not find documents in Downloads, Documents, or Desktop that are not already in your knowledge library. You can pick a folder yourself instead.": "Foresight did not find documents in Downloads, Documents, or Desktop that are not already in your knowledge library. You can pick a folder yourself instead.",
+  "Foresight is built with on-device AI models that process your data locally on your computer.": "Foresight is built with on-device AI models that process your data locally on your computer.",
+  "Foresight is downloading your selected Gemma model along with the expert models required for the app to function. Please keep Foresight open until the download completes.": "Foresight is downloading your selected Gemma model along with the expert models required for the app to function. Please keep Foresight open until the download completes.",
+  "Foresight is up to date": "Foresight is up to date",
+  "Foresight needs access to your folders": "Foresight needs access to your folders",
+  "Foresight requires these permissions to provide live meeting transcription, ambient context assistance, and timely proactive notifications.": "Foresight requires these permissions to provide live meeting transcription, ambient context assistance, and timely proactive notifications.",
+  "Foresight uses models run locally on your device. Choose the Gemma model that best fits your device. This is a one-time download, and you can switch models later in Settings.": "Foresight uses models run locally on your device. Choose the Gemma model that best fits your device. This is a one-time download, and you can switch models later in Settings.",
+  "Foresight will be importing:": "Foresight will be importing:",
+  "Foresight will quit and restart to apply the latest update.": "Foresight will quit and restart to apply the latest update.",
+  "ForesightHelper Logs": "ForesightHelper Logs",
+  "ForesightHelper Monitor": "ForesightHelper Monitor",
+  "Format enhanced notes as complete sentences (Standard) or brief phrases (Concise).": "Format enhanced notes as complete sentences (Standard) or brief phrases (Concise).",
+  "Formatting options": "Formatting options",
+  "From your file": "From your file",
+  "Full Transcript": "Full Transcript",
+  "Full screen": "Full screen",
+  "Fully processed on-device": "Fully processed on-device",
+  "GROUNDING IMAGES": "GROUNDING IMAGES",
+  "Gemma 4 12B": "Gemma 4 12B",
+  "Gemma 4 E4B": "Gemma 4 E4B",
+  "Gemma is a family of lightweight AI models built by Google DeepMind using the same research and technology behind the Gemini models. Designed to run directly on local hardware such as a laptop without needing an internet connection.": "Gemma is a family of lightweight AI models built by Google DeepMind using the same research and technology behind the Gemini models. Designed to run directly on local hardware such as a laptop without needing an internet connection.",
+  "General": "General",
+  "Generate Graph": "Generate Graph",
+  "Generate Summary": "Generate Summary",
+  "Generating the response": "Generating the response",
+  "Generative AI Prohibited Use Policy": "Generative AI Prohibited Use Policy",
+  "Generative AI prohibited use policy": "Generative AI prohibited use policy",
+  "Get Started": "Get Started",
+  "Get answer from your personalized knowledge sources.": "Get answer from your personalized knowledge sources.",
+  "Get to know on-device AI models such as Gemma:": "Get to know on-device AI models such as Gemma:",
+  "Getting Foresight ready for you...": "Getting Foresight ready for you...",
+  "Google AI Edge Foresight can remind you when you have a meeting coming up so you don’t forget it’s ready to help you make the most of your meetings.": "Google AI Edge Foresight can remind you when you have a meeting coming up so you don’t forget it’s ready to help you make the most of your meetings.",
+  "Google AI Edge Foresight enhances your productivity and effectiveness as a local AI companion that proactively surfaces relevant information from your personal knowledge sources without you having to search manually.\n\nWhen transcribing is activated, Google AI Edge Foresight listens to your microphone and system audio to provide this service. Since Foresight uses system audio, you are responsible for obtaining consent from all the speakers before activating assistance from live audio.\n\n<b>Signing in is optional. If you choose to sign in, you authorize Google AI Edge Foresight to access your Google Drive and Google Calendar accounts. You acknowledge that Google AI Edge Foresight collects aggregated usage data as further described in the Google Privacy Policy.</b>": "Google AI Edge Foresight enhances your productivity and effectiveness as a local AI companion that proactively surfaces relevant information from your personal knowledge sources without you having to search manually.\n\nWhen transcribing is activated, Google AI Edge Foresight listens to your microphone and system audio to provide this service. Since Foresight uses system audio, you are responsible for obtaining consent from all the speakers before activating assistance from live audio.\n\n<b>Signing in is optional. If you choose to sign in, you authorize Google AI Edge Foresight to access your Google Drive and Google Calendar accounts. You acknowledge that Google AI Edge Foresight collects aggregated usage data as further described in the Google Privacy Policy.</b>",
+  "Google AI Edge Foresight uses audio from your microphone and device audio to transcribe the conversation (processed locally). This is used to automatically detect and answer questions, to enhance notes you take, and is available for you to review. Transcriptions are generated by AI, so review for accuracy.": "Google AI Edge Foresight uses audio from your microphone and device audio to transcribe the conversation (processed locally). This is used to automatically detect and answer questions, to enhance notes you take, and is available for you to review. Transcriptions are generated by AI, so review for accuracy.",
+  "Google Account": "Google Account",
+  "Google Drive Document": "Google Drive Document",
+  "Google Privacy Policy": "Google Privacy Policy",
+  "Google Terms of Service": "Google Terms of Service",
+  "Grant All Permissions": "Grant All Permissions",
+  "Graph Stats: ": "Graph Stats: ",
+  "Graph is empty": "Graph is empty",
+  "Graph view": "Graph view",
+  "Grid View": "Grid View",
+  "Harness your personal knowledge with on-device AI": "Harness your personal knowledge with on-device AI",
+  "Heading": "Heading",
+  "Help": "Help",
+  "Hide Chat": "Hide Chat",
+  "Hide Live Assistant": "Hide Live Assistant",
+  "Hide side panel": "Hide side panel",
+  "Higher capacity & deeper reasoning · Takes more storage and memory": "Higher capacity & deeper reasoning · Takes more storage and memory",
+  "Highest quality and deeper reasoning. Needs more memory and disk space.": "Highest quality and deeper reasoning. Needs more memory and disk space.",
+  "History": "History",
+  "Hotkeys": "Hotkeys",
+  "How AI Edge Foresight uses audio": "How AI Edge Foresight uses audio",
+  "If enabled, Foresight will detect queries on-device. Otherwise, it will use a server-side query detection service.": "If enabled, Foresight will detect queries on-device. Otherwise, it will use a server-side query detection service.",
+  "If enabled, Foresight will perform all processing locally on your device. Otherwise, server-side Gemini may be used for generating responses.": "If enabled, Foresight will perform all processing locally on your device. Otherwise, server-side Gemini may be used for generating responses.",
+  "If enabled, Foresight will transcribe speech to text on device. Otherwise, it will use a server-side transcription service.": "If enabled, Foresight will transcribe speech to text on device. Otherwise, it will use a server-side transcription service.",
+  "Image": "Image",
+  "Image File": "Image File",
+  "Images": "Images",
+  "Import": "Import",
+  "Import Custom Transcript": "Import Custom Transcript",
+  "Import again": "Import again",
+  "Import file": "Import file",
+  "Import folder": "Import folder",
+  "Import last 1 year from Drive": "Import last 1 year from Drive",
+  "Import paused.": "Import paused.",
+  "Import resumed.": "Import resumed.",
+  "Imported": "Imported",
+  "Imported Transcript": "Imported Transcript",
+  "Importing...": "Importing...",
+  "Include subfolders": "Include subfolders",
+  "Increase Font Size": "Increase Font Size",
+  "Indexed with local EmbeddingGemma": "Indexed with local EmbeddingGemma",
+  "Initialization encountered an error. Please check your connection.": "Initialization encountered an error. Please check your connection.",
+  "Initializing model...": "Initializing model...",
+  "Inputs": "Inputs",
+  "Insight": "Insight",
+  "Insight Details": "Insight Details",
+  "Insight copied to clipboard": "Insight copied to clipboard",
+  "Insights": "Insights",
+  "It looks like a scheduled meeting is happening or about about to start. To link this session with all the context from that calendar event, choose from the list below.": "It looks like a scheduled meeting is happening or about about to start. To link this session with all the context from that calendar event, choose from the list below.",
+  "Italic": "Italic",
+  "Join Meeting": "Join Meeting",
+  "Just now": "Just now",
+  "Key Topics": "Key Topics",
+  "Knowledge Graph": "Knowledge Graph",
+  "Knowledge Graph feature is currently disabled in settings.": "Knowledge Graph feature is currently disabled in settings.",
+  "Knowledge Sources": "Knowledge Sources",
+  "Knowledge sources added": "Knowledge sources added",
+  "Labels": "Labels",
+  "Last 30 days": "Last 30 days",
+  "Last 7 days": "Last 7 days",
+  "Last 90 days": "Last 90 days",
+  "Last changed": "Last changed",
+  "Last imported 1 day ago": "Last imported 1 day ago",
+  "Last imported today": "Last imported today",
+  "Later": "Later",
+  "Launch Agent Monitor": "Launch Agent Monitor",
+  "Learn how": "Learn how",
+  "Link scheduled meeting": "Link scheduled meeting",
+  "List View": "List View",
+  "Listening...": "Listening...",
+  "Live": "Live",
+  "Live Assistant": "Live Assistant",
+  "Live Enhance": "Live Enhance",
+  "Live Enhance ON": "Live Enhance ON",
+  "Live Enhance Off": "Live Enhance Off",
+  "Live Q&A": "Live Q&A",
+  "Live enhanced notes": "Live enhanced notes",
+  "Live enhanced notes will appear here as shorthand notes are written.": "Live enhanced notes will appear here as shorthand notes are written.",
+  "Loading Drive files...": "Loading Drive files...",
+  "Loading daily briefing...": "Loading daily briefing...",
+  "Loading...": "Loading...",
+  "Local File": "Local File",
+  "Local Inference Model": "Local Inference Model",
+  "Location": "Location",
+  "Log path not available": "Log path not available",
+  "Login with Google": "Login with Google",
+  "Look in Downloads, Documents, and Desktop, then choose what to import.": "Look in Downloads, Documents, and Desktop, then choose what to import.",
+  "Looking through your folders…": "Looking through your folders…",
+  "Manage Models": "Manage Models",
+  "Manage sources": "Manage sources",
+  "Markdown": "Markdown",
+  "Markdown guide:\n• # Heading\n• **bold**\n• *italics*\n• - Bullet list\n• 1. Numbered list": "Markdown guide:\n• # Heading\n• **bold**\n• *italics*\n• - Bullet list\n• 1. Numbered list",
+  "Meeting Brief": "Meeting Brief",
+  "Meeting Details": "Meeting Details",
+  "Meeting Reminder": "Meeting Reminder",
+  "Meeting Title / Event Name": "Meeting Title / Event Name",
+  "Meeting Transcript": "Meeting Transcript",
+  "Meeting Transcript Summary": "Meeting Transcript Summary",
+  "Meeting ended": "Meeting ended",
+  "Meeting notes copied to clipboard": "Meeting notes copied to clipboard",
+  "Meeting notes saved successfully": "Meeting notes saved successfully",
+  "Meetings": "Meetings",
+  "Meetings on your Google Calendar": "Meetings on your Google Calendar",
+  "Meetings transcribed": "Meetings transcribed",
+  "Microphone Access": "Microphone Access",
+  "Microphone access is disabled. Open macOS System Settings > Privacy & Security > Microphone to enable Foresight.": "Microphone access is disabled. Open macOS System Settings > Privacy & Security > Microphone to enable Foresight.",
+  "Model cache cleared successfully.": "Model cache cleared successfully.",
+  "Model cannot be changed while transcribing is active": "Model cannot be changed while transcribing is active",
+  "Modified recently": "Modified recently",
+  "Modified this month": "Modified this month",
+  "Modified this week": "Modified this week",
+  "Modified this year": "Modified this year",
+  "Modified today": "Modified today",
+  "Monitor and control the background launch agent.": "Monitor and control the background launch agent.",
+  "More files": "More files",
+  "More tabs": "More tabs",
+  "Most Recent": "Most Recent",
+  "Mute Notifications": "Mute Notifications",
+  "My Drive": "My Drive",
+  "N/A": "N/A",
+  "Name": "Name",
+  "Network error": "Network error",
+  "Network error: Could not connect to Google Drive. Please try again.": "Network error: Could not connect to Google Drive. Please try again.",
+  "Network error: Please check your internet connection and try again.": "Network error: Please check your internet connection and try again.",
+  "Never": "Never",
+  "Never imported": "Never imported",
+  "New discussion recorded since this summary": "New discussion recorded since this summary",
+  "Next": "Next",
+  "No": "No",
+  "No Title": "No Title",
+  "No Transcripts": "No Transcripts",
+  "No answer generated.": "No answer generated.",
+  "No answer was generated by the AI model.": "No answer was generated by the AI model.",
+  "No background tasks are running. On-device AI tasks appear here while they work.": "No background tasks are running. On-device AI tasks appear here while they work.",
+  "No briefing generated.": "No briefing generated.",
+  "No direct connections found in the database.": "No direct connections found in the database.",
+  "No direct high-similarity connections found.": "No direct high-similarity connections found.",
+  "No documents added yet! Use the buttons on the left to add documents to Foresight so it can be more useful to you.": "No documents added yet! Use the buttons on the left to add documents to Foresight so it can be more useful to you.",
+  "No documents available to graph.": "No documents available to graph.",
+  "No entities extracted yet.": "No entities extracted yet.",
+  "No event attached": "No event attached",
+  "No event summaries found.": "No event summaries found.",
+  "No events with 2 or more attendees": "No events with 2 or more attendees",
+  "No files added yet.": "No files added yet.",
+  "No files found on your Drive.": "No files found on your Drive.",
+  "No insight generated.": "No insight generated.",
+  "No insights found.": "No insights found.",
+  "No labels created yet. Create a label or click \"+ Add Label\" on any document to cluster related items automatically.": "No labels created yet. Create a label or click \"+ Add Label\" on any document to cluster related items automatically.",
+  "No logs": "No logs",
+  "No meeting notes found for the selected date range.": "No meeting notes found for the selected date range.",
+  "No meeting summary available.": "No meeting summary available.",
+  "No meetings today.": "No meetings today.",
+  "No new files found": "No new files found",
+  "No notes found. Create your first note!": "No notes found. Create your first note!",
+  "No pending actions.": "No pending actions.",
+  "No preparation summary available.": "No preparation summary available.",
+  "No previous meetings found.": "No previous meetings found.",
+  "No result found.": "No result found.",
+  "No sources found.": "No sources found.",
+  "No subfolders found.": "No subfolders found.",
+  "No summary available.": "No summary available.",
+  "No transcript available.": "No transcript available.",
+  "No transcription yet.": "No transcription yet.",
+  "No transcription yet. Speak to begin.": "No transcription yet. Speak to begin.",
+  "No upcoming meetings found.": "No upcoming meetings found.",
+  "Not Running": "Not Running",
+  "Not downloaded": "Not downloaded",
+  "Notes": "Notes",
+  "Notifications": "Notifications",
+  "Notifications are disabled. Open macOS System Settings > Notifications > Foresight to enable alerts.": "Notifications are disabled. Open macOS System Settings > Notifications > Foresight to enable alerts.",
+  "Now": "Now",
+  "Now • ": "Now • ",
+  "Numbered List": "Numbered List",
+  "ODT": "ODT",
+  "OK": "OK",
+  "Office Documents": "Office Documents",
+  "Older file": "Older file",
+  "Oldest": "Oldest",
+  "On-Device Savings": "On-Device Savings",
+  "On-device AI (also known as Edge AI) executes AI models like Gemma locally on your computer’s hardware. Your data does not need to leave your laptop, ensuring maximum privacy, instant offline availability, and zero recurring cloud API fees.": "On-device AI (also known as Edge AI) executes AI models like Gemma locally on your computer’s hardware. Your data does not need to leave your laptop, ensuring maximum privacy, instant offline availability, and zero recurring cloud API fees.",
+  "On-device model used by Foresight.": "On-device model used by Foresight.",
+  "On-device processing allows you to use AI capabilities in this app regardless of internet connectivity.": "On-device processing allows you to use AI capabilities in this app regardless of internet connectivity.",
+  "Open": "Open",
+  "Open System Settings": "Open System Settings",
+  "Open at login": "Open at login",
+  "Open original": "Open original",
+  "Optional": "Optional",
+  "Organization Labels & Cluster Colors:": "Organization Labels & Cluster Colors:",
+  "Other": "Other",
+  "Out of sync": "Out of sync",
+  "Out of sync: Note was edited after enhancement. Mapping is severed.": "Out of sync: Note was edited after enhancement. Mapping is severed.",
+  "PDF": "PDF",
+  "PDF Document": "PDF Document",
+  "Parsing error": "Parsing error",
+  "Passes the raw audio of detected queries to the model when generating answers, for acoustic context and transcription error correction.": "Passes the raw audio of detected queries to the model when generating answers, for acoustic context and transcription error correction.",
+  "Paste in a transcript, raw text file content, or Google doc text to import it as a custom meeting transcript.": "Paste in a transcript, raw text file content, or Google doc text to import it as a custom meeting transcript.",
+  "Pasting into a Google Doc? Use \"Paste as markdown\" to keep the formatting.": "Pasting into a Google Doc? Use \"Paste as markdown\" to keep the formatting.",
+  "Pause": "Pause",
+  "Pause Rotation": "Pause Rotation",
+  "Pause import": "Pause import",
+  "Permission error": "Permission error",
+  "Pin to top": "Pin to top",
+  "Please add at least one file first.": "Please add at least one file first.",
+  "Please enter the URL": "Please enter the URL",
+  "Powered by ": "Powered by ",
+  "Pptx": "Pptx",
+  "Preparing on-device AI models": "Preparing on-device AI models",
+  "Press Enter to accept or Escape to cancel": "Press Enter to accept or Escape to cancel",
+  "Press keystroke": "Press keystroke",
+  "Pressing back will cancel the current transcribing session. Do you want to continue?": "Pressing back will cancel the current transcribing session. Do you want to continue?",
+  "Preview enhanced notes": "Preview enhanced notes",
+  "Previous": "Previous",
+  "Privacy Mode (100% on-device processing with local Gemma models)": "Privacy Mode (100% on-device processing with local Gemma models)",
+  "Privacy Policy": "Privacy Policy",
+  "Processing the selected file...": "Processing the selected file...",
+  "Question": "Question",
+  "Question detected": "Question detected",
+  "Questions detected during the conversation will be answered here.": "Questions detected during the conversation will be answered here.",
+  "Quit Foresight": "Quit Foresight",
+  "RTF": "RTF",
+  "Re-enhance": "Re-enhance",
+  "Re-summarize Attachments": "Re-summarize Attachments",
+  "Re-summarize Transcript": "Re-summarize Transcript",
+  "Recent Google Drive files up to 1 year (up to 100 most recently authored and viewed)": "Recent Google Drive files up to 1 year (up to 100 most recently authored and viewed)",
+  "Recommendation: No action needed": "Recommendation: No action needed",
+  "Recommendation: Restart/Update recommended (Version mismatch)": "Recommendation: Restart/Update recommended (Version mismatch)",
+  "Recommended Today's agenda": "Recommended Today's agenda",
+  "Record": "Record",
+  "Redo": "Redo",
+  "Redo enhancement": "Redo enhancement",
+  "Refresh Data": "Refresh Data",
+  "Refresh Graph": "Refresh Graph",
+  "Refresh Interval Settings": "Refresh Interval Settings",
+  "Refresh Interval for Calendar events and Drive files": "Refresh Interval for Calendar events and Drive files",
+  "Refresh to see context.": "Refresh to see context.",
+  "Regenerate": "Regenerate",
+  "Regenerating...": "Regenerating...",
+  "Related documents:": "Related documents:",
+  "Rename Label": "Rename Label",
+  "Repetition Penalty": "Repetition Penalty",
+  "Required": "Required",
+  "Restart": "Restart",
+  "Restart Now": "Restart Now",
+  "Restart Required": "Restart Required",
+  "Restart to apply update.": "Restart to apply update.",
+  "Result": "Result",
+  "Result copied to clipboard": "Result copied to clipboard",
+  "Result will be shown here.": "Result will be shown here.",
+  "Resume import": "Resume import",
+  "Return to the meeting session": "Return to the meeting session",
+  "Rich Text": "Rich Text",
+  "Run transcription on device": "Run transcription on device",
+  "Running": "Running",
+  "SOURCES": "SOURCES",
+  "Save": "Save",
+  "Saved compared to paid cloud APIs": "Saved compared to paid cloud APIs",
+  "Saved the selected file.": "Saved the selected file.",
+  "Scanning happens entirely on your Mac — Foresight only reads file names and dates until you choose what to import.": "Scanning happens entirely on your Mac — Foresight only reads file names and dates until you choose what to import.",
+  "Scanning the transcripts...": "Scanning the transcripts...",
+  "Search Graph Nodes or Types...": "Search Graph Nodes or Types...",
+  "Search files by name...": "Search files by name...",
+  "Search folders by name...": "Search folders by name...",
+  "Search knowledge sources...": "Search knowledge sources...",
+  "Search meetings": "Search meetings",
+  "Search the web": "Search the web",
+  "Searching the Web": "Searching the Web",
+  "Searching through your Knowledge Sources": "Searching through your Knowledge Sources",
+  "Security error": "Security error",
+  "Select All Files": "Select All Files",
+  "Select Files": "Select Files",
+  "Select Files from Drive": "Select Files from Drive",
+  "Select Files to Import": "Select Files to Import",
+  "Select Folder": "Select Folder",
+  "Select a Drive Folder": "Select a Drive Folder",
+  "Select all": "Select all",
+  "Select file from Drive": "Select file from Drive",
+  "Select the local generative model to use.": "Select the local generative model to use.",
+  "Send": "Send",
+  "Session Live Transcription": "Session Live Transcription",
+  "Setting up knowledge sources...": "Setting up knowledge sources...",
+  "Settings": "Settings",
+  "Settings for debugging and development purposes.": "Settings for debugging and development purposes.",
+  "Shorthand notes": "Shorthand notes",
+  "Show Foresight and quick start new meeting transcript": "Show Foresight and quick start new meeting transcript",
+  "Show Logs": "Show Logs",
+  "Show a notification before upcoming meetings start.": "Show a notification before upcoming meetings start.",
+  "Show side panel": "Show side panel",
+  "Shows the extraction progress and the most common extracted entities.": "Shows the extraction progress and the most common extracted entities.",
+  "Sign In": "Sign In",
+  "Sign in failed or permissions not granted.": "Sign in failed or permissions not granted.",
+  "Sign out": "Sign out",
+  "Sign-in required to fetch data.": "Sign-in required to fetch data.",
+  "Skip": "Skip",
+  "Skip for now": "Skip for now",
+  "Skip tutorial": "Skip tutorial",
+  "Software update": "Software update",
+  "Source": "Source",
+  "Sources": "Sources",
+  "Sources:": "Sources:",
+  "Speak to create an event...": "Speak to create an event...",
+  "Speaker": "Speaker",
+  "Speech recognition, query detection, and text embedding · Required": "Speech recognition, query detection, and text embedding · Required",
+  "Standard": "Standard",
+  "Start": "Start",
+  "Start Foresight": "Start Foresight",
+  "Start Foresight Session": "Start Foresight Session",
+  "Start Foresight transcript": "Start Foresight transcript",
+  "Start Rotation": "Start Rotation",
+  "Start a new meeting recording": "Start a new meeting recording",
+  "Start date": "Start date",
+  "Start new session": "Start new session",
+  "Start transcribing": "Start transcribing",
+  "Starting transcription...": "Starting transcription...",
+  "Starts a completely empty session. Need to manually add the meeting title and context.": "Starts a completely empty session. Need to manually add the meeting title and context.",
+  "Stats": "Stats",
+  "Stop": "Stop",
+  "Stopped": "Stopped",
+  "Stopping transcription...": "Stopping transcription...",
+  "Structuring notes...": "Structuring notes...",
+  "Suggested for you": "Suggested for you",
+  "Summarization engine not initialized.": "Summarization engine not initialized.",
+  "Summarize & Query Documents": "Summarize & Query Documents",
+  "Summarize Attachments": "Summarize Attachments",
+  "Summarize Meeting Transcript": "Summarize Meeting Transcript",
+  "Summarizing attachments...": "Summarizing attachments...",
+  "Summarizing transcript...": "Summarizing transcript...",
+  "Summarizing...": "Summarizing...",
+  "Summary": "Summary",
+  "Summary copied to clipboard": "Summary copied to clipboard",
+  "Sync": "Sync",
+  "Synthesizer model": "Synthesizer model",
+  "System Audio Capture": "System Audio Capture",
+  "System audio capture is disabled. Open macOS System Settings > Privacy & Security > Screen & System Audio Recording to enable Foresight.": "System audio capture is disabled. Open macOS System Settings > Privacy & Security > Screen & System Audio Recording to enable Foresight.",
+  "Tap to Speak": "Tap to Speak",
+  "Terms of Service": "Terms of Service",
+  "Text": "Text",
+  "The app requires connectivity for certain things like importing your Google Drive and Google Calendar data if signed in, web searches on the internet if enabled (default off), and collecting de-identified usage data consistent with Google’s privacy policy.": "The app requires connectivity for certain things like importing your Google Drive and Google Calendar data if signed in, web searches on the internet if enabled (default off), and collecting de-identified usage data consistent with Google’s privacy policy.",
+  "The meeting is expired": "The meeting is expired",
+  "The scheduled meeting time has ended. Would you like to stop recording?": "The scheduled meeting time has ended. Would you like to stop recording?",
+  "There are no meeting transcripts in history to enhance this note.": "There are no meeting transcripts in history to enhance this note.",
+  "These run on your device. You can keep using Foresight while they finish.": "These run on your device. You can keep using Foresight while they finish.",
+  "Third-party Libraries": "Third-party Libraries",
+  "This action will permanently delete all app data and on-device models. You will need to download the models and app data again to use the app. The app will restart automatically after the process is complete. Do you wish to continue?": "This action will permanently delete all app data and on-device models. You will need to download the models and app data again to use the app. The app will restart automatically after the process is complete. Do you wish to continue?",
+  "This action will permanently delete all app data, but will keep downloaded models. The app will restart automatically after the process is complete. Do you wish to continue?": "This action will permanently delete all app data, but will keep downloaded models. The app will restart automatically after the process is complete. Do you wish to continue?",
+  "Time": "Time",
+  "Title": "Title",
+  "To continue, Google AI Edge Foresight will start downloading necessary models for on-device processing. Please ensure you have a stable internet connection.": "To continue, Google AI Edge Foresight will start downloading necessary models for on-device processing. Please ensure you have a stable internet connection.",
+  "Today": "Today",
+  "Tokens saved": "Tokens saved",
+  "Tokens saved on-device": "Tokens saved on-device",
+  "Tomorrow": "Tomorrow",
+  "Topics Discussed (Not In Your Notes)": "Topics Discussed (Not In Your Notes)",
+  "Total Tokens Saved": "Total Tokens Saved",
+  "Transcribing in real time": "Transcribing in real time",
+  "Transcribing stopped": "Transcribing stopped",
+  "Transcribing was stopped due to inactivity. Please start new meeting or resume previous.": "Transcribing was stopped due to inactivity. Please start new meeting or resume previous.",
+  "Transcript": "Transcript",
+  "Transcript Content": "Transcript Content",
+  "Transcript History": "Transcript History",
+  "Transcript of Note": "Transcript of Note",
+  "Transcription is paused. Would you like to resume?": "Transcription is paused. Would you like to resume?",
+  "Transcription paused": "Transcription paused",
+  "Transcripts": "Transcripts",
+  "Transform View": "Transform View",
+  "URL cannot be empty": "URL cannot be empty",
+  "Undo": "Undo",
+  "Undo enhancement": "Undo enhancement",
+  "Unknown": "Unknown",
+  "Unknown (Ping failed)": "Unknown (Ping failed)",
+  "Unknown error": "Unknown error",
+  "Unmute Notifications": "Unmute Notifications",
+  "Unnamed Folder": "Unnamed Folder",
+  "Unpin": "Unpin",
+  "Unsupported file type": "Unsupported file type",
+  "Untitled": "Untitled",
+  "Untitled Event": "Untitled Event",
+  "Untitled Note": "Untitled Note",
+  "Untitled Segment": "Untitled Segment",
+  "Untitled meeting": "Untitled meeting",
+  "Upcoming": "Upcoming",
+  "Upcoming meeting reminders": "Upcoming meeting reminders",
+  "Upcoming meeting reminders are turned off in Settings.": "Upcoming meeting reminders are turned off in Settings.",
+  "Update": "Update",
+  "Update Summary": "Update Summary",
+  "Update available!": "Update available!",
+  "Use these hotkeys to trigger Foresight actions. To change a hotkey, double click and type the new keys. Use at least a combination of 3 keys.": "Use these hotkeys to trigger Foresight actions. To change a hotkey, double click and type the new keys. Use at least a combination of 3 keys.",
+  "User": "User",
+  "V2 Retrieval (Advanced RAG)": "V2 Retrieval (Advanced RAG)",
+  "Version": "Version",
+  "View Transcript": "View Transcript",
+  "View full meeting transcript": "View full meeting transcript",
+  "View the history of insights provided by Foresight.": "View the history of insights provided by Foresight.",
+  "View, prep and manage meetings from the Meetings tab.": "View, prep and manage meetings from the Meetings tab.",
+  "Voice Command": "Voice Command",
+  "Waiting": "Waiting",
+  "Welcome to Google AI Edge Foresight": "Welcome to Google AI Edge Foresight",
+  "What are on-device models?": "What are on-device models?",
+  "What do we do online?": "What do we do online?",
+  "What is Gemma?": "What is Gemma?",
+  "What is on-device AI?": "What is on-device AI?",
+  "What’s Gemma?": "What’s Gemma?",
+  "When you continue, the app will start downloading necessary on-device AI models to your device. Please ensure you have a stable internet connection.": "When you continue, the app will start downloading necessary on-device AI models to your device. Please ensure you have a stable internet connection.",
+  "Why on-device AI?": "Why on-device AI?",
+  "Why on-device?": "Why on-device?",
+  "XML": "XML",
+  "Xlsx": "Xlsx",
+  "Yes": "Yes",
+  "Yesterday": "Yesterday",
+  "You": "You",
+  "You can control chat answers to extract from only your own knowledge source or including web searches.": "You can control chat answers to extract from only your own knowledge source or including web searches.",
+  "You cannot use Foresight with this account, please check your Admin for more details.": "You cannot use Foresight with this account, please check your Admin for more details.",
+  "Your weekly token usage": "Your weekly token usage",
+  "Z -> A": "Z -> A",
+  "ZIP": "ZIP",
+  "Zero cloud API calls": "Zero cloud API calls",
+  "Zoom in": "Zoom in",
+  "Zoom out": "Zoom out",
+  "activityStatusBusyTooltipTitle": [
+    "Intl.plural",
+    0,
+    null,
+    "1 background task running",
+    null,
+    null,
+    null,
+    [
+      0,
+      " background tasks running"
+    ]
+  ],
+  "activityStatusMoreTasks": [
+    "Intl.plural",
+    0,
+    null,
+    "1 more task",
+    null,
+    null,
+    null,
+    [
+      0,
+      " more tasks"
+    ]
+  ],
+  "addedFilesToImportQueue": [
+    "Added ",
+    0,
+    " files to import queue."
+  ],
+  "attachmentTooLargeToSummarizeErrorMessage": [
+    "The attachment \"",
+    0,
+    "\" is too large to be summarized automatically."
+  ],
+  "calendarEventAttendeesCount": [
+    "Intl.plural",
+    0,
+    null,
+    [
+      0,
+      " Attendee"
+    ],
+    null,
+    null,
+    null,
+    [
+      0,
+      " Attendees"
+    ]
+  ],
+  "chatPageError": [
+    "Error: ",
+    0
+  ],
+  "clearModelCacheFailure": [
+    "Failed to clear model cache: ",
+    0
+  ],
+  "clipboardEventName": [
+    "Event: ",
+    0
+  ],
+  "clipboardTime": [
+    "Time: ",
+    0
+  ],
+  "core seed": "core seed",
+  "couldNotLaunchLink": [
+    "Could not launch ",
+    0
+  ],
+  "couldNotOpenFile": [
+    "Could not open file ",
+    0
+  ],
+  "deleteDocumentConfirmationMessage": [
+    "Are you sure you want to delete \"",
+    0,
+    "\" from Foresight?"
+  ],
+  "deletingDocumentsProgress": [
+    "Deleting document ",
+    0,
+    " of ",
+    1,
+    "..."
+  ],
+  "disclaimerText": [
+    "By clicking to continue, you agree to the <tos>",
+    0,
+    "</tos>, including the <genai>",
+    1,
+    "</genai>, and understand that data will be processed according to the <privpol>",
+    2,
+    "</privpol>."
+  ],
+  "documentEntitiesRow": [
+    0,
+    " docs, ",
+    1,
+    " occurrences"
+  ],
+  "documentEntitiesStatus": [
+    "Enabled: ",
+    0,
+    " · Pending: ",
+    1,
+    " · Processed: ",
+    2,
+    " · Failed: ",
+    3
+  ],
+  "documentGraphClusteredReason": [
+    "Clustered with \"",
+    0,
+    "\" community (",
+    1,
+    "% match)"
+  ],
+  "documentGraphLabelCount": [
+    0,
+    " (",
+    1,
+    ")"
+  ],
+  "documentGraphManageLabel": [
+    "Manage Label \"",
+    0,
+    "\""
+  ],
+  "documentGraphPropagationReason": [
+    "Similar to \"",
+    0,
+    "\" (",
+    1,
+    "% match)"
+  ],
+  "documentMatchPercent": [
+    0,
+    "% Match"
+  ],
+  "documentsAdded": [
+    "Documents successfully added (",
+    0,
+    ")"
+  ],
+  "downloadingUpdateVersion": [
+    "Downloading version ",
+    0,
+    "..."
+  ],
+  "driveAccessError": [
+    "Error accessing Google Drive: ",
+    0
+  ],
+  "driveFilePickerAuthError": [
+    "Authentication or permission error: ",
+    0,
+    ". Please try again."
+  ],
+  "driveFilePickerGenericError": [
+    "Error loading files: ",
+    0,
+    "\n\nPlease try again."
+  ],
+  "driveFilesRetrieved": [
+    "Retrieved ",
+    0,
+    " files from Drive."
+  ],
+  "driveFolderEmbedResult": [
+    0,
+    " files successfully loaded, ",
+    1,
+    " files failed."
+  ],
+  "driveFolderFilesRetrieved": [
+    "Get ",
+    0,
+    " files from Drive folder."
+  ],
+  "driveFolderPickerErrorDetails": [
+    "Error loading folders: ",
+    0
+  ],
+  "e.g. Eloquent Project": "e.g. Eloquent Project",
+  "errorFormat": [
+    "Error: ",
+    0
+  ],
+  "errorGeneratingDailyBriefing": [
+    "Error generating daily briefing: ",
+    0
+  ],
+  "errorLoadingData": [
+    "Error loading ",
+    0,
+    ": ",
+    1
+  ],
+  "errorLoadingModelConfig": [
+    "Error loading model config: ",
+    0
+  ],
+  "errorPickingFolder": [
+    "Error picking folder: ",
+    0
+  ],
+  "eventCardAttendees": [
+    0,
+    " attendees"
+  ],
+  "eventCardFailedRefreshSnackbar": [
+    "Failed to refresh ",
+    0
+  ],
+  "eventCardRefreshedSnackbar": [
+    "Refreshed ",
+    0
+  ],
+  "eventCardRefreshingSnackbar": [
+    "Refreshing ",
+    0,
+    "..."
+  ],
+  "failedToAddEvent": [
+    "Failed to add event: ",
+    0
+  ],
+  "failedToEnhanceMessage": [
+    "Failed to enhance note: ",
+    0
+  ],
+  "failedToGenerateAnswer": [
+    "Failed to generate answer: ",
+    0
+  ],
+  "failedToImportFile": [
+    "Failed to import ",
+    0,
+    ": ",
+    1
+  ],
+  "failedToPickDriveFile": [
+    "Failed to pick drive file: ",
+    0
+  ],
+  "failedToPickFiles": [
+    "Failed to pick files: ",
+    0
+  ],
+  "failedToProcessFile": [
+    "Failed to process ",
+    0,
+    ": ",
+    1
+  ],
+  "failedToRegenerateContent": [
+    "Failed to regenerate content: ",
+    0
+  ],
+  "failedToStartRecording": [
+    "Failed to start transcribing: ",
+    0
+  ],
+  "fetchErrorMessage": [
+    "An error occurred: ",
+    0
+  ],
+  "fileAddedToEvent": [
+    "Added to ",
+    0
+  ],
+  "fileAddedToEvents": [
+    "Added to ",
+    0,
+    " events"
+  ],
+  "fileTooLargeErrorMessage": [
+    "The selected file is too large. The limit is ",
+    0,
+    "."
+  ],
+  "findFilesEstimateHours": [
+    0,
+    " hr"
+  ],
+  "findFilesEstimateMinutes": [
+    0,
+    " min"
+  ],
+  "findFilesFolderChip": [
+    0,
+    " (",
+    1,
+    ")"
+  ],
+  "findFilesImportButton": [
+    "Import ",
+    0,
+    " files"
+  ],
+  "findFilesImportEstimate": [
+    "about ",
+    0
+  ],
+  "findFilesPermissionDeniedBody": [
+    "macOS blocked access to ",
+    0,
+    ". Allow access in System Settings, then try again."
+  ],
+  "findFilesScanningCount": [
+    "Found ",
+    0,
+    " files so far…"
+  ],
+  "findFilesTruncatedNotice": [
+    "Showing the ",
+    0,
+    " most relevant files."
+  ],
+  "generateNotesForStyle": [
+    "Generate ",
+    0
+  ],
+  "graphGenerationFailed": [
+    "Graph generation failed: ",
+    0
+  ],
+  "graphLinkedFrom": [
+    " - linked from ",
+    0,
+    " via [",
+    1,
+    "] (w=",
+    2,
+    ")"
+  ],
+  "graphLinkedTo": [
+    " - linked to ",
+    0,
+    " via [",
+    1,
+    "] (w=",
+    2,
+    ")"
+  ],
+  "graphLoadDataFailed": [
+    "Failed to load graph data: ",
+    0
+  ],
+  "graphNodeType": [
+    "Type: ",
+    0
+  ],
+  "graphStatsDetails": [
+    "Nodes: ",
+    0,
+    "  •  Edges: ",
+    1,
+    "  •  Parsed Documents: ",
+    2
+  ],
+  "hotkeyRegisterFailed": [
+    "Failed to register hotkey: ",
+    0
+  ],
+  "hours": "hours",
+  "importSelectedFiles": [
+    "Import (",
+    0,
+    ")"
+  ],
+  "importedDaysAgo": [
+    "Intl.plural",
+    0,
+    null,
+    [
+      0,
+      " day ago"
+    ],
+    null,
+    null,
+    null,
+    [
+      0,
+      " days ago"
+    ]
+  ],
+  "importedHoursAgo": [
+    "Intl.plural",
+    0,
+    null,
+    [
+      0,
+      " hour ago"
+    ],
+    null,
+    null,
+    null,
+    [
+      0,
+      " hours ago"
+    ]
+  ],
+  "importedMinutesAgo": [
+    "Intl.plural",
+    0,
+    null,
+    [
+      0,
+      " minute ago"
+    ],
+    null,
+    null,
+    null,
+    [
+      0,
+      " minutes ago"
+    ]
+  ],
+  "insights": "insights",
+  "labelActions": [
+    "Actions:\n",
+    0
+  ],
+  "labelKeyTopic": [
+    "Key Topic:\n",
+    0
+  ],
+  "lastImported": [
+    "Last imported: ",
+    0
+  ],
+  "lastImportedDaysAgo": [
+    "Last imported ",
+    0,
+    " days ago"
+  ],
+  "launchAgentBundledVersion": [
+    "Latest Version: ",
+    0
+  ],
+  "launchAgentLogFileNotFound": [
+    "Log file not found at ",
+    0
+  ],
+  "launchAgentRunningVersion": [
+    "Current Version: ",
+    0
+  ],
+  "launchAgentStatus": [
+    "Status: ",
+    0
+  ],
+  "less than a minute": "less than a minute",
+  "listJoinAnd": [
+    0,
+    " and ",
+    1
+  ],
+  "localFilePickerErrorDetails": [
+    "Error picking file: ",
+    0
+  ],
+  "localFilePickerSelectedSnack": [
+    0,
+    ": ",
+    1
+  ],
+  "maxFilesAllowed": [
+    "Maximum of ",
+    0,
+    " files allowed."
+  ],
+  "meetingStartingSoonNotificationBody": [
+    0,
+    " is starting soon."
+  ],
+  "modelDownloadFailedFor": [
+    "Failed to download ",
+    0,
+    "."
+  ],
+  "modelDownloadPercentComplete": [
+    0,
+    "% downloaded"
+  ],
+  "modelDownloadStarted": [
+    "Downloading ",
+    0,
+    "..."
+  ],
+  "modelDownloadedAndSaved": [
+    0,
+    " downloaded and saved"
+  ],
+  "modelLastUpdatedLabel": [
+    "Last updated: ",
+    0
+  ],
+  "modelPathLabel": [
+    "Path: ",
+    0
+  ],
+  "modelSizeOnDisk": [
+    "Size: ",
+    0
+  ],
+  "modelTypeLabel": [
+    "Type: ",
+    0
+  ],
+  "modelVersionLabel": [
+    "Version: ",
+    0
+  ],
+  "noGeneratedNotesForStyle": [
+    "No ",
+    0,
+    " generated yet."
+  ],
+  "notesEnhancerPersonalNote": [
+    "* **[Personal Note]:** ",
+    0
+  ],
+  "outOfSyncNotesBadgeLabel": [
+    0,
+    " out of sync"
+  ],
+  "outOfSyncNotesTooltip": [
+    "Intl.plural",
+    0,
+    null,
+    [
+      0,
+      " note was edited since the last enhancement and is no longer linked to the enhanced notes."
+    ],
+    null,
+    null,
+    null,
+    [
+      0,
+      " notes were edited since the last enhancement and are no longer linked to the enhanced notes."
+    ]
+  ],
+  "processedDocuments": [
+    "Processed ",
+    0,
+    " of ",
+    1,
+    " documents..."
+  ],
+  "removeLabelConfirmationMessage": [
+    "Are you sure you want to remove the label \"",
+    0,
+    "\" across all documents?"
+  ],
+  "repetitionPenaltyCurrent": [
+    "Current: ",
+    0
+  ],
+  "selectedFilesCount": [
+    "Selected Files (",
+    0,
+    "/",
+    1,
+    ")"
+  ],
+  "settingsErrorLoading": [
+    "Error loading settings: ",
+    0
+  ],
+  "settingsErrorLoadingAgentState": [
+    "Error loading agent state: ",
+    0
+  ],
+  "settingsLoadingError": [
+    "Error loading settings: ",
+    0
+  ],
+  "signOutOfAccountTooltip": [
+    "Sign out of ",
+    0
+  ],
+  "silenceTimeoutMinutes": [
+    "Intl.plural",
+    0,
+    null,
+    [
+      0,
+      " minute"
+    ],
+    null,
+    null,
+    null,
+    [
+      0,
+      " minutes"
+    ]
+  ],
+  "silenceTimeoutMinutesDefault": [
+    "Intl.plural",
+    0,
+    null,
+    [
+      0,
+      " minute (Default)"
+    ],
+    null,
+    null,
+    null,
+    [
+      0,
+      " minutes (Default)"
+    ]
+  ],
+  "sourceDisplayNameNumbered": [
+    "Source ",
+    0
+  ],
+  "sourcesIdentifiedAndIndexed": [
+    0,
+    " sources identified, ",
+    1,
+    " indexed"
+  ],
+  "sourcesIndexed": [
+    0,
+    " sources indexed"
+  ],
+  "summarizationError": [
+    "Error during summarization: ",
+    0
+  ],
+  "summarizationFailed": [
+    "Summarization failed: ",
+    0
+  ],
+  "timeDaysAgo": [
+    0,
+    " days ago"
+  ],
+  "timeHoursAgo": [
+    0,
+    " hrs ago"
+  ],
+  "timeMinsAgo": [
+    0,
+    " mins ago"
+  ],
+  "tokensSavedCount": [
+    0,
+    " tokens saved"
+  ],
+  "transcriptTimeHeader": [
+    "Transcript ",
+    0
+  ],
+  "transcripts": "transcripts",
+  "unsupportedToolCall": [
+    "Unsupported tool call: ",
+    0
+  ],
+  "updateAvailableVersion": [
+    "Version ",
+    0,
+    " is available. Restart to update."
+  ],
+  "weekOfDate": [
+    "Week of ",
+    0,
+    "/",
+    1
+  ],
+  "weeklyTokenUsageTooltip": [
+    0,
+    ": ",
+    1,
+    " tokens"
+  ]
+}

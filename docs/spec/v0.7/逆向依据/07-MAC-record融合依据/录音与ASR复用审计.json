@@ -1,0 +1,502 @@
+{
+  "repository": "hansluo/MAC-record",
+  "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+  "scope": "选择性源码快照，只读，不构建/执行；源码观察不是运行验收",
+  "source_checks": [
+    {
+      "path": "README.md",
+      "expected_git_blob_sha": "ad576a5c71696d96927ca65794919991685a53f7",
+      "actual_git_blob_sha": "ad576a5c71696d96927ca65794919991685a53f7",
+      "match": true
+    },
+    {
+      "path": "MacRecord/Services/ModelRegistry.swift",
+      "expected_git_blob_sha": "159a07f793c7a797b6100dfac7ba6859561ca500",
+      "actual_git_blob_sha": "159a07f793c7a797b6100dfac7ba6859561ca500",
+      "match": true
+    },
+    {
+      "path": "MacRecord/Services/ASRBackendTypes.swift",
+      "expected_git_blob_sha": "b7e009c6eed00e418a60c6da28bacd6723a574aa",
+      "actual_git_blob_sha": "b7e009c6eed00e418a60c6da28bacd6723a574aa",
+      "match": true
+    },
+    {
+      "path": "MacRecord/Services/NativeASRBackend.swift",
+      "expected_git_blob_sha": "22df296463c39d7382ebf12d4e671f4f10679361",
+      "actual_git_blob_sha": "22df296463c39d7382ebf12d4e671f4f10679361",
+      "match": true
+    },
+    {
+      "path": "MacRecord/Services/NativeASRService.swift",
+      "expected_git_blob_sha": "7cb1c62d5880e9cb3dd9851407791140d1e2ef78",
+      "actual_git_blob_sha": "7cb1c62d5880e9cb3dd9851407791140d1e2ef78",
+      "match": true
+    },
+    {
+      "path": "MacRecord/Services/SherpaOnnxWrapper.swift",
+      "expected_git_blob_sha": "62b8fa79a5cb2d4ac2488aea7bdad488b01deb50",
+      "actual_git_blob_sha": "62b8fa79a5cb2d4ac2488aea7bdad488b01deb50",
+      "match": true
+    },
+    {
+      "path": "MacRecord/Services/LLMService.swift",
+      "expected_git_blob_sha": "4a7ab786aaec114e397afb237a77e1eceeb887d9",
+      "actual_git_blob_sha": "4a7ab786aaec114e397afb237a77e1eceeb887d9",
+      "match": true
+    },
+    {
+      "path": "MacRecord/Stores/LLMConfigStore.swift",
+      "expected_git_blob_sha": "35c4652231d1f8a86fbd076f9f4b7c1990f4d870",
+      "actual_git_blob_sha": "35c4652231d1f8a86fbd076f9f4b7c1990f4d870",
+      "match": true
+    },
+    {
+      "path": "docs/feature-audit.md",
+      "expected_git_blob_sha": "1016c99edd7dfbac42b3cf27552ce15ffe77ec80",
+      "actual_git_blob_sha": "1016c99edd7dfbac42b3cf27552ce15ffe77ec80",
+      "match": true
+    },
+    {
+      "path": "MacRecord/Services/AudioRecorder.swift",
+      "expected_git_blob_sha": "82058051915e49337bbcbb67b7210a76b0fe4ca8",
+      "actual_git_blob_sha": "82058051915e49337bbcbb67b7210a76b0fe4ca8",
+      "match": true
+    },
+    {
+      "path": "MacRecord/Services/SystemAudioRecorder.swift",
+      "expected_git_blob_sha": "a2899dba570e2d4afd6e9985d48a83928ea12a3c",
+      "actual_git_blob_sha": "a2899dba570e2d4afd6e9985d48a83928ea12a3c",
+      "match": true
+    },
+    {
+      "path": "MacRecord/Services/AudioEnhancer.swift",
+      "expected_git_blob_sha": "d5cd487149f3e25879f106a7078c3aeeffbc91cf",
+      "actual_git_blob_sha": "d5cd487149f3e25879f106a7078c3aeeffbc91cf",
+      "match": true
+    },
+    {
+      "path": "MacRecord/Services/SummaryGenerator.swift",
+      "expected_git_blob_sha": "d8fe34afa32be8f476c5ae739b43ae28f4b081da",
+      "actual_git_blob_sha": "d8fe34afa32be8f476c5ae739b43ae28f4b081da",
+      "match": true
+    },
+    {
+      "path": "MacRecord/Services/VoiceInputService.swift",
+      "expected_git_blob_sha": "9e418cbaa967414cbf20a12afd291dd51db9ec8b",
+      "actual_git_blob_sha": "9e418cbaa967414cbf20a12afd291dd51db9ec8b",
+      "match": true
+    },
+    {
+      "path": "MacRecord/Services/VoiceInputCorrectionService.swift",
+      "expected_git_blob_sha": "192a65689f1ac24c7554078e42d04e25c0c2f782",
+      "actual_git_blob_sha": "192a65689f1ac24c7554078e42d04e25c0c2f782",
+      "match": true
+    },
+    {
+      "path": "MacRecord/Services/RecordingPersistenceCoordinator.swift",
+      "expected_git_blob_sha": "868a8c8f61ffaea156e3915a9df5c45ee0301104",
+      "actual_git_blob_sha": "868a8c8f61ffaea156e3915a9df5c45ee0301104",
+      "match": true
+    },
+    {
+      "path": "MacRecord/Services/SleepWakeManager.swift",
+      "expected_git_blob_sha": "f84d09514b46eddc66c5299593f57fdd8fefa185",
+      "actual_git_blob_sha": "f84d09514b46eddc66c5299593f57fdd8fefa185",
+      "match": true
+    },
+    {
+      "path": "MacRecord/Services/SherpaOnnxDiarizationWrapper.swift",
+      "expected_git_blob_sha": "dabcc0ac4d8be2a59dcf656341525972cf8664de",
+      "actual_git_blob_sha": "dabcc0ac4d8be2a59dcf656341525972cf8664de",
+      "match": true
+    },
+    {
+      "path": "MacRecord/Services/ModelDownloadManager.swift",
+      "expected_git_blob_sha": "1a9ad8d536cca4d1e37daadf619edf4db2dee6f1",
+      "actual_git_blob_sha": "1a9ad8d536cca4d1e37daadf619edf4db2dee6f1",
+      "match": true
+    },
+    {
+      "path": "MacRecord/App/AppState+Recording.swift",
+      "expected_git_blob_sha": "7ae12e2b1392645dfb8e74a7a79aca4dbaac06d2",
+      "actual_git_blob_sha": "7ae12e2b1392645dfb8e74a7a79aca4dbaac06d2",
+      "match": true
+    },
+    {
+      "path": "MacRecord/Models/Recording.swift",
+      "expected_git_blob_sha": "087538e00df68234fdabbb0f12f51896a63df31c",
+      "actual_git_blob_sha": "087538e00df68234fdabbb0f12f51896a63df31c",
+      "match": true
+    },
+    {
+      "path": "MacRecord/Services/ExportManager.swift",
+      "expected_git_blob_sha": "9f9a484bcd6e59bc03b25a22bb39f0da750b630d",
+      "actual_git_blob_sha": "9f9a484bcd6e59bc03b25a22bb39f0da750b630d",
+      "match": true
+    },
+    {
+      "path": "MacRecord/Stores/ASRConfigStore.swift",
+      "expected_git_blob_sha": "a45d4048302d1fab1d97dc41df197bcae256b3a9",
+      "actual_git_blob_sha": "a45d4048302d1fab1d97dc41df197bcae256b3a9",
+      "match": true
+    },
+    {
+      "path": "project.yml",
+      "expected_git_blob_sha": "540d9602950b523a3cdb6f99e496fa00f0ec2a34",
+      "actual_git_blob_sha": "540d9602950b523a3cdb6f99e496fa00f0ec2a34",
+      "match": true
+    },
+    {
+      "path": "MacRecord/App/AppState.swift",
+      "expected_git_blob_sha": "375b5a7a19152822dc0e5ab0c2a43ca4c3a0b499",
+      "actual_git_blob_sha": "375b5a7a19152822dc0e5ab0c2a43ca4c3a0b499",
+      "match": true
+    },
+    {
+      "path": "MacRecord/Services/SherpaOnnxVADWrapper.swift",
+      "expected_git_blob_sha": "6a2e6bc62bca7310101f89bd4ae4ce475c7da82b",
+      "actual_git_blob_sha": "6a2e6bc62bca7310101f89bd4ae4ce475c7da82b",
+      "match": true
+    },
+    {
+      "path": "MacRecord/Services/RealtimeAudioPump.swift",
+      "expected_git_blob_sha": "b2710cf73c46ae990bec6999e8c4aebb70573016",
+      "actual_git_blob_sha": "b2710cf73c46ae990bec6999e8c4aebb70573016",
+      "match": true
+    },
+    {
+      "path": "MacRecord/Services/TextInjector.swift",
+      "expected_git_blob_sha": "705f8ccc0e7f8347b7b0892041feaaa3cf6ae8ca",
+      "actual_git_blob_sha": "705f8ccc0e7f8347b7b0892041feaaa3cf6ae8ca",
+      "match": true
+    },
+    {
+      "path": "MacRecord/Stores/VoiceInputConfigStore.swift",
+      "expected_git_blob_sha": "49136707575242ffa2c3a3da156bb14fcc7ebc8f",
+      "actual_git_blob_sha": "49136707575242ffa2c3a3da156bb14fcc7ebc8f",
+      "match": true
+    },
+    {
+      "path": "MacRecord/Utilities/KeychainHelper.swift",
+      "expected_git_blob_sha": "97df8c1892a379e3e486eeaa6afa568026e52162",
+      "actual_git_blob_sha": "97df8c1892a379e3e486eeaa6afa568026e52162",
+      "match": true
+    }
+  ],
+  "evidence": [
+    {
+      "path": "MacRecord/Services/ModelRegistry.swift",
+      "line_start": 5,
+      "line_end": 18,
+      "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+      "evidence_level": "观察",
+      "claim": "注册族senseVoice/qwen3ASR/appleSpeech；具体IDs为SenseVoice和Qwen",
+      "excerpt": "/// ASR 模型族类型\nenum ASRModelFamily: String, Codable {\n    case senseVoice\n    case qwen3ASR\n    case appleSpeech\n}\n\n/// ASR 模型唯一标识\nenum ASRModelID: String, Codable, CaseIterable, Identifiable {\n    case senseVoiceInt8 = \"sensevoice-int8\"\n    case senseVoiceFull = \"sensevoice-full\"\n    case qwen3ASR06BInt8 = \"qwen3-asr-0.6b-int8\"\n    case qwen3ASR17BInt8 = \"qwen3-asr-1.7b-int8\"\n"
+    },
+    {
+      "path": "MacRecord/Services/ModelRegistry.swift",
+      "line_start": 85,
+      "line_end": 94,
+      "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+      "evidence_level": "观察",
+      "claim": "Qwen1.7B固定revision、各文件尺寸与SHA",
+      "excerpt": "    private static let qwen3ASR17BRevision = \"69eb686fd94a4a865bb5340a3d6ac0d7f1fec0d5\"\n    private static let qwen3ASR17BBaseURL = \"https://huggingface.co/thieunv/sherpa-onnx-qwen3-asr-1.7B-int8/resolve/\\(qwen3ASR17BRevision)\"\n    private static let qwen3ASR17BFiles: [RemoteModelFile] = [\n        RemoteModelFile(relativePath: \"conv_frontend.onnx\", downloadURL: \"\\(qwen3ASR17BBaseURL)/conv_frontend.onnx\", expectedSize: 48_080_441, sha256: \"3cb27a9fe94d95c938e476f2012b21aba2ec0bfceef33b0e58acd208946bafdd\"),\n        RemoteModelFile(relativePath: \"encoder.int8.onnx\", downloadURL: \"\\(qwen3ASR17BBaseURL)/encoder.int8.onnx\", expectedSize: 314_222_162, sha256: \"a5deedae034ece715de8ed204378d8c77f889af3a60c2566581135e84cced7cd\"),\n        RemoteModelFile(relativePath: \"decoder.int8.onnx\", downloadURL: \"\\(qwen3ASR17BBaseURL)/decoder.int8.onnx\", expectedSize: 2_037_458_645, sha256: \"c43c853fa6e97d08365cb8a5502b360b595cd43c00dc60e4d8ca7cc18cad460b\"),\n        RemoteModelFile(relativePath: \"tokenizer/merges.txt\", downloadURL: \"\\(qwen3ASR17BBaseURL)/tokenizer/merges.txt\", expectedSize: 1_671_853, sha256: \"8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5\"),\n        RemoteModelFile(relativePath: \"tokenizer/tokenizer_config.json\", downloadURL: \"\\(qwen3ASR17BBaseURL)/tokenizer/tokenizer_config.json\", expectedSize: 12_487, sha256: \"4942d005604266809309cabc9f4e9cb89ce855d59b14681fdc0e1cc62ea26c4c\"),\n        RemoteModelFile(relativePath: \"tokenizer/vocab.json\", downloadURL: \"\\(qwen3ASR17BBaseURL)/tokenizer/vocab.json\", expectedSize: 2_776_833, sha256: \"ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910\"),\n    ]"
+    },
+    {
+      "path": "MacRecord/Services/ModelRegistry.swift",
+      "line_start": 130,
+      "line_end": 162,
+      "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+      "evidence_level": "观察",
+      "claim": "Qwen0.6B/1.7B下载元数据；未证明可用",
+      "excerpt": "        ASRModelInfo(\n            id: .qwen3ASR06BInt8,\n            displayName: \"Qwen3-ASR 0.6B INT8\",\n            family: .qwen3ASR,\n            provider: \"Alibaba Qwen\",\n            description: \"Qwen3 语音识别模型，支持 30+ 语言和 23 种中国方言\",\n            languages: \"30+ 语言, 23 种中文方言\",\n            modelSize: \"987.7 MB\",\n            downloadSizeBytes: 987_700_000,\n            iconName: \"globe\",\n            tags: [(\"Qwen\", .orange), (\"原生\", .green), (\"INT8\", .blue)],\n            capabilities: .native,\n            isBuiltin: false,\n            downloadURL: \"https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-qwen3-asr-0.6B-int8-2025-03-25.tar.bz2\",\n            archiveName: \"sherpa-onnx-qwen3-asr-0.6B-int8-2025-03-25\"\n        ),\n        ASRModelInfo(\n            id: .qwen3ASR17BInt8,\n            displayName: \"Qwen3-ASR 1.7B INT8\",\n            family: .qwen3ASR,\n            provider: \"Alibaba Qwen\",\n            description: \"更高精度的 Qwen3 语音识别模型，适合中文、方言和复杂会议录音\",\n            languages: \"30+ 语言, 22 种中文方言/口音\",\n            modelSize: \"2.24 GB\",\n            downloadSizeBytes: 2_404_222_421,\n            iconName: \"waveform.badge.magnifyingglass\",\n            tags: [(\"Qwen\", .orange), (\"高精度\", .purple), (\"INT8\", .blue)],\n            capabilities: .native,\n            isBuiltin: false,\n            downloadURL: nil,\n            archiveName: nil,\n            downloadFiles: qwen3ASR17BFiles\n        ),"
+    },
+    {
+      "path": "MacRecord/Services/ModelRegistry.swift",
+      "line_start": 192,
+      "line_end": 209,
+      "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+      "evidence_level": "观察",
+      "claim": "模型存在检查不等于hash或decoder可加载",
+      "excerpt": "    static func validateModelFiles(for id: ASRModelID, in modelDir: URL) -> Bool {\n        switch model(for: id).family {\n        case .senseVoice:\n            return FileManager.default.fileExists(\n                atPath: modelDir.appendingPathComponent(\"model.onnx\").path\n            )\n        case .qwen3ASR:\n            let requiredPaths = [\n                modelDir.appendingPathComponent(\"conv_frontend.onnx\"),\n                modelDir.appendingPathComponent(\"encoder.int8.onnx\"),\n                modelDir.appendingPathComponent(\"decoder.int8.onnx\"),\n                modelDir.appendingPathComponent(\"tokenizer\", isDirectory: true),\n            ]\n            return requiredPaths.allSatisfy { FileManager.default.fileExists(atPath: $0.path) }\n        case .appleSpeech:\n            return true\n        }\n    }"
+    },
+    {
+      "path": "MacRecord/Services/ModelRegistry.swift",
+      "line_start": 276,
+      "line_end": 290,
+      "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+      "evidence_level": "观察",
+      "claim": "Qwen模型路径组成",
+      "excerpt": "    private static func qwen3ASRPaths(for id: ASRModelID) -> ModelPaths? {\n        let modelDir = modelDirectory(for: id)\n        let convFrontend = modelDir.appendingPathComponent(\"conv_frontend.onnx\").path\n        let encoder = modelDir.appendingPathComponent(\"encoder.int8.onnx\").path\n        let decoder = modelDir.appendingPathComponent(\"decoder.int8.onnx\").path\n        let tokenizer = modelDir.appendingPathComponent(\"tokenizer\").path\n\n        guard validateModelFiles(for: id, in: modelDir) else { return nil }\n\n        return .qwen3ASR(\n            convFrontendPath: convFrontend,\n            encoderPath: encoder,\n            decoderPath: decoder,\n            tokenizerPath: tokenizer\n        )"
+    },
+    {
+      "path": "MacRecord/Services/SherpaOnnxWrapper.swift",
+      "line_start": 104,
+      "line_end": 128,
+      "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+      "evidence_level": "观察",
+      "claim": "Qwen offline配置4096/1024/temp0/topP1/seed0",
+      "excerpt": "    private static func createQwen3ASR(\n        cConfig: inout SherpaOnnxOfflineRecognizerConfig,\n        qwenConfig: SherpaOnnxModelConfig.Qwen3ASRConfig,\n        config: SherpaOnnxRecognizerConfig\n    ) -> OpaquePointer? {\n        qwenConfig.convFrontendPath.withCString { convFrontend in\n            qwenConfig.encoderPath.withCString { encoder in\n                qwenConfig.decoderPath.withCString { decoder in\n                    qwenConfig.tokenizerPath.withCString { tokenizer in\n                        config.decodingMethod.withCString { decodingMethod in\n                            config.provider.withCString { provider in\n                                cConfig.model_config.qwen3_asr.conv_frontend = convFrontend\n                                cConfig.model_config.qwen3_asr.encoder = encoder\n                                cConfig.model_config.qwen3_asr.decoder = decoder\n                                cConfig.model_config.qwen3_asr.tokenizer = tokenizer\n                                cConfig.model_config.qwen3_asr.max_total_len = 4096\n                                cConfig.model_config.qwen3_asr.max_new_tokens = 1024\n                                cConfig.model_config.qwen3_asr.temperature = 0.0\n                                cConfig.model_config.qwen3_asr.top_p = 1.0\n                                cConfig.model_config.qwen3_asr.seed = 0\n                                cConfig.model_config.num_threads = config.numThreads\n                                cConfig.model_config.debug = config.debug\n                                cConfig.model_config.provider = provider\n                                cConfig.decoding_method = decodingMethod\n                                return SherpaOnnxCreateOfflineRecognizer(&cConfig)"
+    },
+    {
+      "path": "MacRecord/Services/SherpaOnnxWrapper.swift",
+      "line_start": 140,
+      "line_end": 160,
+      "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+      "evidence_level": "观察",
+      "claim": "CreateOfflineStream+DecodeOfflineStream",
+      "excerpt": "    func recognize(samples: [Float], sampleRate: Int32 = 16000) -> SherpaOnnxRecognitionResult {\n        guard let stream = SherpaOnnxCreateOfflineStream(recognizer) else {\n            return SherpaOnnxRecognitionResult(text: \"\", lang: nil, emotion: nil, event: nil)\n        }\n        defer { SherpaOnnxDestroyOfflineStream(stream) }\n\n        samples.withUnsafeBufferPointer { buffer in\n            SherpaOnnxAcceptWaveformOffline(\n                stream,\n                sampleRate,\n                buffer.baseAddress,\n                Int32(samples.count)\n            )\n        }\n\n        SherpaOnnxDecodeOfflineStream(recognizer, stream)\n\n        guard let jsonCStr = SherpaOnnxGetOfflineStreamResultAsJson(stream) else {\n            return SherpaOnnxRecognitionResult(text: \"\", lang: nil, emotion: nil, event: nil)\n        }\n        defer { SherpaOnnxDestroyOfflineStreamResultJson(jsonCStr) }"
+    },
+    {
+      "path": "MacRecord/Services/NativeASRService.swift",
+      "line_start": 52,
+      "line_end": 86,
+      "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+      "evidence_level": "观察",
+      "claim": "VAD成段后增强并离线识别",
+      "excerpt": "        let vad: SherpaOnnxVADWrapper\n        let recognizer: SherpaOnnxOfflineRecognizerWrapper\n        var confirmedSegments: [String] = []\n        var pendingText: String = \"\"\n        let startTime: Date = Date()\n        var sampleBuffer: [Float] = []\n        var totalSamplesProcessed: Int = 0\n        var pendingSegmentQueue: [[Float]] = []\n        var isProcessingSegment = false\n\n        init(vad: SherpaOnnxVADWrapper, recognizer: SherpaOnnxOfflineRecognizerWrapper) {\n            self.vad = vad\n            self.recognizer = recognizer\n        }\n\n        func processNextSegment() {\n            guard !isProcessingSegment, !pendingSegmentQueue.isEmpty else { return }\n            isProcessingSegment = true\n            let segSamples = pendingSegmentQueue.removeFirst()\n            let enhanced = AudioEnhancer.enhance(samples: segSamples, sampleRate: 16000)\n            let text = recognizer.recognize(\n                samples: enhanced, sampleRate: 16000\n            ).text.trimmingCharacters(in: .whitespacesAndNewlines)\n\n            if !text.isEmpty {\n                confirmedSegments.append(text)\n            }\n            pendingText = \"\"\n            isProcessingSegment = false\n            processNextSegment()\n        }\n\n        var fullText: String {\n            let confirmed = confirmedSegments.joined(separator: \"\")\n            return pendingText.isEmpty ? confirmed : confirmed + pendingText"
+    },
+    {
+      "path": "MacRecord/Services/NativeASRService.swift",
+      "line_start": 140,
+      "line_end": 156,
+      "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+      "evidence_level": "观察",
+      "claim": "Qwen CPU/4线程/16kHz/80维/greedy_search",
+      "excerpt": "        case .qwen3ASR(let convFrontend, let encoder, let decoder, let tokenizer):\n            recognizerConfig = SherpaOnnxRecognizerConfig(\n                modelConfig: .qwen3ASR(.init(\n                    convFrontendPath: convFrontend,\n                    encoderPath: encoder,\n                    decoderPath: decoder,\n                    tokenizerPath: tokenizer\n                )),\n                numThreads: 4,\n                sampleRate: 16000,\n                featureDim: 80,\n                decodingMethod: \"greedy_search\",\n                provider: \"cpu\"\n            )\n        }\n\n        guard let rec = SherpaOnnxOfflineRecognizerWrapper(config: recognizerConfig) else {"
+    },
+    {
+      "path": "MacRecord/Services/NativeASRService.swift",
+      "line_start": 185,
+      "line_end": 218,
+      "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+      "evidence_level": "观察",
+      "claim": "独立diarization模型发现",
+      "excerpt": "    private static func findDiarizationModels() -> (segmentation: String, embedding: String)? {\n        let fm = FileManager.default\n\n        // Bundle 内查找\n        if let bundlePath = Bundle.main.resourceURL {\n            let seg = bundlePath\n                .appendingPathComponent(\"speaker-diarization/sherpa-onnx-pyannote-segmentation-3-0/model.onnx\").path\n            let emb = bundlePath\n                .appendingPathComponent(\"speaker-diarization/3dspeaker_speech_campplus_sv_zh-cn_16k-common.onnx\").path\n            if fm.fileExists(atPath: seg) && fm.fileExists(atPath: emb) {\n                return (seg, emb)\n            }\n            // XcodeGen 当前将目录资源平铺到 Bundle 根目录。\n            let flatSeg = bundlePath.appendingPathComponent(\"model.onnx\").path\n            let flatEmb = bundlePath.appendingPathComponent(\"3dspeaker_speech_campplus_sv_zh-cn_16k-common.onnx\").path\n            if fm.fileExists(atPath: flatSeg) && fm.fileExists(atPath: flatEmb) {\n                return (flatSeg, flatEmb)\n            }\n        }\n\n        // 开发目录\n        let base = NSHomeDirectory() + \"/Desktop/Mac-Record/MacRecord/Resources/speaker-diarization\"\n        let seg = base + \"/sherpa-onnx-pyannote-segmentation-3-0/model.onnx\"\n        let emb = base + \"/3dspeaker_speech_campplus_sv_zh-cn_16k-common.onnx\"\n        if fm.fileExists(atPath: seg) && fm.fileExists(atPath: emb) {\n            return (seg, emb)\n        }\n\n        return nil\n    }\n\n    /// 检查 diarization 模型是否可用\n    func isDiarizationAvailable() -> Bool {\n        Self.findDiarizationModels() != nil"
+    },
+    {
+      "path": "MacRecord/Services/NativeASRService.swift",
+      "line_start": 224,
+      "line_end": 310,
+      "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+      "evidence_level": "观察",
+      "claim": "离线说话人分段后逐段识别",
+      "excerpt": "    func diarize(\n        audioPath: String,\n        numSpeakers: Int32 = 0,\n        onProgress: ((Float) -> Void)? = nil\n    ) throws -> DiarizedTranscribeResult {\n        guard let recognizer = recognizer else {\n            throw NativeASRError.notReady\n        }\n\n        guard let models = Self.findDiarizationModels() else {\n            throw NativeASRError.modelNotFound(\"未找到说话人分离模型（segmentation + embedding）\")\n        }\n\n        let totalStart = CFAbsoluteTimeGetCurrent()\n\n        // 1. 读取并重采样音频\n        let fileURL = URL(fileURLWithPath: audioPath)\n        guard let raw = AudioEnhancer.readAndResample(url: fileURL) else {\n            throw NativeASRError.initFailed(\"无法读取音频文件: \\(audioPath)\")\n        }\n        let audioDuration = Double(raw.samples.count) / Double(raw.sampleRate)\n        print(\"[NativeASR] diarize: 音频 \\(String(format: \"%.1f\", audioDuration))s, \\(raw.samples.count) samples\")\n\n        // 2. 创建 Diarization 引擎\n        guard let diarizer = SherpaOnnxDiarizationWrapper(\n            segmentationModelPath: models.segmentation,\n            embeddingModelPath: models.embedding,\n            numSpeakers: numSpeakers,\n            threshold: numSpeakers > 0 ? 0.5 : 0.92,\n            numThreads: 4\n        ) else {\n            throw NativeASRError.initFailed(\"Speaker Diarization 引擎创建失败\")\n        }\n\n        // 3. 执行说话人分离\n        let diarStart = CFAbsoluteTimeGetCurrent()\n        let diarResult = diarizer.process(samples: raw.samples) { processed, total in\n            let progress = Float(processed) / Float(max(total, 1))\n            onProgress?(progress * 0.6)  // diarization 占进度 60%\n            return 0\n        }\n        let diarTime = CFAbsoluteTimeGetCurrent() - diarStart\n        print(\"[NativeASR] diarize: 分离完成 \\(diarResult.numSpeakers)人 \\(diarResult.segments.count)段, 耗时\\(String(format: \"%.2f\", diarTime))s\")\n\n        guard !diarResult.segments.isEmpty else {\n            return DiarizedTranscribeResult(text: \"\", numSpeakers: 0, segments: [])\n        }\n\n        // 4. 对每个段做 ASR\n        var resultSegments: [DiarizedTranscribeResult.SpeakerSegment] = []\n        let sampleRate = raw.sampleRate\n\n        for (idx, seg) in diarResult.segments.enumerated() {\n            let startSample = max(0, Int(seg.start * Float(sampleRate)))\n            let endSample = min(raw.samples.count, Int(seg.end * Float(sampleRate)))\n            guard endSample > startSample else { continue }\n\n            let segSamples = Array(raw.samples[startSample..<endSample])\n            let enhanced = AudioEnhancer.enhance(samples: segSamples, sampleRate: Float(sampleRate))\n            let asrResult = recognizer.recognize(samples: enhanced, sampleRate: Int32(sampleRate))\n            let text = asrResult.text.trimmingCharacters(in: .whitespacesAndNewlines)\n\n            if !text.isEmpty {\n                resultSegments.append(.init(\n                    speaker: seg.speaker,\n                    start: seg.start,\n                    end: seg.end,\n                    text: text\n                ))\n            }\n\n            // 更新进度 (ASR 占 40%)\n            let progress = 0.6 + 0.4 * Float(idx + 1) / Float(diarResult.segments.count)\n            onProgress?(progress)\n        }\n\n        // 5. 合并带说话人标签的文本\n        let fullText = resultSegments.map { seg in\n            \"说话人\\(seg.speaker + 1): \\(seg.text)\"\n        }.joined(separator: \"\\n\")\n\n        let totalTime = CFAbsoluteTimeGetCurrent() - totalStart\n        print(\"[NativeASR] diarize 完成: \\(diarResult.numSpeakers)人, \\(resultSegments.count)段有效文本, 总耗时\\(String(format: \"%.2f\", totalTime))s\")\n\n        onProgress?(1.0)\n\n        return DiarizedTranscribeResult("
+    },
+    {
+      "path": "MacRecord/Services/NativeASRService.swift",
+      "line_start": 338,
+      "line_end": 361,
+      "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+      "evidence_level": "观察",
+      "claim": "文件VAD，最大识别块10s",
+      "excerpt": "        let sampleRate: Int32 = 16_000\n        var audioDuration: Double = 0\n        var totalSamples = 0\n        guard let vad = SherpaOnnxVADWrapper(\n            modelPath: vadPath,\n            maxSpeechDuration: 10.0,\n            bufferSizeInSeconds: 120.0\n        ) else {\n            throw NativeASRError.transcriptionFailed(\"无法创建语音活动检测器\")\n        }\n\n        func timeText(_ seconds: Double) -> String {\n            let value = max(0, Int(seconds.rounded(.down)))\n            return String(format: \"%02d:%02d:%02d\", value / 3600, (value % 3600) / 60, value % 60)\n        }\n\n        var confirmedTexts: [String] = []\n        var firstLang: String?\n        var firstEmotion: String?\n        var completedSegments = 0\n        var recognizedSamples = 0\n        var totalEnhTime: Double = 0\n        var totalRecTime: Double = 0\n        let maximumSegmentSamples = Int(sampleRate) * 10"
+    },
+    {
+      "path": "MacRecord/Services/NativeASRService.swift",
+      "line_start": 533,
+      "line_end": 543,
+      "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+      "evidence_level": "观察",
+      "claim": "语音输入VAD最小静音0.2s",
+      "excerpt": "    func realtimeStartForVoiceInput(sessionId: String) throws {\n        guard let recognizer = recognizer, let vadPath = vadModelPath else {\n            throw NativeASRError.notReady\n        }\n        guard let vad = SherpaOnnxVADWrapper(\n            modelPath: vadPath, minSilenceDuration: 0.2\n        ) else {\n            throw NativeASRError.initFailed(\"语音输入 VAD 创建失败\")\n        }\n        let session = RealtimeSession(vad: vad, recognizer: recognizer)\n        realtimeSessions[sessionId] = session"
+    },
+    {
+      "path": "MacRecord/Services/NativeASRService.swift",
+      "line_start": 547,
+      "line_end": 579,
+      "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+      "evidence_level": "观察",
+      "claim": "feed收段并按段处理",
+      "excerpt": "    func realtimeFeed(sessionId: String, samples: [Float]) -> String {\n        guard let session = realtimeSessions[sessionId] else { return \"\" }\n\n        session.sampleBuffer.append(contentsOf: samples)\n        session.totalSamplesProcessed += samples.count\n\n        let windowSize = Int(session.vad.windowSize)\n\n        while session.sampleBuffer.count >= windowSize {\n            let window = Array(session.sampleBuffer.prefix(windowSize))\n            session.sampleBuffer.removeFirst(windowSize)\n\n            window.withUnsafeBufferPointer { ptr in\n                session.vad.acceptWaveform(\n                    samples: ptr.baseAddress!, count: Int32(windowSize)\n                )\n            }\n\n            while session.vad.hasSegment {\n                if let (segSamples, _) = session.vad.popFrontSegment() {\n                    session.pendingSegmentQueue.append(segSamples)\n                }\n            }\n        }\n\n        session.processNextSegment()\n        return session.fullText\n    }\n\n    func realtimeCancel(sessionId: String) {\n        realtimeSessions.removeValue(forKey: sessionId)\n    }\n"
+    },
+    {
+      "path": "MacRecord/Services/NativeASRService.swift",
+      "line_start": 605,
+      "line_end": 663,
+      "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+      "evidence_level": "观察",
+      "claim": "stop补齐尾段及flush",
+      "excerpt": "    func realtimeStop(sessionId: String) throws -> TranscribeResult {\n        guard let session = realtimeSessions[sessionId] else {\n            throw NativeASRError.sessionNotFound(sessionId)\n        }\n        defer { realtimeSessions.removeValue(forKey: sessionId) }\n\n        let stopStart = CFAbsoluteTimeGetCurrent()\n\n        let windowSize = Int(session.vad.windowSize)\n        if !session.sampleBuffer.isEmpty {\n            let padding = windowSize - session.sampleBuffer.count % windowSize\n            if padding < windowSize {\n                session.sampleBuffer.append(\n                    contentsOf: [Float](repeating: 0, count: padding)\n                )\n            }\n            while session.sampleBuffer.count >= windowSize {\n                let window = Array(session.sampleBuffer.prefix(windowSize))\n                session.sampleBuffer.removeFirst(windowSize)\n                window.withUnsafeBufferPointer { ptr in\n                    session.vad.acceptWaveform(\n                        samples: ptr.baseAddress!, count: Int32(windowSize)\n                    )\n                }\n            }\n        }\n\n        session.vad.flush()\n\n        var tailSegmentCount = 0\n        while session.vad.hasSegment {\n            if let (segSamples, _) = session.vad.popFrontSegment() {\n                let enhanced = AudioEnhancer.enhance(\n                    samples: segSamples, sampleRate: 16000\n                )\n                let text = session.recognizer.recognize(\n                    samples: enhanced, sampleRate: 16000\n                ).text.trimmingCharacters(in: .whitespacesAndNewlines)\n                if !text.isEmpty {\n                    session.confirmedSegments.append(text)\n                }\n                tailSegmentCount += 1\n            }\n        }\n\n        session.isProcessingSegment = false\n        session.processNextSegment()\n\n        let finalText = session.confirmedSegments.joined(separator: \"\")\n        let duration = Date().timeIntervalSince(session.startTime)\n        let stopTime = CFAbsoluteTimeGetCurrent() - stopStart\n\n        print(\"[NativeASR] 流式会话结束: \\(sessionId), 段数: \\(session.confirmedSegments.count), 尾部段: \\(tailSegmentCount), stop耗时: \\(String(format: \"%.2f\", stopTime))s, 文本: \\(finalText.prefix(50))...\")\n        return TranscribeResult(\n            plainText: finalText,\n            detectedLanguage: nil,\n            emotion: nil,\n            duration: duration\n        )"
+    },
+    {
+      "path": "MacRecord/Services/NativeASRBackend.swift",
+      "line_start": 9,
+      "line_end": 36,
+      "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+      "evidence_level": "观察",
+      "claim": "统一结果segments为空；modelVersion为空；hotwords未传下去；cancel为空",
+      "excerpt": "    func transcribeFile(\n        at url: URL,\n        hotwords: [String] = [],\n        onProgress: (@Sendable (TranscriptionProgress) -> Void)? = nil\n    ) async throws -> UnifiedTranscriptionResult {\n        let result = try await service.transcribeFile(\n            audioPath: url.path,\n            language: \"auto\",\n            onProgress: onProgress\n        )\n        return UnifiedTranscriptionResult(\n            text: result.plainText,\n            language: result.detectedLanguage,\n            segments: [],\n            engineId: modelId.rawValue,\n            modelVersion: nil,\n            duration: result.duration,\n            elapsed: nil,\n            diagnostics: result.emotion\n        )\n    }\n\n    func cancel() async {}\n}"
+    },
+    {
+      "path": "MacRecord/Services/ASRBackendTypes.swift",
+      "line_start": 10,
+      "line_end": 16,
+      "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+      "evidence_level": "观察",
+      "claim": "native capability无timestamps/speaker/hotwords",
+      "excerpt": "    static let native = ASRCapabilities(\n        supportsRealtime: true,\n        supportsFileTranscription: true,\n        supportsSpeakerLabels: false,\n        supportsTimestamps: false,\n        supportsHotwords: false\n    )"
+    },
+    {
+      "path": "MacRecord/Services/AudioRecorder.swift",
+      "line_start": 49,
+      "line_end": 136,
+      "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+      "evidence_level": "观察",
+      "claim": "麦克风AVAudioEngine转换16k mono；文件写入在boost前",
+      "excerpt": "    func startRecording(deviceUID: String? = nil) throws {\n        OSAtomicCompareAndSwap32(1, 0, _isPausedAtomic)\n        let engine = AVAudioEngine()\n        let input = engine.inputNode\n        let format = input.outputFormat(forBus: 0)\n\n        guard let targetFormat = AVAudioFormat(\n            commonFormat: .pcmFormatFloat32,\n            sampleRate: 16000,\n            channels: 1,\n            interleaved: false\n        ) else {\n            throw RecorderError.formatError\n        }\n\n        guard let converter = AVAudioConverter(from: format, to: targetFormat) else {\n            throw RecorderError.converterError\n        }\n\n        let url = AudioFileManager.shared.createTempRecordingURL()\n        self.recordingURL = url\n\n        let outputFile = try AVAudioFile(\n            forWriting: url,\n            settings: targetFormat.settings,\n            commonFormat: .pcmFormatFloat32,\n            interleaved: false\n        )\n        self.audioFile = outputFile\n\n        // ★ 关键改动：bufferSize 改小（0.1s），让 Apple Speech 更快出文字\n        let bufferSize: AVAudioFrameCount = AVAudioFrameCount(format.sampleRate * 0.1)\n        // ★ 捕获需要在音频线程使用的引用（避免跨 actor 访问）\n        let pausedFlag = _isPausedAtomic\n        input.installTap(onBus: 0, bufferSize: bufferSize, format: format) { [weak self] buffer, time in\n            // 线程安全读取暂停状态\n            guard OSAtomicAdd32(0, pausedFlag) == 0 else { return }\n\n            // 原始 buffer 回调（Apple Speech 需要原始采样率 + 小 buffer 才能快速出文字）\n            self?.onRawAudioBuffer?(buffer)\n\n            // 转换为 16kHz mono\n            let frameCount = AVAudioFrameCount(\n                Double(buffer.frameLength) * targetFormat.sampleRate / format.sampleRate\n            )\n            guard frameCount > 0 else { return }\n            guard let convertedBuffer = AVAudioPCMBuffer(\n                pcmFormat: targetFormat,\n                frameCapacity: frameCount\n            ) else { return }\n\n            var error: NSError?\n            let status = converter.convert(to: convertedBuffer, error: &error) { inNumPackets, outStatus in\n                outStatus.pointee = .haveData\n                return buffer\n            }\n\n            guard status != .error, error == nil else { return }\n\n            // 写入文件（原始 16kHz PCM）\n            try? outputFile.write(from: convertedBuffer)\n\n            // ★ 对发给 ASR 的 buffer 做动态范围压缩（增强弱麦克风信号）\n            // 注意：只压缩发给 ASR 的副本，文件保留原始音频\n            // 动态压缩对短 buffer 安全，不会产生 artifacts\n            AudioEnhancer.boostBuffer(convertedBuffer)\n\n            // 计算音频电平\n            if let channelData = convertedBuffer.floatChannelData?[0] {\n                let count = Int(convertedBuffer.frameLength)\n                var rms: Float = 0\n                for i in 0..<count {\n                    rms += channelData[i] * channelData[i]\n                }\n                rms = sqrt(rms / Float(max(count, 1)))\n\n                // ★ 用 Task 异步更新避免 \"Publishing changes from within view updates\"\n                Task { @MainActor [weak self] in\n                    guard let self = self else { return }\n                    self.recentLevels.append(rms)\n                    if self.recentLevels.count > 150 {\n                        self.recentLevels.removeFirst(self.recentLevels.count - 150)\n                    }\n                }\n            }\n\n            // 16kHz buffer 回调（SenseVoice ASR）\n            self?.onAudioBuffer?(convertedBuffer)"
+    },
+    {
+      "path": "MacRecord/Services/AudioRecorder.swift",
+      "line_start": 237,
+      "line_end": 301,
+      "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+      "evidence_level": "观察",
+      "claim": "voice input lite不写音频文件",
+      "excerpt": "    /// 用于语音输入场景，音频仅通过 onAudioBuffer 发给 ASR\n    func startRecordingLite() throws {\n        OSAtomicCompareAndSwap32(1, 0, _isPausedAtomic)\n        let engine = AVAudioEngine()\n        let input = engine.inputNode\n        let format = input.outputFormat(forBus: 0)\n\n        guard let targetFormat = AVAudioFormat(\n            commonFormat: .pcmFormatFloat32,\n            sampleRate: 16000,\n            channels: 1,\n            interleaved: false\n        ) else {\n            throw RecorderError.formatError\n        }\n\n        guard let converter = AVAudioConverter(from: format, to: targetFormat) else {\n            throw RecorderError.converterError\n        }\n\n        let bufferSize: AVAudioFrameCount = AVAudioFrameCount(format.sampleRate * 0.1)\n        let pausedFlag = _isPausedAtomic\n        input.installTap(onBus: 0, bufferSize: bufferSize, format: format) { [weak self] buffer, _ in\n            guard OSAtomicAdd32(0, pausedFlag) == 0 else { return }\n\n            // 转换为 16kHz mono\n            let frameCount = AVAudioFrameCount(\n                Double(buffer.frameLength) * targetFormat.sampleRate / format.sampleRate\n            )\n            guard frameCount > 0 else { return }\n            guard let convertedBuffer = AVAudioPCMBuffer(\n                pcmFormat: targetFormat,\n                frameCapacity: frameCount\n            ) else { return }\n\n            var error: NSError?\n            let status = converter.convert(to: convertedBuffer, error: &error) { _, outStatus in\n                outStatus.pointee = .haveData\n                return buffer\n            }\n            guard status != .error, error == nil else { return }\n\n            // 动态压缩增强弱麦克风信号\n            AudioEnhancer.boostBuffer(convertedBuffer)\n\n            // 更新电平\n            if let channelData = convertedBuffer.floatChannelData?[0] {\n                let count = Int(convertedBuffer.frameLength)\n                var rms: Float = 0\n                for i in 0..<count { rms += channelData[i] * channelData[i] }\n                rms = sqrt(rms / Float(max(count, 1)))\n                Task { @MainActor [weak self] in\n                    self?.recentLevels.append(rms)\n                    if (self?.recentLevels.count ?? 0) > 150 { self?.recentLevels.removeFirst() }\n                }\n            }\n\n            // 16kHz buffer 回调（给 ASR）\n            self?.onAudioBuffer?(convertedBuffer)\n        }\n\n        try engine.start()\n\n        self.audioEngine = engine\n        self.inputNode = input"
+    },
+    {
+      "path": "MacRecord/Services/SystemAudioRecorder.swift",
+      "line_start": 95,
+      "line_end": 152,
+      "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+      "evidence_level": "观察",
+      "claim": "ScreenCaptureKit系统音频mono16k排除本进程音频",
+      "excerpt": "        let filter = SCContentFilter(display: display, excludingWindows: [])\n\n        let config = SCStreamConfiguration()\n        config.capturesAudio = true\n        config.excludesCurrentProcessAudio = true\n        // 把视频帧率降到最低（每100秒才捕获一帧），尽量不触发视频通道\n        config.minimumFrameInterval = CMTime(value: 100, timescale: 1)\n        // 最小分辨率\n        config.width = 2\n        config.height = 2\n        config.sampleRate = 16000\n        config.channelCount = 1\n\n        let url = AudioFileManager.shared.createTempRecordingURL()\n        self.recordingURL = url\n\n        guard let targetFormat = AVAudioFormat(\n            commonFormat: .pcmFormatFloat32,\n            sampleRate: 16000,\n            channels: 1,\n            interleaved: false\n        ) else {\n            throw SystemAudioError.formatError\n        }\n\n        let outputFile = try AVAudioFile(\n            forWriting: url,\n            settings: targetFormat.settings,\n            commonFormat: .pcmFormatFloat32,\n            interleaved: false\n        )\n        self.audioFile = outputFile\n\n        let output = SystemAudioStreamOutput { [weak self] buffer in\n            guard let self = self else { return }\n            try? outputFile.write(from: buffer)\n\n            if let channelData = buffer.floatChannelData?[0] {\n                let count = Int(buffer.frameLength)\n                var rms: Float = 0\n                for i in 0..<count { rms += channelData[i] * channelData[i] }\n                rms = sqrt(rms / Float(max(count, 1)))\n                Task { @MainActor [weak self] in\n                    guard let self = self else { return }\n                    self.recentLevels.append(rms)\n                    if self.recentLevels.count > 150 {\n                        self.recentLevels.removeFirst(self.recentLevels.count - 150)\n                    }\n                }\n            }\n\n            self.onAudioBuffer?(buffer)\n        }\n        self.streamOutput = output\n\n        let newStream = SCStream(filter: filter, configuration: config, delegate: nil)\n        try newStream.addStreamOutput(output, type: .audio, sampleHandlerQueue: .global(qos: .userInitiated))\n        try await newStream.startCapture()"
+    },
+    {
+      "path": "MacRecord/Services/SystemAudioRecorder.swift",
+      "line_start": 183,
+      "line_end": 252,
+      "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+      "evidence_level": "观察",
+      "claim": "睡眠stop stream，唤醒重建",
+      "excerpt": "    /// 休眠前暂停：停止 SCStream（休眠后会失效），保留 audioFile 和 recordingURL\n    func pauseForSleep() async {\n        timer?.invalidate()\n        timer = nil\n        pausedElapsedTime = elapsedTime\n        if let stream = stream { try? await stream.stopCapture() }\n        stream = nil\n        streamOutput = nil\n        print(\"[SystemAudio] 因休眠暂停，已停止 SCStream\")\n    }\n\n    /// 唤醒后恢复：重新创建 SCStream 继续录音\n    func resumeFromSleep() async -> Bool {\n        guard recordingURL != nil else { return false }\n        do {\n            let content = try await SCShareableContent.excludingDesktopWindows(false, onScreenWindowsOnly: false)\n            guard let display = content.displays.first else { return false }\n\n            let filter = SCContentFilter(display: display, excludingWindows: [])\n            let config = SCStreamConfiguration()\n            config.capturesAudio = true\n            config.excludesCurrentProcessAudio = true\n            config.minimumFrameInterval = CMTime(value: 100, timescale: 1)\n            config.width = 2\n            config.height = 2\n            config.sampleRate = 16000\n            config.channelCount = 1\n\n            let output = SystemAudioStreamOutput { [weak self] buffer in\n                guard let self = self else { return }\n                try? self.audioFile?.write(from: buffer)\n\n                if let channelData = buffer.floatChannelData?[0] {\n                    let count = Int(buffer.frameLength)\n                    var rms: Float = 0\n                    for i in 0..<count { rms += channelData[i] * channelData[i] }\n                    rms = sqrt(rms / Float(max(count, 1)))\n                    Task { @MainActor [weak self] in\n                        guard let self = self else { return }\n                        self.recentLevels.append(rms)\n                        if self.recentLevels.count > 150 {\n                            self.recentLevels.removeFirst(self.recentLevels.count - 150)\n                        }\n                    }\n                }\n\n                self.onAudioBuffer?(buffer)\n            }\n            self.streamOutput = output\n\n            let newStream = SCStream(filter: filter, configuration: config, delegate: nil)\n            try newStream.addStreamOutput(output, type: .audio, sampleHandlerQueue: .global(qos: .userInitiated))\n            try await newStream.startCapture()\n\n            self.stream = newStream\n            let resumeStart = Date()\n            timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { [weak self] _ in\n                Task { @MainActor [weak self] in\n                    guard let self = self else { return }\n                    self.elapsedTime = self.pausedElapsedTime + Date().timeIntervalSince(resumeStart)\n                }\n            }\n            isRecording = true\n            print(\"[SystemAudio] 从休眠恢复，SCStream 已重建\")\n            return true\n        } catch {\n            errorMessage = \"唤醒后恢复录音失败: \\(error.localizedDescription)\"\n            isRecording = false\n            print(\"[SystemAudio] 唤醒恢复失败: \\(error)\")\n            return false"
+    },
+    {
+      "path": "MacRecord/Services/AudioEnhancer.swift",
+      "line_start": 16,
+      "line_end": 35,
+      "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+      "evidence_level": "观察",
+      "claim": "80Hz/0.5s估噪/512FFT/256overlap/4x增益",
+      "excerpt": "    /// 高通滤波截止频率\n    private static let hpCutoffHz: Float = 80.0\n    /// 谱减法 — 用前 N 秒估计噪声\n    private static let noiseEstSec: Float = 0.5\n    /// 谱减法 — 过减保护（保留原始幅度的 5%）\n    private static let spectralFloor: Float = 0.05\n    /// 谱减法 — 过减系数\n    private static let overSubtract: Float = 1.0\n    /// FFT 窗口长度\n    private static let nperseg: Int = 512\n    /// FFT 重叠长度\n    private static let noverlap: Int = 256\n    /// 动态压缩 — 帧长 ms\n    private static let compressFrameMs: Float = 30.0\n    /// 动态压缩 — RMS 低于此值触发增益\n    private static let compressRmsThresh: Float = 0.02\n    /// 动态压缩 — 最大增益倍数\n    private static let compressMaxGain: Float = 4.0\n    /// 动态压缩 — 目标 RMS\n    private static let compressTargetRms: Float = 0.06"
+    },
+    {
+      "path": "MacRecord/Services/AudioEnhancer.swift",
+      "line_start": 73,
+      "line_end": 85,
+      "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+      "evidence_level": "观察",
+      "claim": "短于1s段用轻增强",
+      "excerpt": "    /// 对 Float 数组执行**完整**三步增强（适用于 VAD 切出的语音段或文件）\n    /// 需要至少 0.5 秒音频才能正确估计噪声\n    static func enhance(samples: [Float], sampleRate: Float = 16000) -> [Float] {\n        guard samples.count > 100 else { return samples }\n        var result = samples\n        // 语音段通常由 VAD 切出，前面可能没有纯噪声段\n        // 如果太短（< 1 秒），只做轻量增强避免误伤\n        let minSamplesForSpectral = Int(sampleRate * 1.0)\n        if result.count >= minSamplesForSpectral {\n            enhanceInPlace(&result, sampleRate: sampleRate)\n        } else {\n            realtimeEnhanceInPlace(&result, sampleRate: sampleRate)\n        }"
+    },
+    {
+      "path": "MacRecord/Services/VoiceInputService.swift",
+      "line_start": 138,
+      "line_end": 199,
+      "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+      "evidence_level": "观察",
+      "claim": "依赖nativeASR实时capability；300ms轮询注入",
+      "excerpt": "        guard let service = appState.nativeASRService,\n              appState.selectedASRModel.capabilities.supportsRealtime else {\n            appState.recordingMode = .idle\n            state = .idle\n            recorder = nil\n            voiceInputSessionId = nil\n            errorMessage = \"当前引擎不支持实时语音输入，请选择 SenseVoice 或 Qwen\"\n            VoiceInputIndicatorWindow.shared.showError(message: \"请选择实时识别引擎\")\n            return\n        }\n        do {\n            try await service.realtimeStartForVoiceInput(sessionId: sessionId)\n        } catch {\n            appState.recordingMode = .idle\n            state = .idle\n            recorder = nil\n            voiceInputSessionId = nil\n            errorMessage = error.localizedDescription\n            VoiceInputIndicatorWindow.shared.showError(message: \"ASR 会话启动失败\")\n            return\n        }\n\n        // buffer 回调只复制采样并投递到有界队列，不创建无上限 Task。\n        let pump = RealtimeAudioPump(service: service, sessionId: sessionId)\n        audioPump = pump\n        rec.onAudioBuffer = { buffer in\n            guard let channelData = buffer.floatChannelData?[0] else { return }\n            let samples = Array(UnsafeBufferPointer(\n                start: channelData,\n                count: Int(buffer.frameLength)\n            ))\n            pump.enqueue(samples)\n        }\n\n        // ★ 实时轮询：ASR 文字变化时立即注入到光标处（替换旧文本）\n        liveTextPollingTask = Task { [weak self, weak appState] in\n            while !Task.isCancelled {\n                guard let self = self,\n                      let appState = appState,\n                      let service = appState.nativeASRService else { break }\n                let snapshot = await service.getRealtimeSnapshot(sessionId: sessionId)\n                let newText = snapshot.plainText\n                if !newText.isEmpty, newText != self.currentInjectedText {\n                    let oldLen = self.currentInjectedText.count\n                    // 更新浮窗\n                    VoiceInputIndicatorWindow.shared.updateLiveText(newText)\n                    // ★ 实时注入到光标处（替换之前的文本）\n                    if oldLen == 0 {\n                        await TextInjector.inject(text: newText)\n                    } else {\n                        await TextInjector.replaceInjected(oldLength: oldLen, newText: newText)\n                    }\n                    self.currentInjectedText = newText\n                }\n                try? await Task.sleep(for: .milliseconds(300))\n            }\n        }\n\n        // 启动轻量录音\n        do {\n            try rec.startRecordingLite()\n            state = .recording"
+    },
+    {
+      "path": "MacRecord/Services/VoiceInputService.swift",
+      "line_start": 228,
+      "line_end": 288,
+      "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+      "evidence_level": "观察",
+      "claim": "stop尾段与可选LLM纠错替换",
+      "excerpt": "\n        // 停止录音并等待有界队列清空，再 finalize ASR。\n        stopRecordingOnly()\n        if let audioPump {\n            await audioPump.finish()\n            self.audioPump = nil\n        }\n\n        guard let sessionId = voiceInputSessionId,\n              let service = appState.nativeASRService else {\n            VoiceInputIndicatorWindow.shared.hide()\n            finishVoiceInput(appState: appState)\n            return\n        }\n\n        // ★ realtimeStop 处理尾部段（通常 0-1 段，快速返回）\n        let result: NativeASRService.TranscribeResult?\n        do {\n            result = try await service.realtimeStop(sessionId: sessionId)\n        } catch {\n            print(\"[VoiceInput] realtimeStop 失败: \\(error)\")\n            result = nil\n        }\n\n        let asrText = (result?.plainText ?? \"\").trimmingCharacters(in: .whitespacesAndNewlines)\n\n        if asrText.isEmpty {\n            print(\"[VoiceInput] ASR 无结果\")\n            VoiceInputIndicatorWindow.shared.hide()\n            finishVoiceInput(appState: appState)\n            return\n        }\n\n        // ★ 如果 realtimeStop 返回的文本比录音中已注入的更完整，先更新\n        if asrText != currentInjectedText {\n            let oldLen = currentInjectedText.count\n            if oldLen == 0 {\n                await TextInjector.inject(text: asrText)\n            } else {\n                await TextInjector.replaceInjected(oldLength: oldLen, newText: asrText)\n            }\n            currentInjectedText = asrText\n        }\n\n        // ★ LLM 纠错（如果开启）：优化后替换已注入的 ASR 原文\n        if configStore.llmCorrectionEnabled {\n            state = .correcting\n            VoiceInputIndicatorWindow.shared.showCorrecting()\n            let resolvedModel = configStore.resolvedModel(from: appState.llmConfigStore)\n            let customPrompt = appState.llmConfigStore.asrOptimizePrompt.isEmpty ? nil : appState.llmConfigStore.asrOptimizePrompt\n            let correctionResult = await correctionService.correct(\n                text: asrText,\n                model: resolvedModel,\n                customPrompt: customPrompt\n            )\n            let finalText = correctionResult.correctedText\n\n            if correctionResult.didUseLLM, finalText != currentInjectedText {\n                // ★ 用 LLM 优化后的文本替换已注入的 ASR 原文\n                await TextInjector.replaceInjected(oldLength: currentInjectedText.count, newText: finalText)\n                currentInjectedText = finalText"
+    },
+    {
+      "path": "MacRecord/Services/RecordingPersistenceCoordinator.swift",
+      "line_start": 12,
+      "line_end": 53,
+      "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+      "evidence_level": "观察",
+      "claim": "启动processing转failed；录音音频与元数据保存",
+      "excerpt": "    func markInterruptedTasksAfterLaunch() {\n        let descriptor = FetchDescriptor<Recording>(predicate: #Predicate {\n            $0.transcriptionStatus == \"processing\"\n        })\n        guard let recordings = try? modelContext.fetch(descriptor), !recordings.isEmpty else { return }\n        for recording in recordings {\n            recording.transcriptionStatus = \"failed\"\n            recording.transcriptionError = \"上次转录因应用退出而中断，可重新转录\"\n            recording.updatedAt = Date()\n        }\n        try? modelContext.save()\n    }\n\n    func createRecordedSession(\n        sessionId: UUID,\n        title: String,\n        duration: TimeInterval,\n        recordingURL: URL?,\n        engineId: ASRModelID\n    ) throws -> UUID {\n        let recording = Recording(\n            id: sessionId,\n            title: title,\n            fileHash: sessionId.uuidString,\n            duration: duration,\n            createdAt: Date(),\n            updatedAt: Date()\n        )\n        recording.asrModelId = engineId.rawValue\n        recording.transcriptionStatus = \"processing\"\n        if let recordingURL {\n            guard let relativePath = AudioFileManager.shared.storeAudioFile(\n                from: recordingURL,\n                hash: sessionId.uuidString\n            ) else {\n                throw RecordingPersistenceError.audioStorageFailed\n            }\n            recording.audioPath = relativePath\n        }\n        modelContext.insert(recording)\n        try modelContext.save()\n        return recording.id"
+    },
+    {
+      "path": "MacRecord/Services/RecordingPersistenceCoordinator.swift",
+      "line_start": 56,
+      "line_end": 78,
+      "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+      "evidence_level": "观察",
+      "claim": "导入文件失败回滚",
+      "excerpt": "    func importAudio(sourceURL: URL, title: String, engineId: ASRModelID) throws -> UUID {\n        let id = UUID()\n        let storedPath = try AudioFileManager.shared.importAudioFile(from: sourceURL, hash: id.uuidString)\n        let recording = Recording(\n            id: id,\n            title: title,\n            originalFilename: sourceURL.lastPathComponent,\n            audioPath: storedPath,\n            fileHash: id.uuidString,\n            createdAt: Date(),\n            updatedAt: Date()\n        )\n        recording.asrModelId = engineId.rawValue\n        recording.transcriptionStatus = \"processing\"\n        modelContext.insert(recording)\n        do {\n            try modelContext.save()\n            return id\n        } catch {\n            AudioFileManager.shared.deleteAudioFile(relativePath: storedPath)\n            modelContext.delete(recording)\n            throw error\n        }"
+    },
+    {
+      "path": "MacRecord/Services/RecordingPersistenceCoordinator.swift",
+      "line_start": 87,
+      "line_end": 131,
+      "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+      "evidence_level": "观察",
+      "claim": "保存统一结果；失败/取消可重转录状态",
+      "excerpt": "\n    func markProcessing(recordingId: UUID, engineId: ASRModelID) {\n        guard let recording = try? recording(for: recordingId) else { return }\n        recording.asrModelId = engineId.rawValue\n        recording.transcriptionStatus = \"processing\"\n        recording.transcriptionError = nil\n        recording.updatedAt = Date()\n        try? modelContext.save()\n    }\n\n    func apply(_ result: UnifiedTranscriptionResult, to recordingId: UUID) throws {\n        guard let recording = try recording(for: recordingId) else {\n            throw RecordingPersistenceError.recordingNotFound\n        }\n        recording.plainText = result.text\n        recording.detectedLanguage = result.language\n        recording.structuredSegmentsJSON = result.segmentsJSON\n        recording.asrModelId = result.engineId\n        recording.transcriptionStatus = \"completed\"\n        recording.transcriptionError = nil\n        recording.updatedAt = Date()\n        if let speakerText = result.speakerText {\n            recording.diarizedText = speakerText\n            recording.diarizedSpeakerCount = result.speakerCount\n        } else {\n            recording.diarizedText = nil\n            recording.diarizedSpeakerCount = nil\n        }\n        try modelContext.save()\n    }\n\n    func markFailed(_ error: Error, recordingId: UUID) {\n        guard let recording = try? recording(for: recordingId) else { return }\n        recording.transcriptionStatus = \"failed\"\n        recording.transcriptionError = error.localizedDescription\n        recording.updatedAt = Date()\n        try? modelContext.save()\n    }\n\n    func markCancelled(recordingId: UUID) {\n        guard let recording = try? recording(for: recordingId) else { return }\n        recording.transcriptionStatus = \"failed\"\n        recording.transcriptionError = \"转录已取消，可重新转录\"\n        recording.updatedAt = Date()\n        try? modelContext.save()"
+    },
+    {
+      "path": "docs/feature-audit.md",
+      "line_start": 5,
+      "line_end": 13,
+      "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+      "evidence_level": "观察",
+      "claim": "FunASR描述的是旧Python工作台不是Swift适配器",
+      "excerpt": "> 来源项目：`~/Desktop/whisper_env/`\n\n---\n\n## 一、项目概览\n\n| 维度 | 说明 |\n|------|------|\n| **产品定位** | macOS 桌面语音转写工作台，Apple 语音备忘录风格 |"
+    },
+    {
+      "path": "MacRecord/App/AppState+Recording.swift",
+      "line_start": 32,
+      "line_end": 54,
+      "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+      "evidence_level": "观察",
+      "claim": "麦克风与system audio互斥分支，没有同步双轨",
+      "excerpt": "            if source == .systemAudio {\n                let recorder = SystemAudioRecorder()\n                systemAudioRecorder = recorder\n                recorder.onAudioBuffer = { buffer in\n                    guard let channelData = buffer.floatChannelData?[0], let pump else { return }\n                    pump.enqueue(Array(UnsafeBufferPointer(\n                        start: channelData,\n                        count: Int(buffer.frameLength)\n                    )))\n                }\n                try await recorder.startRecording()\n            } else {\n                let recorder = _lazyRecorder\n                recorder.onRawAudioBuffer = nil\n                recorder.onAudioBuffer = { buffer in\n                    guard let channelData = buffer.floatChannelData?[0], let pump else { return }\n                    pump.enqueue(Array(UnsafeBufferPointer(\n                        start: channelData,\n                        count: Int(buffer.frameLength)\n                    )))\n                }\n                try recorder.startRecording()\n            }"
+    },
+    {
+      "path": "MacRecord/Services/SherpaOnnxVADWrapper.swift",
+      "line_start": 8,
+      "line_end": 26,
+      "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+      "evidence_level": "观察",
+      "claim": "VAD阈值0.5/静音0.3s/语音0.25s/最长10s/512window/16kHz",
+      "excerpt": "    let windowSize: Int32 = 512\n\n    init?(modelPath: String, minSilenceDuration: Float = 0.3, maxSpeechDuration: Float = 10.0, bufferSizeInSeconds: Float = 60.0) {\n        var config = SherpaOnnxVadModelConfig()\n        memset(&config, 0, MemoryLayout<SherpaOnnxVadModelConfig>.size)\n\n        let ptr: OpaquePointer? = modelPath.withCString { path in\n            \"cpu\".withCString { provider in\n                config.silero_vad.model = path\n                config.silero_vad.threshold = 0.5\n                config.silero_vad.min_silence_duration = minSilenceDuration\n                config.silero_vad.min_speech_duration = 0.25\n                config.silero_vad.max_speech_duration = maxSpeechDuration\n                config.silero_vad.window_size = 512\n                config.sample_rate = 16000\n                config.num_threads = 1\n                config.provider = provider\n                config.debug = 0\n"
+    },
+    {
+      "path": "MacRecord/Services/RealtimeAudioPump.swift",
+      "line_start": 9,
+      "line_end": 35,
+      "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+      "evidence_level": "观察",
+      "claim": "bufferingNewest容量32，记录丢失buffer且finish等待worker",
+      "excerpt": "    init(service: NativeASRService, sessionId: String, capacity: Int = 32) {\n        let pair = AsyncStream<[Float]>.makeStream(bufferingPolicy: .bufferingNewest(capacity))\n        continuation = pair.continuation\n        worker = Task.detached(priority: .userInitiated) {\n            for await samples in pair.stream {\n                _ = await service.realtimeFeed(sessionId: sessionId, samples: samples)\n            }\n        }\n    }\n\n    func enqueue(_ samples: [Float]) {\n        if case .dropped = continuation.yield(samples) {\n            lock.lock()\n            _droppedBufferCount += 1\n            lock.unlock()\n        }\n    }\n\n    var droppedBufferCount: Int {\n        lock.lock()\n        defer { lock.unlock() }\n        return _droppedBufferCount\n    }\n\n    func finish() async {\n        continuation.finish()\n        await worker.value"
+    },
+    {
+      "path": "MacRecord/Services/TextInjector.swift",
+      "line_start": 10,
+      "line_end": 88,
+      "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+      "evidence_level": "观察",
+      "claim": "剪贴板备份恢复，辅助功能权限，当前app PID检查；替换按字符向后选择",
+      "excerpt": "    static func inject(text: String) async {\n        guard !text.isEmpty else { return }\n        guard AccessibilityHelper.isAccessibilityGranted else {\n            print(\"[TextInjector] 辅助功能权限未授权，无法注入文本\")\n            return\n        }\n\n        // 1. 记录目标应用并完整备份剪贴板内容。\n        let targetPID = NSWorkspace.shared.frontmostApplication?.processIdentifier\n        let pasteboard = NSPasteboard.general\n        let backup = backupPasteboard(pasteboard)\n\n        // 2. 写入要注入的文本\n        pasteboard.clearContents()\n        pasteboard.setString(text, forType: .string)\n\n        // 3. 等待剪贴板内容生效（某些应用需要更长时间）\n        try? await Task.sleep(for: .milliseconds(100))\n\n        // 4. 确认剪贴板确实已写入正确内容\n        if pasteboard.string(forType: .string) != text {\n            pasteboard.clearContents()\n            pasteboard.setString(text, forType: .string)\n            try? await Task.sleep(for: .milliseconds(100))\n        }\n\n        // 5. 焦点仍在原应用时才粘贴，避免内容进入错误窗口。\n        guard targetPID == NSWorkspace.shared.frontmostApplication?.processIdentifier else {\n            restorePasteboard(pasteboard, from: backup)\n            return\n        }\n        simulatePaste()\n\n        // 6. 等待粘贴完成后恢复原剪贴板内容\n        try? await Task.sleep(for: .milliseconds(500))\n        restorePasteboard(pasteboard, from: backup)\n\n        print(\"[TextInjector] 文本已注入: \\(text.prefix(30))...\")\n    }\n\n    /// 替换之前注入的文本：先选中 oldLength 个字符，再粘贴新文本\n    /// 用于实时更新（录音中 ASR 文字增量更新 / LLM 优化后替换）\n    static func replaceInjected(oldLength: Int, newText: String) async {\n        guard !newText.isEmpty, oldLength > 0 else {\n            // 没有旧文本可替换，直接注入\n            await inject(text: newText)\n            return\n        }\n        guard AccessibilityHelper.isAccessibilityGranted else { return }\n\n        let targetPID = NSWorkspace.shared.frontmostApplication?.processIdentifier\n        let pasteboard = NSPasteboard.general\n        let backup = backupPasteboard(pasteboard)\n\n        // 1. 选中之前注入的文本（Shift+Left × oldLength）\n        simulateSelectBackward(count: oldLength)\n        try? await Task.sleep(for: .milliseconds(30))\n\n        // 2. 粘贴新文本（替换选中内容）\n        pasteboard.clearContents()\n        pasteboard.setString(newText, forType: .string)\n        try? await Task.sleep(for: .milliseconds(100))\n\n        // 确认写入成功\n        if pasteboard.string(forType: .string) != newText {\n            pasteboard.clearContents()\n            pasteboard.setString(newText, forType: .string)\n            try? await Task.sleep(for: .milliseconds(100))\n        }\n\n        guard targetPID == NSWorkspace.shared.frontmostApplication?.processIdentifier else {\n            restorePasteboard(pasteboard, from: backup)\n            return\n        }\n        simulatePaste()\n\n        // 3. 恢复剪贴板\n        try? await Task.sleep(for: .milliseconds(500))\n        restorePasteboard(pasteboard, from: backup)"
+    },
+    {
+      "path": "MacRecord/App/AppState.swift",
+      "line_start": 275,
+      "line_end": 428,
+      "commit": "ad53c5740e59498d6c9869c04027c2daddd1b48d",
+      "evidence_level": "观察",
+      "claim": "重转录generation保护/队列/状态/取消/引擎路由",
+      "excerpt": "    func beginTranscription(for recordingId: UUID) -> UUID {\n        let generation = UUID()\n        transcriptionGenerations[recordingId] = generation\n        return generation\n    }\n\n    func isCurrentTranscription(_ generation: UUID, for recordingId: UUID) -> Bool {\n        transcriptionGenerations[recordingId] == generation\n    }\n\n    func finishTranscription(_ generation: UUID, for recordingId: UUID) {\n        guard isCurrentTranscription(generation, for: recordingId) else { return }\n        transcriptionGenerations.removeValue(forKey: recordingId)\n    }\n\n    func registerTranscriptionTask(\n        _ task: Task<Void, Never>,\n        generation: UUID,\n        recordingId: UUID\n    ) {\n        transcriptionTasks[recordingId]?.cancel()\n        transcriptionTasks[recordingId] = task\n        transcriptionTaskGenerations[recordingId] = generation\n        activeTranscriptionIds.insert(recordingId)\n        let progress = TranscriptionProgress(\n            phase: .queued,\n            fraction: 0,\n            message: \"已加入转录队列\",\n            completedSegments: 0\n        )\n        transcriptionProgressByRecordingId[recordingId] = progress\n        transcriptionStatus = progress.message\n    }\n\n    func unregisterTranscriptionTask(generation: UUID, recordingId: UUID) {\n        guard transcriptionTaskGenerations[recordingId] == generation else { return }\n        transcriptionTasks.removeValue(forKey: recordingId)\n        transcriptionTaskGenerations.removeValue(forKey: recordingId)\n        activeTranscriptionIds.remove(recordingId)\n        transcriptionProgressByRecordingId.removeValue(forKey: recordingId)\n        transcriptionStatus = transcriptionTasks.isEmpty\n            ? nil\n            : transcriptionProgressByRecordingId.values.first?.message ?? \"转录队列处理中\"\n    }\n\n    func startRetranscription(recordingId: UUID, audioURL: URL) {\n        let generation = beginTranscription(for: recordingId)\n        persistenceCoordinator.markProcessing(\n            recordingId: recordingId,\n            engineId: asrConfigStore.selectedModelId\n        )\n        let task = Task { @MainActor [weak self] in\n            guard let self else { return }\n            defer {\n                self.finishTranscription(generation, for: recordingId)\n                self.unregisterTranscriptionTask(\n                    generation: generation,\n                    recordingId: recordingId\n                )\n            }\n            do {\n                let progressHandler: @Sendable (TranscriptionProgress) -> Void = { [weak self] progress in\n                    Task { @MainActor [weak self] in\n                        self?.updateTranscriptionProgress(\n                            progress,\n                            recordingId: recordingId,\n                            generation: generation\n                        )\n                    }\n                }\n                let result = try await self.transcriptionQueue.enqueue {\n                    try await self.transcribeFile(\n                        at: audioURL,\n                        onProgress: progressHandler\n                    )\n                }\n                try Task.checkCancellation()\n                guard self.isCurrentTranscription(generation, for: recordingId) else { return }\n                self.updateTranscriptionProgress(\n                    .init(\n                        phase: .saving,\n                        fraction: 0.99,\n                        message: \"正在保存转录结果…\",\n                        completedSegments: self.transcriptionProgressByRecordingId[recordingId]?.completedSegments ?? 0\n                    ),\n                    recordingId: recordingId,\n                    generation: generation\n                )\n                try self.persistenceCoordinator.apply(result, to: recordingId)\n            } catch is CancellationError {\n                guard self.isCurrentTranscription(generation, for: recordingId) else { return }\n                self.persistenceCoordinator.markCancelled(recordingId: recordingId)\n            } catch ASRCoordinationError.superseded {\n                // 更新的请求已经接管该录音。\n            } catch {\n                guard self.isCurrentTranscription(generation, for: recordingId) else { return }\n                self.persistenceCoordinator.markFailed(error, recordingId: recordingId)\n                self.modelStatus = \"❌ 转录失败: \\(error.localizedDescription)\"\n            }\n        }\n        registerTranscriptionTask(task, generation: generation, recordingId: recordingId)\n    }\n\n    func transcribeFile(\n        at url: URL,\n        hotwords: [String] = [],\n        onProgress: (@Sendable (TranscriptionProgress) -> Void)? = nil\n    ) async throws -> UnifiedTranscriptionResult {\n        guard isIdle else { throw ASRCoordinationError.busy }\n        let modelId = asrConfigStore.selectedModelId\n        switch ModelRegistry.model(for: modelId).family {\n        case .senseVoice, .qwen3ASR:\n            guard let nativeASRService else { throw NativeASRError.notReady }\n            return try await NativeASRBackend(modelId: modelId, service: nativeASRService)\n                .transcribeFile(at: url, hotwords: hotwords, onProgress: onProgress)\n        case .appleSpeech:\n            onProgress?(.init(\n                phase: .recognizing,\n                fraction: 0.1,\n                message: \"正在使用系统语音识别…\",\n                completedSegments: 0\n            ))\n            let result = try await AppleSpeechService().transcribeFile(url: url)\n            return UnifiedTranscriptionResult(\n                text: result.plainText,\n                language: nil,\n                segments: [],\n                engineId: modelId.rawValue,\n                modelVersion: nil,\n                duration: result.duration,\n                elapsed: nil,\n                diagnostics: nil\n            )\n        }\n    }\n\n    func cancelTranscription(recordingId: UUID) {\n        guard let task = transcriptionTasks[recordingId],\n              let generation = transcriptionTaskGenerations[recordingId] else { return }\n        let progress = TranscriptionProgress(\n            phase: .cancelling,\n            fraction: transcriptionProgressByRecordingId[recordingId]?.fraction ?? 0,\n            message: \"正在取消，等待当前片段结束…\",\n            completedSegments: transcriptionProgressByRecordingId[recordingId]?.completedSegments ?? 0\n        )\n        updateTranscriptionProgress(\n            progress,\n            recordingId: recordingId,\n            generation: generation\n        )\n        task.cancel()\n    }\n\n    func cancelTranscription() async {"
+    }
+  ],
+  "required_new_work": [
+    "FunASR独立adapter及具体模型版本选择",
+    "ASR段时间/来源/revision统一契约",
+    "双来源同步时钟、持久化和混音策略",
+    "转录任务取消与幂等",
+    "Qwen模型下载可用性与性能验收"
+  ]
+}

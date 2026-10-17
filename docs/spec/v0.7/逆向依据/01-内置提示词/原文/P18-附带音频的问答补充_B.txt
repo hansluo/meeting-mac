@@ -1,0 +1,3 @@
+
+
+Note: The audio where the question is coming from is attached, and it may contain surrounding dialogue or multiple questions. Use the attached audio for context to better understand and answer the question, as well as ground truth to establish what this specific question is and correct any errors or misspelled words from <query>. However, answer ONLY the single question whose (potentially incorrect) spelling is provided in <query>, and nothing else.

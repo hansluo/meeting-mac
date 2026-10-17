@@ -1,0 +1,892 @@
+[
+  {
+    "path": "Contents/CodeResources",
+    "size": 2052,
+    "sha256": "46c4aefcbad4ccd1c5bf83146cd1304e597d8722769d43f8de619f71b6da7c43"
+  },
+  {
+    "path": "Contents/Frameworks/FlutterMacOS.framework/Versions/A/FlutterMacOS",
+    "size": 14821968,
+    "sha256": "3d3291e60002d64919dc7dce9d210cb32ea46ac9e08d96e3827dcb672033e281"
+  },
+  {
+    "path": "Contents/Frameworks/FlutterMacOS.framework/Versions/A/Resources/Info.plist",
+    "size": 850,
+    "sha256": "55a236075173e448c447f7c5e4d5dfb0087b23e9f563d109cd570d4de5abccab"
+  },
+  {
+    "path": "Contents/Frameworks/FlutterMacOS.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
+    "size": 325,
+    "sha256": "42542470043a0a3af3ab452ae4355bf764b916b7a442d3c814f362241a794454"
+  },
+  {
+    "path": "Contents/Frameworks/FlutterMacOS.framework/Versions/A/Resources/icudtl.dat",
+    "size": 864880,
+    "sha256": "325a86063d26334c2eabe1743cea073b612540fbf3d8fc2ef0b5708e3763a8c7"
+  },
+  {
+    "path": "Contents/Frameworks/FlutterMacOS.framework/Versions/A/_CodeSignature/CodeResources",
+    "size": 2916,
+    "sha256": "96ee00565e9f0eb3826f6f61df7230295a4c17d1164a59ac677b592d162a1098"
+  },
+  {
+    "path": "Contents/Frameworks/libLiteRt.dylib",
+    "size": 11664896,
+    "sha256": "9447262a184883e076240a9b562e8a47cb08c816262d5f008c9a24a0041b2a5a"
+  },
+  {
+    "path": "Contents/Frameworks/libLiteRtMetalAccelerator.dylib",
+    "size": 16740944,
+    "sha256": "29772ccebea27fdf85953dcf03afda13799d3c764cfda17eb26860bb32914273"
+  },
+  {
+    "path": "Contents/Frameworks/libLiteRtTopKMetalSampler.dylib",
+    "size": 9481072,
+    "sha256": "f7722bb916e45cf982bddba6ea5305d500d1c177990c1a059d56746a64ab8491"
+  },
+  {
+    "path": "Contents/Frameworks/libLiteRtTopKWebGpuSampler.dylib",
+    "size": 24554080,
+    "sha256": "58ccd536cdb0f32982878ab205b030bb6a82f4b9b13c51141990a5f5db30cd9b"
+  },
+  {
+    "path": "Contents/Frameworks/libLiteRtWebGpuAccelerator.dylib",
+    "size": 31856624,
+    "sha256": "9f7acaed770be63078848f055b48009b456dfa57078e857a0a487dcab6e68cc2"
+  },
+  {
+    "path": "Contents/Info.plist",
+    "size": 2644,
+    "sha256": "11a819a7620a5ec66a7f71b00b63e55a2776561d140939a7f81506d4b9af484e"
+  },
+  {
+    "path": "Contents/MacOS/Foresight",
+    "size": 150168384,
+    "sha256": "fa98b856bfbe9b40cdebfb9f975f7867ec5c0a3ca75b81214a096a60b6db8326"
+  },
+  {
+    "path": "Contents/PkgInfo",
+    "size": 8,
+    "sha256": "82502191c9484b04d685374f9879a0066069c49b8acae7a04b01d38d07e8eca0"
+  },
+  {
+    "path": "Contents/Resources/AppIcon.icns",
+    "size": 73159,
+    "sha256": "8e0f6baabb6bd8d7e293065176042a58521e2722be3db8278165b8d2905a68b1"
+  },
+  {
+    "path": "Contents/Resources/Assets.car",
+    "size": 242072,
+    "sha256": "4f2e2082039cc5427cc220622286e7922021b4ecb57ade54b8456dc81f899109"
+  },
+  {
+    "path": "Contents/Resources/Base.lproj/MainMenu.nib",
+    "size": 16038,
+    "sha256": "926030a8b36e8a643fec1df1dd8f21708ce73e71107c35fda85f00cf4418ce31"
+  },
+  {
+    "path": "Contents/Resources/ForesightHelper.version",
+    "size": 6,
+    "sha256": "f5e5c9534532840fcd45bb002e69ed85c61dba2753450e26b448b7df1481e24d"
+  },
+  {
+    "path": "Contents/Resources/ForesightHelper_tar.tar",
+    "size": 90251264,
+    "sha256": "126cee4753e35b0414b0d4a4d72b9eedfca73f5f6674c93de41c9829278ab9fb"
+  },
+  {
+    "path": "Contents/Resources/GoogleService-Info.plist",
+    "size": 490,
+    "sha256": "011ee124bb6e6e1e4b400f48fa62cc27f92f31821e02f47bb56350e088fc90fe"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/PrivacyInfo.xcprivacy",
+    "size": 3756,
+    "sha256": "9300972853096f7d570d6c4a4bf7152a36c798e89c4f0d81d3b4c6b5dfaddfd0"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/Roboto-Bold.ttf",
+    "size": 127744,
+    "sha256": "594d74a49e307be7cc9e1ee5f1023684e6820cf11bcc968bee590391e1ad5a5a"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/ar.lproj/GoogleSignIn.strings",
+    "size": 1011,
+    "sha256": "5ef0d489ec2b9d16d7738f56b2a0fcf6631de6a837315ace2051dd12eb1b6f24"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/ca.lproj/GoogleSignIn.strings",
+    "size": 1190,
+    "sha256": "41f59976f90573252e9184d316658826d4944181f67ca7d3ffd0029858fd77d2"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/cs.lproj/GoogleSignIn.strings",
+    "size": 1154,
+    "sha256": "a99b6d3569790adb014feaa7a0a904e1621bd61bf9c8f48ffe635fbf0fccec51"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/da.lproj/GoogleSignIn.strings",
+    "size": 938,
+    "sha256": "e3a895896278ddd3ca2c905a224bdabda8330dffb6ff4322a993ca765d9ddd06"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/de.lproj/GoogleSignIn.strings",
+    "size": 1392,
+    "sha256": "6e3e83e70e6d2dbab09eb54a834869da26e7ea80a6947e3add749c5045bc0153"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/el.lproj/GoogleSignIn.strings",
+    "size": 1364,
+    "sha256": "a382a199aee2c527ef54b416b468711736812121ed4c4862398c16ae20d28f33"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/en.lproj/GoogleSignIn.strings",
+    "size": 667,
+    "sha256": "3e1bf5a3aeee0608e035c5e70eca03375a1710bbd54cc05266ec2c46c8bac7d4"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/en_GB.lproj/GoogleSignIn.strings",
+    "size": 667,
+    "sha256": "539895cc94a5b852d6815bc83222ec3faa1ddde3e7938afdf0dfedab3689dd37"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/es.lproj/GoogleSignIn.strings",
+    "size": 1350,
+    "sha256": "90b182df0893ff9f155eb7c103a8699dcdcc47ea10024ebbd0bf13434a4037a0"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/es_MX.lproj/GoogleSignIn.strings",
+    "size": 1156,
+    "sha256": "8b5ed1d86785c3985a6320c801faf81940fb1e5cbeee63556d71dda310f1b7e7"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/fi.lproj/GoogleSignIn.strings",
+    "size": 1152,
+    "sha256": "a6c98a6fdff1e9e340c6be491c8595c8f007c0ca9fd41b52f6869189e6e77085"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/fr.lproj/GoogleSignIn.strings",
+    "size": 1262,
+    "sha256": "ae9044842dbd14e5f6330e94b2dc0c694df7eb1eb0409b2ac52ff9912c49079a"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/fr_CA.lproj/GoogleSignIn.strings",
+    "size": 1213,
+    "sha256": "ca1e967d19446016ff7b4fb89ae3ca4deba9109c71eb2f64277f2a2bb13ecca2"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/google.png",
+    "size": 834,
+    "sha256": "f075b5b46a1ec4d77759f4d576d8e4a2bfc7279d1c52fb3bc80da1440e51e775"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/google@2x.png",
+    "size": 2161,
+    "sha256": "c91d5e0c0e213726b86a5e88e6c2ba3a1e0c207dfe968d1ad2893c2264ae5c0c"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/google@3x.png",
+    "size": 5678,
+    "sha256": "6af9656925517c05cf50c95823ccee96939353e387e61e2eaa9cc358a2e950c7"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/he.lproj/GoogleSignIn.strings",
+    "size": 1037,
+    "sha256": "9a589778fc50d1d1f6efd0e8325cd715d083d62be430f5af9d85dc7d2d68327b"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/hi.lproj/GoogleSignIn.strings",
+    "size": 1229,
+    "sha256": "0eac68389295cdab13328b4ee23d520071612f4520c57d89c03ba09a28b10802"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/hr.lproj/GoogleSignIn.strings",
+    "size": 1198,
+    "sha256": "4b0bee132523e11b30f8762112668ce970a353746c62c55790aa4561276b7379"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/hu.lproj/GoogleSignIn.strings",
+    "size": 1266,
+    "sha256": "057216e93eb64cc68ca76e5c15682a82447f887e450e196276ccbcc28abbb8e0"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/id.lproj/GoogleSignIn.strings",
+    "size": 721,
+    "sha256": "d56844cfa0fcd6bc73058eb25f0a48fd1af5729a6d4597d883f0c475e14af133"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/it.lproj/GoogleSignIn.strings",
+    "size": 816,
+    "sha256": "97bf11fb0f933a67a3128a165a5daccf0f6caf6f0773b853116ab8990363deae"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/ja.lproj/GoogleSignIn.strings",
+    "size": 726,
+    "sha256": "0b8b2c043f39a4633006f27c8e38dbd580cd8d8a3fadb7991a6dc5cba6d9738d"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/ko.lproj/GoogleSignIn.strings",
+    "size": 731,
+    "sha256": "eac53b3600604a28961e4dbe8bfc2ede30d79bc0d3251d27cf6976d52a006f10"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/ms.lproj/GoogleSignIn.strings",
+    "size": 728,
+    "sha256": "db84f7a35a54852e69660e42418c926ef076c853fcbc0cecfcdc9a66728a112e"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/nb.lproj/GoogleSignIn.strings",
+    "size": 1035,
+    "sha256": "8d19d6c088deaec6b8c0d364c052cc469def0b6c3bd1f5b69a15b538c5277dbb"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/nl.lproj/GoogleSignIn.strings",
+    "size": 769,
+    "sha256": "79819a4ff7a5abcc271c90339891ddd6537cba6056b8bfec163a06e44eed19cb"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/pl.lproj/GoogleSignIn.strings",
+    "size": 1126,
+    "sha256": "724f9f9cc3d974c681d3b4103a5b238a790d77f48c10d9c93bd15d2c078fbdfb"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/pt.lproj/GoogleSignIn.strings",
+    "size": 1142,
+    "sha256": "84c1cd8a3cb8c3b5c2abdf43bc5228bab2496e80d4b07a13b8717e6c835bcf2c"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/pt_BR.lproj/GoogleSignIn.strings",
+    "size": 1142,
+    "sha256": "84c1cd8a3cb8c3b5c2abdf43bc5228bab2496e80d4b07a13b8717e6c835bcf2c"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/pt_PT.lproj/GoogleSignIn.strings",
+    "size": 1267,
+    "sha256": "ff67de011324976ebe63a43614e62eb1ea237d6487c4a239e3e67e85911c7b83"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/ro.lproj/GoogleSignIn.strings",
+    "size": 1166,
+    "sha256": "d36f5f1059a14b5580a14672f0ccc3d7639bc58602458991e5e5e2209c4fc28e"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/ru.lproj/GoogleSignIn.strings",
+    "size": 1207,
+    "sha256": "d31b4993e99fdddb96977a3a6717e16854577dd1e0fe8b817350a101e6a1a847"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/sk.lproj/GoogleSignIn.strings",
+    "size": 1242,
+    "sha256": "2aae99cb5a662566b9bd900ecfb462d2d12f2d5913f335ac91e5fc291de7bbcd"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/sv.lproj/GoogleSignIn.strings",
+    "size": 1082,
+    "sha256": "31bc835fe2371a4e204db0c61382061da11f82c51f3436ae798ef2eabf20190c"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/th.lproj/GoogleSignIn.strings",
+    "size": 1019,
+    "sha256": "17af4f1ae5a5e78e14a262622f34c86658026c25fe987d492fa7e1cc4384e7b2"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/tr.lproj/GoogleSignIn.strings",
+    "size": 1145,
+    "sha256": "91d610e4e0933290ba0c45a93056c93247d71abf31543ce2e61e5b5beb1e224a"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/uk.lproj/GoogleSignIn.strings",
+    "size": 1110,
+    "sha256": "0764a56e3277bafdd12cd4066a8c9f3b49f46d3d6b9eea14e43e08268e522a86"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/vi.lproj/GoogleSignIn.strings",
+    "size": 1148,
+    "sha256": "bcebe7c9cbefee13540e7fd84cfc6914eb929cb4883eec447a369f5e585f5299"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/zh_CN.lproj/GoogleSignIn.strings",
+    "size": 583,
+    "sha256": "ef505b7c618e222260ced3b980131e394074ae83628deb1ebb3001873a659312"
+  },
+  {
+    "path": "Contents/Resources/GoogleSignIn.bundle/zh_TW.lproj/GoogleSignIn.strings",
+    "size": 607,
+    "sha256": "90e42d33c5309eccd919ce1a68e8fa7d13fb2f65123abbd73544d8966a6eb67b"
+  },
+  {
+    "path": "Contents/Resources/GoogleUpdater.zip",
+    "size": 12582928,
+    "sha256": "4da10dbd858095e2c4d7cc8de3746448a2361f4b457075fbbdb2604545db2ed0"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/All1PIcons-Regular.otf",
+    "size": 8484,
+    "sha256": "ed7a0430ce5a48c8ced04082080e270849ab79adc06ac65829cb64a12656e68d"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/AssetManifest.bin",
+    "size": 11416,
+    "sha256": "2a8fdfdde4dd0e31f324c6728017d78c3e89f4d7d8a711d2d3b829e334fb5539"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/FontManifest.json",
+    "size": 1230,
+    "sha256": "68a129afec4f918e838b8bb214357e0c8caeaf245af7a57469a631e3d6cb17ba"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/GoogleSans-Bold.ttf",
+    "size": 177184,
+    "sha256": "6c43148fe7f70f806c23335672fc1590896f08aebc765f35a3702c83e7956f23"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/GoogleSans-BoldItalic.ttf",
+    "size": 183860,
+    "sha256": "28df77e0552447d5406746fa8a6103f9d4a3b053ffa097d705ce1fdf542e2306"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/GoogleSans-Italic.ttf",
+    "size": 183272,
+    "sha256": "38e017b77f368059e6a56e19eb7a2119298326789410f861ed9e8f56aa845cc9"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/GoogleSans-Medium.ttf",
+    "size": 178132,
+    "sha256": "0994842b75ad61e6e1fcc0c7a47b7dcce351be36b4f2456a6684648478b08692"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/GoogleSans-MediumItalic.ttf",
+    "size": 183516,
+    "sha256": "b03977bc652e580acfe0edc7eadbf5004a6c7fd3e67356af48e1fe4a241661b7"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/GoogleSans-Regular.ttf",
+    "size": 178668,
+    "sha256": "21af9156c5e5d661640cea25d851ceb3d866185ee038f5a1c8866c8ba4294e62"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/GoogleSansText-Bold.ttf",
+    "size": 259892,
+    "sha256": "0f52198ebec20fca4d5b74bfba0b210366bfe9bebac757514933adcf0261ce40"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/GoogleSansText-BoldItalic.ttf",
+    "size": 262128,
+    "sha256": "8b111cf5ce7400014c42040491a9f353e221e7605f07082ee8151c2ca552cf7f"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/GoogleSansText-Italic.ttf",
+    "size": 263144,
+    "sha256": "46bd2cb4e570890000f2f5f131cbe1af4856cb342fe154452ba9beffbdaa4f16"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/GoogleSansText-Medium.ttf",
+    "size": 260812,
+    "sha256": "21b12d28d3249ab30f6836cae3cfa348ad83a437cb66892e90416ad7903ac95a"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/GoogleSansText-MediumItalic.ttf",
+    "size": 263244,
+    "sha256": "32189f2918cfa184f12119510b74d3432e7da8f5003cd825ad67f748002b5bce"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/GoogleSansText-Regular.ttf",
+    "size": 260772,
+    "sha256": "148243482daf65b351f4070e01126fea64e5d21919da98541695bcd87b2e23b9"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/GoogleSymbols_FILL_GRAD_ROND_opsz_wght.ttf",
+    "size": 28988,
+    "sha256": "07499ab899ca12eb43b56464ee1ed7a4219b7f8341f227db98f71727f26bfaff"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/MaterialIcons-Extended.ttf",
+    "size": 8580,
+    "sha256": "da37745f387b1d4bc24fa8c0189bb6ce1dc84819bd7b347760247d0c4f807edb"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/NOTICES.Z",
+    "size": 466214,
+    "sha256": "3755751e6ce09638d7d57049e67837239f061287fb5cd5f480c835afc55ee4f6"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/NativeAssetsManifest.json",
+    "size": 14553,
+    "sha256": "bd2eb0c38b6f6423ea20b04ab0011105566f0d9658505227a1f69e168d100aea"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/ProductSans-Regular.ttf",
+    "size": 256456,
+    "sha256": "1afe98ff6d6e9ae6b13bb9dc4e111d5bb1bbbc1afe5aefb5c5d1c88dc22c4833"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/assets/animated_logo/1.5x/googlelogo_standard_color_dots_sprites_74x24.png",
+    "size": 38261,
+    "sha256": "02d653fd29e55268d6f3d8174c5c6156771017a59cbed28f23d27950717d91cf"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/assets/animated_logo/2.0x/googlelogo_standard_color_dots_sprites_74x24.png",
+    "size": 49797,
+    "sha256": "bfd2356e3b3c1e6f190d416a0865234abe6993504fbc56415cd996280ed74f7f"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/assets/animated_logo/3.0x/googlelogo_standard_color_dots_sprites_74x24.png",
+    "size": 115940,
+    "sha256": "6647c8bc549fef9471a943b3dec6c755033976beb17ff26cffffbcb307455690"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/assets/animated_logo/4.0x/googlelogo_standard_color_dots_sprites_74x24.png",
+    "size": 127558,
+    "sha256": "5fe1b34a3856143a99ea6d01c6c6ba1a2b40022669af8b1875c43f6b66ced1f0"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/assets/animated_logo/googlelogo_standard_color_dots_sprites_74x24.png",
+    "size": 22470,
+    "sha256": "3e5f4836453bd2d1ed76df1d51468aac9c5adec6697bcbc425d1d06facf8f0ed"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/assets/logo/1.5x/logo_GoogleG_FullColor_rgb_20px.png",
+    "size": 1586,
+    "sha256": "660ccc270701eac7eb3a929c86e98c20603d2a71f94bdaec43aa26084b71bdc4"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/assets/logo/1.5x/logo_Google_FullColor_74x24.png",
+    "size": 3656,
+    "sha256": "04749a9cf0a17f058feb13cd78010e8e42d136d52a34f063b1f79ea2ded742d1"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/assets/logo/2.0x/logo_GoogleG_FullColor_rgb_20px.png",
+    "size": 2130,
+    "sha256": "f54823df1facda1164799dc473dfef049a2fb682119b76537f380872ff0c2c1a"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/assets/logo/2.0x/logo_Google_FullColor_74x24.png",
+    "size": 4965,
+    "sha256": "d4e6292061c2320606e5eade9207fad182b6d0bb8db757152cdc0ec750bd4e71"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/assets/logo/3.0x/logo_GoogleG_FullColor_rgb_20px.png",
+    "size": 3190,
+    "sha256": "258ac694b7c070efeaa31144ae012c4706640f55a266d9be57303df884fe8984"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/assets/logo/3.0x/logo_Google_FullColor_74x24.png",
+    "size": 7515,
+    "sha256": "b8a43d0e6717eb9f11b04d8a06ffd9ee0cac802f9b2c9061ac8e77efcb26d184"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/assets/logo/4.0x/logo_GoogleG_FullColor_rgb_20px.png",
+    "size": 4351,
+    "sha256": "df9291618774dcb363704355862f71e0f991732660a4203a4ab076d1eb0b9492"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/assets/logo/4.0x/logo_Google_FullColor_74x24.png",
+    "size": 10591,
+    "sha256": "a743f0bcd3f140479396a437b5f73e346b9272a0c98cb21da35e37ad6ad2e087"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/assets/logo/logo_GoogleG_FullColor_rgb_20px.png",
+    "size": 1057,
+    "sha256": "b9d45e15b2b9b644c6e2c253ff0b84d05ca443c9ff533c6b48829d1429ce744a"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/assets/logo/logo_Google_FullColor_74x24.png",
+    "size": 2234,
+    "sha256": "ccdcfec874df58fcb5286f07c9925fcb1b84fdcf75f07316e336488cfe880e45"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/googlesansflex/GoogleSansFlex%5BGRAD,ROND,opsz,slnt,wdth,wght%5D.ttf",
+    "size": 4153300,
+    "sha256": "c45ca3e8ffadd30ff13f8201d493b17434742dbce79f7345619ea1ba50a96ef9"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/assets/about.txt",
+    "size": 5481,
+    "sha256": "7028bb3402f37200ea78489a41170a4e1b4c1164530222d505d65e1ed59e07cd"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/assets/on_device_model_configure.json",
+    "size": 1643,
+    "sha256": "c487e534262f81fedd0f55a4846dce201b023917d6ecefb31c116b8f7adf3679"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/images/calendar_icon.png",
+    "size": 1076,
+    "sha256": "7267c222590eac3b518ddaad595a2bbae303a1baa7fd7c87c84e1046a77fd38e"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/images/file_type/audio_icon.png",
+    "size": 1044,
+    "sha256": "5b6f86f8f66e74d392388b1e51741073bf5ad34f31d5f75e8117ca97a3702717"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/images/file_type/docs_icon.png",
+    "size": 257,
+    "sha256": "152a07eb146da5c8184334e1c6a20661ad5373f52faa1f5a8a59c1515e163d1d"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/images/file_type/docx_icon.png",
+    "size": 901,
+    "sha256": "90eacc94e4978e400bf0fd277c88e833579ec946cd94daafd9ccda96e5735904"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/images/file_type/generic_file_type_icon.png",
+    "size": 719,
+    "sha256": "7a7244542c551998cab887471ff4cb3db991bc1edb5f6b42258c9c8a5ccb0c80"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/images/file_type/pdf_icon.png",
+    "size": 10671,
+    "sha256": "c52e1907293e8adf0ef1db3733225a909d4f85eafb7b41f74d0ca32e62f69cfc"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/images/file_type/sheets_icon.png",
+    "size": 392,
+    "sha256": "7bef05dde4e1e8e9c5e7374cab674241f4d77b8574b19e829f2f414fe94191a6"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/images/file_type/slides_icon.png",
+    "size": 273,
+    "sha256": "293ad8ea84cd7fc44d10084f12bfdc8bf12cc95bd00433ae48a4d6f09d351033"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/images/file_type/text_markdown_icon.png",
+    "size": 1391,
+    "sha256": "7df45aaf3eb05b42d886ce5d0c8b7d12f7e0d5af397763944482fc746960d165"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/images/file_type/unknown_type_icon.png",
+    "size": 892,
+    "sha256": "3238b40790f9080311d238b81366adf829c356f8efc35c2fe5f8b149cbfe03c4"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/images/file_type/video_icon.png",
+    "size": 954,
+    "sha256": "b97d25c36e3c791f7aaf49c00476de1c9d719dcf975caa18dc351a160552fc6b"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/images/file_type/web_icon.png",
+    "size": 1980,
+    "sha256": "c3795be25658284dddc6ed594f70addced2d5aca966c779eea7b8405dc56397a"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/images/gemma_embedding.png",
+    "size": 50274,
+    "sha256": "4d06419cf18308db7b5bbe3c8661964dc70cb25426825acfad4d4955f0c8888e"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/images/gemma_logo.gif",
+    "size": 4171910,
+    "sha256": "a419bfb5c1f1545c88020c9fcdfdbc20165230a9e0d7215b0dea2105c10a5795"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/images/google_products/calendar.png",
+    "size": 1115,
+    "sha256": "17e4812d83edcae47a48724a3275aa9da48448a32ee91cfa1d56e6a638c7ce09"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/images/google_products/meet.png",
+    "size": 1272,
+    "sha256": "888301be61a0a67c7494a30a5116f0d51a0ae78524e38ce3316083511964670a"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/images/logo/eye-42-lines.png",
+    "size": 5113066,
+    "sha256": "b6d9e43a9186848907eecc226ef3f92c9e0507d7ad9383b91038e93a57b4dfcc"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/images/logo/logo-text-horizontal.png",
+    "size": 28231,
+    "sha256": "db0fb1e6835b3c3eabdd88888f689df5f8fd236504a2926f5590ffa8982537bc"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/images/logo/logo-text-onboarding.svg",
+    "size": 15075,
+    "sha256": "ecced3c64634eabaaacc7e868b88051e443e98a9c6dfc4ef79c693ca95be279e"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/images/logo/logo-text-stacked.png",
+    "size": 7538,
+    "sha256": "9966c8af8d5964dfccff865d9c9cde52b6727694c3153ddfa328017714d46289"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/images/logo/logo-text.png",
+    "size": 21349,
+    "sha256": "c0af6af0092e645c4efd0977b6304d748cff0006bb7bed0019b5a891d63ad543"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/images/logo/logo.png",
+    "size": 168469,
+    "sha256": "ec33fe23a55ebb4d80a7f4f6d5911c0bdf8b7214c5eaa6012763507c94674ee2"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/images/onboarding/intro-1.png",
+    "size": 1498524,
+    "sha256": "be1cda489dd716761fac5aafc6bc869c40be17ae5763561e3fdeeb071761c4f7"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/images/onboarding/intro-2.png",
+    "size": 1556925,
+    "sha256": "1e61ea161abdd2ad2f9830355a4ef8ecfaa69255667804c029c0acfcee66e61b"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/images/onboarding/intro-3.png",
+    "size": 1559863,
+    "sha256": "2db9715d787a779355e911d8ab4ee73394c7e4d234a0320b06f1ada963aa7dc4"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/images/onboarding1.png",
+    "size": 508308,
+    "sha256": "06a03125468ceaf502e4a5c81666066610eefcf99539d8e6c3c3fb50fab2b74f"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/images/onboarding2.png",
+    "size": 525237,
+    "sha256": "a81dce4bbd77b6e9103fab9c846e2c408a3ddbe6e04980bfb77618048e86db00"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/images/onboarding3.png",
+    "size": 348287,
+    "sha256": "8586906d3013f952cc2983c578f6688df56c08d5748405dee62d550502d7ea66"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/chime.wav",
+    "size": 209170,
+    "sha256": "88e97cce9f7332f15e85ab3cb8892a3845c30bc61ddadbef0f704564a188927d"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/recorder_warning.wav",
+    "size": 4394,
+    "sha256": "83ec6716ed4c01c244bcb20a6681fc28d25a2f6e1c8b7a2af5b0a8f0e249796c"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification.wav",
+    "size": 152288,
+    "sha256": "c77c1fc22efb1a4d95c6a57da7f2d3c5647fb1b61b8011953c8ed2aa7abf4664"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_ar.wav",
+    "size": 210226,
+    "sha256": "cc0d878bb935716447c40c990d4865899e20c0742782a2a1e87d8ec96b0f5264"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_bg.wav",
+    "size": 130244,
+    "sha256": "79508a5102a78f4f553966a741d21eaaf7f9a8ed4130eae00373d9ce3eb8929a"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_bs.wav",
+    "size": 148844,
+    "sha256": "5e9cf8663c70e13ad7ba292ccfb5a79969d82d72185e74025d81c0bace25b824"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_ca.wav",
+    "size": 145986,
+    "sha256": "e07aee7452bd9703454aafabc8b2332b30b59a0fc06a04312f86bf0ac95df860"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_cs.wav",
+    "size": 139222,
+    "sha256": "26ce55472263faaa48c2fda9075f7f42b954230db5143ccf2e598eb302af18df"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_da.wav",
+    "size": 143116,
+    "sha256": "a431cac1a32f3e19712000355b9ba9fef5dbe3e686eb46c1ea65a2db685c8039"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_de.wav",
+    "size": 137142,
+    "sha256": "1a8b3b7824de810ade54f6e12195ff20521afc39ecd06ba761b63d4aba30c0d8"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_el.wav",
+    "size": 119076,
+    "sha256": "ec31ffe500a406ed61758f64ff45ce1f21b937fa769a5eb4819844ec1bdab741"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_es.wav",
+    "size": 114152,
+    "sha256": "6fbc56c9fb5a957ddcdb125ecb414124b69f49fa0e7a3332af603f3d6ad5a876"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_et.wav",
+    "size": 145014,
+    "sha256": "b4f14a868d0ec70b84d56a2e11804847129cd91ac1f36ab5c06f19636f1b9e14"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_fi.wav",
+    "size": 117368,
+    "sha256": "a42ac1b0fd1679b406060aa86f770b9ab2de091b82f40099c88e45712cfbf914"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_fr.wav",
+    "size": 123088,
+    "sha256": "8922bb6b58cc15379c8a1ec69baf27c32f30c18f8646197060b57f6aeed3252a"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_he.wav",
+    "size": 115506,
+    "sha256": "2a87154885776c49d584ffb968908127cbe10ade6a800ef586ffcb20c4594755"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_hi.wav",
+    "size": 164170,
+    "sha256": "0c5b0d1bf56fb416118b26f5cc08a9d6cb4e19def6df63a02dc493d0a61ccce8"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_hr.wav",
+    "size": 150954,
+    "sha256": "b24555cf054f057c608df30972aecf04d2a48a5f30b7a9ca64dfac22be3705b1"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_hu.wav",
+    "size": 124142,
+    "sha256": "946b8afac84a03ccc96f179f66fc61b95371e1784f3633e77b3e1b8334791e07"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_id.wav",
+    "size": 197752,
+    "sha256": "eebfc874ffeb41807fb6d31336a9f75af5f8e27a17ad51079d6a12f1b4d815bc"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_it.wav",
+    "size": 128640,
+    "sha256": "9af54fe1f24d2f286ee3be7cdda1d1a29fd72825e2b197ab33c8d9ba40185b31"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_ja.wav",
+    "size": 194074,
+    "sha256": "c25c4201a76277804f29697b2e350d7715b48e809927e9e6a709e34dcebaf275"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_ko.wav",
+    "size": 209934,
+    "sha256": "fc3ccdbaf286418679bb6e5c7c306fc607e9d1758446dcda881a1b9046a9d79e"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_lt.wav",
+    "size": 158478,
+    "sha256": "8fa66e7d011a89f7318c016449960d03b5165ab8ac9aa9a26bcce43ffb5308b5"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_lv.wav",
+    "size": 139800,
+    "sha256": "577a8a97528d0bcee3c11142cf33de0ae0d45c7ac97e3ecf2a05ea6faf460a0d"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_mk.wav",
+    "size": 143566,
+    "sha256": "6b6751386cf9d9ca7ef7b3faaf2d323e1c5f411994be577102a6ea1f8e40db88"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_nb.wav",
+    "size": 140886,
+    "sha256": "68b63f2a1ad57e96e5c34cd8a9dd296d64ddc7c2b1e9e2ac7988cccf427c26fc"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_nl.wav",
+    "size": 130322,
+    "sha256": "3a2ae2b335eaaceea07a5d645c346cdab154b639cb35ff93a4afab8f2a45cb5e"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_pl.wav",
+    "size": 139196,
+    "sha256": "5f6b68e7461f20a697c83ff39d7a13546a9afa1cb4a9fa2b9a29f9891b8c9895"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_pt_PT.wav",
+    "size": 150388,
+    "sha256": "a77064514c9d7b7eb346159188476552c42eabc7b8ce0575c64ec60acf5f8d36"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_ro.wav",
+    "size": 149178,
+    "sha256": "160e28b1927c93dca69bad7d556c2dd5d362e93886f22556cf31083f6a04ff6f"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_ru.wav",
+    "size": 129146,
+    "sha256": "dcea170082403d8d653ee73e315081241576f3aa2d06566e80421f75bff08566"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_sk.wav",
+    "size": 147256,
+    "sha256": "17e781cbaa0aa8748bc7b6b4ab0b36df8ea4f095a2eb032c0bed3ddbbba2eee3"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_sl.wav",
+    "size": 124730,
+    "sha256": "4eaf77f0a6fa83d6ed3420b2ceb6cf1ef5d61297031aee6970e43c3e0d457705"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_sq.wav",
+    "size": 156524,
+    "sha256": "1ef4f3789edb490a0410a44a8816778ac6e78536cb00894f1ec1684b369b6032"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_sr.wav",
+    "size": 133508,
+    "sha256": "45ce58b55b3b9b609de09c5eb35e678320683bc521168b6664ba5ed4960adb6e"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_sv.wav",
+    "size": 143022,
+    "sha256": "f3c5b11d20ebce164a465f380a1e63f12cb00cd0806fae4d8a472a4eae63c650"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_th.wav",
+    "size": 173344,
+    "sha256": "c652157427f7649d0e3349126507f886583d26fab0a1be6de33e47f60ba2b588"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_tr.wav",
+    "size": 149102,
+    "sha256": "0c8f0d147f63c83dd74693a2e77afda10778f82c9da43c11aaa4e069c6fee29d"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_uk.wav",
+    "size": 150248,
+    "sha256": "8d321666313e5779c807d1342f81153d094496e78cb523d6942df8f6d7d9a221"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_vi.wav",
+    "size": 179732,
+    "sha256": "63df6417f33ee7b29035f31518c869c0857f6d39b433483cce5ff396cf5910a1"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_zh_CN.wav",
+    "size": 157364,
+    "sha256": "80521d354a6bb6154c9f666610d2da35fe42a0c35a520a971bab46e17037eb2e"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_zh_HK.wav",
+    "size": 173914,
+    "sha256": "5d07ebc5a06da8de12e52597493f2b83b9cead88eef02652b175545e818204d9"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/lib/sounds/transcription_notification_zh_TW.wav",
+    "size": 154752,
+    "sha256": "fc0e35c89a086677c432aa5399b4ff7f3b3452efcfed5cb326ac1f160f8c6a5d"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/packages/material_ui/shaders/ink_sparkle.frag",
+    "size": 11976,
+    "sha256": "074f1a29fc029dead14b48a0b5e14d2454d8749159d0b79714ab9bb5d1ecadf4"
+  },
+  {
+    "path": "Contents/Resources/macos_prod.assets/shaders/stretch_effect.frag",
+    "size": 10192,
+    "sha256": "50c8c225a68bcb36805a9d3fde5be28e315e666fd1c142a2d88f3fb5dfc7d9ff"
+  },
+  {
+    "path": "Contents/_CodeSignature/CodeResources",
+    "size": 59611,
+    "sha256": "5cf93a9c36a97e3d4c284d91bfb80da2a8cf61e060c8d62135bbe368b6e5c6f1"
+  },
+  {
+    "path": "Contents/embedded.provisionprofile",
+    "size": 13601,
+    "sha256": "1577a586de46cf2874a78c1a375c1d83a5a1cd217b1fddddeb336843f781b411"
+  }
+]

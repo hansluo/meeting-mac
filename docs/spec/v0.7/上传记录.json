@@ -1,0 +1,15 @@
+{
+  "document_version": "0.7",
+  "product_implementation_authorized": false,
+  "archive": "docs/spec/packages/Foresight-v0.7-complete-spec-public-20261017.zip",
+  "archive_sha256": "390489a6c21938d7d82f4e01ab0ddc7a548c8bfcb7be2a77c49e6bacd2f2b0cc",
+  "large_evidence_files_in_zip_only": [
+    "docs/spec/v0.7/逆向依据/05-证据与复现/dart-string-objects.json",
+    "docs/spec/v0.7/逆向依据/05-证据与复现/原始静态证据/helper-strings.txt",
+    "docs/spec/v0.7/逆向依据/05-证据与复现/原始静态证据/helper-symbols.txt",
+    "docs/spec/v0.7/逆向依据/05-证据与复现/原始静态证据/main-strings.txt",
+    "docs/spec/v0.7/逆向依据/05-证据与复现/原始静态证据/main-symbols.txt",
+    "docs/spec/v0.7/逆向依据/05-证据与复现/原始静态证据/rea-bundle.json"
+  ],
+  "redacted_matches": 4
+}
